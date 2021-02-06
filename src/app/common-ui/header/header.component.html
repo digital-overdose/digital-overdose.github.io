@@ -1,16 +1,17 @@
 <header class="mb-3">
   <div class="w-100 row m-0 py-0 px-3 d-flex flex-row justify-content-between">
 
-    <h1 class="ml-2"><a id="a-title" href="/">
+    <h1 class="ml-2"><a id="a-title" [routerLink]="['/home']">
       Digital Overdose
     </a></h1>
 
     <nav>
       <ul class="nav-lists d-flex flex-row flex-wrap">
-        <li class="nav-elements"><a [routerLink]="['/community']">Community</a></li>
-        <li class="nav-elements"><a [routerLink]="['/team']">Team</a></li>
-        <li class="nav-elements"><a [routerLink]="['/conference']">D-Over Conference</a></li>
-        <li class="nav-elements"><a [routerLink]="['/posts']">Posts</a></li>
+        <li class="nav-elements" [ngClass]="{'active': (this.currentPath.localeCompare('/home')) == 0}"><a [routerLink]="['/home']">Home</a></li>
+        <li class="nav-elements" [ngClass]="{'active': (this.currentPath.localeCompare('/community')) == 0}"><a [routerLink]="['/community']">Community</a></li>
+        <li class="nav-elements" [ngClass]="{'active': (this.currentPath.localeCompare('/team')) == 0}"><a [routerLink]="['/team']">Team</a></li>
+        <li class="nav-elements" [ngClass]="{'active': (this.currentPath.localeCompare('/conference')) == 0}"><a [routerLink]="['/conference']">D-Over Conference</a></li>
+        <li class="nav-elements" [ngClass]="{'active': (this.currentPath.localeCompare('/posts')) == 0}"><a [routerLink]="['/posts']">Posts</a></li>
       </ul>
     </nav>
   </div>
