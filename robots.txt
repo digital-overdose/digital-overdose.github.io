@@ -1,0 +1,9 @@
+User-agent: *
+Crawl-delay: 120
+Sitemap:
+
+User-agent: discobot
+Disallow: /
+
+User-agent: Slurp
+Crawl-delay: 4
