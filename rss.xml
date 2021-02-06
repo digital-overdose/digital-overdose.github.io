@@ -3,21 +3,28 @@
   <channel>
     <title>Digital Overdose</title>
     <!-- TODO Change link -->
-    <link>https://www.example.com</link>
+    <link><!-- https://<domain> --></link>
     <description>The home of the Digital Overdose community.</description>
     <language>en-us</language>
     <generator>VSCode</generator>
-    <category>Development</category>
+    <category>Community</category>
     <category>Information Security</category>
     <category>IoT</category>
     <category>OSINT</category>
     <category>Cybersecurity</category>
     <!-- TODO Add image
       <image>
-        <url>https://atomicnicos.me/assets/content/main/synth.jpg</url>
-        <title>AtomicNicos's Blog at the end of the univers</title>
+        <url>https://<domain>/assets/images/cover.jfif</url>
+        <title>The home of the Digital Overdose community.</title>
         <link>https://www.atomicnicos.me</link>
       </image>
     -->
+    <item>
+      <title>Hello World</title>
+      <link>https://<!-- Domain -->/post/2021/2021_02_06+Hello-World</link>
+      <description>Introducing Digital Overdose's spanking new website.</description>
+      <guid>domain/post-2021-0</guid>
+      <pubDate>Sat, Jan. 6th, 2021</pubDate>
+    </item>
   </channel>
 </rss>
