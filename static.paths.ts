@@ -1,10 +1,38 @@
 export const ROUTES = [
   '/',
-  '/team',
+
+  '/home',
   '/community',
+  '/team',
   '/conference',
   '/posts',
+
   '/discord',
   '/youtube',
-  '/post/2021/2021_02_06+Hello-World'
+
+  '/tags',
+  '/tags/Community',
+  '/tags/Convention',
+  '/tags/Cryptocurrency',
+  '/tags/Cryptography',
+  '/tags/CTF',
+  '/tags/Cyber%20Security',
+  '/tags/Development',
+  '/tags/External%20Content',
+  '/tags/Information%20Security',
+  '/tags/IOT',
+  '/tags/Media',
+  '/tags/Mobile',
+  '/tags/OSINT',
+  '/tags/Personal',
+  '/tags/Privacy',
+  '/tags/Programming',
+  '/tags/Talks',
+  '/tags/Web',
+
+  '/authors/AtomicNicos',
+  '/authors/Mrs.%20Skelli',
+  '/authors/Night',
+
+  '/post/2021/2021_02_06+Hello-World',
 ];

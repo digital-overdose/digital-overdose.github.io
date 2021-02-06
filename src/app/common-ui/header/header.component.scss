@@ -11,3 +11,7 @@ h1 {
     text-decoration: none;
   }
 }
+
+li.active {
+  background: darken($color: #600606, $amount: 5);
+}

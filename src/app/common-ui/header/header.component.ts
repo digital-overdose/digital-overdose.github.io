@@ -1,3 +1,4 @@
+import { Router, NavigationEnd, Event, RouterEvent } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  currentPath: String = '/home';
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+    this.router.events.subscribe((event: Event) => {
+      if (event instanceof RouterEvent) {
+        this.currentPath = event.url;
+      }
+    });
   }
 
 }

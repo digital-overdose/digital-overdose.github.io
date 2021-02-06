@@ -6,7 +6,152 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
   <url>
-    <loc>https://atomicnicos.me/</loc>
+    <loc>https://<!-- Domain -->/</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://<!-- Domain -->/home</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://<!-- Domain -->/community</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://<!-- Domain -->/team</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://<!-- Domain -->/conference</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://<!-- Domain -->/youtube</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://<!-- Domain -->/discord</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://<!-- Domain -->/tags</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://<!-- Domain -->/tags/Community</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://<!-- Domain -->/tags/Convention</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://<!-- Domain -->/tags/Cryptocurrency</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://<!-- Domain -->/tags/Cryptography</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://<!-- Domain -->/tags/CTF</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://<!-- Domain -->/tags/Cyber%20Security</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://<!-- Domain -->/tags/Development</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://<!-- Domain -->/tags/External%20Content</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://<!-- Domain -->/tags/Information%20Security</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://<!-- Domain -->/tags/IOT</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://<!-- Domain -->/tags/Media</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://<!-- Domain -->/tags/Mobile</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://<!-- Domain -->/tags/OSINT</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://<!-- Domain -->/tags/Personal</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://<!-- Domain -->/tags/Privacy</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://<!-- Domain -->/tags/Programming</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://<!-- Domain -->/tags/Talks</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://<!-- Domain -->/tags/Web</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://<!-- Domain -->/authors/AtomicNicos</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://<!-- Domain -->/authors/Mrs.%20Skelli</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://<!-- Domain -->/authors/Night</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://<!-- Domain -->/post/2021/2021_02_06+Hello-World</loc>
     <priority>0.80</priority>
     <changefreq>daily</changefreq>
   </url>
