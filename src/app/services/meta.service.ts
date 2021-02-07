@@ -20,7 +20,7 @@ export class MetaService {
       { name: 'og:description', content: `${description ?? 'Welcome to Digital Overdose! We\'re an ethical hacking community dedicated to providing help and resources for members and guests. We aim to create a large community that people can enjoy and find support or friends in.'}` },
       { name: 'og:image', content: imgUrl },
       { name: 'description', content: `${description ?? 'Welcome to Digital Overdose! We\'re an ethical hacking community dedicated to providing help and resources for members and guests. We aim to create a large community that people can enjoy and find support or friends in.'}` },
-      { name: 'keywords', content: keywords.join(', ') },
+      { name: 'keywords', content: ['digital', 'overdose', 'infosec', 'security', 'cybersec', 'cybersecurity', ...keywords].join(', ') },
       { name: 'twitter:card', content: 'summary' },
       { name: 'twitter:url', content: url },
       { name: 'twitter:image', content: imgUrl },

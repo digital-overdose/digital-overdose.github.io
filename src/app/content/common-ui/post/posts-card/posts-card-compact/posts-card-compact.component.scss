@@ -10,8 +10,8 @@
   color: rgba(96,6,6);
 }
 
-a > div {
-  color: black;
+.card:hover {
+  cursor: pointer;
 }
 
 .card-link-container {
