@@ -1,0 +1,17 @@
+<div class="article card d-flex flex-column h-100 align-items-stretch">
+  <img class="article-image" *ngIf="this.image_url !== ''" src="{{ this.image_url }}">
+  <div class="article-body p-2">
+    <div class="article-header">
+      <h1 class="mb-2">{{ this.title }}</h1>
+      <div *ngIf="this.tags.length > 0" class="mt-3 d-flex flex-row card-link-container align-items-center">
+        <em style="text-decoration: underline">Tags:</em>&nbsp;
+        <a class="card-tag p-1 mx-1" *ngFor="let t of this.tags" [routerLink]="['/tags', t.name]">
+          <span>{{ t.name }}</span>
+        </a>
+      </div>
+      <span *ngIf="created !== undefined">Published on {{getMonth(created[1])}} {{getDay(created[2])}}, {{ created[0] }}. <span *ngIf="this.edited !== undefined">Last edited on {{getMonth(edited[1])}} {{getDay(edited[2])}}, {{ edited[0] }}.</span></span>
+    </div>
+    <hr/>
+    <ng-content></ng-content>
+  </div>
+</div>

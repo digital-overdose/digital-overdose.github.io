@@ -1,0 +1,15 @@
+<div class="h-100 w-100 d-flex flex-column justify-content-between">
+  <div class="d-flex flex-row">
+    <app-post-sidebar class="col-lg-4 m-0 pl-1 pr-0" [authors]="this.authors"></app-post-sidebar>
+    <app-post-body class="col-lg-8 m-0 pr-1 pl-0"
+      [title]="this.title"
+      [tags]="this.tags"
+      [image_url]="this.image_url"
+      [created]="this.created"
+      [edited]="this.edited"
+    >
+    <ng-content></ng-content>
+  </app-post-body>
+  </div>
+
+</div>

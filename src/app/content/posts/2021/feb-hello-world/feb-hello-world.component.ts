@@ -1,3 +1,4 @@
+import { MetaService } from './../../../../services/meta.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FebHelloWorldComponent implements OnInit {
 
-  constructor() { }
+  constructor(private meta: MetaService) { }
 
   ngOnInit(): void {
+
+    this.meta.setTags('https://<domain>/post/2021/2021_02_06+Hello-World', 'Hello World!',
+                      'https://<domain>/assets/images/cover.jfif', 750, 750,
+                      ['discord', 'digital', 'overdose', 'new', 'beginnings']);
+
   }
 
 }

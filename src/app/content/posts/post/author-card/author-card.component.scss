@@ -1,0 +1,33 @@
+.img-avatar {
+  img {
+    padding: 5px;
+    border: 1px solid #51555d;
+    max-width: 110px;
+    border-radius: 50%;
+  }
+}
+
+.card-title {
+  font-size: larger;
+  font-weight: bolder;
+  margin-bottom: 0px;
+}
+
+.card-text {
+  text-align: justify;
+}
+
+.card-links {
+    color: #5e5e5e;
+    transition: 0.3ms ease-in-out;
+    text-decoration: none;
+    font-weight: bolder;
+
+    i {
+      color: #2f44ff
+    }
+}
+
+.card-links:hover {
+  color: #2f44ff
+}

@@ -8,12 +8,18 @@ import { PostsCardComponent } from './content/posts/posts-card/posts-card.compon
 
 import { PostsCardCompactComponent } from './content/posts/posts-card-compact/posts-card-compact.component';
 import { PostsCardCompactHeaderComponent } from './content/posts/posts-card-compact-header/posts-card-compact-header.component';
+import { PostComponent } from './content/posts/post/post.component';
+import { PostSidebarComponent } from './content/posts/post/post-sidebar/post-sidebar.component';
+import { PostBodyComponent } from './content/posts/post/post-body/post-body.component';
 @NgModule({
   declarations: [
+    PostComponent,
     AuthorCardComponent,
     PostsCardComponent,
     PostsCardCompactComponent,
     PostsCardCompactHeaderComponent,
+    PostSidebarComponent,
+    PostBodyComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'digital-overdose' }),
@@ -25,10 +31,13 @@ import { PostsCardCompactHeaderComponent } from './content/posts/posts-card-comp
     CommonModule,
     HttpClientModule,
     AppRoutingModule,
+    PostComponent,
     AuthorCardComponent,
     PostsCardComponent,
     PostsCardCompactComponent,
     PostsCardCompactHeaderComponent,
+    PostSidebarComponent,
+    PostBodyComponent,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
