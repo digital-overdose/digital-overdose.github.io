@@ -1,12 +1,12 @@
-src
-├── app
-│   ├── app-routing.module.ts
-│   ├── app.component.html
-│   ├── app.component.scss
-│   ├── app.component.spec.ts
-│   ├── app.component.ts
-│   ├── app.module.ts
-│   ├── app.server.module.ts
+src/app
+├── app-routing.module.ts
+├── app.component.html
+├── app.component.scss
+├── app.component.spec.ts
+├── app.component.ts
+├── app.module.ts
+├── app.server.module.ts
+├── content
 │   ├── common-ui
 │   │   ├── footer
 │   │   │   ├── footer.component.html
@@ -18,163 +18,140 @@ src
 │   │   │   ├── header.component.scss
 │   │   │   ├── header.component.spec.ts
 │   │   │   └── header.component.ts
-│   │   └── main-body
-│   │       ├── main-body.component.html
-│   │       ├── main-body.component.scss
-│   │       ├── main-body.component.spec.ts
-│   │       └── main-body.component.ts
-│   ├── content
-│   │   ├── community
-│   │   │   ├── community.component.html
-│   │   │   ├── community.component.scss
-│   │   │   ├── community.component.spec.ts
-│   │   │   └── community.component.ts
-│   │   ├── conference
-│   │   │   ├── conference.component.html
-│   │   │   ├── conference.component.scss
-│   │   │   ├── conference.component.spec.ts
-│   │   │   └── conference.component.ts
-│   │   ├── copyright
-│   │   │   ├── copyright.component.html
-│   │   │   ├── copyright.component.scss
-│   │   │   ├── copyright.component.spec.ts
-│   │   │   └── copyright.component.ts
-│   │   ├── home
-│   │   │   ├── home.component.html
-│   │   │   ├── home.component.scss
-│   │   │   ├── home.component.spec.ts
-│   │   │   └── home.component.ts
-│   │   ├── not-found404
-│   │   │   ├── not-found404.component.html
-│   │   │   ├── not-found404.component.scss
-│   │   │   ├── not-found404.component.spec.ts
-│   │   │   └── not-found404.component.ts
-│   │   ├── posts
-│   │   │   ├── 2021
-│   │   │   │   └── feb-hello-world
-│   │   │   │       ├── feb-hello-world.component.html
-│   │   │   │       ├── feb-hello-world.component.scss
-│   │   │   │       ├── feb-hello-world.component.spec.ts
-│   │   │   │       └── feb-hello-world.component.ts
-│   │   │   ├── post
-│   │   │   │   ├── author-card
-│   │   │   │   │   ├── author-card.component.html
-│   │   │   │   │   ├── author-card.component.scss
-│   │   │   │   │   ├── author-card.component.spec.ts
-│   │   │   │   │   └── author-card.component.ts
-│   │   │   │   ├── post-body
-│   │   │   │   │   ├── post-body.component.html
-│   │   │   │   │   ├── post-body.component.scss
-│   │   │   │   │   ├── post-body.component.spec.ts
-│   │   │   │   │   └── post-body.component.ts
-│   │   │   │   ├── post-sidebar
-│   │   │   │   │   ├── post-sidebar.component.html
-│   │   │   │   │   ├── post-sidebar.component.scss
-│   │   │   │   │   ├── post-sidebar.component.spec.ts
-│   │   │   │   │   └── post-sidebar.component.ts
-│   │   │   │   ├── post.component.html
-│   │   │   │   ├── post.component.scss
-│   │   │   │   ├── post.component.spec.ts
-│   │   │   │   └── post.component.ts
-│   │   │   ├── posts-card
-│   │   │   │   ├── posts-card.component.html
-│   │   │   │   ├── posts-card.component.scss
-│   │   │   │   ├── posts-card.component.spec.ts
-│   │   │   │   └── posts-card.component.ts
-│   │   │   ├── posts-card-compact
-│   │   │   │   ├── posts-card-compact.component.html
-│   │   │   │   ├── posts-card-compact.component.scss
-│   │   │   │   ├── posts-card-compact.component.spec.ts
-│   │   │   │   └── posts-card-compact.component.ts
-│   │   │   ├── posts-card-compact-header
-│   │   │   │   ├── posts-card-compact-header.component.html
-│   │   │   │   ├── posts-card-compact-header.component.scss
-│   │   │   │   ├── posts-card-compact-header.component.spec.ts
-│   │   │   │   └── posts-card-compact-header.component.ts
-│   │   │   ├── posts-filtered-by-author
-│   │   │   │   ├── posts-filtered-by-author.component.html
-│   │   │   │   ├── posts-filtered-by-author.component.scss
-│   │   │   │   ├── posts-filtered-by-author.component.spec.ts
-│   │   │   │   └── posts-filtered-by-author.component.ts
-│   │   │   ├── posts-filtered-by-tag
-│   │   │   │   ├── posts-filtered-by-tag.component.html
-│   │   │   │   ├── posts-filtered-by-tag.component.scss
-│   │   │   │   ├── posts-filtered-by-tag.component.spec.ts
-│   │   │   │   └── posts-filtered-by-tag.component.ts
-│   │   │   └── posts-inventory
-│   │   │       ├── posts-inventory.component.html
-│   │   │       ├── posts-inventory.component.scss
-│   │   │       ├── posts-inventory.component.spec.ts
-│   │   │       └── posts-inventory.component.ts
-│   │   ├── privacy-policy
-│   │   │   ├── privacy-policy.component.html
-│   │   │   ├── privacy-policy.component.scss
-│   │   │   ├── privacy-policy.component.spec.ts
-│   │   │   └── privacy-policy.component.ts
-│   │   ├── redirects
-│   │   │   ├── discord
-│   │   │   │   ├── discord.component.html
-│   │   │   │   └── discord.component.ts
-│   │   │   └── youtube
-│   │   │       ├── youtube.component.html
-│   │   │       └── youtube.component.ts
-│   │   └── team
-│   │       ├── team.component.html
-│   │       ├── team.component.scss
-│   │       ├── team.component.spec.ts
-│   │       └── team.component.ts
-│   ├── data
-│   │   └── authors.ts
-│   ├── interfaces
-│   │   ├── author
-│   │   │   └── socials-link.ts
-│   │   ├── author-map.ts
-│   │   ├── author.ts
-│   │   ├── post-map.ts
-│   │   ├── post.ts
-│   │   ├── tag-count.ts
-│   │   └── tag.ts
-│   ├── routing
-│   │   ├── app-content-2021-routing.module.ts
-│   │   ├── app-content-2022-routing.module.ts
-│   │   ├── app.sub-routes-2021.ts
-│   │   ├── app.sub-routes-2022.ts
-│   │   └── app.sub-routes.ts
-│   ├── services
-│   │   ├── browser-recognition.service.spec.ts
-│   │   ├── browser-recognition.service.ts
-│   │   ├── meta.service.spec.ts
-│   │   ├── meta.service.ts
-│   │   ├── title.service.spec.ts
-│   │   └── title.service.ts
-│   ├── shared.module.ts
-│   ├── submodules
-│   │   ├── app-content-2021.module.ts
-│   │   └── app-content-2022.module.ts
-│   └── utils
-│       ├── listing-utils.ts
-│       └── tags.ts
-├── assets
-│   └── images
-│       ├── 404_image.jfif
-│       ├── authors
-│       │   ├── atomicnicos.jpg
-│       │   ├── mrs-skelli.jpg
-│       │   └── night.jpg
-│       └── cover.jfif
-├── environments
-│   ├── environment.prod.ts
-│   └── environment.ts
-├── favicon.ico
-├── favicon.png
-├── index.html
-├── main.server.ts
-├── main.ts
-├── polyfills.ts
-├── robots.txt
-├── rss.xml
-├── sitemap.xml
-├── styles.scss
-└── test.ts
+│   │   ├── main-body
+│   │   │   ├── main-body.component.html
+│   │   │   ├── main-body.component.scss
+│   │   │   ├── main-body.component.spec.ts
+│   │   │   └── main-body.component.ts
+│   │   ├── post
+│   │   │   ├── author-card
+│   │   │   │   ├── author-card.component.html
+│   │   │   │   ├── author-card.component.scss
+│   │   │   │   ├── author-card.component.spec.ts
+│   │   │   │   └── author-card.component.ts
+│   │   │   ├── post-body
+│   │   │   │   ├── post-body.component.html
+│   │   │   │   ├── post-body.component.scss
+│   │   │   │   ├── post-body.component.spec.ts
+│   │   │   │   └── post-body.component.ts
+│   │   │   ├── post-sidebar
+│   │   │   │   ├── post-sidebar.component.html
+│   │   │   │   ├── post-sidebar.component.scss
+│   │   │   │   ├── post-sidebar.component.spec.ts
+│   │   │   │   └── post-sidebar.component.ts
+│   │   │   ├── post.component.html
+│   │   │   ├── post.component.scss
+│   │   │   ├── post.component.spec.ts
+│   │   │   ├── post.component.ts
+│   │   │   └── posts-card
+│   │   │       ├── posts-card-compact
+│   │   │       │   ├── posts-card-compact.component.html
+│   │   │       │   ├── posts-card-compact.component.scss
+│   │   │       │   ├── posts-card-compact.component.spec.ts
+│   │   │       │   └── posts-card-compact.component.ts
+│   │   │       ├── posts-card-compact-header
+│   │   │       │   ├── posts-card-compact-header.component.html
+│   │   │       │   ├── posts-card-compact-header.component.scss
+│   │   │       │   ├── posts-card-compact-header.component.spec.ts
+│   │   │       │   └── posts-card-compact-header.component.ts
+│   │   │       └── posts-card-normal
+│   │   │           ├── posts-card-normal.component.html
+│   │   │           ├── posts-card-normal.component.scss
+│   │   │           ├── posts-card-normal.component.spec.ts
+│   │   │           └── posts-card-normal.component.ts
+│   │   └── post-inventory-display
+│   │       ├── post-inventory-display.component.html
+│   │       ├── post-inventory-display.component.scss
+│   │       ├── post-inventory-display.component.spec.ts
+│   │       ├── post-inventory-display.component.ts
+│   │       ├── posts-filtered-by-author
+│   │       │   ├── posts-filtered-by-author.component.spec.ts
+│   │       │   └── posts-filtered-by-author.component.ts
+│   │       ├── posts-filtered-by-tag
+│   │       │   ├── posts-filtered-by-tag.component.spec.ts
+│   │       │   └── posts-filtered-by-tag.component.ts
+│   │       └── posts-no-filter
+│   │           ├── posts-no-filter.component.spec.ts
+│   │           └── posts-no-filter.component.ts
+│   ├── community
+│   │   ├── community.component.html
+│   │   ├── community.component.scss
+│   │   ├── community.component.spec.ts
+│   │   └── community.component.ts
+│   ├── conference
+│   │   ├── conference.component.html
+│   │   ├── conference.component.scss
+│   │   ├── conference.component.spec.ts
+│   │   └── conference.component.ts
+│   ├── copyright
+│   │   ├── copyright.component.html
+│   │   ├── copyright.component.scss
+│   │   ├── copyright.component.spec.ts
+│   │   └── copyright.component.ts
+│   ├── home
+│   │   ├── home.component.html
+│   │   ├── home.component.scss
+│   │   ├── home.component.spec.ts
+│   │   └── home.component.ts
+│   ├── not-found404
+│   │   ├── not-found404.component.html
+│   │   ├── not-found404.component.scss
+│   │   ├── not-found404.component.spec.ts
+│   │   └── not-found404.component.ts
+│   ├── posts
+│   │   └── 2021
+│   │       └── feb-hello-world
+│   │           ├── feb-hello-world.component.html
+│   │           ├── feb-hello-world.component.scss
+│   │           ├── feb-hello-world.component.spec.ts
+│   │           └── feb-hello-world.component.ts
+│   ├── privacy-policy
+│   │   ├── privacy-policy.component.html
+│   │   ├── privacy-policy.component.scss
+│   │   ├── privacy-policy.component.spec.ts
+│   │   └── privacy-policy.component.ts
+│   ├── redirects
+│   │   ├── discord
+│   │   │   ├── discord.component.html
+│   │   │   └── discord.component.ts
+│   │   └── youtube
+│   │       ├── youtube.component.html
+│   │       └── youtube.component.ts
+│   └── team
+│       ├── team.component.html
+│       ├── team.component.scss
+│       ├── team.component.spec.ts
+│       └── team.component.ts
+├── data
+│   └── authors.ts
+├── interfaces
+│   ├── author
+│   │   └── socials-link.ts
+│   ├── author-map.ts
+│   ├── author.ts
+│   ├── post-map.ts
+│   ├── post.ts
+│   ├── tag-count.ts
+│   └── tag.ts
+├── routing
+│   ├── app-content-2021-routing.module.ts
+│   ├── app-content-2022-routing.module.ts
+│   ├── app.sub-routes-2021.ts
+│   └── app.sub-routes-2022.ts
+├── services
+│   ├── browser-recognition.service.spec.ts
+│   ├── browser-recognition.service.ts
+│   ├── meta.service.spec.ts
+│   ├── meta.service.ts
+│   ├── title.service.spec.ts
+│   └── title.service.ts
+├── shared.module.ts
+├── submodules
+│   ├── app-content-2021.module.ts
+│   └── app-content-2022.module.ts
+└── utils
+    ├── listing-utils.ts
+    ├── routing-functions.ts
+    └── tags.ts
 
-40 directories, 137 files
+37 directories, 117 files
