@@ -1,0 +1,36 @@
+header {
+  z-index: 997;
+  transition: all 0.5s ease-in-out;
+  padding: 14px 0;
+  background: #600606;
+}
+
+h1 {
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+li.active {
+  background: darken($color: #600606, $amount: 5);
+}
+
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 4px 0 !important;
+
+    ul {
+      li {
+        a {
+          padding: 4px 10px !important;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+}

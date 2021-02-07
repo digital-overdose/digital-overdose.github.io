@@ -1,7 +1,4 @@
-import { PostsFilteredByAuthorComponent } from './content/posts/posts-filtered-by-author/posts-filtered-by-author.component';
 import { HomeComponent } from './content/home/home.component';
-import { PostsFilteredByTagComponent } from './content/posts/posts-filtered-by-tag/posts-filtered-by-tag.component';
-import { PostsInventoryComponent } from './content/posts/posts-inventory/posts-inventory.component';
 import { ConferenceComponent } from './content/conference/conference.component';
 import { CommunityComponent } from './content/community/community.component';
 import { NgModule } from '@angular/core';
@@ -10,6 +7,11 @@ import { TeamComponent } from './content/team/team.component';
 import { YoutubeComponent } from './content/redirects/youtube/youtube.component';
 import { DiscordComponent } from './content/redirects/discord/discord.component';
 import { NotFound404Component } from './content/not-found404/not-found404.component';
+import { PrivacyPolicyComponent } from './content/privacy-policy/privacy-policy.component';
+import { CopyrightComponent } from './content/copyright/copyright.component';
+import { PostsNoFilterComponent } from './content/common-ui/post-inventory-display/posts-no-filter/posts-no-filter.component';
+import { PostsFilteredByTagComponent } from './content/common-ui/post-inventory-display/posts-filtered-by-tag/posts-filtered-by-tag.component';
+import { PostsFilteredByAuthorComponent } from './content/common-ui/post-inventory-display/posts-filtered-by-author/posts-filtered-by-author.component';
 
 const routes: Routes = [
   {
@@ -35,7 +37,21 @@ const routes: Routes = [
   },
   {
     path: 'posts',
-    component: PostsInventoryComponent
+    component: PostsNoFilterComponent,
+  },
+  {
+    path: 'copyright',
+    component: CopyrightComponent,
+    data: {
+      title: 'Copyright Policy',
+    }
+  },
+  {
+    path: 'privacy',
+    component: PrivacyPolicyComponent,
+    data: {
+      title: 'Privacy Policy',
+    }
   },
   {
     path: 'tags',
