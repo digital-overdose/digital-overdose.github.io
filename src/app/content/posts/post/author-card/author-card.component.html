@@ -1,1 +1,13 @@
-<p>author-card works!</p>
+<div class="card p-3">
+  <div class="d-block img-avatar mx-auto">
+    <img src="{{ author.avatar }}" alt="{{ author.name }} avatar" itemprop="image">
+  </div>
+  <div class="card-title my-2 mx-auto">{{ author.name }}</div>
+  <div class="card-text mb-2">{{ author.bio }}</div>
+  <div class="flex-column" *ngFor="let l of author.links">
+    <a class="card-links" href="{{ l.url }}"><i class="{{ l.icon }}"></i> {{ l.label }}</a>
+  </div>
+  <div class="mt-2 d-flex flex-row justify-content-end">
+    <a class="card-links" [routerLink]="['/authors', author.name]"><span><i class="fas fa-external-link-alt"></i> Read more by {{ author.name }}</span></a>
+  </div>
+</div>

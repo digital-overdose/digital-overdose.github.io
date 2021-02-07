@@ -1,6 +1,35 @@
 import { AuthorMap } from './../../app/interfaces/author-map';
 
 export const authorList: AuthorMap = {
+  "Digital Overdose": {
+    name: "Digital Overdose",
+    // TODO fill in
+    bio: "Description of DO",
+    avatar: "/assets/images/cover.jfif",
+    links: [
+      {
+        label: "Blog",
+        icon: "fas fa-fw fa-blog",
+        // TODO fill in
+        url: "https://<domain>.me",
+      },
+      {
+        label: "Twitter",
+        icon: "fab fa-fw fa-twitter-square",
+        url: "https://twitter.com/d_overcon",
+      },
+      {
+        label: "LinkedIn",
+        icon: "fab fa-fw fa-linkedin",
+        url: "https://linkedin.com/company/digitaloverdose",
+      },
+      {
+        label: "GitHub",
+        icon: "fab fa-fw fa-github",
+        url: "https://github.com/digital-overdose",
+      }
+    ]
+  },
   "AtomicNicos": {
     name: "AtomicNicos",
     bio: "Developer, Hackademic, OSINTeer, Wannabe Infosec Contributor.",
