@@ -2,7 +2,7 @@ header {
   z-index: 997;
   transition: all 0.5s ease-in-out;
   padding: 14px 0;
-  background: #600606;
+  background: #1e1146;
 }
 
 h1 {
@@ -13,7 +13,21 @@ h1 {
 }
 
 li.active {
-  background: darken($color: #600606, $amount: 5);
+  background: lighten($color: #1e1146, $amount: 5);
+  border-radius: 5px;
+}
+
+li {
+  a:hover {
+    color: #60baff !important;
+  }
+}
+
+li:not(.active) {
+  a:hover {
+    text-shadow: 0 0 1px #1e1146, 0 0 10px #0000FF;
+    font-weight: bold;
+  }
 }
 
 
@@ -33,4 +47,7 @@ li.active {
 
 
 @media screen and (max-width: 400px) {
+  h1 {
+    text-align: center;
+  }
 }
