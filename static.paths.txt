@@ -4,6 +4,8 @@
 /community
 /team
 /conference
+/copyright
+/privacy
 
 /youtube
 /discord

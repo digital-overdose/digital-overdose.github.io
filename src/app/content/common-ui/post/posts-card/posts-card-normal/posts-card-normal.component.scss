@@ -1,0 +1,52 @@
+.card-img-top {
+  height: 100px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.card-read-more {
+  text-align: right;
+  margin-left: auto;
+  line-height: 1;
+  letter-spacing: 0px;
+  text-decoration: underline !important;
+  color: rgba(96,6,6);
+}
+
+.card-tag {
+  background-color: #0130ff;
+  color: white;
+  padding: 8px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+h6 {
+  margin: 0;
+  font-size: small;
+  font-weight: 500;
+}
+
+
+.card-link-container {
+  flex-wrap: wrap;
+
+  .card-tag, .card-author {
+    white-space: nowrap;
+    overflow-x: hidden;
+    padding: 4px;
+    border-radius: 5px;
+    margin: 1px;
+  }
+
+  .card-tag {
+    background-color: #0130ff;
+    color: white;
+  }
+
+  .card-author {
+    color: white;
+    background-color: #818181;
+  }
+
+}

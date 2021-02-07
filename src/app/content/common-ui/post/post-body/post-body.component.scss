@@ -1,0 +1,34 @@
+.article-image {
+  max-height: 300px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.card-link-container {
+  flex-wrap: wrap;
+
+  .card-tag  {
+    white-space: nowrap;
+    overflow-x: hidden;
+    padding: 4px;
+    border-radius: 5px;
+    margin: 1px;
+    color: white !important;
+    background-color: #0130ff;
+  }
+}
+
+hr {
+  border: 1px solid grey;
+}
+
+
+@media screen and (max-width: 768px) {
+  .article-image {
+    max-height: 150px;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+}

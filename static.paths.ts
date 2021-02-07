@@ -6,6 +6,8 @@ export const ROUTES = [
   '/team',
   '/conference',
   '/posts',
+  '/copyright',
+  '/privacy',
 
   '/discord',
   '/youtube',
