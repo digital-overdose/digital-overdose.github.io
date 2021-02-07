@@ -1,3 +1,4 @@
+import { BrowserRecognitionService } from './../../../../../services/browser-recognition.service';
 import { Component, OnInit, Input } from '@angular/core';
 import { Post } from './.././../../../../interfaces/post';
 import { stringify } from './.././../../../../utils/listing-utils';
@@ -12,9 +13,15 @@ export class PostsCardCompactComponent implements OnInit {
 
   stringify = stringify;
 
-  constructor() { }
+  constructor(private browserRec: BrowserRecognitionService) { }
 
   ngOnInit(): void {
   }
 
+  goToPost(path: string) {
+    if (this.browserRec.isBrowser) {
+      window.location.replace(path);
+    }
+
+  }
 }

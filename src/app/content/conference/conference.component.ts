@@ -1,3 +1,5 @@
+import { BASE_URL } from './../../data/url';
+import { MetaService } from './../../services/meta.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ConferenceComponent implements OnInit {
 
-  constructor() { }
+  constructor(private meta: MetaService) { }
 
   ngOnInit(): void {
+    this.meta.setTags(`${BASE_URL}/conference`, 'Digital Overdose Con: For Rookies',
+                      `${BASE_URL}/assets/images/cover.jfif`, 750, 750,
+                      ['conference', 'for', 'rookies']);
   }
-
 }

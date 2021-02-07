@@ -24,7 +24,7 @@ a {
 .bird-app, .bot-app {
   border-radius: 10px;
   user-select: none;
-  width: 30%;
+  width: 20rem;
 }
 
 .bird-app {
@@ -37,7 +37,7 @@ a {
 
 @media screen and (max-width: 768px) {
   .bird-app, .bot-app {
-    width: 40%;
+    width: 15rem;
   }
 
   h1 {
@@ -49,10 +49,9 @@ a {
   }
 }
 
-
 @media screen and (max-width: 400px) {
   .bird-app, .bot-app {
-    width: 50%;
+    width: 10rem;
   }
   h1 {
     font-size: 1rem ;
