@@ -1,8 +1,22 @@
 # Digital Overdose Website
 
+## Table of Contents
+
+- [Angular Specific Information](#angular-specific-information)
+  - [Prerendering content for deployment](#prerendering-the-files-for-deployment)
+  - [Running the Dev Local Server](#development-server)
+  - [Adding code to the project scaffold](#adding-code-to-the-project-scaffold)
+  - [Running unit tests](#running-unit-tests)
+  - [Running end-to-end tests](#running-end-to-end-tests)
+- [Adding content](#adding-content)
+  - [Adding a year to the site's routing](#adding-a-year-of-content)
+  - [Adding a tag](#adding-a-tag)
+  - [Adding an article](#adding-an-article)
+  - [Adding an author](#adding-an-author)
+
 ## Angular Specific Information
 
-### Actually prerendering the files
+### Prerendering the files for deployment
 
 Run `npm run prerender` ! Past Nicos bids you hello.
 
@@ -10,9 +24,9 @@ Run `npm run prerender` ! Past Nicos bids you hello.
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-### Code scaffolding
+### Adding code to the project scaffold
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `ng generate component path/to/component-name --module=<parent-module-name>` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ### Running unit tests
 
@@ -189,7 +203,7 @@ const routes: Routes = [
 
 ```
 
-Don't forget to update `static.routes.txt`, `static.routes.ts`, `sitemap.xml` and `rss.xml`.
+Don't forget to update `static.paths.txt`, `static.paths.ts`, `sitemap.xml` and `rss.xml`.
 
 ### Adding a tag
 
@@ -199,7 +213,7 @@ Go to `utils/tags.ts` and add a tag:
 export const TAG_XXXX: Tag = { name: 'Random' }
 ```
 
-Then you simply need to reference it from the `routing/app.sub-routes-XXXX.ts` and update `static.routes.txt`, `static.routes.ts`, `sitemap.xml` and `rss.xml` and you'll be all set.
+Then you simply need to reference it from the `routing/app.sub-routes-XXXX.ts` and update `static.paths.txt`, `static.paths.ts`, `sitemap.xml` and `rss.xml` and you'll be all set.
 
 ### Adding an article
 
@@ -220,4 +234,28 @@ Within, the HTML file, one must set write the following:
 
 Anything can be entered in between the `app-post` tags.
 
-Don't forget to update `static.routes.txt`, `static.routes.ts`, `sitemap.xml` and `rss.xml`.
+Don't forget to update `static.paths.txt`, `static.paths.ts`, `sitemap.xml` and `rss.xml`.
+
+### Adding an author
+
+One can add an author by editing the `data/authors.ts` file and adding the relevant fields to an author:
+
+```typescript
+export const authorList: AuthorMap = {
+  /// ... Other authors
+  "reference": {
+    name: "username",
+    bio: "A semi-short description.",
+    // A link towards the local avatar of the author (ideally 300x300)
+    avatar: "/assets/images/authors/XXXXX", 
+    links: [
+      {
+        label: "Twitter", // Link name
+        icon: "fab fa-fw fa-twitter-square", // Link fontawesome icon class
+        url: "https://twitter.com/XXXX",  // Actual URL of the link
+      },
+      // Can add as many as desired
+    ]
+  }
+}
+```
