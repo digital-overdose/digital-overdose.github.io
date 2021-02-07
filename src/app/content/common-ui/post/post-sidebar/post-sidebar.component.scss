@@ -1,0 +1,16 @@
+.author-list {
+  .author-card:not(:first-child) {
+    margin-top: 5px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .author-card {
+    padding: 0 !important;
+    flex-grow: 1;
+    margin-top: 5px !important;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+}

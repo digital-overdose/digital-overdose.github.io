@@ -1,0 +1,16 @@
+<ng-container *ngIf="this.container; else elseTemplate">
+  <div class="container main-page align-self-stretch p-2">
+    <div class="w-100 align-self-stretch">
+      <ng-container [ngTemplateOutlet]="widgetContent"></ng-container>
+    </div>
+  </div>
+</ng-container>
+<ng-template #elseTemplate>
+  <div class="main-page align-self-stretch">
+    <ng-container [ngTemplateOutlet]="widgetContent"></ng-container>
+  </div>
+</ng-template>
+
+<ng-template  #widgetContent>
+  <ng-content></ng-content>
+</ng-template>
