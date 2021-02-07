@@ -3,23 +3,26 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-import { AuthorCardComponent } from './content/posts/post/author-card/author-card.component';
-import { PostsCardComponent } from './content/posts/posts-card/posts-card.component';
+import { PostComponent } from './content/common-ui/post/post.component';
+import { AuthorCardComponent } from './content/common-ui/post/author-card/author-card.component';
+import { PostSidebarComponent } from './content/common-ui/post/post-sidebar/post-sidebar.component';
+import { PostBodyComponent } from './content/common-ui/post/post-body/post-body.component';
 
-import { PostsCardCompactComponent } from './content/posts/posts-card-compact/posts-card-compact.component';
-import { PostsCardCompactHeaderComponent } from './content/posts/posts-card-compact-header/posts-card-compact-header.component';
-import { PostComponent } from './content/posts/post/post.component';
-import { PostSidebarComponent } from './content/posts/post/post-sidebar/post-sidebar.component';
-import { PostBodyComponent } from './content/posts/post/post-body/post-body.component';
+import { PostsCardNormalComponent } from './content/common-ui/post/posts-card/posts-card-normal/posts-card-normal.component';
+import { PostsCardCompactComponent } from './content/common-ui/post/posts-card/posts-card-compact/posts-card-compact.component';
+import { PostsCardCompactHeaderComponent } from './content/common-ui/post/posts-card/posts-card-compact-header/posts-card-compact-header.component';
+import { PostInventoryDisplayComponent } from './content/common-ui/post-inventory-display/post-inventory-display.component';
+
 @NgModule({
   declarations: [
     PostComponent,
     AuthorCardComponent,
-    PostsCardComponent,
+    PostsCardNormalComponent,
     PostsCardCompactComponent,
     PostsCardCompactHeaderComponent,
     PostSidebarComponent,
     PostBodyComponent,
+    PostInventoryDisplayComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'digital-overdose' }),
@@ -33,11 +36,12 @@ import { PostBodyComponent } from './content/posts/post/post-body/post-body.comp
     AppRoutingModule,
     PostComponent,
     AuthorCardComponent,
-    PostsCardComponent,
+    PostsCardNormalComponent,
     PostsCardCompactComponent,
     PostsCardCompactHeaderComponent,
     PostSidebarComponent,
     PostBodyComponent,
+    PostInventoryDisplayComponent,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

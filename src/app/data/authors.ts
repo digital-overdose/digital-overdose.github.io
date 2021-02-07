@@ -3,10 +3,14 @@ import { AuthorMap } from './../../app/interfaces/author-map';
 export const authorList: AuthorMap = {
   "Digital Overdose": {
     name: "Digital Overdose",
-    // TODO fill in
-    bio: "Description of DO",
+    bio: "Digital Overdose is an information security and cybersecurity focused community for people of all levels of experience.",
     avatar: "/assets/images/cover.jfif",
     links: [
+      {
+        label: "Discord",
+        icon: "fab fa-discord",
+        url: "https://discord.gg/yTPvyub"
+      },
       {
         label: "Blog",
         icon: "fas fa-fw fa-blog",
