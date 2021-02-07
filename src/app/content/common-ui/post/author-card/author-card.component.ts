@@ -13,5 +13,4 @@ export class AuthorCardComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }

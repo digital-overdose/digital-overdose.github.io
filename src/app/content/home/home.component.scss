@@ -1,0 +1,64 @@
+.backdrop {
+  background-image: url('/assets/images/cover.jfif') ;
+  background-repeat: no-repeat;
+  background-size: cover; /* Resize the background image to cover the entire container */
+  background-position: center;
+}
+
+.home-title {
+  background-color: purple;
+  color: white;
+  border-radius: 10px;
+  cursor: default;
+  user-select: none;
+}
+
+span {
+  word-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bird-app, .bot-app {
+  border-radius: 10px;
+  user-select: none;
+  width: 30%;
+}
+
+.bird-app {
+  background-color: #1DA1F2;
+}
+
+.bot-app {
+  background-color: #7289da;
+}
+
+@media screen and (max-width: 768px) {
+  .bird-app, .bot-app {
+    width: 40%;
+  }
+
+  h1 {
+    font-size: 1.5rem ;
+  }
+
+  span {
+    font-size: 1rem;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .bird-app, .bot-app {
+    width: 50%;
+  }
+  h1 {
+    font-size: 1rem ;
+  }
+
+  span {
+    font-size: .75rem;
+  }
+}
