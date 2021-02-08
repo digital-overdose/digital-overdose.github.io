@@ -7,7 +7,7 @@
 /copyright
 /privacy
 
-/404
+/404-not-found
 
 /youtube
 /discord

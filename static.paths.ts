@@ -9,7 +9,7 @@ export const ROUTES = [
   '/copyright',
   '/privacy',
 
-  '/404',
+  '/404-not-found',
 
   '/discord',
   '/youtube',
