@@ -88,12 +88,12 @@ const routes: Routes = [
     component: DiscordComponent
   },
   {
-    path: '404',
+    path: '404-not-found',
     component: NotFound404Component
   },
   {
     path: '**',
-    redirectTo: '/404'
+    redirectTo: '/404-not-found'
   }
 ];
 
