@@ -14,6 +14,7 @@ export class ConferenceComponent implements OnInit {
   ngOnInit(): void {
     this.meta.setTags(`${BASE_URL}/conference`, 'Digital Overdose Con: For Rookies',
                       `${BASE_URL}/assets/images/cover.jfif`, 750, 750,
-                      ['conference', 'for', 'rookies']);
+                      ['conference', 'for', 'rookies'],
+                      'Digital Overdose is proud to announce that we are running an information security conference !');
   }
 }

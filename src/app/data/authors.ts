@@ -14,8 +14,7 @@ export const authorList: AuthorMap = {
       {
         label: "Blog",
         icon: "fas fa-fw fa-blog",
-        // TODO fill in
-        url: "https://<domain>.me",
+        url: "https://digital-overdose.github.io",
       },
       {
         label: "Twitter",
@@ -31,6 +30,11 @@ export const authorList: AuthorMap = {
         label: "GitHub",
         icon: "fab fa-fw fa-github",
         url: "https://github.com/digital-overdose",
+      },
+      {
+        label: "Patreon",
+        icon: "fab fa-fw fa-patreon",
+        url: "https://www.patreon.com/digitaloverdosecon",
       }
     ]
   },
