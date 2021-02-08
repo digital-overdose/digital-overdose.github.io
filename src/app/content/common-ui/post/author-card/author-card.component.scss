@@ -29,12 +29,14 @@
     font-weight: bolder;
 
     i {
-      color: #2f44ff
+      color: #2f44ff;
+      width: 20px;
+      text-align: center;
     }
 }
 
 .card-links:hover {
-  color: #2f44ff
+  color: #2f44ff;
 }
 
 @media screen and (max-width: 768px) {
