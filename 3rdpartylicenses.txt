@@ -35,9 +35,6 @@ MIT
 @angular/router
 MIT
 
-@nguniversal/express-engine
-MIT
-
 core-js
 MIT
 Copyright (c) 2014-2021 Denis Pushkarev
