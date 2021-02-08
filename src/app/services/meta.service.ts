@@ -1,22 +1,52 @@
+import { BASE_URL } from './../data/url';
 import { TitleService } from './title.service';
 import { Injectable } from '@angular/core';
 import { Meta } from '@angular/platform-browser';
 
+/**
+ * Class that handles the dynamic injection of website metadata tags.
+ *
+ * @export
+ */
 @Injectable({
   providedIn: 'root'
 })
 export class MetaService {
+  /**
+   * Creates an instance of MetaService.
+   *
+   * @param meta The service that can inject meta data into the HTML page header.
+   * @param title A service that sets the webpage's title.
+   */
   constructor(private meta: Meta, private title: TitleService) { }
 
-  setTags(url: string, title: string, imgUrl: string, imgWidth: number, imgHeight: number, keywords: string[], description?: string, authorName?: string, authorSocial?: string) {
+  /**
+   * Injects the metadata tags into the HTML page. Used for SSR and SEO.
+   *
+   * @param url The URL of this resource.
+   * @param title The title of the page.
+   * @param imgUrl The URL of the meta image.
+   * @param imgWidth The width of the meta image.
+   * @param imgHeight The height of the meta image.
+   * @param keywords An assortment of keywords for SEO.
+   * @param [description] A description of the content of the page.
+   * @param [authorName] The name of the person that wrote the content in the page.
+   * @param [authorSocial] The author's social media links.
+   */
+  setTags(url: string,
+          title: string,
+          imgUrl: string,
+          imgWidth: number, imgHeight: number,
+          keywords: string[], description?: string,
+          authorName?: string, authorSocial?: string) {
     this.title.setTitle(title);
 
     this.meta.addTags([
       { name: 'og:url', content: url },
       { name: 'og:locale', content: 'en_us' },
       // TODO Change
-      { name: 'og:site_name', content: '' },
-      { name: 'og:title', content: `${title} @ Digital Overdose` },
+      { name: 'og:site_name', content: `${BASE_URL}` },
+      { name: 'og:title', content: `${title} @Digital Overdose` },
       { name: 'og:description', content: `${description ?? 'Welcome to Digital Overdose! We\'re an ethical hacking community dedicated to providing help and resources for members and guests. We aim to create a large community that people can enjoy and find support or friends in.'}` },
       { name: 'og:image', content: imgUrl },
       { name: 'description', content: `${description ?? 'Welcome to Digital Overdose! We\'re an ethical hacking community dedicated to providing help and resources for members and guests. We aim to create a large community that people can enjoy and find support or friends in.'}` },
