@@ -2,18 +2,24 @@ import { Component, OnInit } from '@angular/core';
 import { authorList } from 'src/app/data/authors';
 import { SocialsLink } from 'src/app/interfaces/author/socials-link';
 
+/**
+ * The fouter element of the page.
+ *
+ * @export
+ */
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
-  links: SocialsLink[];
+  /** The links to be displayed at the bottom of the page. */
+  links: SocialsLink[] = authorList['Digital Overdose'].links;
 
+  /** Creates an instance of FooterComponent. */
   constructor() { }
 
-  ngOnInit(): void {
-    this.links = authorList["Digital Overdose"].links;
-  }
+  /** Initialises the component. */
+  ngOnInit(): void { }
 
 }

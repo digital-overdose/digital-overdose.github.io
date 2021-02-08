@@ -49,7 +49,7 @@ import { App2021Module } from './submodules/app-content-2021.module';
   imports: [
     SharedModule,
     App2021Module,
-    //App2022Module
+    // App2022Module
   ],
   providers: [],
   bootstrap: [AppComponent],

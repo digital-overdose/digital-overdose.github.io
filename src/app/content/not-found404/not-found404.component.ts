@@ -2,14 +2,25 @@ import { BASE_URL } from './../../data/url';
 import { MetaService } from './../../services/meta.service';
 import { Component, OnInit } from '@angular/core';
 
+/**
+ * Displays the 404 page.
+ *
+ * @export
+ */
 @Component({
   selector: 'app-not-found404',
   templateUrl: './not-found404.component.html',
   styleUrls: ['./not-found404.component.scss']
 })
 export class NotFound404Component implements OnInit {
+  /**
+   * Creates an instance of NotFound404Component.
+   *
+   * @param meta The HTML header metadata injection service.
+   */
   constructor(private meta: MetaService) { }
 
+  /** Set the page metadata information. */
   ngOnInit() {
     this.meta.setTags(`${BASE_URL}/404-not-found`, 'The error page',
                       `${BASE_URL}/assets/images/404_image.jfif`, 460, 403,
