@@ -1,12 +1,21 @@
 # Digital Overdose Website
 
+## Cloning the repository
+
+```bash
+git clone https://github.com/digital-overdose/digital-overdose.github.io
+npm install
+```
+
 ## Table of Contents
 
+- [Cloning the repository](#cloning-the-repository)
 - [Development Specific Information](#development-specific-information)
   - [Running the Dev Local Server](#development-server)
   - [Adding code to the project scaffold](#adding-code-to-the-project-scaffold)
   - [Prerendering content for deployment](#prerendering-the-files-for-deployment)
   - [Serving the site to GitHub pages](#serving-the-site-to-github-pages)
+  - [Compiling the documentation](#compiling-the-documentation)
 - [Adding content](#adding-content)
   - [Adding a year to the site's routing](#adding-a-year-of-content)
   - [Adding a tag](#adding-a-tag)
@@ -33,6 +42,12 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 ### Serving the site to GitHub Pages
 
 From the finalized `main` branch, run the `./update-gh-pages.sh` command in your Git terminal.
+
+### Compiling the documentation
+
+Run the `compodoc -p tsconfig.app.json` in your terminal to compile the documentation. It can be viewed in `/documentation`.
+
+For a live documentation site, run the `compodoc -p tsconfig.app.json src -s` in your terminal and visit [http://127.0.0.1:8080](`http://127.0.0.1:8080`) in your browser.
 
 ## Adding content
 
