@@ -1,0 +1,258 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>digital-overdose documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">digital-overdose documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content module">
+                   <div class="content-data">
+
+
+
+<ol class="breadcrumb">
+    <li>Modules</li>
+    <li>AppRoutingModule</li>
+</ol>
+
+
+<ul class="nav nav-tabs" role="tablist">
+    <li  class="active" >
+        <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+    </li>
+    <li >
+        <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+    </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/app-routing.module.ts</code>
+        </p>
+
+
+
+
+        <div class="container-fluid module">
+            <div class="row">
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">
+import { NgModule } from &#x27;@angular/core&#x27;;
+import { RouterModule, PreloadAllModules, Route } from &#x27;@angular/router&#x27;;
+
+import { HomeComponent } from &#x27;./content/home/home.component&#x27;;
+import { ConferenceComponent } from &#x27;./content/conference/conference.component&#x27;;
+import { CommunityComponent } from &#x27;./content/community/community.component&#x27;;
+import { TeamComponent } from &#x27;./content/team/team.component&#x27;;
+import { PrivacyPolicyComponent } from &#x27;./content/privacy-policy/privacy-policy.component&#x27;;
+import { CopyrightComponent } from &#x27;./content/copyright/copyright.component&#x27;;
+
+import { YoutubeComponent } from &#x27;./content/redirects/youtube/youtube.component&#x27;;
+import { DiscordComponent } from &#x27;./content/redirects/discord/discord.component&#x27;;
+import { NotFound404Component } from &#x27;./content/not-found404/not-found404.component&#x27;;
+
+import { PostsNoFilterComponent } from &#x27;./content/common-ui/post-inventory-display/posts-no-filter/posts-no-filter.component&#x27;;
+import { PostsFilteredByTagComponent } from &#x27;./content/common-ui/post-inventory-display/posts-filtered-by-tag/posts-filtered-by-tag.component&#x27;;
+import { PostsFilteredByAuthorComponent } from &#x27;./content/common-ui/post-inventory-display/posts-filtered-by-author/posts-filtered-by-author.component&#x27;;
+
+/** {@link Route[] | Routes} used to navigate the application. */
+const routes: Route[] &#x3D; [
+  {
+    path: &#x27;&#x27;,
+    pathMatch: &#x27;full&#x27;,
+    redirectTo: &#x27;home&#x27;
+  },
+  {
+    path: &#x27;home&#x27;,
+    component: HomeComponent,
+  },
+  {
+    path: &#x27;community&#x27;,
+    component: CommunityComponent
+  },
+  {
+    path: &#x27;team&#x27;,
+    component: TeamComponent
+  },
+  {
+    path: &#x27;conference&#x27;,
+    component: ConferenceComponent
+  },
+  {
+    path: &#x27;posts&#x27;,
+    component: PostsNoFilterComponent,
+  },
+  {
+    path: &#x27;copyright&#x27;,
+    component: CopyrightComponent,
+    data: {
+      title: &#x27;Copyright Policy&#x27;,
+    }
+  },
+  {
+    path: &#x27;privacy&#x27;,
+    component: PrivacyPolicyComponent,
+    data: {
+      title: &#x27;Privacy Policy&#x27;,
+    }
+  },
+  {
+    path: &#x27;tags&#x27;,
+    component: PostsFilteredByTagComponent,
+  },
+  {
+    path: &#x27;tags/:filter&#x27;,
+    component: PostsFilteredByTagComponent,
+  },
+  {
+    path: &#x27;authors&#x27;,
+    component: PostsFilteredByAuthorComponent,
+  },
+  {
+    path: &#x27;authors/:author&#x27;,
+    component: PostsFilteredByAuthorComponent,
+  },
+  {
+    path: &#x27;post/2021&#x27;,
+    loadChildren: () &#x3D;&gt; import(&#x27;./routing/app-content-2021-routing.module&#x27;).then(m &#x3D;&gt; m.Posts2021RoutingModule)
+  },
+  /*
+  {
+    path: &#x27;post/2022&#x27;,
+    loadChildren: () &#x3D;&gt; import(&#x27;./routing/app-content-2022-routing.module&#x27;).then(m &#x3D;&gt; m.Posts2022RoutingModule)
+  },
+  */
+  {
+    path: &#x27;youtube&#x27;,
+    component: YoutubeComponent,
+  },
+  {
+    path: &#x27;discord&#x27;,
+    component: DiscordComponent
+  },
+  {
+    path: &#x27;404-not-found&#x27;,
+    component: NotFound404Component
+  },
+  {
+    path: &#x27;**&#x27;,
+    redirectTo: &#x27;/404-not-found&#x27;
+  }
+];
+
+@NgModule({
+  imports: [
+    RouterModule.forRoot(routes, {
+      initialNavigation: &#x27;enabled&#x27;,
+      relativeLinkResolution: &#x27;legacy&#x27;,
+      preloadingStrategy: PreloadAllModules,
+      scrollPositionRestoration: &#x27;enabled&#x27;,
+      anchorScrolling: &#x27;enabled&#x27;,
+      scrollOffset: [0, 64],
+    })
+  ],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }
+</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'module';
+            var COMPODOC_CURRENT_PAGE_URL = 'AppRoutingModule.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

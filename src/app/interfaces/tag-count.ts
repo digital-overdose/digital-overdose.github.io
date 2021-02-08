@@ -1,5 +1,13 @@
-import { Tag } from './tag';
+
+/**
+ * Represent the amount of posts tagged with a certain name.
+ *
+ * @export
+ */
 export interface TagCount {
-  tag_name: string,
-  count: number
+  /** The name of the tag. */
+  tag_name: string;
+
+  /** The amount of posts tagged. */
+  count: number;
 }

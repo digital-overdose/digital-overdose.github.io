@@ -1,0 +1,230 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>digital-overdose documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+	      <link rel="stylesheet" href="./styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="./" class="navbar-brand">digital-overdose documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content getting-started">
+                   <div class="content-data">
+
+<h1 id="digital-overdose-website">Digital Overdose Website</h1>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#development-specific-information">Development Specific Information</a><ul>
+<li><a href="#development-server">Running the Dev Local Server</a></li>
+<li><a href="#adding-code-to-the-project-scaffold">Adding code to the project scaffold</a></li>
+<li><a href="#prerendering-the-files-for-deployment">Prerendering content for deployment</a></li>
+<li><a href="#serving-the-site-to-github-pages">Serving the site to GitHub pages</a></li>
+</ul>
+</li>
+<li><a href="#adding-content">Adding content</a><ul>
+<li><a href="#adding-a-year-of-content">Adding a year to the site&#39;s routing</a></li>
+<li><a href="#adding-a-tag">Adding a tag</a></li>
+<li><a href="#adding-an-article">Adding an article</a></li>
+<li><a href="#adding-an-author">Adding an author</a></li>
+</ul>
+</li>
+<li><a href="#angular-specific-information">Angular Specific Information</a><ul>
+<li><a href="#running-unit-tests">Running unit tests</a></li>
+<li><a href="#running-end-to-end-tests">Running end-to-end tests</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="development-specific-information">Development Specific Information</h2>
+<h3 id="prerendering-the-files-for-deployment">Prerendering the files for deployment</h3>
+<p>Run <code>npm run prerender</code> ! Past Nicos bids you hello.</p>
+<h3 id="adding-code-to-the-project-scaffold">Adding code to the project scaffold</h3>
+<p>Run <code>ng generate component path/to/component-name --module=&lt;parent-module-name&gt;</code> to generate a new component. You can also use <code>ng generate directive|pipe|service|class|guard|interface|enum|module</code>.</p>
+<h3 id="development-server">Development server</h3>
+<p>Run <code>ng serve</code> for a dev server. Navigate to <code>http://localhost:4200/</code>. The app will automatically reload if you change any of the source files.</p>
+<h3 id="serving-the-site-to-github-pages">Serving the site to GitHub Pages</h3>
+<p>From the finalized <code>main</code> branch, run the <code>./update-gh-pages.sh</code> command in your Git terminal.</p>
+<h2 id="adding-content">Adding content</h2>
+<h3 id="adding-a-year-of-content">Adding a year of content</h3>
+<p>Create the file <code>submodules/app-content-XXXX.module.ts</code>.</p>
+<p>Within it, write the following</p>
+<div><pre class="line-numbers"><code class="language-typescript">import { CommonModule } from &#39;&#64;angular/common&#39;;
+import { SharedModule } from &#39;../shared.module&#39;;
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from &#39;&#64;angular/core&#39;;
+
+&#64;NgModule({
+  declarations: [ ],
+  imports: [
+    CommonModule,
+    SharedModule
+  ],
+  providers: [],
+  bootstrap: [],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+})
+export class AppXXXXModule { }</code></pre></div><p>Create the file <code>routing/app-sub-routes-XXXX.ts</code>. Within it write the following:</p>
+<div><pre class="line-numbers"><code class="language-typescript">import { authorList } from &#39;./../data/authors&#39;;
+import { TAG_TALKS, TAG_INFOSEC, TAG_CONVENTION, TAG_COMMUNITY } from &#39;../utils/tags&#39;;
+import { Routes } from &#39;&#64;angular/router&#39;;
+
+export const subroutesXXXX: Routes = [
+
+/** Example:
+ * ```
+ * export const subroutesXXXX: Routes = [
+ *  {
+ *    path: &#39;&#39;,
+ *    component: Component,
+ *    data: {
+ *      title: &#39;&#39;,
+ *      authors: [ authorList[&quot;authorName&quot;] ],
+ *      description: &#39;&#39;, // optional
+ *      image_url: &#39;&#39;, // optional
+ *      tags: [ TAG_YYYY ]
+ *    }
+ *  }
+ * ]
+ * ```
+ */
+];</code></pre></div><p>Then create the file <code>routing/app-content-XXXX-routing.module.ts</code>, and insert the followin within:</p>
+<div><pre class="line-numbers"><code class="language-typescript">import { NgModule } from &#39;&#64;angular/core&#39;;
+import { RouterModule } from &#39;&#64;angular/router&#39;;
+import { subroutesXXXX } from &#39;./app.sub-routes-XXXX&#39;;
+
+&#64;NgModule({
+  imports: [RouterModule.forChild(subroutesXXXX)],
+  exports: [RouterModule]
+})
+export class PostsXXXXRoutingModule { }
+</code></pre></div><p>Finally, link it to the rest in <code>app-routing.module.ts</code>:</p>
+<div><pre class="line-numbers"><code class="language-typescript">
+const routes: Routes = [
+  // ***
+  {
+    path: &#39;post/XXXX&#39;,
+    loadChildren: () =&gt; import(&#39;./routing/app-content-XXXX-routing.module&#39;).then(m =&gt; m.PostsXXXXRoutingModule)
+  },
+  // ***
+];
+</code></pre></div><p>Don&#39;t forget to update <code>static.paths.txt</code>, <code>static.paths.ts</code>, <code>sitemap.xml</code> and <code>rss.xml</code>.</p>
+<h3 id="adding-a-tag">Adding a tag</h3>
+<p>Go to <code>utils/tags.ts</code> and add a tag:</p>
+<div><pre class="line-numbers"><code class="language-typescript">export const TAG_XXXX: Tag = { name: &#39;Random&#39; }</code></pre></div><p>Then you simply need to reference it from the <code>routing/app.sub-routes-XXXX.ts</code> and update <code>static.paths.txt</code>, <code>static.paths.ts</code>, <code>sitemap.xml</code> and <code>rss.xml</code> and you&#39;ll be all set.</p>
+<h3 id="adding-an-article">Adding an article</h3>
+<p>One can add an article by using the following command:</p>
+<div><pre class="line-numbers"><code class="language-typescript">ng g c content/posts/XXXX/random-unique-name --module=submodules/app-content-XXXX</code></pre></div><p>Within, the HTML file, one must set write the following:</p>
+<div><pre class="line-numbers"><code class="language-typescript">&lt;app-post [created]=&quot;[2020, 02, 06]&quot;&gt; // [edited] is optional.
+  &lt;p&gt;Your content here.&lt;/p&gt;
+&lt;/app-post&gt;
+</code></pre></div><p>Anything can be entered in between the <code>app-post</code> tags.</p>
+<p>Don&#39;t forget to update <code>static.paths.txt</code>, <code>static.paths.ts</code>, <code>sitemap.xml</code> and <code>rss.xml</code>.</p>
+<h3 id="adding-an-author">Adding an author</h3>
+<p>One can add an author by editing the <code>data/authors.ts</code> file and adding the relevant fields to an author:</p>
+<div><pre class="line-numbers"><code class="language-typescript">export const authorList: AuthorMap = {
+  /// ... Other authors
+  &quot;reference&quot;: {
+    name: &quot;username&quot;,
+    bio: &quot;A semi-short description.&quot;,
+    // A link towards the local avatar of the author (ideally 300x300)
+    avatar: &quot;/assets/images/authors/XXXXX&quot;, 
+    links: [
+      {
+        label: &quot;Twitter&quot;, // Link name
+        icon: &quot;fab fa-fw fa-twitter-square&quot;, // Link fontawesome icon class
+        url: &quot;https://twitter.com/XXXX&quot;,  // Actual URL of the link
+      },
+      // Can add as many as desired
+    ]
+  }
+}</code></pre></div><h2 id="angular-specific-information">Angular Specific Information</h2>
+<h3 id="running-unit-tests">Running unit tests</h3>
+<p>Run <code>ng test</code> to execute the unit tests via <a href="https://karma-runner.github.io">Karma</a>.</p>
+<h3 id="running-end-to-end-tests">Running end-to-end tests</h3>
+<p>Run <code>ng e2e</code> to execute the end-to-end tests via <a href="http://www.protractortest.org/">Protractor</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 0;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'getting-started';
+            var COMPODOC_CURRENT_PAGE_URL = 'index.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="./js/libs/custom-elements.min.js"></script>
+       <script src="./js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="./js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="./js/menu-wc.js" defer></script>
+
+       <script src="./js/libs/bootstrap-native.js"></script>
+
+       <script src="./js/libs/es6-shim.min.js"></script>
+       <script src="./js/libs/EventDispatcher.js"></script>
+       <script src="./js/libs/promise.min.js"></script>
+       <script src="./js/libs/zepto.min.js"></script>
+
+       <script src="./js/compodoc.js"></script>
+
+       <script src="./js/tabs.js"></script>
+       <script src="./js/menu.js"></script>
+       <script src="./js/libs/clipboard.min.js"></script>
+       <script src="./js/libs/prism.js"></script>
+       <script src="./js/sourceCode.js"></script>
+          <script src="./js/search/search.js"></script>
+          <script src="./js/search/lunr.min.js"></script>
+          <script src="./js/search/search-lunr.js"></script>
+          <script src="./js/search/search_index.js"></script>
+       <script src="./js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
