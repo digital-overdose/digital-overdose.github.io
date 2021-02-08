@@ -34,8 +34,19 @@ li:not(.active) {
 @media screen and (max-width: 768px) {
   header {
     padding: 4px 0 !important;
+    div {
+      h1 {
+        margin: 0 auto !important;
+        margin-bottom: .25rem !important;
+      }
+    }
 
     ul {
+
+      display:flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
       li {
         a {
           padding: 4px 10px !important;
@@ -45,9 +56,5 @@ li:not(.active) {
   }
 }
 
-
 @media screen and (max-width: 400px) {
-  h1 {
-    text-align: center;
-  }
 }

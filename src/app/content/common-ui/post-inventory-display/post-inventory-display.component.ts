@@ -1,43 +1,68 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 import { Post } from 'src/app/interfaces/post';
 import { PostMap } from 'src/app/interfaces/post-map';
 import { groupBy, keyDescOrder } from 'src/app/utils/listing-utils';
 
+/**
+ * Loads up posts and displays them. Comes in card and list-tile views.
+ *
+ * @export
+ */
 @Component({
   templateUrl: './post-inventory-display.component.html',
   styleUrls: ['./post-inventory-display.component.scss']
 })
 export class PostInventoryDisplayComponent implements OnInit {
+  /** The list of all of the posts that can be displayed. */
   posts: Post[];
-  postsByYear: PostMap = {};
-  keyDescOrder = keyDescOrder;
 
+  /** The list of all of the posts sorted by year. */
+  postsByYear: PostMap = {};
+
+  /** A number of maximum number of posts to be displayed. */
   numberPostsToLoad: number = 9;
+
+  /** Whether or not all of the posts are loaded (helps to show the "load more" button). */
   maximumPostsLoaded: boolean;
+
+  /** Whether or not the view is card or list-tile based. */
   compactView: boolean = false;
+
+  /** The title of the display. */
   title: string;
+
+  /** The subtitle of the display. */
   subtitle: string;
 
+  /** Local copy for use in the HTML. */
+  keyDescOrder = keyDescOrder;
+
+  /** Creates an instance of PostInventoryDisplayComponent. */
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  /** Set the page metadata information. */
+  ngOnInit(): void { }
 
-  loadPosts(_posts?: Post[]): void {
-    this.maximumPostsLoaded = this.numberPostsToLoad > _posts.length;
-    this.posts = _posts.slice(0, this.numberPostsToLoad);
+  /**
+   * Loads a number of posts and assigns them to an object.
+   *
+   * @param [postsToLoad] The posts that should be loaded onto the page.
+   */
+  loadPosts(postsToLoad?: Post[]): void {
+    this.maximumPostsLoaded = this.numberPostsToLoad > postsToLoad.length;
+    this.posts = this.compactView ? postsToLoad : postsToLoad.slice(0, this.numberPostsToLoad);
     this.postsByYear = groupBy(this.posts, 'year');
   }
 
+  /** Increases the maximum amount of posts to display. */
   loadMorePosts(): void {
     this.numberPostsToLoad += 3;
     this.loadPosts();
   }
 
+  /** Toggles the view from a card-based view to a list-tile-based view. */
   toggleCompactView(): void {
     this.compactView = !this.compactView;
     this.loadPosts();
   }
-
 }

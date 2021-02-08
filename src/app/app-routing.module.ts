@@ -1,19 +1,24 @@
+
+import { NgModule } from '@angular/core';
+import { RouterModule, PreloadAllModules, Route } from '@angular/router';
+
 import { HomeComponent } from './content/home/home.component';
 import { ConferenceComponent } from './content/conference/conference.component';
 import { CommunityComponent } from './content/community/community.component';
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 import { TeamComponent } from './content/team/team.component';
+import { PrivacyPolicyComponent } from './content/privacy-policy/privacy-policy.component';
+import { CopyrightComponent } from './content/copyright/copyright.component';
+
 import { YoutubeComponent } from './content/redirects/youtube/youtube.component';
 import { DiscordComponent } from './content/redirects/discord/discord.component';
 import { NotFound404Component } from './content/not-found404/not-found404.component';
-import { PrivacyPolicyComponent } from './content/privacy-policy/privacy-policy.component';
-import { CopyrightComponent } from './content/copyright/copyright.component';
+
 import { PostsNoFilterComponent } from './content/common-ui/post-inventory-display/posts-no-filter/posts-no-filter.component';
 import { PostsFilteredByTagComponent } from './content/common-ui/post-inventory-display/posts-filtered-by-tag/posts-filtered-by-tag.component';
 import { PostsFilteredByAuthorComponent } from './content/common-ui/post-inventory-display/posts-filtered-by-author/posts-filtered-by-author.component';
 
-const routes: Routes = [
+/** {@link Route[] | Routes} used to navigate the application. */
+const routes: Route[] = [
   {
     path: '',
     pathMatch: 'full',
