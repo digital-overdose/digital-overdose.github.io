@@ -24,10 +24,11 @@ export class AppComponent implements OnInit {
 
   /** Initialises the component. */
   ngOnInit(): void {
+    this.container = !['/', '/home'].includes(this.router.url);
     this.router.events.subscribe(
       (event) => {
         if (event instanceof RouterEvent) {
-          this.container = !['/home'].includes(event.url);
+          this.container = !['/', '/home'].includes(event.url);
         }
       }
     );
