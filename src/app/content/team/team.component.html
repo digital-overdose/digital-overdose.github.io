@@ -1,57 +1,69 @@
 <script>
-    /* Demo purposes only */
-var snippet = [].slice.call(document.querySelectorAll('.hover'));
-if (snippet.length) {
-  snippet.forEach(function (snippet) {
-    snippet.addEventListener('mouseout', function (event) {
-      if (event.target.parentNode.tagName === 'figure') {
-        event.target.parentNode.classList.remove('hover')
-      } else {
-        event.target.parentNode.classList.remove('hover')
-      }
+  /* Demo purposes only */
+  var snippet = [].slice.call(document.querySelectorAll('.hover'));
+  if (snippet.length) {
+    snippet.forEach(function (snippet) {
+      snippet.addEventListener('mouseout', function (event) {
+        if (event.target.parentNode.tagName === 'figure') {
+          event.target.parentNode.classList.remove('hover')
+        } else {
+          event.target.parentNode.classList.remove('hover')
+        }
+      });
     });
-  });
-}
+  }
 </script>
-<figure class="snip1584"><img src="/assets/images/authors/mrs-skelli.jpg" alt="Mrs Skelli"/>
-    <figcaption>
-      <h3>Eden Stroet,</h3>
-      <h3>Mrs Skelli</h3>
-      <h5>fancy title</h5>
-    </figcaption>
-</figure>
-<figure class="snip1584"><img src="/assets/images/authors/atomicnicos.jpg" alt="AtomicNicos"/>
-    <figcaption>
-      <h3>Nicolas Boeckh,</h3>
-      <h3>AtomicNicos</h3>
-      <h5>fancy title</h5>
-    </figcaption>
-</figure>
-<figure class="snip1584"><img src="/assets/images/authors/night.jpg" alt="Night"/>
-    <figcaption>
-      <h3>K Stroet,</h3>
-      <h3>Night, Bugbot</h3>
-      <h5>fancy title</h5>
-    </figcaption>
-</figure>
-<figure class="snip1584"><img src="https://skelli.win/assets/img/team/team-4.jpg" alt="D4vid"/>
-    <figcaption>
-      <h3>D4vid, Lucifer</h3>
-      <h5>fancy title</h5>
-    </figcaption>
-</figure>
-<figure class="snip1584"><img src="https://skelli.win/assets/img/team/team-5.jpg" alt="Mayhaps"/>
-    <figcaption>
-      <h3>Mayhaps</h3>
-      <h5>fancy title</h5>
-    </figcaption>
-</figure>
-<figure class="snip1584"><img src="https://skelli.win/assets/img/team/team-6.jpg" alt="0x0Elliot"/>
-    <figcaption>
-      <h3>0x0Elliot</h3>
-      <h5>fancy title</h5>
-    </figcaption>
-</figure>
+
+<div class="d-flex flex-column">
+  <div class="d-flex flex-wrap justify-content-center">
+    <figure class="snip1584">
+      <img src="/assets/images/team/mrs-skelli.jpg" alt="Mrs Skelli"/>
+      <figcaption>
+        <h3>Eden Stroet,</h3>
+        <h3>Mrs Skelli</h3>
+        <h5>fancy title</h5>
+      </figcaption>
+    </figure>
+    <figure class="snip1584">
+      <img src="/assets/images/team/atomicnicos.jpg" alt="AtomicNicos"/>
+      <figcaption>
+        <h3>Nicolas Boeckh,</h3>
+        <h3>AtomicNicos</h3>
+        <h5>fancy title</h5>
+      </figcaption>
+    </figure>
+    <figure class="snip1584">
+      <img src="/assets/images/team/night.jpg" alt="Night"/>
+      <figcaption>
+        <h3>K Stroet,</h3>
+        <h3>Night, Bugbot</h3>
+        <h5>fancy title</h5>
+      </figcaption>
+    </figure>
+    <figure class="snip1584">
+      <img src="/assets/images/team/lucifer.jpg" alt="D4vid"/>
+      <figcaption>
+        <h3>D4vid, Lucifer</h3>
+        <h5>fancy title</h5>
+      </figcaption>
+    </figure>
+    <figure class="snip1584">
+      <img src="/assets/images/team/mayhaps.jpg" alt="Mayhaps"/>
+      <figcaption>
+        <h3>Mayhaps</h3>
+        <h5>fancy title</h5>
+      </figcaption>
+    </figure>
+    <figure class="snip1584">
+      <img src="/assets/images/team/0x0elliot.jpg" alt="0x0Elliot"/>
+      <figcaption>
+        <h3>0x0Elliot</h3>
+        <h5>fancy title</h5>
+      </figcaption>
+    </figure>
+  </div>
+</div>
+
 
 <p>Some community explanation</p>
 

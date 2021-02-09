@@ -13,52 +13,10 @@
   user-select: none;
 }
 
-span {
-  word-wrap: break-word;
-}
-
-a {
-  text-decoration: none;
-}
-
-.bird-app, .bot-app {
-  border-radius: 10px;
-  user-select: none;
-  width: 20rem;
-  height: 3.125rem;
-}
-
 .bird-app {
   background-color: #1DA1F2;
 }
 
-.bot-app {
-  background-color: #7289da;
-}
-
-@media screen and (max-width: 768px) {
-  .bird-app, .bot-app {
-    width: 15rem;
-  }
-
-  h1 {
-    font-size: 1.5rem ;
-  }
-
-  span {
-    font-size: 1rem;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .bird-app, .bot-app {
-    width: 10rem;
-  }
-  h1 {
-    font-size: 1rem ;
-  }
-
-  span {
-    font-size: .75rem;
-  }
+.socials-container {
+  width: 90% !important;
 }
