@@ -1,5 +1,6 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import "~@fontsource/dosis"; // Weight 500
+@import "~@fontsource/anton"; // Weight 500
 
 #main_content h1{font-size:1.875em}
 #main_content h2{font-size:1.5em}
@@ -49,7 +50,7 @@ nav {
 
 /* Sets the dimensions of the entire scrollbar */
 html::-webkit-scrollbar {
-  width: 0.625em;
+  width: 0.5em;
   height: 1.875em;
 }
 

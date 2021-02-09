@@ -44,7 +44,6 @@ export class MetaService {
     this.meta.addTags([
       { name: 'og:url', content: url },
       { name: 'og:locale', content: 'en_us' },
-      // TODO Change
       { name: 'og:site_name', content: `${BASE_URL}` },
       { name: 'og:title', content: `${title} @Digital Overdose` },
       { name: 'og:description', content: `${description ?? 'Welcome to Digital Overdose! We\'re an ethical hacking community dedicated to providing help and resources for members and guests. We aim to create a large community that people can enjoy and find support or friends in.'}` },

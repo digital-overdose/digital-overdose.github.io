@@ -1,0 +1,14 @@
+:host {
+  display: flex;
+}
+
+.app {
+  border-radius: 10px;
+  user-select: none;
+  width: fit-content !important;
+  align-content: center;
+}
+
+a {
+  text-decoration: none;
+}

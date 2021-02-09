@@ -23,6 +23,7 @@ import { DiscordComponent } from './content/redirects/discord/discord.component'
 import { NotFound404Component } from './content/not-found404/not-found404.component';
 
 import { App2021Module } from './submodules/app-content-2021.module';
+import { HomeSocialButtonComponent } from './content/home/home-social-button/home-social-button.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { App2021Module } from './submodules/app-content-2021.module';
     NotFound404Component,
     CopyrightComponent,
     PrivacyPolicyComponent,
+    HomeSocialButtonComponent,
   ],
   imports: [
     SharedModule,

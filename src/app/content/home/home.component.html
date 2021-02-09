@@ -1,31 +1,23 @@
 <div class="backdrop w-100 h-100 d-flex flex-grow align-self-stretch">
   <div class="w-100 d-flex align-self-stretch flex-column justify-content-center">
     <div class="d-flex flex-column justify-content-center align-items-center">
-      <h1 class="home-title mx-auto my-2 p-3">Digital Overdose</h1>
-      <a class="bot-app m-1 p-1" href="https://discord.com/yTPvyub">
-        <div class="m-1 d-flex flex-row align-items-center">
-          <div class="w-25 text-center my-auto">
-              <span class="text-white"><i class="fab fa-discord fa-2x mx-auto"></i></span>
-          </div>
-          <div class="p-0 w-75 text-center">
-            <span class="text-white">
-              Join us on Discord
-            </span>
-          </div>
-        </div>
-      </a>
-      <a class="bird-app m-1 p-1" href="https://twitter.com/d_overcon">
-        <div class="m-1 d-flex flex-row align-items-center">
-          <div class="w-25 text-center">
-              <span class="text-white"><i class="fab fa-twitter fa-2x mx-auto"></i></span>
-          </div>
-          <div class="p-0 w-75 text-center">
-            <span class="text-white">
-              Follow us on Twitter
-            </span>
-          </div>
-        </div>
-      </a>
+      <div class="mx-auto my-2">
+        <h2 class="home-title mx-4 p-3 text-center">DIGITAL OVERDOSE</h2>
+      </div>
+      <div class="d-flex flex-column justify-content-center align-items-center mb-2 socials-container">
+        <app-home-social-button class="m-1"
+          [text]="'Join us on Discord'"
+          [url]="'https://discord.gg/yTPvyub'"
+          [faClass]="'fab fa-discord'"
+          [color]="'#7289da'"
+          ></app-home-social-button>
+        <app-home-social-button class="m-1"
+          [text]="'Follow us on Twitter'"
+          [url]="'https://twitter.com/d_overcon'"
+          [faClass]="'fab fa-twitter'"
+          [color]="'#1DA1F2'"
+          ></app-home-social-button>
+      </div>
     </div>
   </div>
 </div>
