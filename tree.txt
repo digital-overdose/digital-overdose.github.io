@@ -89,6 +89,11 @@ src/app
 │   │   ├── copyright.component.spec.ts
 │   │   └── copyright.component.ts
 │   ├── home
+│   │   ├── home-social-button
+│   │   │   ├── home-social-button.component.html
+│   │   │   ├── home-social-button.component.scss
+│   │   │   ├── home-social-button.component.spec.ts
+│   │   │   └── home-social-button.component.ts
 │   │   ├── home.component.html
 │   │   ├── home.component.scss
 │   │   ├── home.component.spec.ts
@@ -123,7 +128,8 @@ src/app
 │       ├── team.component.spec.ts
 │       └── team.component.ts
 ├── data
-│   └── authors.ts
+│   ├── authors.ts
+│   └── url.ts
 ├── interfaces
 │   ├── author
 │   │   └── socials-link.ts
@@ -151,7 +157,7 @@ src/app
 │   └── app-content-2022.module.ts
 └── utils
     ├── listing-utils.ts
-    ├── routing-functions.ts
+    ├── route-generation-functions.ts
     └── tags.ts
 
-37 directories, 117 files
+38 directories, 122 files
