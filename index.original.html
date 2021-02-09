@@ -8,8 +8,23 @@
     <base href="/">
     <link rel="icon" type="image/x-icon" href="favicon.png">
     <script src="https://kit.fontawesome.com/88cfc0e7e2.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="styles.3190b0961d4c9a82ff6f.css"></head>
+    <!-- Github Pages hack to allow SPA refresh without receiving 404. -->
+    <script>
+      (function () {
+        // Retrieve the URL the user was trying to access when receiving the 404.
+        var redirect = sessionStorage.redirect;
+        // Remove the URL from sessionStorage.
+        delete sessionStorage.redirect;
+        // Check if we actually need to redirect.
+        if (redirect && redirect != location.href) {
+          // We need to redirect to the URL the user was trying to access.
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
+    <!-- /Github Pages hack. -->
+  <link rel="stylesheet" href="styles.006d675cbaebcb771b1c.css"></head>
   <body>
     <app-root></app-root>
-  <script src="runtime-es2015.cb9e1fd3c80a435a9b0e.js" type="module"></script><script src="runtime-es5.cb9e1fd3c80a435a9b0e.js" nomodule defer></script><script src="polyfills-es5.0efb7e1239eed72e3aeb.js" nomodule defer></script><script src="polyfills-es2015.38b4851f3ee2c7dab617.js" type="module"></script><script src="main-es2015.c75e8dbb9364b1f843be.js" type="module"></script><script src="main-es5.c75e8dbb9364b1f843be.js" nomodule defer></script></body>
+  <script src="runtime-es2015.145b57be354b68102ac0.js" type="module"></script><script src="runtime-es5.145b57be354b68102ac0.js" nomodule defer></script><script src="polyfills-es5.0efb7e1239eed72e3aeb.js" nomodule defer></script><script src="polyfills-es2015.38b4851f3ee2c7dab617.js" type="module"></script><script src="main-es2015.a11cf823e168d2cce299.js" type="module"></script><script src="main-es5.a11cf823e168d2cce299.js" nomodule defer></script></body>
 </html>
