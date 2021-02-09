@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
+
 .snip1584 {
   font-family: 'Raleway', sans-serif;
   position: relative;
@@ -11,13 +12,15 @@
   color: #ffffff;
   font-size: 16px;
   text-align: left;
+
+  * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+  }
 }
-.snip1584 * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-}
+
 .snip1584:before {
   position: absolute;
   top: 10px;
@@ -37,6 +40,7 @@
   max-width: 100%;
   backface-visibility: hidden;
 }
+
 .snip1584 figcaption {
   position: absolute;
   top: 0;
@@ -49,12 +53,13 @@
   flex-direction: column;
   justify-content: center;
 }
-.snip1584 h3,
-.snip1584 h5 {
+
+.snip1584 h3, .snip1584 h5 {
   margin: 0;
   opacity: 0;
   letter-spacing: 1px;
 }
+
 .snip1584 h3 {
   -webkit-transform: translateY(-100%);
   transform: translateY(-100%);
@@ -64,6 +69,7 @@
   transition-delay: 0.05s;
   margin-bottom: 5px;
 }
+
 .snip1584 h5 {
   font-weight: normal;
   background-color: #ae895d;
@@ -73,6 +79,7 @@
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
+
 .snip1584 a {
   position: absolute;
   top: 0;
@@ -81,27 +88,26 @@
   right: 0;
   z-index: 1;
 }
-.snip1584:hover:before,
-.snip1584.hover:before {
+
+.snip1584:hover:before, .snip1584.hover:before {
   top: 10px;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
-.snip1584:hover h3,
-.snip1584.hover h3,
-.snip1584:hover h5,
-.snip1584.hover h5 {
+
+.snip1584:hover h3, .snip1584.hover h3,
+.snip1584:hover h5, .snip1584.hover h5 {
   -webkit-transform: translateY(0);
   transform: translateY(0);
   opacity: 1;
 }
-.snip1584:hover h3,
-.snip1584.hover h3 {
+
+.snip1584:hover h3, .snip1584.hover h3 {
   -webkit-transition-delay: 0.3s;
   transition-delay: 0.3s;
 }
-.snip1584:hover h5,
-.snip1584.hover h5 {
+
+.snip1584:hover h5, .snip1584.hover h5 {
   -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
 }

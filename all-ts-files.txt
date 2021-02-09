@@ -20,6 +20,7 @@
 ./src/app/content/conference/conference.component.ts
 ./src/app/content/copyright/copyright.component.ts
 ./src/app/content/home/home.component.ts
+./src/app/content/home/home-social-button/home-social-button.component.ts
 ./src/app/content/not-found404/not-found404.component.ts
 ./src/app/content/posts/2021/feb-hello-world/feb-hello-world.component.ts
 ./src/app/content/privacy-policy/privacy-policy.component.ts
