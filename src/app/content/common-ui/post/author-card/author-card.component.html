@@ -4,10 +4,12 @@
   </div>
   <div class="card-title my-2 mx-auto">{{ author.name }}</div>
   <div class="card-text mb-2">{{ author.bio }}</div>
-  <div class="flex-column" *ngFor="let l of author.links">
-    <a class="card-links" href="{{ l.url }}"><i class="{{ l.icon }}"></i> {{ l.label }}</a>
+  <div class="d-flex flex-column flex-wrap card-links-container">
+    <div *ngFor="let l of author.links" class="mr-auto">
+      <a class="card-links" href="{{ l.url }}"><i class="{{ l.icon }}"></i> {{ l.label }}</a>
+    </div>
   </div>
-  <div class="mt-2 d-flex flex-row justify-content-end">
+  <div class="card-read-more mt-2 d-flex flex-row justify-content-end">
     <a class="card-links" [routerLink]="['/authors', author.name]"><span><i class="fas fa-external-link-alt"></i> Read more by {{ author.name }}</span></a>
   </div>
 </div>

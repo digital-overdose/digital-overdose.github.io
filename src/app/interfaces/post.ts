@@ -20,7 +20,7 @@ export interface Post {
   description?: string;
 
   /** A URL used for the Post header image. */
-  image_url?: string;
+  imageUrl?: string;
 
   /** A list of {@link Tag | tags} the Post is flagged with. */
   tags?: Tag[];
