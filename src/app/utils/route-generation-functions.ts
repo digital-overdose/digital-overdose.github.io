@@ -45,7 +45,7 @@ function routeToPost(r: Route): Post {
     path: r.path,
     description: r.data.description,
     title: r.path.slice(11),
-    image_url: r.data.image_url ?? '',
+    imageUrl: r.data.imageUrl ?? '',
     tags: r.data.tags,
     authors: r.data.authors
   };
