@@ -1,0 +1,45 @@
+.event-title {
+  font-size: large;
+  font-weight: bold;
+}
+
+.card {
+  cursor: pointer;
+}
+
+.event-date {
+  font-size: medium;
+}
+
+.event-time {
+  font-size: small;
+}
+
+@media screen and (max-width: 768px) {
+  .event-title {
+    font-size: large;
+  }
+
+  .event-date {
+    font-size: medium;
+  }
+
+  .event-time {
+    font-size: small;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .event-title {
+    font-size: medium;
+  }
+
+  .event-date {
+    font-size: small;
+  }
+
+  .event-time {
+    font-size: smaller;
+  }
+}

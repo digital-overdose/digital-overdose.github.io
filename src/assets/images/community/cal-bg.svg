@@ -1,0 +1,36 @@
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+xmlns:cc="http://creativecommons.org/ns#"
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:svg="http://www.w3.org/2000/svg"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+id="svg2"
+viewBox="0 0 100 100" preserveAspectRatio="none"
+sodipodi:docname="cal-bg">
+  <defs>
+    <linearGradient id="svg-cal-text" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="red"/>
+      <stop offset="100%" stop-color="orange"/>
+    </linearGradient>
+    <linearGradient id="svg-cal-frame" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="orange"/>
+      <stop offset="100%" stop-color="red"/>
+    </linearGradient>
+    <linearGradient id="svg-down-frame" x1="0" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="orange"/>
+      <stop offset="100%" stop-color="red"/>
+    </linearGradient>
+  </defs>
+  <path d="M0,0
+  L65,0
+  L65,80
+  L0,100z" fill="url(#svg-cal-text)"></path>
+
+  <path d="M0,100 L100,100 L65,80z" fill="url(#svg-down-frame)"></path>
+  <path d="M65,0
+  L100,0
+  L100,100
+  L65,80z" fill="url(#svg-cal-frame)"></path>
+
+</svg>

@@ -1,0 +1,22 @@
+<div class="d-flex flex-column m-3">
+  <div class="card">
+    <h6 class="text-center my-2 mx-1">Next up<br/>@Digital Overdose</h6>
+  </div>
+  <ng-container *ngIf="this.events.length > 0; else elseTemplate">
+    <div *ngFor="let e of this.events">
+      <app-calendar-card [event]="e"></app-calendar-card>
+    </div>
+  </ng-container>
+  <ng-template #elseTemplate>
+    <ng-container *ngIf="this.loading; else elseTemplate">
+      <div class="card">
+        <h6 class="text-center my-2 mx-1"><i class="fas fa-spinner fa-pulse"></i></h6>
+      </div>
+    </ng-container>
+    <ng-template #elseTemplate>
+      <div class="card">
+        <h6 class="text-center my-2 mx-1">No events scheduled</h6>
+      </div>
+    </ng-template>
+  </ng-template>
+</div>

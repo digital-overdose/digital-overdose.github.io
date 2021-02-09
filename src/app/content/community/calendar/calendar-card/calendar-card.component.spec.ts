@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HomeSocialButtonComponent } from './home-social-button.component';
+import { CalendarCardComponent } from './calendar-card.component';
 
-describe('HomeSocialButtonComponent', () => {
-  let component: HomeSocialButtonComponent;
-  let fixture: ComponentFixture<HomeSocialButtonComponent>;
+describe('CalendarCardComponent', () => {
+  let component: CalendarCardComponent;
+  let fixture: ComponentFixture<CalendarCardComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HomeSocialButtonComponent ]
+      declarations: [ CalendarCardComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HomeSocialButtonComponent);
+    fixture = TestBed.createComponent(CalendarCardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
