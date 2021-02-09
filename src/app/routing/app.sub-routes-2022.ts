@@ -12,7 +12,7 @@ export const subroutes2022: Routes = [
     data: {
       authors: [ authorList["AtomicNicos"] ],
       description: 'aaaa aaa s as as a adasefn asiasindqw  qw q   sa afasdfa ',
-      image_url: 'https://atomicnicos.me/assets/content/whoami/me.jpg',
+      imageUrl: 'https://atomicnicos.me/assets/content/whoami/me.jpg',
       tags: [ TAG_INFOSEC, TAG_TALKS, TAG_CONVENTION ],
     }
   },

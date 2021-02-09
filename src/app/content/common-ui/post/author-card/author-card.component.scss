@@ -40,7 +40,18 @@
 }
 
 @media screen and (max-width: 768px) {
+  .card-links-container {
+    flex-direction: row !important;
+    justify-content: center !important;
+  }
 
+  .card-links-container > div {
+    margin: 0 10px !important;
+  }
+
+  .card-read-more {
+    justify-content: center !important;
+  }
 }
 
 
