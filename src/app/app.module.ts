@@ -23,7 +23,9 @@ import { DiscordComponent } from './content/redirects/discord/discord.component'
 import { NotFound404Component } from './content/not-found404/not-found404.component';
 
 import { App2021Module } from './submodules/app-content-2021.module';
-import { HomeSocialButtonComponent } from './content/home/home-social-button/home-social-button.component';
+import { SocialButtonComponent } from './content/common-ui/social-button/social-button.component';
+import { CalendarComponent } from './content/community/calendar/calendar.component';
+import { CalendarCardComponent } from './content/community/calendar/calendar-card/calendar-card.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +48,9 @@ import { HomeSocialButtonComponent } from './content/home/home-social-button/hom
     NotFound404Component,
     CopyrightComponent,
     PrivacyPolicyComponent,
-    HomeSocialButtonComponent,
+    SocialButtonComponent,
+    CalendarComponent,
+    CalendarCardComponent,
   ],
   imports: [
     SharedModule,

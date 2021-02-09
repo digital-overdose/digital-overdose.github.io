@@ -1,4 +1,4 @@
-<a class="app p-2" href="{{ this.url }}" [ngStyle]="{'background-color': this.color }">
+<a class="app p-2" href="{{ this.url }}" [ngStyle]="{'background-color': this.color, 'border': this.border ? '2px solid black' : 'none' }">
   <div class="d-flex flex-row justify-content-center align-items-center">
     <div class="text-center my-auto mx-2 p-1">
         <span class="text-white"><i class="{{ this.faClass }} fa-2x mx-auto"></i></span>

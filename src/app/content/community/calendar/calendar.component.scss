@@ -1,0 +1,33 @@
+.card {
+  h6 {
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .intro-text {
+    width: 90% !important;
+  }
+
+  .cal-tainer {
+    flex-direction: column !important;
+    background-image: none;
+    background: linear-gradient(to bottom, red, orange, red);
+  }
+
+  .cal-text, .cal-frame {
+    margin: 0 auto !important;
+    flex: 0 0 80% !important;
+    max-width: 80% !important;
+  }
+
+  .cal-frame {
+    margin-top: .5rem !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  :host > div {
+    margin: .5rem .25rem !important;
+  }
+}

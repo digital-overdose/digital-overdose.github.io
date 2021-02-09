@@ -15,6 +15,9 @@ export class AppComponent implements OnInit {
   /** Whether or not the content of the page should be x-constrained. */
   container: boolean = true;
 
+  /** List of paths that should not be x-constrained. */
+  unconstrainedPath: string[] = ['/', '/home']
+
   /**
    * Creates an instance of AppComponent.
    *
@@ -24,11 +27,11 @@ export class AppComponent implements OnInit {
 
   /** Initialises the component. */
   ngOnInit(): void {
-    this.container = !['/', '/home'].includes(this.router.url);
+    this.container = !this.unconstrainedPath.includes(this.router.url);
     this.router.events.subscribe(
       (event) => {
         if (event instanceof RouterEvent) {
-          this.container = !['/', '/home'].includes(event.url);
+          this.container = !this.unconstrainedPath.includes(event.url);
         }
       }
     );

@@ -4,6 +4,7 @@
 
 ```bash
 git clone https://github.com/digital-overdose/digital-overdose.github.io
+cd digital-overdose.github.io
 npm install
 ```
 
@@ -31,17 +32,25 @@ npm install
 
 Run `npm run prerender` ! Past Nicos bids you hello.
 
+___
+
 ### Adding code to the project scaffold
 
 Run `ng generate component path/to/component-name --module=<parent-module-name>` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
+___
+
 ### Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve --open` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+___
 
 ### Serving the site to GitHub Pages
 
 From the finalized `main` branch, run the `./update-gh-pages.sh` command in your Git terminal.
+
+___
 
 ### Compiling the documentation
 
@@ -49,13 +58,15 @@ Run the `compodoc -p tsconfig.app.json` in your terminal to compile the document
 
 For a live documentation site, run the `compodoc -p tsconfig.app.json src -s` in your terminal and visit [http://127.0.0.1:8080](`http://127.0.0.1:8080`) in your browser.
 
+___
+
 ## Adding content
 
 ### Adding a year of content
 
 Create the file `submodules/app-content-XXXX.module.ts`.
 
-Within it, write the following
+Within it, write the following:
 
 ```typescript
 import { CommonModule } from '@angular/common';
@@ -136,6 +147,8 @@ const routes: Routes = [
 
 Don't forget to update `static.paths.txt`, `static.paths.ts`, `sitemap.xml` and `rss.xml`.
 
+___
+
 ### Adding a tag
 
 Go to `utils/tags.ts` and add a tag:
@@ -145,6 +158,8 @@ export const TAG_XXXX: Tag = { name: 'Random' }
 ```
 
 Then you simply need to reference it from the `routing/app.sub-routes-XXXX.ts` and update `static.paths.txt`, `static.paths.ts`, `sitemap.xml` and `rss.xml` and you'll be all set.
+
+___
 
 ### Adding an article
 
@@ -166,6 +181,8 @@ Within, the HTML file, one must set write the following:
 Anything can be entered in between the `app-post` tags.
 
 Don't forget to update `static.paths.txt`, `static.paths.ts`, `sitemap.xml` and `rss.xml`.
+
+___
 
 ### Adding an author
 
@@ -191,11 +208,15 @@ export const authorList: AuthorMap = {
 }
 ```
 
+___
+
 ## Angular Specific Information
 
 ### Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+___
 
 ### Running end-to-end tests
 
