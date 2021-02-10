@@ -30,7 +30,7 @@ export const subroutes2021: Routes = [
     data: {
       title: 'Hello World!',
       authors: [ authorList['AtomicNicos'], authorList['Mrs. Skelli'], authorList['Night'] ],
-      description: 'Introducing Digital Overdose\'s spanking new website.',
+      description: 'Introducing Digital Overdose\'s new window into the community.',
       imageUrl: '/assets/images/cover.jfif',
       tags: [ TAG_COMMUNITY, TAG_WEB ],
     }

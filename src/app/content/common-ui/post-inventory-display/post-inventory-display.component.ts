@@ -1,10 +1,9 @@
-import { BrowserRecognitionService } from './../../../services/browser-recognition.service';
-import { browser } from 'protractor';
 import { Component, OnInit } from '@angular/core';
 import { Post } from 'src/app/interfaces/post';
 import { PostMap } from 'src/app/interfaces/post-map';
 import { groupBy, keyDescOrder } from 'src/app/utils/listing-utils';
 import { ServiceLocator } from 'src/app/utils/service.locator';
+import { BrowserRecognitionService } from 'src/app/services/browser-recognition.service';
 
 /**
  * Loads up posts and displays them. Comes in card and list-tile views.
