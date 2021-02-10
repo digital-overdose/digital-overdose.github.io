@@ -1,157 +1,212 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+          http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
   <url>
-    <loc>https://<!-- Domain -->/</loc>
+    <loc>https://digitaloverdose.tech/</loc>
     <priority>0.80</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://<!-- Domain -->/home</loc>
+    <loc>https://digitaloverdose.tech</loc>
     <priority>0.80</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://<!-- Domain -->/community</loc>
+    <loc>https://digitaloverdose.tech/home</loc>
     <priority>0.80</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://<!-- Domain -->/team</loc>
+    <loc>https://digitaloverdose.tech/community</loc>
     <priority>0.80</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://<!-- Domain -->/conference</loc>
+    <loc>https://digitaloverdose.tech/team</loc>
     <priority>0.80</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://<!-- Domain -->/youtube</loc>
+    <loc>https://digitaloverdose.tech/conference</loc>
     <priority>0.80</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://<!-- Domain -->/discord</loc>
+    <loc>https://digitaloverdose.tech/copyright</loc>
     <priority>0.80</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://<!-- Domain -->/tags</loc>
+    <loc>https://digitaloverdose.tech/privacy</loc>
     <priority>0.80</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://<!-- Domain -->/tags/Community</loc>
+    <loc>https://digitaloverdose.tech/contribution-guidelines</loc>
     <priority>0.80</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://<!-- Domain -->/tags/Convention</loc>
+    <loc>https://digitaloverdose.tech</loc>
     <priority>0.80</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://<!-- Domain -->/tags/Cryptocurrency</loc>
+    <loc>https://digitaloverdose.tech/404-not-found</loc>
     <priority>0.80</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://<!-- Domain -->/tags/Cryptography</loc>
+    <loc>https://digitaloverdose.tech</loc>
     <priority>0.80</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://<!-- Domain -->/tags/CTF</loc>
+    <loc>https://digitaloverdose.tech/youtube</loc>
     <priority>0.80</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://<!-- Domain -->/tags/Cyber%20Security</loc>
+    <loc>https://digitaloverdose.tech/discord</loc>
     <priority>0.80</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://<!-- Domain -->/tags/Development</loc>
+    <loc>https://digitaloverdose.tech</loc>
     <priority>0.80</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://<!-- Domain -->/tags/External%20Content</loc>
+    <loc>https://digitaloverdose.tech/tags</loc>
     <priority>0.80</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://<!-- Domain -->/tags/Information%20Security</loc>
+    <loc>https://digitaloverdose.tech/tags/Community</loc>
     <priority>0.80</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://<!-- Domain -->/tags/IOT</loc>
+    <loc>https://digitaloverdose.tech/tags/Convention</loc>
     <priority>0.80</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://<!-- Domain -->/tags/Media</loc>
+    <loc>https://digitaloverdose.tech/tags/Cryptocurrency</loc>
     <priority>0.80</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://<!-- Domain -->/tags/Mobile</loc>
+    <loc>https://digitaloverdose.tech/tags/Cryptography</loc>
     <priority>0.80</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://<!-- Domain -->/tags/OSINT</loc>
+    <loc>https://digitaloverdose.tech/tags/CTF</loc>
     <priority>0.80</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://<!-- Domain -->/tags/Personal</loc>
+    <loc>https://digitaloverdose.tech/tags/Cyber%20Security</loc>
     <priority>0.80</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://<!-- Domain -->/tags/Privacy</loc>
+    <loc>https://digitaloverdose.tech/tags/Development</loc>
     <priority>0.80</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://<!-- Domain -->/tags/Programming</loc>
+    <loc>https://digitaloverdose.tech/tags/External%20Content</loc>
     <priority>0.80</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://<!-- Domain -->/tags/Talks</loc>
+    <loc>https://digitaloverdose.tech/tags/Information%20Security</loc>
     <priority>0.80</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://<!-- Domain -->/tags/Web</loc>
+    <loc>https://digitaloverdose.tech/tags/IOT</loc>
     <priority>0.80</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://<!-- Domain -->/authors/AtomicNicos</loc>
+    <loc>https://digitaloverdose.tech/tags/Media</loc>
     <priority>0.80</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://<!-- Domain -->/authors/Mrs.%20Skelli</loc>
+    <loc>https://digitaloverdose.tech/tags/Mobile</loc>
     <priority>0.80</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://<!-- Domain -->/authors/Night</loc>
+    <loc>https://digitaloverdose.tech/tags/OSINT</loc>
     <priority>0.80</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://<!-- Domain -->/post/2021/2021_02_06+Hello-World</loc>
+    <loc>https://digitaloverdose.tech/tags/Personal</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://digitaloverdose.tech/tags/Privacy</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://digitaloverdose.tech/tags/Programming</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://digitaloverdose.tech/tags/Talks</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://digitaloverdose.tech/tags/Web</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://digitaloverdose.tech</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://digitaloverdose.tech/authors/AtomicNicos</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://digitaloverdose.tech/authors/Mrs.%20Skelli</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://digitaloverdose.tech/authors/Night</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://digitaloverdose.tech</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://digitaloverdose.tech/post/2021/2021_02_06+Hello-World</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://digitaloverdose.tech</loc>
     <priority>0.80</priority>
     <changefreq>daily</changefreq>
   </url>

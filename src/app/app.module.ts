@@ -31,6 +31,8 @@ import { services } from './utils/services-map';
 import { PostsCardNormalComponent } from './content/common-ui/posts-card/posts-card-normal/posts-card-normal.component';
 import { PostsCardCompactComponent } from './content/common-ui/posts-card/posts-card-compact/posts-card-compact.component';
 import { PostsCardCompactHeaderComponent } from './content/common-ui/posts-card/posts-card-compact-header/posts-card-compact-header.component';
+import { TeamCardDirective } from './directives/team-card.directive';
+import { ContributionGuidelinesComponent } from './content/contribution-guidelines/contribution-guidelines.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +61,8 @@ import { PostsCardCompactHeaderComponent } from './content/common-ui/posts-card/
     PostsCardNormalComponent,
     PostsCardCompactComponent,
     PostsCardCompactHeaderComponent,
+    TeamCardDirective,
+    ContributionGuidelinesComponent,
   ],
   imports: [
     SharedModule,
@@ -70,13 +74,7 @@ import { PostsCardCompactHeaderComponent } from './content/common-ui/posts-card/
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule {
-  constructor() {
-    ServiceLocator.injector = Injector.create(
-      Object.keys(services).map(key => ({
-        provide: services[key].provide,
-        useClass: services[key].provide,
-        deps: services[key].deps
-      }))
-    );
+  constructor(private injector: Injector) {    // Create global Service Injector.
+      ServiceLocator.injector = this.injector;
   }
 }
