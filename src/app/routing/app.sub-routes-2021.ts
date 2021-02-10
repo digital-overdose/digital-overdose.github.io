@@ -1,8 +1,8 @@
 // tslint:disable: no-string-literal
-import { authorList } from './../data/authors';
-import { TAG_TALKS, TAG_INFOSEC, TAG_CONVENTION, TAG_COMMUNITY, TAG_WEB } from '../utils/tags';
+import { authorList } from 'src/app/data/authors';
+import { TAG_TALKS, TAG_INFOSEC, TAG_CONVENTION, TAG_COMMUNITY, TAG_WEB } from 'src/app/utils/tags';
 import { Routes } from '@angular/router';
-import { FebHelloWorldComponent } from '../content/posts/2021/feb-hello-world/feb-hello-world.component';
+import { FebHelloWorldComponent } from 'src/app/content/posts/2021/feb-hello-world/feb-hello-world.component';
 
 /**
  *
@@ -30,7 +30,7 @@ export const subroutes2021: Routes = [
     data: {
       title: 'Hello World!',
       authors: [ authorList['AtomicNicos'], authorList['Mrs. Skelli'], authorList['Night'] ],
-      description: 'Introducing Digital Overdose\'s spanking new website.',
+      description: 'Introducing Digital Overdose\'s new window into the community.',
       imageUrl: '/assets/images/cover.jfif',
       tags: [ TAG_COMMUNITY, TAG_WEB ],
     }

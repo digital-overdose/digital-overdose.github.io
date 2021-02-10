@@ -1,6 +1,6 @@
 
 import { KeyValue } from '@angular/common';
-import { Post } from '../interfaces/post';
+import { Post } from 'src/app/interfaces/post';
 
 /**
  * Function that groups {@link Object | elements} in an {@link Post[] | array of Posts} by a certain key within the {@link Post}.

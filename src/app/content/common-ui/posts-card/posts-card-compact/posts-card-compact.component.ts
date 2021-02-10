@@ -1,7 +1,7 @@
-import { BrowserRecognitionService } from './../../../../../services/browser-recognition.service';
+import { BrowserRecognitionService } from 'src/app/services/browser-recognition.service';
 import { Component, OnInit, Input } from '@angular/core';
-import { Post } from './.././../../../../interfaces/post';
-import { stringify } from './.././../../../../utils/listing-utils';
+import { Post } from 'src/app/interfaces/post';
+import { stringify } from 'src/app/utils/listing-utils';
 
 /**
  * A Post Card.

@@ -8,18 +8,12 @@ import { AuthorCardComponent } from './content/common-ui/post/author-card/author
 import { PostSidebarComponent } from './content/common-ui/post/post-sidebar/post-sidebar.component';
 import { PostBodyComponent } from './content/common-ui/post/post-body/post-body.component';
 
-import { PostsCardNormalComponent } from './content/common-ui/post/posts-card/posts-card-normal/posts-card-normal.component';
-import { PostsCardCompactComponent } from './content/common-ui/post/posts-card/posts-card-compact/posts-card-compact.component';
-import { PostsCardCompactHeaderComponent } from './content/common-ui/post/posts-card/posts-card-compact-header/posts-card-compact-header.component';
 import { PostInventoryDisplayComponent } from './content/common-ui/post-inventory-display/post-inventory-display.component';
 
 @NgModule({
   declarations: [
     PostComponent,
     AuthorCardComponent,
-    PostsCardNormalComponent,
-    PostsCardCompactComponent,
-    PostsCardCompactHeaderComponent,
     PostSidebarComponent,
     PostBodyComponent,
     PostInventoryDisplayComponent,
@@ -36,9 +30,6 @@ import { PostInventoryDisplayComponent } from './content/common-ui/post-inventor
     AppRoutingModule,
     PostComponent,
     AuthorCardComponent,
-    PostsCardNormalComponent,
-    PostsCardCompactComponent,
-    PostsCardCompactHeaderComponent,
     PostSidebarComponent,
     PostBodyComponent,
     PostInventoryDisplayComponent,

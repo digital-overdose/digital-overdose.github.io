@@ -1,5 +1,5 @@
-import { stringify, getMonth, getDay } from './../../../../../utils/listing-utils';
-import { Post } from './../../../../../interfaces/post';
+import { stringify, getMonth, getDay } from 'src/app/utils/listing-utils';
+import { Post } from 'src/app/interfaces/post';
 
 import { Component, Input, OnInit } from '@angular/core';
 

@@ -8,6 +8,7 @@ export const ROUTES = [
   '/posts',
   '/copyright',
   '/privacy',
+  '/contribution-guidelines',
 
   '/404-not-found',
 

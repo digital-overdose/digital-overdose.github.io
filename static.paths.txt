@@ -6,6 +6,7 @@
 /conference
 /copyright
 /privacy
+/contribution-guidelines
 
 /404-not-found
 

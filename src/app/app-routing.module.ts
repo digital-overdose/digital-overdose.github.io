@@ -1,3 +1,4 @@
+import { ContributionGuidelinesComponent } from './content/contribution-guidelines/contribution-guidelines.component';
 
 import { NgModule } from '@angular/core';
 import { RouterModule, PreloadAllModules, Route } from '@angular/router';
@@ -43,6 +44,13 @@ const routes: Route[] = [
   {
     path: 'posts',
     component: PostsNoFilterComponent,
+  },
+  {
+    path: 'contribution-guidelines',
+    component: ContributionGuidelinesComponent,
+    data: {
+      title: 'Contribution Guidelines',
+    }
   },
   {
     path: 'copyright',
