@@ -2,8 +2,7 @@
 <rss version="2.0">
   <channel>
     <title>Digital Overdose</title>
-    <!-- TODO Change link -->
-    <link><!-- https://<domain> --></link>
+    <link>https://digitaloverdose.tech</link>
     <description>The home of the Digital Overdose community.</description>
     <language>en-us</language>
     <generator>VSCode</generator>
@@ -12,18 +11,16 @@
     <category>IoT</category>
     <category>OSINT</category>
     <category>Cybersecurity</category>
-    <!-- TODO Add image
       <image>
-        <url>https://<domain>/assets/images/cover.jfif</url>
+        <url>https://digitaloverdose.tech/assets/images/cover.jfif</url>
         <title>The home of the Digital Overdose community.</title>
-        <link>https://www.atomicnicos.me</link>
+        <link>https://digitaloverdose.tech</link>
       </image>
-    -->
     <item>
-      <title>Hello World</title>
-      <link>https://<!-- Domain -->/post/2021/2021_02_06+Hello-World</link>
-      <description>Introducing Digital Overdose's spanking new website.</description>
-      <guid>domain/post-2021-0</guid>
+      <title>Hello World!</title>
+      <link>https://digitaloverdose.tech/post/2021/2021_02_06+Hello-World</link>
+      <description>Introducing Digital Overdose's new new window into the community.</description>
+      <guid>digitaloverdose/post-2021-0</guid>
       <pubDate>Sat, Jan. 6th, 2021</pubDate>
     </item>
   </channel>
