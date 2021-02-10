@@ -6,14 +6,14 @@ This is the markdown todo file for project a.
 
 Tasks related to new content.
 
-- [ ] Finish the community page @AtomicNicos
-- [ ] Finish the team page @Mrs-Skelli @9o3
-- [ ] Fix CSS in home
-- [ ] Fix CSS in posts
+- [x] Finish the community page @AtomicNicos
+- [x] Finish the team page @Mrs-Skelli @9o3
+- [x] Fix CSS in home
+- [x] Fix CSS in posts
 
 ## Release
 
-- [ ] Purchase a domain @9o3
+- [x] Purchase a domain @9o3
 
 
 # DONE
