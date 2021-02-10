@@ -1,4 +1,4 @@
-import { BASE_URL } from './../../data/url';
+import { BASE_URL } from 'src/app/data/url';
 import { MetaService } from 'src/app/services/meta.service';
 import { Component, OnInit } from '@angular/core';
 

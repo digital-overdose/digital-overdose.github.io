@@ -1,6 +1,7 @@
+import { ServiceLocator } from './utils/service.locator';
 
 import { SharedModule } from './shared.module';
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA, Injector } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './content/common-ui/header/header.component';
@@ -26,6 +27,10 @@ import { App2021Module } from './submodules/app-content-2021.module';
 import { SocialButtonComponent } from './content/common-ui/social-button/social-button.component';
 import { CalendarComponent } from './content/community/calendar/calendar.component';
 import { CalendarCardComponent } from './content/community/calendar/calendar-card/calendar-card.component';
+import { services } from './utils/services-map';
+import { PostsCardNormalComponent } from './content/common-ui/posts-card/posts-card-normal/posts-card-normal.component';
+import { PostsCardCompactComponent } from './content/common-ui/posts-card/posts-card-compact/posts-card-compact.component';
+import { PostsCardCompactHeaderComponent } from './content/common-ui/posts-card/posts-card-compact-header/posts-card-compact-header.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +56,9 @@ import { CalendarCardComponent } from './content/community/calendar/calendar-car
     SocialButtonComponent,
     CalendarComponent,
     CalendarCardComponent,
+    PostsCardNormalComponent,
+    PostsCardCompactComponent,
+    PostsCardCompactHeaderComponent,
   ],
   imports: [
     SharedModule,
@@ -61,4 +69,14 @@ import { CalendarCardComponent } from './content/community/calendar/calendar-car
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AppModule { }
+export class AppModule {
+  constructor() {
+    ServiceLocator.injector = Injector.create(
+      Object.keys(services).map(key => ({
+        provide: services[key].provide,
+        useClass: services[key].provide,
+        deps: services[key].deps
+      }))
+    );
+  }
+}

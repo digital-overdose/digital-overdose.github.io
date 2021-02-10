@@ -1,5 +1,5 @@
-import { getDay, getMonth } from '../../../../utils/listing-utils';
-import { Tag } from '../../../../interfaces/tag';
+import { getDay, getMonth } from 'src/app/utils/listing-utils';
+import { Tag } from 'src/app/interfaces/tag';
 import { Component, OnInit, Input } from '@angular/core';
 
 /**

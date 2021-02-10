@@ -1,5 +1,5 @@
-import { BASE_URL } from './../data/url';
-import { TitleService } from './title.service';
+import { BASE_URL } from 'src/app/data/url';
+import { TitleService } from 'src/app/services/title.service';
 import { Injectable } from '@angular/core';
 import { Meta } from '@angular/platform-browser';
 
