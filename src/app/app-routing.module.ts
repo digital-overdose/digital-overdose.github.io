@@ -5,7 +5,6 @@ import { RouterModule, PreloadAllModules, Route } from '@angular/router';
 
 import { HomeComponent } from './content/home/home.component';
 import { ConferenceComponent } from './content/conference/conference.component';
-import { CommunityComponent } from './content/community/community.component';
 import { TeamComponent } from './content/team/team.component';
 import { PrivacyPolicyComponent } from './content/privacy-policy/privacy-policy.component';
 import { CopyrightComponent } from './content/copyright/copyright.component';
@@ -31,7 +30,7 @@ const routes: Route[] = [
   },
   {
     path: 'community',
-    component: CommunityComponent
+    redirectTo: 'home'
   },
   {
     path: 'team',
