@@ -29,7 +29,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.meta.setTags(`${BASE_URL}/home`, 'Home',
                       `${BASE_URL}/assets/images/cover.jfif`, 750, 750,
-                      ['community', 'discord', 'home'],
+                      ['community', 'discord', 'home', 'socials', 'twitter', 'patreon', 'youtube', 'linkedin', 'github', 'events'],
                       'Welcome to Digital Overdose !');
   }
 }
