@@ -47,6 +47,15 @@
   border-radius: 10px;
 }
 
+.cal-frame {
+  padding-top: .6rem !important;
+  padding-bottom: .6rem !important;
+}
+
+.cal-text {
+  margin-left: 15px !important;
+}
+
 .separator2 {
   background: linear-gradient(to bottom, #4895E6, #9100da);
 }
@@ -64,6 +73,10 @@
     flex-direction: column !important;
     background-image: none;
     background: linear-gradient(to bottom, red, orange, red);
+  }
+
+  .cal-frame {
+    padding: .3rem 0 !important
   }
 
   .soc-tainer {

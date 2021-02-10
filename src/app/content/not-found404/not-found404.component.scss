@@ -1,0 +1,12 @@
+
+
+@media screen and (max-width: 480px) {
+  .media-container > h1 {
+    font-size: xx-large;
+  }
+
+  .media-container > img {
+    width: 90% !important;
+    aspect-ratio: 1.14;
+  }
+}
