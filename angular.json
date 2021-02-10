@@ -30,7 +30,8 @@
               "src/sitemap.xml",
               "src/robots.txt",
               "src/404.md",
-              "src/CNAME"
+              "src/CNAME",
+              "src/.nojekyll"
             ],
             "styles": [
               "src/styles.scss"
