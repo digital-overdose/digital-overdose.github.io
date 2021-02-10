@@ -1,6 +1,6 @@
-import { BASE_URL } from './../../data/url';
-import { MetaService } from './../../services/meta.service';
-import { SocialsLink } from './../../interfaces/author/socials-link';
+import { BASE_URL } from 'src/app/data/url';
+import { MetaService } from 'src/app/services/meta.service';
+import { SocialsLink } from 'src/app/interfaces/author/socials-link';
 import { Component, OnInit } from '@angular/core';
 import { authorList } from 'src/app/data/authors';
 

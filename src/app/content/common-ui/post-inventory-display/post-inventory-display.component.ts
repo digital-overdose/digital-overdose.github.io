@@ -1,7 +1,10 @@
+import { BrowserRecognitionService } from './../../../services/browser-recognition.service';
+import { browser } from 'protractor';
 import { Component, OnInit } from '@angular/core';
 import { Post } from 'src/app/interfaces/post';
 import { PostMap } from 'src/app/interfaces/post-map';
 import { groupBy, keyDescOrder } from 'src/app/utils/listing-utils';
+import { ServiceLocator } from 'src/app/utils/service.locator';
 
 /**
  * Loads up posts and displays them. Comes in card and list-tile views.
@@ -37,8 +40,13 @@ export class PostInventoryDisplayComponent implements OnInit {
   /** Local copy for use in the HTML. */
   keyDescOrder = keyDescOrder;
 
+  /** The service that enables us to detect whether the page is being served by a browser.  */
+  protected browserRec: BrowserRecognitionService;
+
   /** Creates an instance of PostInventoryDisplayComponent. */
-  constructor() { }
+  constructor() {
+    this.browserRec = ServiceLocator.injector.get(BrowserRecognitionService);
+  }
 
   /** Set the page metadata information. */
   ngOnInit(): void { }
@@ -64,5 +72,12 @@ export class PostInventoryDisplayComponent implements OnInit {
   toggleCompactView(): void {
     this.compactView = !this.compactView;
     this.loadPosts();
+  }
+
+  /** Loads the Contribution Guidelines page. */
+  goToContributionGuidelines(): void {
+    if (this.browserRec.isBrowser) {
+      window.location.assign('/contribution-guidelines');
+    }
   }
 }

@@ -1,4 +1,4 @@
-import { Author } from '../../../../interfaces/author';
+import { Author } from 'src/app/interfaces/author';
 import { Component, Input, OnInit } from '@angular/core';
 
 /**

@@ -1,8 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
-import { GcalApiResponse } from './../interfaces/calendar/gcal-api-response';
-import { GcalEvent } from '../interfaces/calendar/gcal-event';
+import { GcalApiResponse } from 'src/app/interfaces/calendar/gcal-api-response';
+import { GcalEvent } from 'src/app/interfaces/calendar/gcal-event';
 
 /**
  * This service is designed to integrate the Google Calendar API so that the site can display upcoming events.
