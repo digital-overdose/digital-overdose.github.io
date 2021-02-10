@@ -29,7 +29,8 @@
               "src/rss.xml",
               "src/sitemap.xml",
               "src/robots.txt",
-              "src/404.md"
+              "src/404.md",
+              "src/CNAME"
             ],
             "styles": [
               "src/styles.scss"
