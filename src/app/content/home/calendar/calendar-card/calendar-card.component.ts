@@ -1,4 +1,4 @@
-import { BrowserRecognitionService } from './../../../../services/browser-recognition.service';
+import { BrowserRecognitionService } from 'src/app/services/browser-recognition.service';
 import { GcalEvent } from 'src/app/interfaces/calendar/gcal-event';
 import { Component, Input, OnInit } from '@angular/core';
 
