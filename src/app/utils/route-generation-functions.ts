@@ -1,11 +1,11 @@
 import { Route } from '@angular/router';
 
-import { TagCount } from '../interfaces/tag-count';
-import { Tag } from '../interfaces/tag';
-import { Post } from '../interfaces/post';
-import { Author } from '../interfaces/author';
+import { TagCount } from 'src/app/interfaces/tag-count';
+import { Tag } from 'src/app/interfaces/tag';
+import { Post } from 'src/app/interfaces/post';
+import { Author } from 'src/app/interfaces/author';
 
-import { subroutes2021 } from '../routing/app.sub-routes-2021';
+import { subroutes2021 } from 'src/app/routing/app.sub-routes-2021';
 
 // import { subroutes2022 } from './app.sub-routes-2022';
 

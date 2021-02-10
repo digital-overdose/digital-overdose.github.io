@@ -1,4 +1,4 @@
-import { GcalEvent } from './../../../interfaces/calendar/gcal-event';
+import { GcalEvent } from 'src/app/interfaces/calendar/gcal-event';
 import { Component, OnInit } from '@angular/core';
 import { GoogleCalService } from 'src/app/services/google-cal.service';
 

@@ -54,9 +54,9 @@ ___
 
 ### Compiling the documentation
 
-Run the `compodoc -p tsconfig.app.json` in your terminal to compile the documentation. It can be viewed in `/documentation`.
+Run the `compodoc -p tsconfig.app.json` command in your terminal to compile the documentation. It can be viewed in `/documentation`.
 
-For a live documentation site, run the `compodoc -p tsconfig.app.json src -s` in your terminal and visit [http://127.0.0.1:8080](`http://127.0.0.1:8080`) in your browser.
+For a live documentation site, run the `compodoc -p tsconfig.app.json src -s` command in your terminal and visit [http://127.0.0.1:8080](`http://127.0.0.1:8080`) in your browser.
 
 ___
 

@@ -1,7 +1,9 @@
 <ng-container *ngIf="!this.compactView; then cardTemplate; else compactTemplate"></ng-container>
 <ng-template #cardTemplate>
   <div class="d-flex flex-row flex-wrap align-items-center">
-    <div class="col-sm-3"></div>
+    <div class="col-sm-3 mb-3">
+      <div class="btn btn-primary d-flex flex-column" (click)="this.goToContributionGuidelines()"><i class="fas fa-question-circle"></i><span>Want to contribute?</span></div>
+    </div>
     <div class=" mb-3 align-self-center col-sm-6">
       <h1 class="text-center">{{ this.title }}<br *ngIf="this.subtitle"/><span *ngIf="this.subtitle">{{ this.subtitle   }}</span></h1>
     </div>
@@ -24,7 +26,9 @@
 </ng-template>
 <ng-template #compactTemplate>
   <div class="d-flex flex-row flex-wrap align-items-center">
-    <div class="col-sm-3"></div>
+    <div class="col-sm-3 mb-3">
+      <div class="btn btn-primary d-flex flex-column" (click)="this.goToContributionGuidelines()"><i class="fas fa-question-circle"></i><span>Want to contribute?</span></div>
+    </div>
     <div class=" mb-3 align-self-center col-sm-6">
       <h1 class="text-center">{{ this.title }}</h1>
     </div>

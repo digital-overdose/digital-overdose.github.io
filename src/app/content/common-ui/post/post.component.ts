@@ -1,6 +1,6 @@
-import { authorList } from '../../../data/authors';
-import { Tag } from '../../../interfaces/tag';
-import { Author } from '../../../interfaces/author';
+import { authorList } from 'src/app/data/authors';
+import { Tag } from 'src/app/interfaces/tag';
+import { Author } from 'src/app/interfaces/author';
 import { ActivatedRoute } from '@angular/router';
 import { Component, Input, OnInit } from '@angular/core';
 

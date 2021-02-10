@@ -1,75 +1,29 @@
-<script>
-  /* Demo purposes only */
-  var snippet = [].slice.call(document.querySelectorAll('.hover'));
-  if (snippet.length) {
-    snippet.forEach(function (snippet) {
-      snippet.addEventListener('mouseout', function (event) {
-        if (event.target.parentNode.tagName === 'figure') {
-          event.target.parentNode.classList.remove('hover')
-        } else {
-          event.target.parentNode.classList.remove('hover')
-        }
-      });
-    });
-  }
-</script>
-
-<div class="d-flex flex-column">
-  <div class="d-flex flex-wrap justify-content-center">
-    <figure class="snip1584">
-      <img src="/assets/images/team/mrs-skelli.jpg" alt="Mrs Skelli"/>
-      <figcaption>
-        <h3>Eden Stroet,</h3>
-        <h3>Mrs Skelli</h3>
-        <h5>fancy title</h5>
-      </figcaption>
-    </figure>
-    <figure class="snip1584">
-      <img src="/assets/images/team/atomicnicos.jpg" alt="AtomicNicos"/>
-      <figcaption>
-        <h3>Nicolas Boeckh,</h3>
-        <h3>AtomicNicos</h3>
-        <h5>fancy title</h5>
-      </figcaption>
-    </figure>
-    <figure class="snip1584">
-      <img src="/assets/images/team/night.jpg" alt="Night"/>
-      <figcaption>
-        <h3>K Stroet,</h3>
-        <h3>Night, Bugbot</h3>
-        <h5>fancy title</h5>
-      </figcaption>
-    </figure>
-    <figure class="snip1584">
-      <img src="/assets/images/team/lucifer.jpg" alt="D4vid"/>
-      <figcaption>
-        <h3>D4vid, Lucifer</h3>
-        <h5>fancy title</h5>
-      </figcaption>
-    </figure>
-    <figure class="snip1584">
-      <img src="/assets/images/team/mayhaps.jpg" alt="Mayhaps"/>
-      <figcaption>
-        <h3>Mayhaps</h3>
-        <h5>fancy title</h5>
-      </figcaption>
-    </figure>
-    <figure class="snip1584">
-      <img src="/assets/images/team/0x0elliot.jpg" alt="0x0Elliot"/>
-      <figcaption>
-        <h3>0x0Elliot</h3>
-        <h5>fancy title</h5>
-      </figcaption>
-    </figure>
+<div class="mt-3 mb-2 w-75 mx-auto">
+  <div class="fancy-container d-flex flex-column justify-content-center align-items-center flex-box">
+    <h1 class="fancy bg-1 text-center p-1 my-2">Team</h1>
   </div>
 </div>
 
+<div class="d-flex flex-column">
+  <div class="d-flex flex-wrap justify-content-center">
+    <div class="team-card m-2" appTeamCard *ngFor="let t of team" [ngStyle]="{'background-image': 'url(' + t.imageUrl + ')'}">
+      <div class="card-caption">
+        <h3>{{ t.name }}<span *ngIf="t.alias !== undefined">,</span></h3>
+        <h3 *ngIf="t.alias !== undefined">{{ t.alias.join(', ') }}</h3>
+        <h5>{{ t.description }}</h5>
+      </div>
+    </div>
+  </div>
+</div>
 
-<p>Some community explanation</p>
+<hr/>
+<h3>Conference Volunteers:</h3>
 
-<p>Team</p>
-
-
-<p>Team</p>
-<p>Team</p>
-<p>Team</p>
+<p>Thanks to these lovely volunteers who are helping to make our conference possible!</p>
+<ul>
+  <li>AtomicNicos#1404</li>
+  <li>Night👻#4206</li>
+  <li>(ASV) Mrs Skelli#9072</li>
+  <li>s4t4n#7820</li>
+  <li>Cyber Mobster#2010</li>
+</ul>

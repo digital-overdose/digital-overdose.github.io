@@ -1,6 +1,6 @@
 import { MetaService } from 'src/app/services/meta.service';
-import { BASE_URL } from './../../../data/url';
-import { BrowserRecognitionService } from './../../../services/browser-recognition.service';
+import { BASE_URL } from 'src/app/data/url';
+import { BrowserRecognitionService } from 'src/app/services/browser-recognition.service';
 import { Component, OnInit } from '@angular/core';
 
 /**

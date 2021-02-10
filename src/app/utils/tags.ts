@@ -1,4 +1,4 @@
-import { Tag } from '../interfaces/tag';
+import { Tag } from 'src/app/interfaces/tag';
 
 /** Tag for all community projects and endeavors. */
 export const TAG_COMMUNITY: Tag = { name: 'Community' };
