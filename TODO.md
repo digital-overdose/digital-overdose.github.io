@@ -4,6 +4,10 @@ This is the markdown todo file for project a.
 
 ## Content
 
+
+
+# DONE
+
 Tasks related to new content.
 
 - [x] Finish the community page @AtomicNicos
@@ -14,6 +18,3 @@ Tasks related to new content.
 ## Release
 
 - [x] Purchase a domain @9o3
-
-
-# DONE
