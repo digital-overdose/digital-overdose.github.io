@@ -62,7 +62,6 @@
     "./src/app/utils/listing-utils.ts",
     "./src/app/utils/route-generation-functions.ts",
     "./src/app/utils/service.locator.ts",
-    "./src/app/utils/services-map.ts",
     "./src/app/utils/tags.ts",
   ],
   "include": [

@@ -24,6 +24,7 @@ export class PostsFilteredByAuthorComponent extends PostInventoryDisplayComponen
    */
   constructor(private route: ActivatedRoute) {
     super();
+    this.titleService.setTitle(`Community Posts by ${this.author}`);
   }
 
   /** Set the page metadata information. */
