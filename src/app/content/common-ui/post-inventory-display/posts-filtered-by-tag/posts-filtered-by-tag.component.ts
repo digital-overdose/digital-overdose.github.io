@@ -24,6 +24,7 @@ export class PostsFilteredByTagComponent extends PostInventoryDisplayComponent i
    */
   constructor(private route: ActivatedRoute) {
     super();
+    this.titleService.setTitle(`Community Posts tagged '${this.tag}'`);
   }
 
   /** Set the page metadata information. */

@@ -19,14 +19,14 @@ export class YoutubeComponent implements OnInit {
    * @param browserRec The inBrowser detection service.
    * @param meta The HTML header metadata injection service.
    */
-  constructor(private browserRec: BrowserRecognitionService, private meta: MetaService) { }
-
-  /** Sets the page metadata information and redirects to the YouTube channel if inBrowser. */
-  ngOnInit(): void {
+  constructor(private browserRec: BrowserRecognitionService, private meta: MetaService) {
     this.meta.setTags(`${BASE_URL}/youtube`, 'Check our YouTube channel!',
                       `${BASE_URL}/assets/images/cover.jfif`, 750, 750,
                       ['youtube', 'community']);
+  }
 
+  /** Sets the page metadata information and redirects to the YouTube channel if inBrowser. */
+  ngOnInit(): void {
     if (this.browserRec.isBrowser) {
       window.location.replace('https://www.youtube.com/channel/UCvTW4Eyt8xNbMEkFEEvFMIQ');
     }

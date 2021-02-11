@@ -18,14 +18,14 @@ export class ContributionGuidelinesComponent implements OnInit {
    *
    * @param meta The HTML header metadata injection service.
    */
-  constructor(private meta: MetaService) { }
-
-  /** Set the page metadata information. */
-  ngOnInit(): void {
+  constructor(private meta: MetaService) {
     this.meta.setTags(`${BASE_URL}/contribution-guidelines`, 'Digital Overdose Con: For Rookies',
                       `${BASE_URL}/assets/images/cover.jfif`, 750, 750,
                       ['contribution', 'external', 'content'],
                       'Guidelines to contribute a post or article to Digital Overdose.');
   }
+
+  /** Set the page metadata information. */
+  ngOnInit(): void { }
 
 }
