@@ -1,6 +1,6 @@
 User-agent: *
 Crawl-delay: 120
-Sitemap:
+Sitemap: https://digitaloverdose.tech/sitemap.xml
 
 User-agent: discobot
 Disallow: /
