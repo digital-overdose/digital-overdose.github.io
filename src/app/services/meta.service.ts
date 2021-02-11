@@ -42,7 +42,7 @@ export class MetaService {
           authorName?: string, authorSocial?: string) {
     this.title.setTitle(title);
 
-    this.meta.addTags([
+    [
       { name: 'og:url', content: url },
       { name: 'og:locale', content: 'en_us' },
       { name: 'og:site_name', content: `${BASE_URL}` },
@@ -60,6 +60,6 @@ export class MetaService {
       { name: 'twitter:creator', content: `${authorSocial ?? '@d_overcon' }` },
       { name: 'twitter:image:width', content: `${imgWidth}` },
       { name: 'twitter:image:height', content: `${imgHeight}` },
-    ]);
+    ].forEach(x => this.meta.updateTag(x));
   }
 }
