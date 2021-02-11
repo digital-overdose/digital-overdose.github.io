@@ -2,11 +2,29 @@ User-agent: *
 Crawl-delay: 120
 Sitemap: https://digitaloverdose.tech/sitemap.xml
 
-User-agent: discobot
-Disallow: /
-
 User-agent: Slurp
 Crawl-delay: 4
 
 User-agent: Twitterbot
 Disallow:
+
+User-agent: LinkedInBot
+Disallow:
+
+User-agent: DuckDuckBot
+Disallow:
+
+User-agent: Applebot
+Disallow:
+
+User-agent: FacebookExternalHit
+Disallow:
+
+User-agent: Yandexbot
+Disallow:
+
+User-agent: Baiduspider
+Disallow:
+
+User-agent: discobot
+Disallow: /
