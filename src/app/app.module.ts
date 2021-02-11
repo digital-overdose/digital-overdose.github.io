@@ -33,6 +33,7 @@ import { PostsCardCompactHeaderComponent } from './content/common-ui/posts-card/
 
 import { ServiceLocator } from './utils/service.locator';
 import { TeamCardDirective } from './directives/team-card.directive';
+import { BrowserTransferStateModule } from '@angular/platform-browser';
 
 @NgModule({
   declarations: [
@@ -69,6 +70,7 @@ import { TeamCardDirective } from './directives/team-card.directive';
   imports: [
     SharedModule,
     App2021Module,
+    BrowserTransferStateModule,
     // App2022Module
   ],
   providers: [],
