@@ -1,5 +1,5 @@
 import { SharedModule } from './shared.module';
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA, Injector } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA, Injector, APP_INITIALIZER } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './content/common-ui/header/header.component';
@@ -34,6 +34,7 @@ import { PostsCardCompactHeaderComponent } from './content/common-ui/posts-card/
 import { ServiceLocator } from './utils/service.locator';
 import { TeamCardDirective } from './directives/team-card.directive';
 import { BrowserTransferStateModule } from '@angular/platform-browser';
+
 
 @NgModule({
   declarations: [
@@ -73,9 +74,9 @@ import { BrowserTransferStateModule } from '@angular/platform-browser';
     BrowserTransferStateModule,
     // App2022Module
   ],
-  providers: [],
-  bootstrap: [AppComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  providers: [ ],
+  bootstrap: [ AppComponent ],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppModule {
   constructor(private injector: Injector) {    // Create global Service Injector.

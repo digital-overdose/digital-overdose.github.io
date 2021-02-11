@@ -23,12 +23,12 @@ export class TeamComponent implements OnInit {
    *
    * @param meta The HTML header metadata injection service.
    */
-  constructor(private meta: MetaService) {
+  constructor(private meta: MetaService) { }
+
+  /** Set the page metadata information. */
+  ngOnInit(): void {
     this.meta.setTags(`${BASE_URL}/team`, 'The Digital Overdose Team',
                       `${BASE_URL}/assets/images/cover.jfif`, 750, 750,
                       ['discord', 'community', 'team']);
   }
-
-  /** Set the page metadata information. */
-  ngOnInit(): void { }
 }
