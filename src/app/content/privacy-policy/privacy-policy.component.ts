@@ -18,12 +18,12 @@ export class PrivacyPolicyComponent implements OnInit {
    *
    * @param meta The HTML header metadata injection service.
    */
-  constructor(private meta: MetaService) {
+  constructor(private meta: MetaService) { }
+
+  /** Set the page metadata information. */
+  ngOnInit(): void {
     this.meta.setTags(`${BASE_URL}/privacy`, 'Privacy Policy',
                       `${BASE_URL}/assets/images/cover.jfif`, 750, 750,
                       ['privacy', 'policy']);
   }
-
-  /** Set the page metadata information. */
-  ngOnInit(): void { }
 }

@@ -19,12 +19,11 @@ export class FebHelloWorldComponent implements OnInit {
    *
    * @param meta The HTML header metadata injection service.
    */
-  constructor(private meta: MetaService) {
-    this.meta.setTags(`${BASE_URL}/post/2021/2021_02_06+Hello-World`, 'Hello World!',
-                      `${BASE_URL}/assets/images/cover.jfif`, 750, 750,
-                      ['discord', 'new', 'beginnings']);
-  }
+  constructor(private meta: MetaService) { }
 
   /** Set the page metadata information. */
-  ngOnInit(): void { }
+  ngOnInit(): void {
+    this.meta.setTags(`${BASE_URL}/post/2021/2021_02_06+Hello-World`, 'Hello World!',
+                      `${BASE_URL}/assets/images/cover.jfif`, 750, 750,
+                      ['discord', 'new', 'beginnings']);}
 }
