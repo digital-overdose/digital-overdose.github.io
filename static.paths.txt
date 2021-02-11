@@ -4,6 +4,7 @@
 /community
 /team
 /conference
+/posts
 /copyright
 /privacy
 /contribution-guidelines
