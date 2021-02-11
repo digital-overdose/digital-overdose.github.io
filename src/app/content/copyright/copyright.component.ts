@@ -18,12 +18,12 @@ export class CopyrightComponent implements OnInit {
    *
    * @param meta The HTML header metadata injection service.
    */
-  constructor(private meta: MetaService) {
+  constructor(private meta: MetaService) { }
+
+  /** Set the page metadata information. */
+  ngOnInit(): void {
     this.meta.setTags(`${BASE_URL}/copyright`, 'Copyright Policy',
                       `${BASE_URL}/assets/images/cover.jfif`, 750, 750,
                       ['copyright', 'cc-by-sa']);
   }
-
-  /** Set the page metadata information. */
-  ngOnInit(): void { }
 }
