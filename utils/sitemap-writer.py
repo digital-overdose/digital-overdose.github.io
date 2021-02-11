@@ -16,7 +16,8 @@ if __name__ == '__main__':
 
   for link in l:
     _l = link.replace('\n', '').replace('\r', '')
-    sitemap += f"""
+    if len(_l) > 0:
+      sitemap += f"""
   <url>
     <loc>https://digitaloverdose.tech{ _l }</loc>
     <priority>0.80</priority>
