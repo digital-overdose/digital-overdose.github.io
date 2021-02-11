@@ -1,3 +1,4 @@
+// tslint:disable: quotemark
 import { BASE_URL } from 'src/app/data/url';
 import { TitleService } from 'src/app/services/title.service';
 import { Injectable } from '@angular/core';
@@ -40,6 +41,15 @@ export class MetaService {
           keywords: string[], description?: string,
           authorName?: string, authorSocial?: string) {
     this.title.setTitle(title);
+
+    [
+      'og:url', 'og:locale', 'og:site_name', 'og:title', 'og:description', 'og:image',
+      'description', 'keywords',
+      'twitter:card', 'twitter:url', 'twitter:image', 'twitter:label1', 'twitter:data1',
+      'twitter:site', 'twitter:creator', 'twitter:image:width', 'twitter:image:height'
+    ].forEach(x => {
+      this.meta.removeTag("name='" + x + "'");
+    });
 
     this.meta.addTags([
       { name: 'og:url', content: url },

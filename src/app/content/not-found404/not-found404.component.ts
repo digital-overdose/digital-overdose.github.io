@@ -18,13 +18,13 @@ export class NotFound404Component implements OnInit {
    *
    * @param meta The HTML header metadata injection service.
    */
-  constructor(private meta: MetaService) { }
-
-  /** Set the page metadata information. */
-  ngOnInit() {
+  constructor(private meta: MetaService) {
     this.meta.setTags(`${BASE_URL}/404-not-found`, 'The error page',
                       `${BASE_URL}/assets/images/404_image.jfif`, 460, 403,
                       ['community', 'discord', 'error', '404'],
                       'Waffles. Correct Horse Battery Staple. DEBUG. g̵̺̙͍̼͓͈̤̋͒ļ̶̛̖̖̭͎̪͍͉̎͋̿̑́͋̈́̀̈́͊͠ì̴̛͈͇͓̯̤̻͈̯͂̈͂́̊̑͛̈́̏̚ṯ̵͎̝̘̱̜̋̂̓͊̌́̄̽̄̎̃̽̕͝c̵̣̪͍͎̹̪̎̓̓̓͊̽͠ͅh̵̢̡̡̛̭̯̠̥̳̗̘̽͑́̑͑͘e̴̢̡̝̹̼̱͙͚̿͂̍̎́̀̊̄͠ͅs̷̠̣͙̓̈̉̂̉̃́̍̃̉͠͝͝. "><script>console.log(\'test\');</script>');
   }
+
+  /** Set the page metadata information. */
+  ngOnInit() { }
 }
