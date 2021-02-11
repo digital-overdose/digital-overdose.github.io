@@ -42,15 +42,6 @@ export class MetaService {
           authorName?: string, authorSocial?: string) {
     this.title.setTitle(title);
 
-    [
-      'og:url', 'og:locale', 'og:site_name', 'og:title', 'og:description', 'og:image',
-      'description', 'keywords',
-      'twitter:card', 'twitter:url', 'twitter:image', 'twitter:label1', 'twitter:data1',
-      'twitter:site', 'twitter:creator', 'twitter:image:width', 'twitter:image:height'
-    ].forEach(x => {
-      this.meta.removeTag("name='" + x + "'");
-    });
-
     this.meta.addTags([
       { name: 'og:url', content: url },
       { name: 'og:locale', content: 'en_us' },

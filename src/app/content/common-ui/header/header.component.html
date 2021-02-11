@@ -8,10 +8,10 @@
 
     <nav>
       <ul class="nav-lists d-flex flex-row flex-wrap">
-        <li class="nav-elements" [ngClass]="{'active': (this.currentPath.localeCompare('/home') == 0) || (this.currentPath.localeCompare('/') == 0)}"><a [routerLink]="['/home']">Home</a></li>
-        <li class="nav-elements" [ngClass]="{'active': (this.currentPath.localeCompare('/team')) == 0}"><a [routerLink]="['/team']">Team</a></li>
-        <li class="nav-elements" [ngClass]="{'active': (this.currentPath.localeCompare('/conference')) == 0}"><a [routerLink]="['/conference']">Conference</a></li>
-        <li class="nav-elements" [ngClass]="{'active': (this.currentPath.localeCompare('/posts')) == 0}"><a [routerLink]="['/posts']">Posts</a></li>
+        <li class="nav-elements" [ngClass]="{'active': (this.currentPath.localeCompare('/home') == 0) || (this.currentPath.localeCompare('/') == 0)}"><a href="/home">Home</a></li>
+        <li class="nav-elements" [ngClass]="{'active': (this.currentPath.localeCompare('/team')) == 0}"><a href="/team">Team</a></li>
+        <li class="nav-elements" [ngClass]="{'active': (this.currentPath.localeCompare('/conference')) == 0}"><a href="/conference">Conference</a></li>
+        <li class="nav-elements" [ngClass]="{'active': (this.currentPath.localeCompare('/posts')) == 0}"><a href="/posts">Posts</a></li>
       </ul>
     </nav>
   </div>
