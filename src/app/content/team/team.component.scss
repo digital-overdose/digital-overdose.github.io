@@ -22,7 +22,6 @@
   background-size: contain;
   min-width: 230px;
   max-width: 315px;
-  aspect-ratio: 1;
   color: #ffffff;
   width: 100%;
   position: relative;
@@ -36,12 +35,8 @@
   }
 }
 
+
 .card-caption:before {
-  position: absolute;
-  top: 0.53rem;
-  bottom: 0.53rem;
-  left: 0.53rem;
-  right: 0.53rem;
   top: 100% !important;
   content: '';
   -webkit-transition: all 0.25s ease;
@@ -51,17 +46,51 @@
 }
 
 .card-caption {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
   z-index: 1;
   margin: 10px;
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+@supports (aspect-ratio: 1) {
+  .team-card {
+    aspect-ratio: 1;
+  }
+
+  .card-caption:before {
+    position: absolute;
+    top: 0.53rem;
+    bottom: 0.53rem;
+    left: 0.53rem;
+    right: 0.53rem;
+  }
+
+  .card-caption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+@supports not (aspect-ratio: 1) {
+  .team-card {
+    flex: 1 1 auto;
+  }
+
+  .card-caption:before {
+    position: relative;
+    padding-bottom: 95%;
+  }
+
+  .card-caption {
+    position: relative;
+    padding-bottom: 95%;
+    height: 0;
+  }
 }
 
 .card-caption > * {
