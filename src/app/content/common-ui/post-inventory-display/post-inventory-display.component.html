@@ -19,9 +19,9 @@
       <!-- Card -->
       <app-posts-card class="col-sm-4 mb-2" *ngFor="let item0 of item.value" [post]="item0"></app-posts-card>
     </div>
-    <div *ngIf="!this.maximumPostsLoaded" class="d-flex flex-row justify-content-center my-2 px-4">
-      <div class="btn btn-primary mx-auto d-flex flex-column" (click)="this.loadMorePosts()"><span>Load more</span><i class="fa fa-chevron-down" aria-hidden="true"></i></div>
-    </div>
+  </div>
+  <div *ngIf="!this.maximumPostsLoaded" class="d-flex flex-row justify-content-center my-2 px-4">
+    <div class="btn btn-primary mx-auto d-flex flex-column" (click)="this.loadMorePosts()"><span>Load more</span><i class="fa fa-chevron-down" aria-hidden="true"></i></div>
   </div>
 </ng-template>
 <ng-template #compactTemplate>
@@ -30,7 +30,7 @@
       <div class="btn btn-primary d-flex flex-column" (click)="this.goToContributionGuidelines()"><i class="fas fa-question-circle"></i><span>Want to contribute?</span></div>
     </div>
     <div class=" mb-3 align-self-center col-sm-6">
-      <h1 class="text-center">{{ this.title }}</h1>
+      <h1 class="text-center">{{ this.title }}<br *ngIf="this.subtitle"/><span *ngIf="this.subtitle">{{ this.subtitle }}</span></h1>
     </div>
     <div class="col-sm-3 mb-3">
       <div class="btn btn-primary d-flex flex-column" (click)="this.toggleCompactView()"><span>Card View</span><i class="fas fa-angle-double-down"></i></div>
