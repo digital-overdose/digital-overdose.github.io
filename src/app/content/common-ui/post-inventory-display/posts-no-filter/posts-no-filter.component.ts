@@ -1,4 +1,3 @@
-import { BrowserRecognitionService } from './../../../../services/browser-recognition.service';
 import { ActivatedRoute } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { Post } from 'src/app/interfaces/post';
