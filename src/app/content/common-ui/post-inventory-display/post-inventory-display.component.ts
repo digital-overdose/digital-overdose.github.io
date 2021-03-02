@@ -69,7 +69,7 @@ export class PostInventoryDisplayComponent implements OnInit {
    *
    * @param [postsToLoad] The posts that should be loaded onto the page.
    */
-  loadPosts(postsToLoad?: Post[]): void {
+    loadPosts(postsToLoad?: Post[]): void {
     this.maximumPostsLoaded = this.numberPostsToLoad >= postsToLoad.length;
     this.posts = this.compactView ? postsToLoad : postsToLoad.slice(0, this.numberPostsToLoad);
     this.postsByYear = groupBy(this.posts, 'year');

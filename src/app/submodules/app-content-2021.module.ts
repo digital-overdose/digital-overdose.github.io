@@ -1,11 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { SharedModule } from 'src/app/shared.module';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { FebHelloWorldComponent } from 'src/app/content/posts/2021/feb-hello-world/feb-hello-world.component';
+import { Feb2021HelloWorldComponent } from 'src/app/content/posts/2021/feb-hello-world/feb-hello-world.component';
 
 @NgModule({
   declarations: [
-    FebHelloWorldComponent
+    Feb2021HelloWorldComponent
   ],
   imports: [
     CommonModule,

@@ -13,7 +13,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './feb-hello-world.component.html',
   styleUrls: ['./feb-hello-world.component.scss']
 })
-export class FebHelloWorldComponent implements OnInit {
+export class Feb2021HelloWorldComponent implements OnInit {
   /**
    * Creates an instance of this Post.
    *
