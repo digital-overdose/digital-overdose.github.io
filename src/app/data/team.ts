@@ -6,13 +6,13 @@ export const teamMemberList: TeamMember[] = [
   {
     name: 'EDEN STROET',
     alias: ['MRS SKELLI'],
-    description: 'Community Owner, Conference Bringer, Gateway Owner',
+    description: 'Community Owner, Conference Bringer',
     imageUrl: '/assets/images/team/mrs-skelli.jpg'
   },
   {
     name: 'NICOLAS BOECKH',
     alias: ['ATOMICNICOS'],
-    description: 'Community Admin, Conference Bringer, Gateway Moderator',
+    description: 'Community Admin, Conference Bringer',
     imageUrl: '/assets/images/team/atomicnicos.jpg'
   },
   {
@@ -24,7 +24,7 @@ export const teamMemberList: TeamMember[] = [
   {
     name: 'D4VID',
     alias: ['LUCIFER'],
-    description: 'Community Admin, Gateway Owner',
+    description: 'Community Admin',
     imageUrl: '/assets/images/team/lucifer.jpg'
   },/*
   {
