@@ -11,19 +11,10 @@
         <h3>{{ t.name }}<span *ngIf="t.alias !== undefined">,</span></h3>
         <h3 *ngIf="t.alias !== undefined">{{ t.alias.join(', ') }}</h3>
         <h5>{{ t.description }}</h5>
+        <div *ngIf="t.links != undefined" class="card-links w-75 d-flex flex-row flew-wrap justify-content-center mx-3">
+          <a class="card-link" *ngFor="let l of t.links" href="{{ l.url }}" title="{{ l.label }}"><i class="{{ l.icon }}"></i></a>
+        </div>
       </div>
     </div>
   </div>
 </div>
-
-<hr/>
-<h3>Conference Volunteers:</h3>
-
-<p>Thanks to these lovely volunteers who are helping to make our conference possible!</p>
-<ul>
-  <li>AtomicNicos#1404</li>
-  <li>Night👻#4206</li>
-  <li>(ASV) Mrs Skelli#9072</li>
-  <li>s4t4n#7820</li>
-  <li>Cyber Vega#1201</li>
-</ul>

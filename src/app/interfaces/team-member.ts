@@ -1,3 +1,5 @@
+import { SocialsLink } from "./author/socials-link";
+
 /** Represents a Digital Overdose team member. */
 export interface TeamMember {
   /** Their name. */
@@ -11,4 +13,6 @@ export interface TeamMember {
 
   /** The link to their image. */
   imageUrl: string;
+
+  links?: SocialsLink[]
 }

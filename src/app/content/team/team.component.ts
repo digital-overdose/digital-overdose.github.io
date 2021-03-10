@@ -12,7 +12,7 @@ import { TeamMember } from 'src/app/interfaces/team-member';
 @Component({
   selector: 'app-team',
   templateUrl: './team.component.html',
-  styleUrls: ['./team.component.scss']
+  styleUrls: ['./team.component.scss', '../../../assets/css/team-card.scss']
 })
 export class TeamComponent implements OnInit {
   /** The list of team members, retrieved from data storage. */

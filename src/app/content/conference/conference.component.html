@@ -1,75 +1,32 @@
-<div class="mt-2 mx-2">
-  <div class="fancy-container d-flex flex-column justify-content-center align-items-center flex-box">
-    <h1 class="fancy bg-1 text-center p-3 my-2">Digital Overdose<br/>Conference</h1>
-    <h2 class="fancy bg-2 text-center p-2">(aka. D_OVER CON)</h2>
-  </div>
-</div>
+<app-conference-header-logo></app-conference-header-logo>
 
-<div class="mt-4"></div>
+<a id="title"></a>
 
-<h3>Quick access</h3>
+<app-conference-header [path]="'/conference'"></app-conference-header>
 
-<ul>
-  <li><a class="no-underline" routerLink="." fragment="introduction">What's all this about?</a></li>
-  <li><a class="no-underline" routerLink="." fragment="attendance">How much will it cost? / Attendance</a></li>
-  <li><a class="no-underline" routerLink="." fragment="cfp-details">Are you interested? / CFP Submission</a></li>
-  <li><a class="no-underline" routerLink="." fragment="for-sponsors">For potential sponsors</a></li>
-</ul>
-
-<h3 id="introduction">What's all of this about?</h3>
+<h2>About</h2>
 
 <p>Digital Overdose is proud to announce that we are running a free online conference!</p>
 
 <p>What will be spoken about? Information Security, Cybersecurity, OSINT, DevOps, Tech in general... Everything is on the table.</p>
 
-<p>The catch? The only people able to speak there are <strong>rookies</strong>. Rookies not necessarily in the sense that they are new to Information Security, but more specifically in the sense that they've never had the experience of talking at a conference previously!</p>
+<p>The catch? The only people able to speak there are <strong>rookies</strong>. Rookies not necessarily in the sense that they are new to Information Security or any of the other domains we've cited, but more specifically in the sense that they've never had the experience of talking at a conference previously!</p>
 
-<p>With the number of conventions with rookie tracks that have been cancelled, focusing specifically on rookies lets them have all of the well-deserved limelight, and helps foster the next generation of representatives of the community.</p>
+<p>With the number of conventions with cancelled rookie tracks, focusing specifically on rookies lets them have all of the well-deserved limelight, and helps foster the next generation of representatives of the community.</p>
 
-<p>So if you're free on the 17th and 18th of April (2021), then <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NzVuYjVxM2dlOHM5YzB0aWRhOXQ4MGluYzMgNDhyN3UxN2U1NWlmdDE5azc4M2Jidmw4bDhAZw&tmsrc=48r7u17e55ift19k783bbvl8l8%40group.calendar.google.com"><i class="far fa-calendar"></i> save the date</a> !</p>
+<p>So if you're free on the 17th and 18th of April (2021), then <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NzVuYjVxM2dlOHM5YzB0aWRhOXQ4MGluYzMgNDhyN3UxN2U1NWlmdDE5azc4M2Jidmw4bDhAZw&tmsrc=48r7u17e55ift19k783bbvl8l8%40group.calendar.google.com"><i class="far fa-calendar"></i> save the date</a>, and feel free to mark yourself as attending on the <a target="_blank" href="https://www.linkedin.com/events/digitaloverdoseconference-aka-d6765979218758115328/"><i class="fa fa-linkedin-square"></i> LinkedIn Event page</a>.</p>
 
 <hr/>
 
-<h3 id="attendance">How much will it cost? / Attendance</h3>
+<h2 id="attendance">How much will it cost? / Attendance</h2>
 
 <p>The conference will be <strong>free</strong> for anyone to attend.</p>
 
-<p>Approximately one month before the event, we will open an EventBrite where you can optionally acquire a ticket (for interest metrics only).</p>
+<p>Approximately two weeks before the event, we will open an EventBrite where you can optionally acquire a ticket (for interest metrics only).</p>
 
 <p>For more updates, follow us on <a href="https://twitter.com/d_overcon"><i class="fab fa-fw fa-twitter-square"></i> Twitter</a> and <a href="https://linkedin.com/company/digitaloverdose"><i class="fab fa-fw fa-linkedin"></i> LinkedIn</a> and don't hesitate to share with your friends and colleagues.</p>
 
-<p>Our community is the most active on  <a href="https://discord.gg/yTPvyub"><i class="fab fa-fw fa-discord"></i> Discord</a>, so if you want you can pop in and tell us "Hi"!</p>
+<p>Our community is most active on  <a href="https://discord.gg/yTPvyub"><i class="fab fa-fw fa-discord"></i> Discord</a>, so if you want you can pop in and tell us "Hi, I'm here for the conference"!</p>
 
 <p>The stream of the conference will be publicly hosted on <a class="card-links" href="https://www.youtube.com/channel/UCvTW4Eyt8xNbMEkFEEvFMIQ"><i class="fab fa-fw fa-youtube"></i> our YouTube channel</a>, and if you miss a talk or a few, we will have the recordings up as fast as possible in the days following the event, with links to them on this page.</p>
-
-<hr/>
-
-<h3 id="cfp-details">Are you interested? / CFP Submission</h3>
-
-<p>So we've managed to pique your interest? That's awesome!</p>
-
-<p>We have some good news then!<br/>From now until <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NmlsbnN0M2pndmoyMTRnazFyOTAydWlsdDIgNDhyN3UxN2U1NWlmdDE5azc4M2Jidmw4bDhAZw&tmsrc=48r7u17e55ift19k783bbvl8l8%40group.calendar.google.com"><i class="far fa-calendar"></i> March 7th 23:59 GMT+1</a>, you may submit a talk proposal to this address:
-<a target="_blank" href="mailto://digitaloverdosecon+cfp@gmail.com">digitaloverdosecon+cfp@gmail.com</a>.</p>
-
-<p>To make it nice and simple, we're thinking of <strong>30 minute</strong> talks (25 minutes for the actual talk and 5 minutes for a Q&A).</p>
-
-<div class="my-2 p-1 important">
-<p>And in the interest of making thinking about it as painless as possible, your proposal can be as simple as:</p>
-
-<ul>
-  <li>A title</li>
-  <li>The subject matter</li>
-  <li>A short description</li>
-  <li>Your name and any social media you're willing to share with us.</li>
-</ul>
-</div>
-
-<p>We will then forward the first three elements (and nothing more) to a blind panel, to make sure that everyone gets a fair shot at speaking for the first time!</p>
-
-<hr/>
-
-<h3 id="for-sponsors">For potential sponsors</h3>
-
-<p>In order to provide our speakers with well-deserved conference "swag" and its shipping, organizations can choose to sponsor the event at a flat rate, in exchange for shoutouts during the conference and their logos appearing on the stream as well as potential wearable merchandise.</p>
-
-<p>The use of this sponsorship money will be 100% to cover the costs of swag, and we will publish a detailed public notice for the sake transparency</p>
+<br/>

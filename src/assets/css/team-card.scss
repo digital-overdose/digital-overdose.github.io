@@ -1,0 +1,195 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+.team-card {
+  margin: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  min-width: 230px;
+  max-width: 315px;
+  color: #ffffff;
+  width: 100%;
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+
+  * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+  }
+}
+
+
+.card-caption:before {
+  top: 100% !important;
+  content: '';
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-transition-delay: 0.25s;
+  transition-delay: 0.25s;
+}
+
+.card-caption {
+  z-index: 1;
+  margin: 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@supports (aspect-ratio: 1) {
+  .team-card {
+    aspect-ratio: 1;
+  }
+
+  .card-caption:before {
+    position: absolute;
+    top: 0.53rem;
+    bottom: 0.53rem;
+    left: 0.53rem;
+    right: 0.53rem;
+  }
+
+  .card-caption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+@supports not (aspect-ratio: 1) {
+  .team-card {
+    flex: 1 1 auto;
+  }
+
+  .card-caption:before {
+    position: relative;
+    padding-bottom: 95%;
+  }
+
+  .card-caption {
+    position: relative;
+    padding-bottom: 95%;
+    height: 0;
+  }
+}
+
+.card-caption > * {
+  text-align: center;
+}
+
+.card-caption:hover:before, .card-caption.hover:before {
+  top: 10px;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.card-caption.active {
+  background-color: rgba(51, 51, 51, 0.9) !important;
+}
+
+.card-caption h3, .card-caption h5, .card-caption .card-links {
+  margin: 0;
+  opacity: 0;
+  letter-spacing: 1px;
+}
+.card-caption h3 {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  text-transform: uppercase;
+  font-weight: 400;
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+  margin-bottom: 5px;
+}
+
+.card-caption h5 {
+  font-weight: normal;
+  background-color: #ae895d;
+  padding: 3px 10px;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  margin-bottom: 5px;
+}
+
+.card-caption .card-links {
+  font-weight: normal;
+  padding: 3px 10px;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.card-caption a:not(.card-link) {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+a.card-link {
+  font-weight: bolder;
+  color: #ffa42d;
+}
+
+a.card-link:hover > i {
+  color: orangered;
+}
+
+.card-caption:hover:before, .card-caption.active:before {
+  top: 10px;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.card-caption:hover h3, .card-caption.active h3,
+.card-caption:hover h5, .card-caption.active h5,
+.card-caption:hover .card-links, .card-caption.active .card-links {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.card-caption:hover h3, .card-caption.active h3 {
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.card-caption:hover h5, .card-caption.active h5 {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.card-caption:hover .card-links, .card-caption.active .card-links {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+
+@media screen and (max-width: 400px) {
+  h3 {
+    font-size: x-large;
+ }
+
+  h5 {
+    font-size: large;
+  }
+
+  .team-card {
+    min-width: 90%;
+    max-width: 90%;
+    width: 90%;
+    aspect-ratio: 1;
+
+    margin: 0px;
+  }
+}

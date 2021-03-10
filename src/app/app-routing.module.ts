@@ -41,6 +41,10 @@ const routes: Route[] = [
     component: ConferenceComponent
   },
   {
+    path: 'dovercon',
+    loadChildren: () => import('./routing/app-dovercon-routing.module').then(m => m.DoverconRoutingModule)
+  },
+  {
     path: 'posts',
     component: PostsNoFilterComponent,
   },

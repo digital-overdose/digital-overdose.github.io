@@ -1,0 +1,17 @@
+<div class="mt-4"></div>
+
+<div class="header mb-4">
+  <div class="w-100 row m-0 py-0 px-3 d-flex flex-row justify-content-between">
+    <nav>
+      <ul class="d-flex flex-row flex-wrap justify-content-center">
+        <li [ngClass]="{'active': (this.path.localeCompare('/conference') == 0)}"><a href="/conference#title">About</a></li>
+        <li [ngClass]="{'active': (this.path.localeCompare('/dovercon/cfp-edition-2021') == 0)}"><a href="/dovercon/cfp-edition-2021#title">Call for Proposals</a></li>
+        <li [ngClass]="{'active': (this.path.localeCompare('/dovercon/mentors-edition-2021') == 0)}"><a href="/dovercon/mentors-edition-2021#title">Mentors</a></li>
+        <li [ngClass]="{'active': (this.path.localeCompare('/dovercon/speakers-edition-2021') == 0)}"><a href="/dovercon/speakers-edition-2021#title">Speakers</a></li>
+        <li [ngClass]="{'active': (this.path.localeCompare('/dovercon/schedule-edition-2021') == 0)}"><a href="/dovercon/schedule-edition-2021#title">Schedule</a></li>
+        <li [ngClass]="{'active': (this.path.localeCompare('/dovercon/sponsoring-edition-2021') == 0)}"><a href="/dovercon/sponsoring-edition-2021#title">Sponsors</a></li>
+        <li [ngClass]="{'active': (this.path.localeCompare('/dovercon/team-edition-2021') == 0)}"><a href="/dovercon/team-edition-2021#title">Conference Team</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>

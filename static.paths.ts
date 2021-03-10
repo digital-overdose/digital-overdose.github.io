@@ -10,6 +10,13 @@ export const ROUTES = [
   '/privacy',
   '/contribution-guidelines',
 
+  '/dovercon/cfp-edition-2021',
+  '/dovercon/mentors-edition-2021',
+  '/dovercon/speakers-edition-2021',
+  '/dovercon/schedule-edition-2021',
+  '/dovercon/sponsoring-edition-2021',
+  '/dovercon/team-edition-2021',
+
   '/404-not-found',
 
   '/discord',
