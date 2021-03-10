@@ -9,6 +9,9 @@ import { PostSidebarComponent } from './content/common-ui/post/post-sidebar/post
 import { PostBodyComponent } from './content/common-ui/post/post-body/post-body.component';
 
 import { PostInventoryDisplayComponent } from './content/common-ui/post-inventory-display/post-inventory-display.component';
+import { TeamCardDirective } from './directives/team-card.directive';
+import { ConferenceNavHeaderComponent } from './content/conference/header/header.component';
+import { ConferenceHeaderLogoComponent } from './content/conference/logo/logo.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +20,9 @@ import { PostInventoryDisplayComponent } from './content/common-ui/post-inventor
     PostSidebarComponent,
     PostBodyComponent,
     PostInventoryDisplayComponent,
+    TeamCardDirective,
+    ConferenceNavHeaderComponent,
+    ConferenceHeaderLogoComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'digital-overdose' }),
@@ -33,6 +39,9 @@ import { PostInventoryDisplayComponent } from './content/common-ui/post-inventor
     PostSidebarComponent,
     PostBodyComponent,
     PostInventoryDisplayComponent,
+    ConferenceNavHeaderComponent,
+    ConferenceHeaderLogoComponent,
+    TeamCardDirective,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

@@ -52,7 +52,7 @@ export const authorList: AuthorMap = {
     links: [
       {
         label: 'Blog',
-        icon: 'fas fa-fw fa-blog',
+        icon: 'fas fa-fw fa-globe',
         url: 'https://atomicnicos.me',
       },
       {
@@ -84,7 +84,7 @@ export const authorList: AuthorMap = {
     links: [
       {
         label: 'Blog',
-        icon: 'fas fa-fw fa-blog',
+        icon: 'fas fa-fw fa-globe',
         url: 'https://skelli.win',
       },
       {

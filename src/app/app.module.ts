@@ -1,3 +1,4 @@
+
 import { SharedModule } from './shared.module';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA, Injector, APP_INITIALIZER } from '@angular/core';
 
@@ -32,8 +33,8 @@ import { PostsCardCompactComponent } from './content/common-ui/posts-card/posts-
 import { PostsCardCompactHeaderComponent } from './content/common-ui/posts-card/posts-card-compact-header/posts-card-compact-header.component';
 
 import { ServiceLocator } from './utils/service.locator';
-import { TeamCardDirective } from './directives/team-card.directive';
 import { BrowserTransferStateModule } from '@angular/platform-browser';
+import { AppDoverconModule } from './submodules/app-dovercon.module';
 
 
 @NgModule({
@@ -64,13 +65,12 @@ import { BrowserTransferStateModule } from '@angular/platform-browser';
 
     PostsCardNormalComponent,
     PostsCardCompactComponent,
-    PostsCardCompactHeaderComponent,
-
-    TeamCardDirective,
+    PostsCardCompactHeaderComponent
   ],
   imports: [
     SharedModule,
     App2021Module,
+    AppDoverconModule,
     BrowserTransferStateModule,
     // App2022Module
   ],
