@@ -30,6 +30,38 @@
     <priority>0.80</priority>
     <changefreq>daily</changefreq>
   </url>
+
+  <url>
+    <loc>https://digitaloverdose.tech/dovercon/cfp-edition-2021</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://digitaloverdose.tech/dovercon/mentors-edition-2021</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://digitaloverdose.tech/dovercon/speakers-edition-2021</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://digitaloverdose.tech/dovercon/schedule-edition-2021</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://digitaloverdose.tech/dovercon/sponsoring-edition-2021</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://digitaloverdose.tech/dovercon/team-edition-2021</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+
   <url>
     <loc>https://digitaloverdose.tech/posts</loc>
     <priority>0.80</priority>
