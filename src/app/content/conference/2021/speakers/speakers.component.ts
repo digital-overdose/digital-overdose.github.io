@@ -19,7 +19,7 @@ export class Dovercon2021SpeakersComponent implements OnInit {
   time: number[] = [0, 0, 0, 0];
 
   nowEpoch: number = new Date().getTime();
-  releaseEpoch: number = 1615892400000;
+  releaseEpoch: number = 1619856000000;
 
   /**
    * Creates an instance of ConferenceComponent.

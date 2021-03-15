@@ -30,7 +30,7 @@ export class CalendarComponent implements OnInit {
   ngOnInit(): void {
     this.gcal.getCalendarEvents().then(
       (e: GcalEvent[]) => {
-        this.events = e.slice(0, 3);
+        this.events = e.filter((v) => (Date.parse(v.end.dateTime) > Date.now())).slice(0, 3);
         this.loading = false;
       }
     );

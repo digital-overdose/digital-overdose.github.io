@@ -12,6 +12,7 @@ import { PostInventoryDisplayComponent } from './content/common-ui/post-inventor
 import { TeamCardDirective } from './directives/team-card.directive';
 import { ConferenceNavHeaderComponent } from './content/conference/header/header.component';
 import { ConferenceHeaderLogoComponent } from './content/conference/logo/logo.component';
+import { TimerComponent } from './content/common-ui/timer/timer.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ConferenceHeaderLogoComponent } from './content/conference/logo/logo.co
     PostInventoryDisplayComponent,
     TeamCardDirective,
     ConferenceNavHeaderComponent,
-    ConferenceHeaderLogoComponent
+    ConferenceHeaderLogoComponent,
+    TimerComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'digital-overdose' }),
@@ -41,6 +43,7 @@ import { ConferenceHeaderLogoComponent } from './content/conference/logo/logo.co
     PostInventoryDisplayComponent,
     ConferenceNavHeaderComponent,
     ConferenceHeaderLogoComponent,
+    TimerComponent,
     TeamCardDirective,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]

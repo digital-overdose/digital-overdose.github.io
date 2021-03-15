@@ -4,6 +4,13 @@
 
 <app-conference-header [path]="'/conference'"></app-conference-header>
 
+<ng-container *ngIf="this.nowEpoch < this.releaseEpoch">
+  <br/>
+  <app-timer [time]="this.time"></app-timer>
+  <br/>
+</ng-container>
+
+
 <h2>About</h2>
 
 <p>Digital Overdose is proud to announce that we are running a free online conference!</p>
