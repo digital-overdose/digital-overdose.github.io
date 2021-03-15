@@ -7,7 +7,6 @@ import { Dovercon2021SpeakersComponent } from '../content/conference/2021/speake
 import { Dovercon2021ScheduleComponent } from '../content/conference/2021/schedule/schedule.component';
 import { Dovercon2021SponsoringComponent } from '../content/conference/2021/sponsoring/sponsoring.component';
 import { Dovercon2021CfpComponent } from '../content/conference/2021/cfp/cfp.component';
-import { TimerComponent } from '../content/common-ui/timer/timer.component';
 
 @NgModule({
   declarations: [
@@ -16,8 +15,7 @@ import { TimerComponent } from '../content/common-ui/timer/timer.component';
     Dovercon2021SpeakersComponent,
     Dovercon2021ScheduleComponent,
     Dovercon2021SponsoringComponent,
-    Dovercon2021CfpComponent,
-    TimerComponent
+    Dovercon2021CfpComponent
   ],
   imports: [
     CommonModule,
