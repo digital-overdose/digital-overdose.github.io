@@ -1,0 +1,62 @@
+<div class="d-flex flex-row justify-content-center">
+  <div class="card d-flex flex-column justify-content-center m-1 p-2 text-center">
+    <ng-container *ngIf="this.time != undefined; else elseTemplate">
+      <div >
+        {{ this.time[0] }}
+      </div>
+    </ng-container>
+    <ng-template #elseTemplate>
+      <div>
+        <i class="fas fa-spinner"></i>
+      </div>
+    </ng-template>
+    <div>
+      Days
+    </div>
+  </div>
+  <div class="card d-flex flex-column justify-content-center m-1 p-2 text-center">
+    <ng-container *ngIf="this.time != undefined; else elseTemplate">
+      <div >
+        {{ this.time[1] }}
+      </div>
+    </ng-container>
+    <ng-template #elseTemplate>
+      <div>
+        <i class="fas fa-spinner"></i>
+      </div>
+    </ng-template>
+    <div>
+      Hours
+    </div>
+  </div>
+  <div class="card d-flex flex-column justify-content-center m-1 p-2 text-center">
+    <ng-container *ngIf="this.time != undefined; else elseTemplate">
+      <div >
+        {{ this.time[2] }}
+      </div>
+    </ng-container>
+    <ng-template #elseTemplate>
+      <div>
+        <i class="fas fa-spinner"></i>
+      </div>
+    </ng-template>
+    <div>
+      Minutes
+    </div>
+  </div>
+  <div class="card d-flex flex-column justify-content-center m-1 p-2 text-center">
+    <ng-container *ngIf="this.time != undefined; else elseTemplate">
+      <div >
+        {{ this.time[3] }}
+      </div>
+    </ng-container>
+    <ng-template #elseTemplate>
+      <div>
+        <i class="fas fa-spinner"></i>
+      </div>
+    </ng-template>
+    <div>
+      Seconds
+    </div>
+  </div>
+</div>

@@ -6,7 +6,17 @@
 
 <h2>Schedule</h2>
 
-<p>TBA 29th of March / 2nd of April 2021.</p>
+<br/>
+<ng-container *ngIf="this.nowEpoch < this.releaseEpoch; then thenTemplate; else elseTemplate"></ng-container>
+<ng-template #thenTemplate>
+  <p class="text-center m-1 h4">Announcement in:</p>
+  <app-timer [time]="this.time"></app-timer>
 
-<br/><br/><br/><br/><br/><br/><br/><br/>
-<br/><br/><br/><br/><br/><br/><br/><br/>
+  <br/><br/><br/><br/><br/><br/><br/><br/>
+  <br/><br/><br/><br/><br/><br/><br/><br/>
+</ng-template>
+<ng-template #elseTemplate>
+  <div class="d-flex flex-column">
+
+  </div>
+</ng-template>
