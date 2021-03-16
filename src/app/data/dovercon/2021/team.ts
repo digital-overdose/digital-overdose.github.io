@@ -64,7 +64,7 @@ export const organizers: TeamMember[] = [
       }
     ]
   },
-]
+];
 
 export const helpers: TeamMember[] = [
   {

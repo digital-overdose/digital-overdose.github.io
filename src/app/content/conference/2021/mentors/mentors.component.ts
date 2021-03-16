@@ -1,25 +1,25 @@
 import { Component, OnInit } from '@angular/core';
 import { mentors } from 'src/app/data/dovercon/2021/mentors';
 import { BASE_URL } from 'src/app/data/url';
-import { TeamMember } from 'src/app/interfaces/team-member';
 import { MetaService } from 'src/app/services/meta.service';
 import { interval } from 'rxjs';
 import { startWith } from 'rxjs/operators';
 import { diff } from 'src/app/utils/time-until';
 import { BrowserRecognitionService } from 'src/app/services/browser-recognition.service';
+import { Mentor } from 'src/app/interfaces/mentor';
 
 @Component({
   templateUrl: './mentors.component.html',
-  styleUrls: ['../../conference.component.scss']
+  styleUrls: ['../../conference.component.scss', '../../../../../assets/css/team-card.scss']
 })
 export class Dovercon2021MentorsComponent implements OnInit {
   /** The list of team members, retrieved from data storage. */
-  mentors: TeamMember[] = mentors;
+  mentors: Mentor[] = mentors;
 
   time: number[] = [0, 0, 0, 0];
 
   nowEpoch: number = new Date().getTime();
-  releaseEpoch: number = 1615978800000;
+  releaseEpoch: number = 1616022000000;
   /**
    * Creates an instance of ConferenceComponent.
    *
