@@ -16,6 +16,7 @@ export const ROUTES = [
   '/dovercon/schedule-edition-2021',
   '/dovercon/sponsoring-edition-2021',
   '/dovercon/team-edition-2021',
+  '/dovercon/code-of-conduct',
 
   '/404-not-found',
 
