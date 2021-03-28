@@ -1,10 +1,11 @@
-import { Routes } from "@angular/router";
-import { Dovercon2021CfpComponent } from "../content/conference/2021/cfp/cfp.component";
-import { Dovercon2021MentorsComponent } from "../content/conference/2021/mentors/mentors.component";
-import { Dovercon2021ScheduleComponent } from "../content/conference/2021/schedule/schedule.component";
-import { Dovercon2021SpeakersComponent } from "../content/conference/2021/speakers/speakers.component";
-import { Dovercon2021SponsoringComponent } from "../content/conference/2021/sponsoring/sponsoring.component";
-import { Dovercon2021TeamComponent } from "../content/conference/2021/team/team.component";
+import { Dovercon2021CodeOfConductComponent } from './../content/conference/2021/code-of-conduct/code-of-conduct.component';
+import { Routes } from '@angular/router';
+import { Dovercon2021CfpComponent } from '../content/conference/2021/cfp/cfp.component';
+import { Dovercon2021MentorsComponent } from '../content/conference/2021/mentors/mentors.component';
+import { Dovercon2021ScheduleComponent } from '../content/conference/2021/schedule/schedule.component';
+import { Dovercon2021SpeakersComponent } from '../content/conference/2021/speakers/speakers.component';
+import { Dovercon2021SponsoringComponent } from '../content/conference/2021/sponsoring/sponsoring.component';
+import { Dovercon2021TeamComponent } from '../content/conference/2021/team/team.component';
 
 export const subroutesDovercon: Routes = [
   {
@@ -30,5 +31,9 @@ export const subroutesDovercon: Routes = [
   {
     path: 'sponsoring-edition-2021',
     component: Dovercon2021SponsoringComponent,
+  },
+  {
+    path: 'code-of-conduct',
+    component: Dovercon2021CodeOfConductComponent,
   },
 ];

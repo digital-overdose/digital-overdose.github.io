@@ -7,6 +7,7 @@ import { Dovercon2021SpeakersComponent } from '../content/conference/2021/speake
 import { Dovercon2021ScheduleComponent } from '../content/conference/2021/schedule/schedule.component';
 import { Dovercon2021SponsoringComponent } from '../content/conference/2021/sponsoring/sponsoring.component';
 import { Dovercon2021CfpComponent } from '../content/conference/2021/cfp/cfp.component';
+import { Dovercon2021CodeOfConductComponent } from '../content/conference/2021/code-of-conduct/code-of-conduct.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { Dovercon2021CfpComponent } from '../content/conference/2021/cfp/cfp.com
     Dovercon2021SpeakersComponent,
     Dovercon2021ScheduleComponent,
     Dovercon2021SponsoringComponent,
-    Dovercon2021CfpComponent
+    Dovercon2021CfpComponent,
+    Dovercon2021CodeOfConductComponent
   ],
   imports: [
     CommonModule,
