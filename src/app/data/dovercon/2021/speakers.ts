@@ -154,7 +154,7 @@ export const speakers: TeamMember[] = [
   {
     name: 's4t4n',
     description: 'The Zero Trust Model',
-    imageUrl: '/assets/images/dovercon/2021/team/s4t4n.jpg',
+    imageUrl: '/assets/images/dovercon/2021/speakers/sarthak.jpg',
     links: [
       {
         label: 'Twitter',
@@ -377,13 +377,32 @@ export const speakers: TeamMember[] = [
     imageUrl: '/assets/images/dovercon/2021/speakers/placeholder.jfif',
   },
   {
-    name: 'Michael M.',
+    name: 'Michael McGinley',
     description: 'Parting ways with Purdue? - The Effect of Industry 4.0 on Industrial Control Systems Security Architectures',
-    imageUrl: '/assets/images/dovercon/2021/speakers/placeholder.jfif',
+    imageUrl: '/assets/images/dovercon/2021/speakers/michaelm.jpg',
+    links: [
+      {
+        label: 'Twitter',
+        icon: 'fab fa-fw fa-twitter-square',
+        url: 'https://twitter.com/michael_mcg3'
+      },
+    ]
   },
   {
-    name: 'Chloe',
+    name: 'Chloe Seaton',
     description: 'What it takes to be an Ethical Hacker - Being Non Technical in Cyber',
-    imageUrl: '/assets/images/dovercon/2021/speakers/placeholder.jfif',
+    imageUrl: '/assets/images/dovercon/2021/speakers/chloe.jpg',
+    links: [
+      {
+        label: 'Twitter',
+        icon: 'fab fa-fw fa-twitter-square',
+        url: 'https://twitter.com/csearchi'
+      },
+      {
+        label: 'LinkedIn',
+        icon: 'fab fa-fw fa-linkedin',
+        url: 'https://www.linkedin.com/in/chloe-seaton-13732014a/',
+      }
+    ]
   }
 ];
