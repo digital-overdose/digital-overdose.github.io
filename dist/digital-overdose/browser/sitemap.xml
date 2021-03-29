@@ -57,6 +57,11 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://digitaloverdose.tech/dovercon/code-of-conduct</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://digitaloverdose.tech/dovercon/team-edition-2021</loc>
     <priority>0.80</priority>
     <changefreq>daily</changefreq>
