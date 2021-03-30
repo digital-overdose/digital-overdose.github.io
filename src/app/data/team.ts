@@ -6,7 +6,7 @@ export const teamMemberList: TeamMember[] = [
   {
     name: 'EDEN STROET',
     alias: ['MRS SKELLI'],
-    description: 'Community Owner, Conference Bringer',
+    description: 'Community Admin, Conference Bringer',
     imageUrl: '/assets/images/team/mrs-skelli.jpg',
     links: [
       {
@@ -67,7 +67,7 @@ export const teamMemberList: TeamMember[] = [
   {
     name: 'K. STROET',
     alias: ['NIGHT', 'BUGBOT'],
-    description: 'Community Co-Owner',
+    description: 'Community Admin',
     imageUrl: '/assets/images/team/night.jpg',
     links: [
       {
