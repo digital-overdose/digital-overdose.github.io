@@ -367,14 +367,28 @@ export const speakers: TeamMember[] = [
     ]
   },
   {
-    name: 'Josephine W.',
+    name: 'Josephine Windsor-Lewis',
     description: 'Smart phone to medical device in five (not so) easy steps',
-    imageUrl: '/assets/images/dovercon/2021/speakers/placeholder.jfif',
+    imageUrl: '/assets/images/dovercon/2021/speakers/josephinew.jpg',
+    links: [
+      {
+        label: 'Twitter',
+        icon: 'fab fa-fw fa-twitter-square',
+        url: 'https://twitter.com/m157y573p'
+      },
+    ]
   },
   {
-    name: 'Andrew G.',
+    name: 'REALM',
     description: 'An introduction to reverse engineering: ‘WannaCry’ killswitch domain',
-    imageUrl: '/assets/images/dovercon/2021/speakers/placeholder.jfif',
+    imageUrl: '/assets/images/dovercon/2021/speakers/realm.jpg',
+    links: [
+      {
+        label: 'Twitter',
+        icon: 'fab fa-fw fa-twitter-square',
+        url: 'https://twitter.com/tehr3alm'
+      },
+    ]
   },
   {
     name: 'Michael McGinley',
