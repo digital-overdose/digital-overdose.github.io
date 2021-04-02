@@ -5,15 +5,23 @@ import { interval } from 'rxjs';
 import { startWith } from 'rxjs/operators';
 import { diff } from 'src/app/utils/time-until';
 import { BrowserRecognitionService } from 'src/app/services/browser-recognition.service';
+import { ScheduleElement } from 'src/app/interfaces/schedule-element';
+import { schedule } from 'src/app/data/dovercon/2021/schedule';
 @Component({
   templateUrl: './schedule.component.html',
-  styleUrls: ['../../conference.component.scss']
+  styleUrls: ['../../conference.component.scss', '../../../../../assets/css/team-card.scss', './schedule.component.scss']
 })
 export class Dovercon2021ScheduleComponent implements OnInit {
+  schedule: ScheduleElement[] = schedule;
+  day11: ScheduleElement[] = schedule.filter(x => x.portion === 1);
+  day12: ScheduleElement[] = schedule.filter(x => x.portion === 2);
+  day21: ScheduleElement[] = schedule.filter(x => x.portion === 3);
+  day22: ScheduleElement[] = schedule.filter(x => x.portion === 4);
+
   time: number[] = [0, 0, 0, 0];
 
   nowEpoch: number = new Date().getTime();
-  releaseEpoch: number = 1617364800000;
+  releaseEpoch: number = 1617444000000;
 
   /**
    * Creates an instance of ConferenceComponent.

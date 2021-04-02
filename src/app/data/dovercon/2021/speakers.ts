@@ -233,8 +233,7 @@ export const speakers: TeamMember[] = [
     ]
   },
   {
-    name: 'John',
-    alias: ['White Hat Inspector'],
+    name: 'White Hat Inspector',
     description: 'Skype: A hidden OSINT goldmine',
     imageUrl: '/assets/images/dovercon/2021/speakers/whitehatinspector.jpg',
     links: [
