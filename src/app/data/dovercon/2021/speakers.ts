@@ -152,7 +152,8 @@ export const speakers: TeamMember[] = [
     ]
   },
   {
-    name: 's4t4n',
+    name: 'Sarthak Taneja',
+    alias: ['S4T4N'],
     description: 'The Zero Trust Model',
     imageUrl: '/assets/images/dovercon/2021/speakers/sarthak.jpg',
     links: [
@@ -327,7 +328,7 @@ export const speakers: TeamMember[] = [
   },
   {
     name: 'Mariah Rucker',
-    description: 'Defense Against the (Cyber) Dark Arts',
+    description: 'Defense Against the Dark (Cyber) Arts',
     imageUrl: '/assets/images/dovercon/2021/speakers/patronuscode.jpg',
     links: [
       {

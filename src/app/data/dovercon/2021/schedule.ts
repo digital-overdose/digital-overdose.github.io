@@ -250,7 +250,7 @@ export const schedule: ScheduleElement[] = [
   },
   {
     speakers: [
-      _('s4t4n')
+      _('Sarthak Taneja')
     ],
     portion: 4,
     start: new Date(1618757700000),
