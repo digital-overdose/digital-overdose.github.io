@@ -344,7 +344,12 @@ export const speakers: TeamMember[] = [
         label: 'GitHub',
         icon: 'fab fa-fw fa-github-square',
         url: 'https://github.com/patronuscode',
-      }
+      },
+      {
+        label: 'Website',
+        icon: 'fas fa-globe',
+        url: 'https://wizardsintech.com',
+      },
     ]
   },
   {
