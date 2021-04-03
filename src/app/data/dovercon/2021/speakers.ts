@@ -326,6 +326,28 @@ export const speakers: TeamMember[] = [
     imageUrl: '/assets/images/dovercon/2021/speakers/thomas_chen.jpg',
   },
   {
+    name: 'Mariah Rucker',
+    description: 'Alohomora Online Security Safety',
+    imageUrl: '/assets/images/dovercon/2021/speakers/patronuscode.jpg',
+    links: [
+      {
+        label: 'Twitter',
+        icon: 'fab fa-fw fa-twitter-square',
+        url: 'https://twitter.com/patronuscode'
+      },
+      {
+        label: 'LinkedIn',
+        icon: 'fab fa-fw fa-linkedin',
+        url: 'https://www.linkedin.com/in/mariahrucker/',
+      },
+      {
+        label: 'GitHub',
+        icon: 'fab fa-fw fa-github-square',
+        url: 'https://github.com/patronuscode',
+      }
+    ]
+  },
+  {
     name: 'Heather Lane',
     alias: ['Heart'],
     description: 'Manual work: A noble and proven approach to open source investigations',
