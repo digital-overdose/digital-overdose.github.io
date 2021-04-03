@@ -14,8 +14,8 @@ export const schedule: ScheduleElement[] = [
     portion: 1,
     start: new Date(1618647900000),
     end: new Date(1618649700000),
-    startBST: '10:25',
-    endBST: '10:55'
+    startCEST: '10:25',
+    endCEST: '10:55'
   },
   {
     speakers: [
@@ -24,8 +24,8 @@ export const schedule: ScheduleElement[] = [
     portion: 1,
     start: new Date(1618650000000),
     end: new Date(1618651800000),
-    startBST: '11:00',
-    endBST: '11:30'
+    startCEST: '11:00',
+    endCEST: '11:30'
   },
   {
     speakers: [
@@ -34,8 +34,8 @@ export const schedule: ScheduleElement[] = [
     portion: 1,
     start: new Date(1618652100000),
     end: new Date(1618653900000),
-    startBST: '11:35',
-    endBST: '12:05'
+    startCEST: '11:35',
+    endCEST: '12:05'
   },
   {
     speakers: [
@@ -44,8 +44,8 @@ export const schedule: ScheduleElement[] = [
     portion: 1,
     start: new Date(1618654200000),
     end: new Date(1618656000000),
-    startBST: '12:10',
-    endBST: '12:40'
+    startCEST: '12:10',
+    endCEST: '12:40'
   },
   {
     speakers: [
@@ -54,8 +54,8 @@ export const schedule: ScheduleElement[] = [
     portion: 1,
     start: new Date(1618656300000),
     end: new Date(1618658100000),
-    startBST: '12:45',
-    endBST: '13:15'
+    startCEST: '12:45',
+    endCEST: '13:15'
   },
   {
     speakers: [
@@ -64,8 +64,8 @@ export const schedule: ScheduleElement[] = [
     portion: 2,
     start: new Date(1618660800000),
     end: new Date(1618662600000),
-    startBST: '14:00',
-    endBST: '14:30'
+    startCEST: '14:00',
+    endCEST: '14:30'
   },
   {
     speakers: [
@@ -74,8 +74,8 @@ export const schedule: ScheduleElement[] = [
     portion: 2,
     start: new Date(1618662900000),
     end: new Date(1618664700000),
-    startBST: '14:35',
-    endBST: '15:05'
+    startCEST: '14:35',
+    endCEST: '15:05'
   },
   {
     speakers: [
@@ -85,8 +85,8 @@ export const schedule: ScheduleElement[] = [
     portion: 2,
     start: new Date(1618665000000),
     end: new Date(1618666800000),
-    startBST: '15:10',
-    endBST: '15:40'
+    startCEST: '15:10',
+    endCEST: '15:40'
   },
   {
     speakers: [
@@ -95,8 +95,8 @@ export const schedule: ScheduleElement[] = [
     portion: 2,
     start: new Date(1618667100000),
     end: new Date(1618668900000),
-    startBST: '15:45',
-    endBST: '16:15'
+    startCEST: '15:45',
+    endCEST: '16:15'
   },
   {
     speakers: [
@@ -105,8 +105,8 @@ export const schedule: ScheduleElement[] = [
     portion: 2,
     start: new Date(1618669200000),
     end: new Date(1618671000000),
-    startBST: '16:20',
-    endBST: '16:50'
+    startCEST: '16:20',
+    endCEST: '16:50'
   },
   {
     speakers: [
@@ -115,8 +115,8 @@ export const schedule: ScheduleElement[] = [
     portion: 2,
     start: new Date(1618671300000),
     end: new Date(1618673100000),
-    startBST: '16:55',
-    endBST: '17:25'
+    startCEST: '16:55',
+    endCEST: '17:25'
   },
   {
     speakers: [
@@ -125,8 +125,8 @@ export const schedule: ScheduleElement[] = [
     portion: 2,
     start: new Date(1618673400000),
     end: new Date(1618675500000),
-    startBST: '17:30',
-    endBST: '18:05'
+    startCEST: '17:30',
+    endCEST: '18:05'
   },
   {
     speakers: [
@@ -135,8 +135,8 @@ export const schedule: ScheduleElement[] = [
     portion: 2,
     start: new Date(1618675800000),
     end: new Date(1618677600000),
-    startBST: '18:10',
-    endBST: '18:40'
+    startCEST: '18:10',
+    endCEST: '18:40'
   },
   {
     speakers: [
@@ -145,8 +145,8 @@ export const schedule: ScheduleElement[] = [
     portion: 2,
     start: new Date(1618677900000),
     end: new Date(1618679700000),
-    startBST: '18:45',
-    endBST: '19:15'
+    startCEST: '18:45',
+    endCEST: '19:15'
   },
   {
     speakers: [
@@ -155,8 +155,8 @@ export const schedule: ScheduleElement[] = [
     portion: 3,
     start: new Date(1618734000000),
     end: new Date(1618735800000),
-    startBST: '10:20',
-    endBST: '10:50'
+    startCEST: '10:20',
+    endCEST: '10:50'
   },
   {
     speakers: [
@@ -165,8 +165,8 @@ export const schedule: ScheduleElement[] = [
     portion: 3,
     start: new Date(1618736100000),
     end: new Date(1618737900000),
-    startBST: '10:55',
-    endBST: '11:25'
+    startCEST: '10:55',
+    endCEST: '11:25'
   },
   {
     speakers: [
@@ -175,8 +175,8 @@ export const schedule: ScheduleElement[] = [
     portion: 3,
     start: new Date(1618738200000),
     end: new Date(1618740000000),
-    startBST: '11:30',
-    endBST: '12:00'
+    startCEST: '11:30',
+    endCEST: '12:00'
   },
   {
     speakers: [
@@ -185,8 +185,8 @@ export const schedule: ScheduleElement[] = [
     portion: 3,
     start: new Date(1618740300000),
     end: new Date(1618742100000),
-    startBST: '12:05',
-    endBST: '12:35'
+    startCEST: '12:05',
+    endCEST: '12:35'
   },
   {
     speakers: [
@@ -195,8 +195,8 @@ export const schedule: ScheduleElement[] = [
     portion: 3,
     start: new Date(1618742400000),
     end: new Date(1618744200000),
-    startBST: '12:40',
-    endBST: '13:10'
+    startCEST: '12:40',
+    endCEST: '13:10'
   },
   {
     speakers: [
@@ -205,8 +205,8 @@ export const schedule: ScheduleElement[] = [
     portion: 4,
     start: new Date(1618747200000),
     end: new Date(1618749000000),
-    startBST: '14:00',
-    endBST: '14:30'
+    startCEST: '14:00',
+    endCEST: '14:30'
   },
   {
     speakers: [
@@ -215,8 +215,8 @@ export const schedule: ScheduleElement[] = [
     portion: 4,
     start: new Date(1618749300000),
     end: new Date(1618751100000),
-    startBST: '14:35',
-    endBST: '15:05'
+    startCEST: '14:35',
+    endCEST: '15:05'
   },
   {
     speakers: [
@@ -225,8 +225,8 @@ export const schedule: ScheduleElement[] = [
     portion: 4,
     start: new Date(1618751400000),
     end: new Date(1618753200000),
-    startBST: '15:10',
-    endBST: '15:40'
+    startCEST: '15:10',
+    endCEST: '15:40'
   },
   {
     speakers: [
@@ -235,8 +235,8 @@ export const schedule: ScheduleElement[] = [
     portion: 4,
     start: new Date(1618753500000),
     end: new Date(1618755300000),
-    startBST: '15:45',
-    endBST: '16:15'
+    startCEST: '15:45',
+    endCEST: '16:15'
   },
   {
     speakers: [
@@ -245,8 +245,8 @@ export const schedule: ScheduleElement[] = [
     portion: 4,
     start: new Date(1618755600000),
     end: new Date(1618757400000),
-    startBST: '16:20',
-    endBST: '16:50'
+    startCEST: '16:20',
+    endCEST: '16:50'
   },
   {
     speakers: [
@@ -255,8 +255,8 @@ export const schedule: ScheduleElement[] = [
     portion: 4,
     start: new Date(1618757700000),
     end: new Date(1618759500000),
-    startBST: '16:55',
-    endBST: '17:25'
+    startCEST: '16:55',
+    endCEST: '17:25'
   },
   {
     speakers: [
@@ -265,8 +265,8 @@ export const schedule: ScheduleElement[] = [
     portion: 4,
     start: new Date(1618759800000),
     end: new Date(1618761600000),
-    startBST: '17:30',
-    endBST: '18:00'
+    startCEST: '17:30',
+    endCEST: '18:00'
   },
   {
     speakers: [
@@ -275,7 +275,7 @@ export const schedule: ScheduleElement[] = [
     portion: 4,
     start: new Date(1618761900000),
     end: new Date(1618763700000),
-    startBST: '18:05',
-    endBST: '18:35'
+    startCEST: '18:05',
+    endCEST: '18:35'
   },
 ];

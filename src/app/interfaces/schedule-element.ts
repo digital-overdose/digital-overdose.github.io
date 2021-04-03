@@ -10,7 +10,7 @@ export interface ScheduleElement {
 
   portion: number;
 
-  startBST: string;
+  startCEST: string;
 
-  endBST: string;
+  endCEST: string;
 }

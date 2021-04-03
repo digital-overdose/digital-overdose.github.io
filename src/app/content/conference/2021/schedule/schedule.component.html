@@ -21,9 +21,9 @@
     <h3 class="text-center">Day 1</h3>
     <div class="card p-2 d-flex flex-row mb-2">
       <div class="col-3 my-auto d-flex flex-row align-items-stretch justify-content-around mx-2">
-        <div class="d-flex flex-column text-center"><span class="event-time">10:05</span><span class="event-timezone">(BST)</span></div>
+        <div class="d-flex flex-column text-center"><span class="event-time">10:05</span><span class="event-timezone">(CEST)</span></div>
         <div class="d-flex flex-column justify-content-center"><i class="fas fa-arrow-circle-right mx-1"></i></div>
-        <div class="d-flex flex-column text-center"><span class="event-time">10:20</span><span class="event-timezone">(BST)</span></div>
+        <div class="d-flex flex-column text-center"><span class="event-time">10:20</span><span class="event-timezone">(CEST)</span></div>
       </div>
       <div class="col-9">
         <div class="d-flex flex-column my-auto">
@@ -34,9 +34,9 @@
     </div>
     <div class="card d-flex flex-row p-2" *ngFor="let se of this.day11">
       <div class="col-3 my-auto d-flex flex-row align-items-stretch justify-content-around mx-2">
-        <div class="d-flex flex-column text-center"><span class="event-time">{{ se.startBST }}</span><span class="event-timezone">(BST)</span><span class="event-timelocal mt-3">{{ se.start | date: 'HH:mm' }}</span><span class="event-timezone">(Local)</span></div>
+        <div class="d-flex flex-column text-center"><span class="event-time">{{ se.startCEST }}</span><span class="event-timezone">(CEST)</span><span class="event-timelocal mt-3">{{ se.start | date: 'HH:mm' }}</span><span class="event-timezone">(Local)</span></div>
         <div class="d-flex flex-column justify-content-center"><i class="fas fa-arrow-circle-right mx-1"></i></div>
-        <div class="d-flex flex-column text-center"><span class="event-time">{{ se.endBST }}</span><span class="event-timezone">(BST)</span><span class="event-timelocal mt-3">{{ se.end | date: 'HH:mm' }}</span><span class="event-timezone">(Local)</span></div>
+        <div class="d-flex flex-column text-center"><span class="event-time">{{ se.endCEST }}</span><span class="event-timezone">(CEST)</span><span class="event-timelocal mt-3">{{ se.end | date: 'HH:mm' }}</span><span class="event-timezone">(Local)</span></div>
       </div>
       <div class="col-9 d-flex flex-column">
         <div class="d-flex flex-column my-auto" *ngFor="let speaker of se.speakers">
@@ -48,9 +48,9 @@
     <div class="card p-2 my-2 d-flex flex-row"><div class="col-3">&nbsp;</div><div class="col-9 ml-4 pl-2 h5">Break</div></div>
     <div class="card d-flex flex-row p-2" *ngFor="let se of this.day12">
       <div class="col-3 my-auto d-flex flex-row align-items-stretch justify-content-around mx-2">
-        <div class="d-flex flex-column text-center"><span class="event-time">{{ se.startBST }}</span><span class="event-timezone">(BST)</span><span class="event-timelocal mt-3">{{ se.start | date: 'HH:mm' }}</span><span class="event-timezone">(Local)</span></div>
+        <div class="d-flex flex-column text-center"><span class="event-time">{{ se.startCEST }}</span><span class="event-timezone">(CEST)</span><span class="event-timelocal mt-3">{{ se.start | date: 'HH:mm' }}</span><span class="event-timezone">(Local)</span></div>
         <div class="d-flex flex-column justify-content-center"><i class="fas fa-arrow-circle-right mx-1"></i></div>
-        <div class="d-flex flex-column text-center"><span class="event-time">{{ se.endBST }}</span><span class="event-timezone">(BST)</span><span class="event-timelocal mt-3">{{ se.end | date: 'HH:mm' }}</span><span class="event-timezone">(Local)</span></div>
+        <div class="d-flex flex-column text-center"><span class="event-time">{{ se.endCEST }}</span><span class="event-timezone">(CEST)</span><span class="event-timelocal mt-3">{{ se.end | date: 'HH:mm' }}</span><span class="event-timezone">(Local)</span></div>
       </div>
       <div class="col-9 d-flex flex-column">
         <span class="d-flex flex-column my-auto" *ngFor="let speaker of se.speakers">
@@ -61,9 +61,9 @@
     </div>
     <div class="card p-2 d-flex flex-row mt-2">
       <div class="col-3 my-auto d-flex flex-row align-items-stretch justify-content-around mx-2">
-        <div class="d-flex flex-column text-center"><span class="event-time">19:20</span><span class="event-timezone">(BST)</span></div>
+        <div class="d-flex flex-column text-center"><span class="event-time">19:20</span><span class="event-timezone">(CEST)</span></div>
         <div class="d-flex flex-column justify-content-center"><i class="fas fa-arrow-circle-right mx-1"></i></div>
-        <div class="d-flex flex-column text-center"><span class="event-time">19:30</span><span class="event-timezone">(BST)</span></div>
+        <div class="d-flex flex-column text-center"><span class="event-time">19:30</span><span class="event-timezone">(CEST)</span></div>
       </div>
       <div class="col-9 d-flex flex-column justify-content-center">
         <div class="my-auto">
@@ -75,9 +75,9 @@
     <h3 class="text-center">Day 2</h3>
     <div class="card p-2 d-flex flex-row mb-2">
       <div class="col-3 my-auto d-flex flex-row align-items-stretch justify-content-around mx-2">
-        <div class="d-flex flex-column text-center"><span class="event-time">10:05</span><span class="event-timezone">(BST)</span></div>
+        <div class="d-flex flex-column text-center"><span class="event-time">10:05</span><span class="event-timezone">(CEST)</span></div>
         <div class="d-flex flex-column justify-content-center"><i class="fas fa-arrow-circle-right mx-1"></i></div>
-        <div class="d-flex flex-column text-center"><span class="event-time">10:15</span><span class="event-timezone">(BST)</span></div>
+        <div class="d-flex flex-column text-center"><span class="event-time">10:15</span><span class="event-timezone">(CEST)</span></div>
       </div>
       <div class="col-9 d-flex flex-column justify-content-center">
         <div class="my-auto">
@@ -87,9 +87,9 @@
     </div>
     <div class="card d-flex flex-row p-2" *ngFor="let se of this.day21">
       <div class="col-3 my-auto d-flex flex-row align-items-stretch justify-content-around mx-2">
-        <div class="d-flex flex-column text-center"><span class="event-time">{{ se.startBST }}</span><span class="event-timezone">(BST)</span><span class="event-timelocal mt-3">{{ se.start | date: 'HH:mm' }}</span><span class="event-timezone">(Local)</span></div>
+        <div class="d-flex flex-column text-center"><span class="event-time">{{ se.startCEST }}</span><span class="event-timezone">(CEST)</span><span class="event-timelocal mt-3">{{ se.start | date: 'HH:mm' }}</span><span class="event-timezone">(Local)</span></div>
         <div class="d-flex flex-column justify-content-center"><i class="fas fa-arrow-circle-right mx-1"></i></div>
-        <div class="d-flex flex-column text-center"><span class="event-time">{{ se.endBST }}</span><span class="event-timezone">(BST)</span><span class="event-timelocal mt-3">{{ se.end | date: 'HH:mm' }}</span><span class="event-timezone">(Local)</span></div>
+        <div class="d-flex flex-column text-center"><span class="event-time">{{ se.endCEST }}</span><span class="event-timezone">(CEST)</span><span class="event-timelocal mt-3">{{ se.end | date: 'HH:mm' }}</span><span class="event-timezone">(Local)</span></div>
       </div>
       <div class="col-9 d-flex flex-column">
         <span class="d-flex flex-column my-auto" *ngFor="let speaker of se.speakers">
@@ -101,9 +101,9 @@
     <div class="card p-2 my-2 d-flex flex-row"><div class="col-3">&nbsp;</div><div class="col-9 ml-4 pl-2 h5">Break</div></div>
     <div class="card d-flex flex-row p-2" *ngFor="let se of this.day22">
       <div class="col-3 my-auto d-flex flex-row align-items-stretch justify-content-around mx-2">
-        <div class="d-flex flex-column text-center"><span class="event-time">{{ se.startBST }}</span><span class="event-timezone">(BST)</span><span class="event-timelocal mt-3">{{ se.start | date: 'HH:mm' }}</span><span class="event-timezone">(Local)</span></div>
+        <div class="d-flex flex-column text-center"><span class="event-time">{{ se.startCEST }}</span><span class="event-timezone">(CEST)</span><span class="event-timelocal mt-3">{{ se.start | date: 'HH:mm' }}</span><span class="event-timezone">(Local)</span></div>
         <div class="d-flex flex-column justify-content-center"><i class="fas fa-arrow-circle-right mx-1"></i></div>
-        <div class="d-flex flex-column text-center"><span class="event-time">{{ se.endBST }}</span><span class="event-timezone">(BST)</span><span class="event-timelocal mt-3">{{ se.end | date: 'HH:mm' }}</span><span class="event-timezone">(Local)</span></div>
+        <div class="d-flex flex-column text-center"><span class="event-time">{{ se.endCEST }}</span><span class="event-timezone">(CEST)</span><span class="event-timelocal mt-3">{{ se.end | date: 'HH:mm' }}</span><span class="event-timezone">(Local)</span></div>
       </div>
       <div class="col-9 d-flex flex-column">
         <span class="d-flex flex-column my-auto" *ngFor="let speaker of se.speakers">
@@ -114,9 +114,9 @@
     </div>
     <div class="card p-2 d-flex flex-row mt-2">
       <div class="col-3 my-auto d-flex flex-row align-items-stretch justify-content-around mx-2">
-        <div class="d-flex flex-column text-center"><span class="event-time">18:40</span><span class="event-timezone">(BST)</span></div>
+        <div class="d-flex flex-column text-center"><span class="event-time">18:40</span><span class="event-timezone">(CEST)</span></div>
         <div class="d-flex flex-column justify-content-center"><i class="fas fa-arrow-circle-right mx-1"></i></div>
-        <div class="d-flex flex-column text-center"><span class="event-time">18:55</span><span class="event-timezone">(BST)</span></div>
+        <div class="d-flex flex-column text-center"><span class="event-time">18:55</span><span class="event-timezone">(CEST)</span></div>
       </div>
       <div class="col-9 d-flex flex-column justify-content-center">
         <div class="my-auto">
@@ -126,9 +126,9 @@
     </div>
     <div class="card p-2 d-flex flex-row mt-2">
       <div class="col-3 my-auto d-flex flex-row align-items-stretch justify-content-around mx-2">
-        <div class="d-flex flex-column text-center"><span class="event-time">19:00</span><span class="event-timezone">(BST)</span></div>
+        <div class="d-flex flex-column text-center"><span class="event-time">19:00</span><span class="event-timezone">(CEST)</span></div>
         <div class="d-flex flex-column justify-content-center"><i class="fas fa-arrow-circle-right mx-1"></i></div>
-        <div class="d-flex flex-column text-center"><span class="event-time">21:00</span><span class="event-timezone">(BST)</span></div>
+        <div class="d-flex flex-column text-center"><span class="event-time">21:00</span><span class="event-timezone">(CEST)</span></div>
       </div>
       <div class="col-9 d-flex flex-column justify-content-center">
         <div class="my-auto">
