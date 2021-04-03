@@ -327,7 +327,7 @@ export const speakers: TeamMember[] = [
   },
   {
     name: 'Mariah Rucker',
-    description: 'Alohomora Online Security Safety',
+    description: 'Defense Against the Dark (Cyber) Arts',
     imageUrl: '/assets/images/dovercon/2021/speakers/patronuscode.jpg',
     links: [
       {
