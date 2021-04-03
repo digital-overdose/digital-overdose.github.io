@@ -250,7 +250,7 @@ export const speakers: TeamMember[] = [
     ]
   },
   {
-    name: 'Rebecca I.',
+    name: 'Becca I.',
     description: 'BizOps in motion',
     imageUrl: '/assets/images/dovercon/2021/speakers/becca.jpg',
     links: [
