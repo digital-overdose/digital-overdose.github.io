@@ -230,7 +230,7 @@ export const schedule: ScheduleElement[] = [
   },
   {
     speakers: [
-      _('Mariah Rucker')
+      _('Thomas Chen')
     ],
     portion: 4,
     start: new Date(1618753500000),
@@ -267,15 +267,5 @@ export const schedule: ScheduleElement[] = [
     end: new Date(1618761600000),
     startCEST: '17:30',
     endCEST: '18:00'
-  },
-  {
-    speakers: [
-      _('Thomas Chen')
-    ],
-    portion: 4,
-    start: new Date(1618761900000),
-    end: new Date(1618763700000),
-    startCEST: '18:05',
-    endCEST: '18:35'
   },
 ];
