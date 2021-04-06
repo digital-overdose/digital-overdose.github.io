@@ -409,7 +409,7 @@ export const speakers: TeamMember[] = [
   },
   {
     name: 'Chloe Seaton',
-    description: 'What it takes to be an Ethical Hacker - Being Non Technical in Cyber',
+    description: 'What it takes to be an Ethical Hacker - A journey into a technical role',
     imageUrl: '/assets/images/dovercon/2021/speakers/chloe.jpg',
     links: [
       {
