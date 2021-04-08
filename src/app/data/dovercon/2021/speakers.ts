@@ -201,7 +201,7 @@ export const speakers: TeamMember[] = [
   },
   {
     name: 'Argandov',
-    description: 'MAKING SENSE OF DATA WITH LINUX',
+    description: 'Making sense of data with Linux',
     imageUrl: '/assets/images/dovercon/2021/speakers/argandov.jpg',
     links: [
       {
