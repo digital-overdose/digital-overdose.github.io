@@ -39,7 +39,7 @@ export const schedule: ScheduleElement[] = [
   },
   {
     speakers: [
-      _('REALM')
+      _('Thomas Chen')
     ],
     portion: 1,
     start: new Date(1618654200000),
@@ -137,16 +137,6 @@ export const schedule: ScheduleElement[] = [
     end: new Date(1618677600000),
     startCEST: '18:10',
     endCEST: '18:40'
-  },
-  {
-    speakers: [
-      _('Heather Lane')
-    ],
-    portion: 2,
-    start: new Date(1618677900000),
-    end: new Date(1618679700000),
-    startCEST: '18:45',
-    endCEST: '19:15'
   },
   {
     speakers: [
@@ -267,15 +257,5 @@ export const schedule: ScheduleElement[] = [
     end: new Date(1618761600000),
     startCEST: '17:30',
     endCEST: '18:00'
-  },
-  {
-    speakers: [
-      _('Thomas Chen')
-    ],
-    portion: 4,
-    start: new Date(1618761900000),
-    end: new Date(1618763700000),
-    startCEST: '18:05',
-    endCEST: '18:35'
   },
 ];
