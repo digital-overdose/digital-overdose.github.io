@@ -1,12 +1,16 @@
+
 import { Component, OnInit } from '@angular/core';
 import { BASE_URL } from 'src/app/data/url';
+import { Mentor } from 'src/app/interfaces/mentor';
+import { sponsors } from 'src/app/data/dovercon/2021/sponsors';
 import { MetaService } from 'src/app/services/meta.service';
 
 @Component({
   templateUrl: './sponsoring.component.html',
-  styleUrls: ['../../conference.component.scss']
+  styleUrls: ['../../conference.component.scss', '../../../../../assets/css/team-card.scss']
 })
 export class Dovercon2021SponsoringComponent implements OnInit {
+  sponsors: Mentor[] = sponsors;
   /**
    * Creates an instance of ConferenceComponent.
    *
