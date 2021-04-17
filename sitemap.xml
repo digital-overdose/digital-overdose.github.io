@@ -103,6 +103,11 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://digitaloverdose.tech/music-playlist</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://digitaloverdose.tech/tags</loc>
     <priority>0.80</priority>
     <changefreq>daily</changefreq>
