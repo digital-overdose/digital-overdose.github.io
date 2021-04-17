@@ -35,6 +35,7 @@ import { PostsCardCompactHeaderComponent } from './content/common-ui/posts-card/
 import { ServiceLocator } from './utils/service.locator';
 import { BrowserTransferStateModule } from '@angular/platform-browser';
 import { AppDoverconModule } from './submodules/app-dovercon.module';
+import { YoutubePlaylistRedirectComponent } from './content/redirects/youtube-playlist-redirect/youtube-playlist-redirect.component';
 
 
 @NgModule({
@@ -65,7 +66,8 @@ import { AppDoverconModule } from './submodules/app-dovercon.module';
 
     PostsCardNormalComponent,
     PostsCardCompactComponent,
-    PostsCardCompactHeaderComponent
+    PostsCardCompactHeaderComponent,
+    YoutubePlaylistRedirectComponent
   ],
   imports: [
     SharedModule,
