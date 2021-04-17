@@ -99,7 +99,7 @@ export const speakers: TeamMember[] = [
     links: [
       {
         label: 'Twitter',
-        icon: 'fab fa-fw fa-twitter-square-square',
+        icon: 'fab fa-fw fa-twitter-square',
         url: 'https://twitter.com/10fMan7'
       }
     ]
@@ -111,7 +111,7 @@ export const speakers: TeamMember[] = [
     links: [
       {
         label: 'Twitter',
-        icon: 'fab fa-fw fa-twitter-square-square',
+        icon: 'fab fa-fw fa-twitter-square',
         url: 'https://twitter.com/BosintBlanc'
       }
     ]
@@ -125,6 +125,11 @@ export const speakers: TeamMember[] = [
         label: 'Medium',
         icon: 'fab fa-medium',
         url: 'https://medium.com/@suryanshmansha'
+      },
+      {
+        label: 'Twitter',
+        icon: 'fab fa-fw fa-twitter-square',
+        url: 'https://twitter.com/0xd4rk'
       }
     ]
   },

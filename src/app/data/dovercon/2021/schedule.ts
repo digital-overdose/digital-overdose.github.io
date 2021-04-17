@@ -39,23 +39,13 @@ export const schedule: ScheduleElement[] = [
   },
   {
     speakers: [
-      _('Thomas Chen')
+      _('Patrick Rus')
     ],
     portion: 1,
     start: new Date(1618654200000),
     end: new Date(1618656000000),
     startCEST: '12:10',
     endCEST: '12:40'
-  },
-  {
-    speakers: [
-      _('Patrick Rus')
-    ],
-    portion: 1,
-    start: new Date(1618656300000),
-    end: new Date(1618658100000),
-    startCEST: '12:45',
-    endCEST: '13:15'
   },
   {
     speakers: [

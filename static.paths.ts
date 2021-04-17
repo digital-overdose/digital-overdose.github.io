@@ -22,6 +22,7 @@ export const ROUTES = [
 
   '/discord',
   '/youtube',
+  '/music-playlist',
 
   '/tags',
   '/tags/Community',
