@@ -63,7 +63,7 @@ export const speakers: TeamMember[] = [
   {
     name: 'Luke Pajor',
     alias: ['Luckay'],
-    description: 'What to do About Motivated Intruders',
+    description: 'What to do About Motivated Intruders (Prerecorded)',
     imageUrl: '/assets/images/dovercon/2021/speakers/luckay.png',
     links: [
       {

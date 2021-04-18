@@ -183,16 +183,6 @@ export const schedule: ScheduleElement[] = [
       _('Tehreem Fahim')
     ],
     portion: 4,
-    start: new Date(1618747200000),
-    end: new Date(1618749000000),
-    startCEST: '14:00',
-    endCEST: '14:30'
-  },
-  {
-    speakers: [
-      _('Rahul')
-    ],
-    portion: 4,
     start: new Date(1618749300000),
     end: new Date(1618751100000),
     startCEST: '14:35',
@@ -210,7 +200,11 @@ export const schedule: ScheduleElement[] = [
   },
   {
     speakers: [
-      _('Mariah Rucker')
+      {
+        name: 'Elizabeth Momola, Vivian Band, Juan Spinel',
+        description: '"Moving forward in cybersecurity", a panel by ex-rookies, hosted by James Bore.',
+        imageUrl: '/assets/images/dovercon/2021/speakers/pandecrew.png',
+      }
     ],
     portion: 4,
     start: new Date(1618753500000),
