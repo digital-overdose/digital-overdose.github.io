@@ -22,6 +22,7 @@
 /youtube
 /discord
 /music-playlist
+/afterparty
 
 /tags
 /tags/Community
