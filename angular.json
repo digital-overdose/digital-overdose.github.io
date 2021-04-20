@@ -26,6 +26,7 @@
             "assets": [
               "src/favicon.png",
               "src/assets",
+              "src/ctfs",
               "src/rss.xml",
               "src/sitemap.xml",
               "src/robots.txt",
