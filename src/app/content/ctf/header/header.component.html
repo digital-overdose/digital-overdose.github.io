@@ -1,0 +1,11 @@
+
+<div class="header mb-4">
+  <div class="w-100 row m-0 py-0 px-3 d-flex flex-row justify-content-between">
+    <nav>
+      <ul class="d-flex flex-row flex-wrap justify-content-center">
+        <li [ngClass]="{'active': (this.path.localeCompare('/ctf/') == 0)}"><a href="/ctf">About</a></li>
+        <li [ngClass]="{'active': (this.path.localeCompare('/ctf/2021') == 0)}"><a href="/ctf/2021">D_OVERCON 2021 CTF</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>

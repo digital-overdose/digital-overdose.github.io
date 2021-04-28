@@ -16,7 +16,7 @@ export class MainBodyComponent implements OnInit {
   container: boolean = true;
 
   /** List of paths that should not be x-constrained. */
-  unconstrainedPath: string[] = ['/', '/home', '/community']
+  unconstrainedPath: string[] = ['/', '/home', '/community'];
 
   /**
    * Creates an instance of MainBodyComponent.
@@ -31,6 +31,7 @@ export class MainBodyComponent implements OnInit {
     this.router.events.subscribe(
       (event) => {
         if (event instanceof RouterEvent) {
+          console.log(event.url);
           this.container = !this.unconstrainedPath.includes(event.url);
         }
       }

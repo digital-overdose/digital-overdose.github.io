@@ -5,7 +5,7 @@ import { MetaService } from 'src/app/services/meta.service';
 @Component({
   selector: 'app-code-of-conduct',
   templateUrl: './code-of-conduct.component.html',
-  styleUrls: ['../../conference.component.scss']
+  styleUrls: ['../../conference.components.scss']
 })
 export class Dovercon2021CodeOfConductComponent implements OnInit {
   /**

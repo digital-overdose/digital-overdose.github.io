@@ -5,7 +5,7 @@ import { Tag } from 'src/app/interfaces/tag';
 import { Post } from 'src/app/interfaces/post';
 import { Author } from 'src/app/interfaces/author';
 
-import { subroutes2021 } from 'src/app/routing/app.sub-routes-2021';
+import { subroutes2021 } from 'src/app/routing/app-sub-routes-2021';
 
 // import { subroutes2022 } from './app.sub-routes-2022';
 

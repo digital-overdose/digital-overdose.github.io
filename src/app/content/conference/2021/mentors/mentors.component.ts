@@ -10,7 +10,7 @@ import { Mentor } from 'src/app/interfaces/mentor';
 
 @Component({
   templateUrl: './mentors.component.html',
-  styleUrls: ['../../conference.component.scss', '../../../../../assets/css/team-card.scss']
+  styleUrls: ['../../conference.components.scss', '../../../../../assets/css/team-card.scss']
 })
 export class Dovercon2021MentorsComponent implements OnInit {
   /** The list of team members, retrieved from data storage. */

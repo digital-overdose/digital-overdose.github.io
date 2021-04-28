@@ -7,7 +7,7 @@ import { MetaService } from 'src/app/services/meta.service';
 
 @Component({
   templateUrl: './sponsoring.component.html',
-  styleUrls: ['../../conference.component.scss', '../../../../../assets/css/team-card.scss']
+  styleUrls: ['../../conference.components.scss', '../../../../../assets/css/team-card.scss']
 })
 export class Dovercon2021SponsoringComponent implements OnInit {
   sponsors: Mentor[] = sponsors;

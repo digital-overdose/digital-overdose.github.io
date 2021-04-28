@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, PreloadAllModules, Route } from '@angular/router';
 
 import { HomeComponent } from './content/home/home.component';
-import { ConferenceComponent } from './content/conference/conference.component';
 import { TeamComponent } from './content/team/team.component';
 import { PrivacyPolicyComponent } from './content/privacy-policy/privacy-policy.component';
 import { CopyrightComponent } from './content/copyright/copyright.component';
@@ -39,12 +38,20 @@ const routes: Route[] = [
     component: TeamComponent
   },
   {
-    path: 'conference',
-    component: ConferenceComponent
+    path: 'dovercon/2021',
+    loadChildren: () => import('./routing/app-dovercon-routing.module').then(m => m.DoverconRoutingModule)
+  },
+  {
+    path: 'ctf',
+    loadChildren: () => import('./routing/app-ctf-routing.module').then(m => m.CTFRoutingModule)
   },
   {
     path: 'dovercon',
-    loadChildren: () => import('./routing/app-dovercon-routing.module').then(m => m.DoverconRoutingModule)
+    redirectTo: '/dovercon/2021/about'
+  },
+  {
+    path: 'ctf',
+    redirectTo: '/ctf/2021'
   },
   {
     path: 'posts',

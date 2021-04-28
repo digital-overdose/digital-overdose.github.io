@@ -9,9 +9,11 @@ import { Dovercon2021SponsoringComponent } from '../content/conference/2021/spon
 import { Dovercon2021CfpComponent } from '../content/conference/2021/cfp/cfp.component';
 import { Dovercon2021CodeOfConductComponent } from '../content/conference/2021/code-of-conduct/code-of-conduct.component';
 import { AfterpartyComponent } from '../content/redirects/afterparty/afterparty.component';
+import { Dovercon2021AboutComponent } from '../content/conference/2021/conference.component';
 
 @NgModule({
   declarations: [
+    Dovercon2021AboutComponent,
     Dovercon2021TeamComponent,
     Dovercon2021MentorsComponent,
     Dovercon2021SpeakersComponent,
