@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CodeOfConductComponent } from './code-of-conduct.component';
+import { Dovercon2021CodeOfConductComponent } from './code-of-conduct.component';
 
-describe('CodeOfConductComponent', () => {
-  let component: CodeOfConductComponent;
-  let fixture: ComponentFixture<CodeOfConductComponent>;
+describe('Dovercon2021CodeOfConductComponent', () => {
+  let component: Dovercon2021CodeOfConductComponent;
+  let fixture: ComponentFixture<Dovercon2021CodeOfConductComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CodeOfConductComponent ]
+      declarations: [ Dovercon2021CodeOfConductComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CodeOfConductComponent);
+    fixture = TestBed.createComponent(Dovercon2021CodeOfConductComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

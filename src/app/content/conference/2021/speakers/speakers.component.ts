@@ -10,7 +10,7 @@ import { TeamMember } from 'src/app/interfaces/team-member';
 
 @Component({
   templateUrl: './speakers.component.html',
-  styleUrls: ['./_5p01l3r5.scss', '../../conference.component.scss', '../../../../../assets/css/team-card.scss'],
+  styleUrls: ['./_5p01l3r5.scss', '../../conference.components.scss', '../../../../../assets/css/team-card.scss'],
 })
 export class Dovercon2021SpeakersComponent implements OnInit {
   /** The list of team members, retrieved from data storage. */

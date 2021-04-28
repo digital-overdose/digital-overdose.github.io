@@ -4,7 +4,7 @@ import { MetaService } from 'src/app/services/meta.service';
 
 @Component({
   templateUrl: './cfp.component.html',
-  styleUrls: ['../../conference.component.scss']
+  styleUrls: ['../../conference.components.scss']
 })
 export class Dovercon2021CfpComponent implements OnInit {
   /**

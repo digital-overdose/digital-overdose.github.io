@@ -1,0 +1,46 @@
+
+
+h1, h2 {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 300 !important;
+  text-align: center;
+  margin-bottom: .275rem;
+}
+
+.fancy-container {
+  transform: rotate(-5deg);
+
+  .fancy {
+    font-family: Anton;
+    width: fit-content;
+    border-radius: 15px;
+  }
+
+  .bg-1 {
+    background-color: #7405a8;
+    color: #96ff0d;
+  }
+
+  .bg-2 {
+    background-color: #005eb6;
+    color: #FFF327;
+  }
+}
+
+nav {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: xx-large;
+  }
+
+  h2 {
+    font-size: x-large;
+  }
+
+}

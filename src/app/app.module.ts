@@ -1,6 +1,6 @@
 
 import { SharedModule } from './shared.module';
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA, Injector, APP_INITIALIZER } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA, Injector } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './content/common-ui/header/header.component';
@@ -8,7 +8,6 @@ import { FooterComponent } from './content/common-ui/footer/footer.component';
 import { MainBodyComponent } from './content/common-ui/main-body/main-body.component';
 
 import { HomeComponent } from './content/home/home.component';
-import { ConferenceComponent } from './content/conference/conference.component';
 import { TeamComponent } from './content/team/team.component';
 import { CopyrightComponent } from './content/copyright/copyright.component';
 import { PrivacyPolicyComponent } from './content/privacy-policy/privacy-policy.component';
@@ -36,6 +35,7 @@ import { ServiceLocator } from './utils/service.locator';
 import { BrowserTransferStateModule } from '@angular/platform-browser';
 import { AppDoverconModule } from './submodules/app-dovercon.module';
 import { YoutubePlaylistRedirectComponent } from './content/redirects/youtube-playlist-redirect/youtube-playlist-redirect.component';
+import { AppCTFModule } from './submodules/app-ctf.module';
 
 
 @NgModule({
@@ -47,7 +47,6 @@ import { YoutubePlaylistRedirectComponent } from './content/redirects/youtube-pl
 
     HomeComponent,
     TeamComponent,
-    ConferenceComponent,
     ContributionGuidelinesComponent,
     CopyrightComponent,
     PrivacyPolicyComponent,
@@ -73,6 +72,7 @@ import { YoutubePlaylistRedirectComponent } from './content/redirects/youtube-pl
     SharedModule,
     App2021Module,
     AppDoverconModule,
+    AppCTFModule,
     BrowserTransferStateModule,
     // App2022Module
   ],
