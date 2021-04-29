@@ -31,11 +31,15 @@ const routes: Route[] = [
   },
   {
     path: 'community',
-    redirectTo: 'home'
+    redirectTo: '/home'
   },
   {
     path: 'team',
     component: TeamComponent
+  },
+  {
+    path: 'conference',
+    redirectTo: '/dovercon'
   },
   {
     path: 'dovercon/2021',
