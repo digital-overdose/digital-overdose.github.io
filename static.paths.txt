@@ -4,6 +4,7 @@
 /community
 /team
 /dovercon
+/conference
 /posts
 /copyright
 /privacy
