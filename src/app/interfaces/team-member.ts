@@ -15,4 +15,6 @@ export interface TeamMember {
   imageUrl: string;
 
   links?: SocialsLink[];
+
+  talkURL?: string;
 }

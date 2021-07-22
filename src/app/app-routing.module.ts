@@ -16,7 +16,7 @@ import { PostsNoFilterComponent } from './content/common-ui/post-inventory-displ
 import { PostsFilteredByTagComponent } from './content/common-ui/post-inventory-display/posts-filtered-by-tag/posts-filtered-by-tag.component';
 import { PostsFilteredByAuthorComponent } from './content/common-ui/post-inventory-display/posts-filtered-by-author/posts-filtered-by-author.component';
 import { YoutubePlaylistRedirectComponent } from './content/redirects/youtube-playlist-redirect/youtube-playlist-redirect.component';
-import { AfterpartyComponent } from './content/redirects/afterparty/afterparty.component';
+import { Dovercon2021AfterpartyComponent } from './content/redirects/afterparty/afterparty.component';
 
 /** {@link Route[] | Routes} used to navigate the application. */
 const routes: Route[] = [
@@ -43,7 +43,7 @@ const routes: Route[] = [
   },
   {
     path: 'dovercon/2021',
-    loadChildren: () => import('./routing/app-dovercon-routing.module').then(m => m.DoverconRoutingModule)
+    loadChildren: () => import('./routing/app-dovercon2021-routing.module').then(m => m.Dovercon2021RoutingModule)
   },
   {
     path: 'ctf',
@@ -122,7 +122,7 @@ const routes: Route[] = [
   },
   {
     path: 'afterparty',
-    component: AfterpartyComponent
+    component: Dovercon2021AfterpartyComponent
   },
   {
     path: '404-not-found',
