@@ -33,7 +33,7 @@ import { PostsCardCompactHeaderComponent } from './content/common-ui/posts-card/
 
 import { ServiceLocator } from './utils/service.locator';
 import { BrowserTransferStateModule } from '@angular/platform-browser';
-import { AppDoverconModule } from './submodules/app-dovercon.module';
+import { AppDovercon2021Module } from './submodules/app-dovercon-2021.module';
 import { YoutubePlaylistRedirectComponent } from './content/redirects/youtube-playlist-redirect/youtube-playlist-redirect.component';
 import { AppCTFModule } from './submodules/app-ctf.module';
 
@@ -71,7 +71,7 @@ import { AppCTFModule } from './submodules/app-ctf.module';
   imports: [
     SharedModule,
     App2021Module,
-    AppDoverconModule,
+    AppDovercon2021Module,
     AppCTFModule,
     BrowserTransferStateModule,
     // App2022Module

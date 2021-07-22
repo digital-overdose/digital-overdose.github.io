@@ -1,8 +1,8 @@
 // tslint:disable:object-literal-key-quotes
-import { TeamMember } from 'src/app/interfaces/team-member';
+import { Speaker } from 'src/app/interfaces/speaker';
 
 /** The list of team members. */
-export const speakers: TeamMember[] = [
+export const speakers: Speaker[] = [
   {
     name: 'Sam Ferguson',
     alias: ['AffineSecurity'],
@@ -29,7 +29,8 @@ export const speakers: TeamMember[] = [
         icon: 'fab fa-fw fa-gitlab',
         url: 'https://gitlab.com/AffineSecurity',
       }
-    ]
+    ],
+    talkURL: 'https://www.youtube.com/watch?v=hcIB41SBPb8'
   },
   {
     name: 'Abigail Simmons',
@@ -41,7 +42,8 @@ export const speakers: TeamMember[] = [
         icon: 'fab fa-fw fa-twitter-square',
         url: 'https://twitter.com/met_sec'
       }
-    ]
+    ],
+    talkURL: 'https://www.youtube.com/watch?v=0wm_mhdLMnw'
   },
   {
     name: 'Drew Jones',
@@ -58,12 +60,13 @@ export const speakers: TeamMember[] = [
         icon: 'fab fa-fw fa-twitter-square',
         url: 'https://twitter.com/qhum7sec'
       }
-    ]
+    ],
+    talkURL: 'https://www.youtube.com/watch?v=Wd33BLBv7X0'
   },
   {
     name: 'Luke Pajor',
     alias: ['Luckay'],
-    description: 'What to do About Motivated Intruders (Prerecorded)',
+    description: 'What to do About Motivated Intruders',
     imageUrl: '/assets/images/dovercon/2021/speakers/luckay.png',
     links: [
       {
@@ -71,7 +74,8 @@ export const speakers: TeamMember[] = [
         icon: 'fab fa-fw fa-linkedin',
         url: 'https://www.linkedin.com/in/luke-pajor-02486511b/',
       },
-    ]
+    ],
+    talkURL: 'https://www.youtube.com/watch?v=i35QA7A2K84'
   },
   {
     name: 'Alex Hoffman',
@@ -84,12 +88,14 @@ export const speakers: TeamMember[] = [
         icon: 'fab fa-fw fa-twitter-square',
         url: 'https://twitter.com/RedWedgeX'
       }
-    ]
+    ],
+    talkURL: 'https://www.youtube.com/watch?v=QSMA-c7c168'
   },
   {
     name: '3t3rn4l P4r4d0x',
     description: 'Capabilities: That one vulnerability vector you don\'t realize exists',
     imageUrl: '/assets/images/dovercon/2021/speakers/3t3rn4l_p4r4d0x.png',
+    talkURL: 'https://www.youtube.com/watch?v=VaMKSsTtCZo'
   },
   {
     name: 'Juan Giarrizzo',
@@ -102,7 +108,8 @@ export const speakers: TeamMember[] = [
         icon: 'fab fa-fw fa-twitter-square',
         url: 'https://twitter.com/10fMan7'
       }
-    ]
+    ],
+    talkURL: 'https://www.youtube.com/watch?v=BUIizj01sLE'
   },
   {
     name: 'BosintBlanc',
@@ -114,7 +121,8 @@ export const speakers: TeamMember[] = [
         icon: 'fab fa-fw fa-twitter-square',
         url: 'https://twitter.com/BosintBlanc'
       }
-    ]
+    ],
+    talkURL: 'https://www.youtube.com/watch?v=tQX_E6f6Va4'
   },
   {
     name: 'Suryansh M.',
@@ -131,7 +139,8 @@ export const speakers: TeamMember[] = [
         icon: 'fab fa-fw fa-twitter-square',
         url: 'https://twitter.com/0xd4rk'
       }
-    ]
+    ],
+    talkURL: 'https://www.youtube.com/watch?v=HkIkHTS-uV0'
   },
   {
     name: 'Nasreddine Bencherchali',
@@ -154,7 +163,8 @@ export const speakers: TeamMember[] = [
         icon: 'fab fa-fw fa-gitlab',
         url: 'https://github.com/nasbench',
       }
-    ]
+    ],
+    talkURL: 'https://www.youtube.com/watch?v=YVMgHsvJ1_Y'
   },
   {
     name: 'Sarthak Taneja',
@@ -167,12 +177,14 @@ export const speakers: TeamMember[] = [
         icon: 'fab fa-fw fa-twitter-square',
         url: 'https://twitter.com/s4t4n1212'
       },
-    ]
+    ],
+    talkURL: 'https://www.youtube.com/watch?v=ZZ9M8TevT8Y'
   },
   {
     name: 'Patrick Rus',
     description: 'Cyber-Investigation/OSINT of Phishing Emails',
     imageUrl: '/assets/images/dovercon/2021/speakers/patrick_rus.jpg',
+    talkURL: 'https://www.youtube.com/watch?v=V3sbQmxTkm0'
   },
   {
     name: 'Rahul',
@@ -198,11 +210,12 @@ export const speakers: TeamMember[] = [
     imageUrl: '/assets/images/dovercon/2021/speakers/anastasiia_m.jpg',
     links: [
       {
-        label: 'LinkedIn',
-        icon: 'fab fa-fw fa-linkedin',
-        url: 'https://www.linkedin.com/in/anastasiia-mytrofanovska-303024170/',
+        label: 'Twitter',
+        icon: 'fab fa-fw fa-twitter',
+        url: 'https://www.twitter.com/stasya7z/',
       }
-    ]
+    ],
+    talkURL: 'https://www.youtube.com/watch?v=YC1RScc9tKY'
   },
   {
     name: 'Argandov',
@@ -219,7 +232,8 @@ export const speakers: TeamMember[] = [
         icon: 'fab fa-fw fa-linkedin',
         url: 'https://www.linkedin.com/in/argandov/',
       }
-    ]
+    ],
+    talkURL: 'https://www.youtube.com/watch?v=5mjjsv91qbU'
   },
   {
     name: 'Deeksha Shekar',
@@ -236,7 +250,8 @@ export const speakers: TeamMember[] = [
         icon: 'fab fa-fw fa-linkedin',
         url: 'https://www.linkedin.com/in/deeksha-shekar-5422aa15a/',
       }
-    ]
+    ],
+    talkURL: 'https://www.youtube.com/watch?v=4RZIhme1xcg'
   },
   {
     name: 'White Hat Inspector',
@@ -253,7 +268,8 @@ export const speakers: TeamMember[] = [
         icon: 'fab fa-fw fa-github-square',
         url: 'https://github.com/WhiteHatInspector',
       }
-    ]
+    ],
+    talkURL: 'https://www.youtube.com/watch?v=x0TYNXlvdww'
   },
   {
     name: 'Becca I.',
@@ -270,7 +286,8 @@ export const speakers: TeamMember[] = [
         icon: 'fab fa-fw fa-linkedin',
         url: 'https://www.linkedin.com/in/rebecca-isherwood-b23007136/',
       }
-    ]
+    ],
+    talkURL: 'https://www.youtube.com/watch?v=kRg9-qoAX6w'
   },
   {
     name: 'Tehreem Fahim',
@@ -288,7 +305,8 @@ export const speakers: TeamMember[] = [
         icon: 'fab fa-fw fa-linkedin',
         url: 'https://www.linkedin.com/in/tehreem09/',
       }
-    ]
+    ],
+    talkURL: 'https://www.youtube.com/watch?v=Ojc87ewBsMI'
   },
   {
     name: 'Luna Belfort',
@@ -306,7 +324,8 @@ export const speakers: TeamMember[] = [
         icon: 'fab fa-fw fa-instagram-square',
         url: 'https://www.instagram.com/luna.brizzi/',
       },
-    ]
+    ],
+    talkURL: 'https://www.youtube.com/watch?v=Rzqo0d-oDtc'
   },
   {
     name: 'Alvaro Leno',
@@ -324,7 +343,8 @@ export const speakers: TeamMember[] = [
         icon: 'fab fa-fw fa-instagram-square',
         url: 'https://www.instagram.com/alvaroleno/',
       },
-    ]
+    ],
+    talkURL: 'https://www.youtube.com/watch?v=Rzqo0d-oDtc'
   },
   {
     name: 'Thomas Chen',
@@ -386,7 +406,8 @@ export const speakers: TeamMember[] = [
         icon: 'fab fa-fw fa-twitter-square',
         url: 'https://twitter.com/m157y573p'
       },
-    ]
+    ],
+    talkURL: 'https://www.youtube.com/watch?v=LbxVzD1vQz4'
   },
   {
     name: 'REALM',
@@ -410,7 +431,8 @@ export const speakers: TeamMember[] = [
         icon: 'fab fa-fw fa-twitter-square',
         url: 'https://twitter.com/michael_mcg3'
       },
-    ]
+    ],
+    talkURL: 'https://www.youtube.com/watch?v=jlr5qNZc0Qk'
   },
   {
     name: 'Chloe Seaton',
@@ -427,6 +449,7 @@ export const speakers: TeamMember[] = [
         icon: 'fab fa-fw fa-linkedin',
         url: 'https://www.linkedin.com/in/chloe-seaton-13732014a/',
       }
-    ]
+    ],
+    talkURL: 'https://www.youtube.com/watch?v=Rzqo0d-oDtc'
   }
 ];

@@ -6,7 +6,7 @@ export const teamMemberList: TeamMember[] = [
   {
     name: 'EDEN STROET',
     alias: ['MRS SKELLI'],
-    description: 'Community Admin, Conference Bringer',
+    description: 'Community Manager, Conference Bringer',
     imageUrl: '/assets/images/team/mrs-skelli.jpg',
     links: [
       {
@@ -34,7 +34,7 @@ export const teamMemberList: TeamMember[] = [
   {
     name: 'NICOLAS BOECKH',
     alias: ['ATOMICNICOS'],
-    description: 'Community Admin, Conference Bringer',
+    description: 'Community Manager, Conference Bringer',
     imageUrl: '/assets/images/team/atomicnicos.jpg',
     links: [
       {
@@ -65,9 +65,22 @@ export const teamMemberList: TeamMember[] = [
     ]
   },
   {
+    name: 'ABBY SIMMONS',
+    alias: ['AGITATO'],
+    description: 'Community Manager',
+    imageUrl: '/assets/images/team/pandecrew.png',
+    links: [
+      {
+        label: 'Twitter',
+        icon: 'fab fa-fw fa-twitter-square',
+        url: 'https://twitter.com/met_sec',
+      },
+    ]
+  },
+  {
     name: 'K. STROET',
     alias: ['NIGHT', 'BUGBOT'],
-    description: 'Community Admin',
+    description: 'Community Manager',
     imageUrl: '/assets/images/team/night.jpg',
     links: [
       {
@@ -80,7 +93,7 @@ export const teamMemberList: TeamMember[] = [
   {
     name: 'D4VID',
     alias: ['LUCIFER'],
-    description: 'Community Admin',
+    description: 'Community Manager',
     imageUrl: '/assets/images/team/lucifer.jpg',
     links: [
       {
@@ -96,21 +109,27 @@ export const teamMemberList: TeamMember[] = [
     imageUrl: '/assets/images/team/0x0elliot.jpg'
   },*/
   {
-    name: 'CyberVega',
-    description: 'Conference Media Designer',
-    imageUrl: '/assets/images/team/cybervega.jpg',
+    name: 'Sable',
+    alias: ['msddos'],
+    description: 'Community Volunteer',
+    imageUrl: '/assets/images/team/sable.png',
     links: [
       {
         label: 'Twitter',
         icon: 'fab fa-fw fa-twitter-square',
-        url: 'https://twitter.com/TheCyberVega',
+        url: 'https://twitter.com/theokaydev',
       },
+      {
+        label: 'GitHub',
+        icon: 'fab fa-fw fa-github',
+        url: 'https://github.com/Sable-20',
+      }
     ]
   },
   {
     name: 'Jafar',
     alias: ['JK'],
-    description: 'Community Moderator',
+    description: 'Community Volunteer',
     imageUrl: '/assets/images/team/jk.png',
     links: [
       {
@@ -131,21 +150,89 @@ export const teamMemberList: TeamMember[] = [
     ]
   },
   {
-    name: 'Sable',
-    alias: ['msddos'],
-    description: 'Community Moderator',
-    imageUrl: '/assets/images/team/sable.png',
+    name: '3T3RN4L P4R4D0X',
+    description: 'Community Volunteer',
+    imageUrl: '/assets/images/team/3t3rn4l_p4r4d0x.png',
+  },
+  {
+    name: 'SARTHAK TANEJA',
+    alias: ['S4T4N'],
+    description: 'Community Volunteer',
+    imageUrl: '/assets/images/team/sarthak.jpg',
     links: [
       {
         label: 'Twitter',
         icon: 'fab fa-fw fa-twitter-square',
-        url: 'https://twitter.com/theokaydev',
-      },
-      {
-        label: 'GitHub',
-        icon: 'fab fa-fw fa-github',
-        url: 'https://github.com/Sable-20',
+        url: 'https://twitter.com/s4t4n1212',
       }
     ]
-  }
+  },
+  {
+    name: 'MICHAEL FAWLEY',
+    description: 'Community Volunteer',
+    imageUrl: '/assets/images/team/placeholder.jpg',
+    links: [
+      {
+        label: 'Twitter',
+        icon: 'fab fa-fw fa-twitter-square',
+        url: 'https://twitter.com/GhostFawley',
+      }
+    ]
+  },
+  {
+    name: 'NERDY',
+    description: 'Community Volunteer, CTF Team Captain',
+    imageUrl: '/assets/images/team/placeholder.jpg',
+  },
+  {
+    name: 'LUNA',
+    alias: ['SOVIETLUNOX'],
+    description: 'Community Helper',
+    imageUrl: '/assets/images/team/sovietlunox.jpg',
+    links: [
+      {
+        label: 'Twitter',
+        icon: 'fab fa-fw fa-twitter-square',
+        url: 'https://twitter.com/sovietlunox',
+      }
+    ]
+  },
+  {
+    name: 'SAM FERGUSON',
+    alias: ['AFFINESECURITY'],
+    description: 'Community Helper, Docker God',
+    imageUrl: '/assets/images/team/affinesecurity.png',
+    links: [
+      {
+        label: 'Twitter',
+        icon: 'fab fa-fw fa-twitter-square',
+        url: 'https://twitter.com/affinesecurity',
+      }
+    ]
+  },
+  {
+    name: 'GHOST PROTOCOL',
+    description: 'Community Helper',
+    imageUrl: '/assets/images/team/placeholder.jpg',
+    links: [
+      {
+        label: 'Twitter',
+        icon: 'fab fa-fw fa-twitter-square',
+        url: 'https://twitter.com/ghostprot_DO',
+      }
+    ]
+  },
+  {
+    name: 'ANASTASIIA MYTROFANOVSKA',
+    alias: ['STACY'],
+    description: 'Community Helper',
+    imageUrl: '/assets/images/team/anastasiia_m.jpg',
+    links: [
+      {
+        label: 'Twitter',
+        icon: 'fab fa-fw fa-twitter-square',
+        url: 'https://twitter.com/stasya7z',
+      }
+    ]
+  },
 ];

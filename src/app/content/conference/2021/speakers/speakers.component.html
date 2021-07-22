@@ -24,7 +24,12 @@
         <div class="card-caption">
           <h3>{{ t.name }}<span *ngIf="t.alias !== undefined">,</span></h3>
           <h3 *ngIf="t.alias !== undefined">{{ t.alias.join(', ') }}</h3>
-          <h5>{{ t.description }}</h5>
+          <ng-container *ngIf="t.talkURL === undefined; else elseTemplate">
+            <h5>{{ t.description }}</h5>
+          </ng-container>
+          <ng-template #elseTemplate>
+            <h5><a class="card-link card-link-2" href="{{t.talkURL}}">{{ t.description }}</a></h5>
+          </ng-template>
           <div *ngIf="t.links != undefined" class="card-links w-75 d-flex flex-row flew-wrap justify-content-center mx-3">
             <a class="card-link" *ngFor="let l of t.links" href="{{ l.url }}" title="{{ l.label }}"><i class="{{ l.icon }}"></i></a>
           </div>

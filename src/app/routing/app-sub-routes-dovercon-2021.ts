@@ -8,7 +8,7 @@ import { Dovercon2021SponsoringComponent } from '../content/conference/2021/spon
 import { Dovercon2021TeamComponent } from '../content/conference/2021/team/team.component';
 import { Dovercon2021AboutComponent } from '../content/conference/2021/conference.component';
 
-export const subroutesDovercon: Routes = [
+export const subroutesDovercon2021: Routes = [
   {
     path: 'about',
     component: Dovercon2021AboutComponent
