@@ -204,9 +204,24 @@ export const teamMemberList: TeamMember[] = [
     imageUrl: '/assets/images/team/affinesecurity.png',
     links: [
       {
+        label: 'Website',
+        icon: 'fas fa-globe',
+        url: 'https://affinesecurity.gitlab.io/',
+      },
+      {
         label: 'Twitter',
         icon: 'fab fa-fw fa-twitter-square',
-        url: 'https://twitter.com/affinesecurity',
+        url: 'https://twitter.com/AffineSecurity'
+      },
+      {
+        label: 'LinkedIn',
+        icon: 'fab fa-fw fa-linkedin',
+        url: 'https://www.linkedin.com/in/affinesecurity/',
+      },
+      {
+        label: 'GitLab',
+        icon: 'fab fa-fw fa-gitlab',
+        url: 'https://gitlab.com/AffineSecurity',
       }
     ]
   },
