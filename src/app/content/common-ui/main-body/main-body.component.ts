@@ -31,7 +31,6 @@ export class MainBodyComponent implements OnInit {
     this.router.events.subscribe(
       (event) => {
         if (event instanceof RouterEvent) {
-          console.log(event.url);
           this.container = !this.unconstrainedPath.includes(event.url);
         }
       }

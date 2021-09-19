@@ -34,7 +34,7 @@ export const teamMemberList: TeamMember[] = [
   {
     name: 'NICOLAS BOECKH',
     alias: ['ATOMICNICOS'],
-    description: 'Community Manager, Conference Bringer',
+    description: 'Community Manager, Conference Bringer, CTF Wrangler',
     imageUrl: '/assets/images/team/atomicnicos.jpg',
     links: [
       {
@@ -102,8 +102,8 @@ export const teamMemberList: TeamMember[] = [
         url: 'https://twitter.com/d4vid_lucifer',
       },
     ]
-  },/*
-  {
+  },
+  /*  {
     name: '0x0elliot',
     description: 'Community Moderator, Conference CTF Bringer',
     imageUrl: '/assets/images/team/0x0elliot.jpg'
@@ -170,7 +170,7 @@ export const teamMemberList: TeamMember[] = [
   {
     name: 'MICHAEL FAWLEY',
     description: 'Community Volunteer',
-    imageUrl: '/assets/images/team/placeholder.jpg',
+    imageUrl: '/assets/images/team/fawley.jpg',
     links: [
       {
         label: 'Twitter',
@@ -187,7 +187,7 @@ export const teamMemberList: TeamMember[] = [
   {
     name: 'LUNA',
     alias: ['SOVIETLUNOX'],
-    description: 'Community Helper',
+    description: 'Community Volunteer',
     imageUrl: '/assets/images/team/sovietlunox.jpg',
     links: [
       {
@@ -200,7 +200,7 @@ export const teamMemberList: TeamMember[] = [
   {
     name: 'SAM FERGUSON',
     alias: ['AFFINESECURITY'],
-    description: 'Community Helper, Docker God',
+    description: 'Community Volunteer, Docker God',
     imageUrl: '/assets/images/team/affinesecurity.png',
     links: [
       {
@@ -227,8 +227,8 @@ export const teamMemberList: TeamMember[] = [
   },
   {
     name: 'GHOST PROTOCOL',
-    description: 'Community Helper',
-    imageUrl: '/assets/images/team/placeholder.jpg',
+    description: 'Community Volunteer',
+    imageUrl: '/assets/images/team/ghostprotocol.jpg',
     links: [
       {
         label: 'Twitter',
@@ -240,7 +240,7 @@ export const teamMemberList: TeamMember[] = [
   {
     name: 'ANASTASIIA MYTROFANOVSKA',
     alias: ['STACY'],
-    description: 'Community Helper',
+    description: 'Community Volunteer',
     imageUrl: '/assets/images/team/anastasiia_m.jpg',
     links: [
       {

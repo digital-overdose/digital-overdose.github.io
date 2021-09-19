@@ -1,0 +1,23 @@
+<app-ctf-logo></app-ctf-logo>
+<br/>
+<app-ctf-header [path]="'/ctf/2021-autumn'"></app-ctf-header>
+
+<h2>Digital Overdose 2021</h2>
+<h2>Autumn CTF</h2>
+
+<ng-container *ngIf="this.nowEpoch < this.releaseEpoch">
+  <br/>
+  <app-timer [time]="this.time"></app-timer>
+</ng-container>
+
+<br/>
+<hr/>
+<p>Our second CTF is brewing, coming to you live from October 9th (00:00:00 GMT+2) until October 10th (23:59:59 GMT+2).</p>
+
+<p>This event will be a 2-day jeopardy style CTF.</p>
+
+<p>Sponsors and Infrastructure TBD.</p>
+
+<hr/>
+
+<hr/>

@@ -3,6 +3,20 @@
 <a id="title"></a>
 
 <app-conference-header [path]="'/dovercon/sponsoring-edition-2021'"></app-conference-header>
+
+<h2>For future reference:</h2>
+
+<p>Earlier we mentioned that we would release a transparency report on how the sponsorship funds were used.</p>
+
+<p>You can see that transparency report <a target="_blank" href="https://docs.google.com/spreadsheets/d/1qKyODSq011zCmi69ZWzJwsdVon5htfPxifI9HqOJg30" rel="noopener"><em class="fas fa-external-link-square-alt"></em> here</a>.</p>
+
+<hr/>
+
+<div class="my-4 p-1 important">
+  <p class="m-0"><strong>As of April 18th, 2021 at 23:59 GMT+1, the conference has ended.</strong></p>
+  <p class="m-0">The following is preserved for archival purposes and perpetuity.</p>
+</div>
+
 <h2>Our sponsors</h2>
 <div class="d-flex flex-column">
   <div class="d-flex flex-wrap justify-content-center">
@@ -12,7 +26,7 @@
         <h3 *ngIf="t.alias !== undefined">{{ t.alias.join(', ') }}</h3>
         <h5>{{ t.description }}</h5>
         <div *ngIf="t.links != undefined" class="card-links w-75 d-flex flex-row flew-wrap justify-content-center mx-3">
-          <a class="card-link" *ngFor="let l of t.links" href="{{ l.url }}" title="{{ l.label }}"><i class="{{ l.icon }}"></i></a>
+          <a class="card-link" *ngFor="let l of t.links" href="{{ l.url }}" title="{{ l.label }}"><em class="{{ l.icon }}"></em></a>
         </div>
       </div>
     </div>
@@ -29,6 +43,7 @@
 
 <p>In order to provide our speakers with well-deserved conference "swag" and its shipping, organizations can choose to sponsor the event at a flat rate of 250€, sent through EventBrite, an event ticket management platform.</p>
 
+<hr/>
 <h3>Perks</h3>
 
 <ul>
@@ -39,6 +54,7 @@
   <li>Your organization's logo will appear on any conference "swag" (t-shirts or hoodies) that we will order for the speakers, mentors and other conference contributors.</li>
 </ul>
 
+<hr/>
 <h3>Traceability</h3>
 
 <p>We realize that giving away 250€ might not be easy to justify, but we are endeavoring to ensure full transparency as to the usage of the sponsorship, which will be entirely dedicated to covering the costs of swag (t-shirts, hoodies, stickers and eventually challenge coins) and of its shipping to the speakers, mentors and other conference contributors. To this end, we will publish a public document detailing all of the expenses for the sake of transparency.</p>
