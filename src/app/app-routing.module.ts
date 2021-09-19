@@ -38,12 +38,16 @@ const routes: Route[] = [
     component: TeamComponent
   },
   {
-    path: 'conference',
-    redirectTo: '/dovercon'
-  },
-  {
     path: 'dovercon/2021',
     loadChildren: () => import('./routing/app-dovercon2021-routing.module').then(m => m.Dovercon2021RoutingModule)
+  },
+  {
+    path: 'conference',
+    redirectTo: '/dovercon/2021/about'
+  },
+  {
+    path: 'dovercon',
+    redirectTo: '/dovercon/2021/about'
   },
   {
     path: 'ctf',
@@ -55,7 +59,7 @@ const routes: Route[] = [
   },
   {
     path: 'ctf',
-    redirectTo: '/ctf/2021'
+    redirectTo: '/ctf'
   },
   {
     path: 'posts',

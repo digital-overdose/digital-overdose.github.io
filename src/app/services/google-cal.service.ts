@@ -26,7 +26,16 @@ export class GoogleCalService {
       'https://www.googleapis.com/calendar/v3/calendars/7v3cc0k33248jdcmrmvp75e6jo%40group.calendar.google.com/events?key=AIzaSyA4kVl5yEgSztWS27qG9oIgdw646KnoeNc').toPromise().then(
       (response: GcalApiResponse) => response.items
     );
-
+    events.push({
+      summary: 'Digital Overdose Autumn 2021 CTF',
+      start: {
+        dateTime: '2021-10-09T00:00:00+02:00'
+      },
+      end: {
+        dateTime: '2021-10-10T23:59:59+02:00'
+      },
+      htmlLink: 'https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MDJtbGxsa29sbGk0bjJ1MjI1MWVyMzNuYWogN3YzY2MwazMzMjQ4amRjbXJtdnA3NWU2am9AZw&amp;tmsrc=7v3cc0k33248jdcmrmvp75e6jo%40group.calendar.google.com'
+    });
     return events;
   }
 }
