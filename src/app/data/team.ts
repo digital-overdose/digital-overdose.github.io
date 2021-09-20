@@ -182,7 +182,14 @@ export const teamMemberList: TeamMember[] = [
   {
     name: 'NERDY',
     description: 'Community Volunteer, CTF Team Captain',
-    imageUrl: '/assets/images/team/placeholder.jpg',
+    imageUrl: '/assets/images/team/nerdy.jpg',
+    links: [
+      {
+        label: 'Twitter',
+        icon: 'fab fa-fw fa-twitter-square',
+        url: 'https://twitter.com/Geeg007',
+      }
+    ]
   },
   {
     name: 'LUNA',
