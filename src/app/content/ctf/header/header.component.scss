@@ -60,7 +60,6 @@ nav {
   transition: all 0.5s ease-in-out;
   padding: 8px 0;
   background: #1e1146;
-  margin-bottom: .75rem !important;
 
   li.active {
     background: lighten($color: #1e1146, $amount: 5);

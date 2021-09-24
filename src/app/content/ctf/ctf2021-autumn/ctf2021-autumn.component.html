@@ -2,22 +2,69 @@
 <br/>
 <app-ctf-header [path]="'/ctf/2021-autumn'"></app-ctf-header>
 
-<h2>Digital Overdose 2021</h2>
-<h2>Autumn CTF</h2>
+<div class='bg d-flex flex-column'>
+  <div class='p-4 bg-grey mx-auto'>
+    <h2>Digital Overdose 2021</h2>
+    <h2>Autumn CTF</h2>
 
-<ng-container *ngIf="this.nowEpoch < this.releaseEpoch">
+    <ng-container *ngIf="this.nowEpoch < this.releaseEpoch">
+      <br/>
+      <app-timer [time]="this.time"></app-timer>
+    </ng-container>
+
+    <div class='d-flex flex-column mt-3'>
+      <a class='mx-auto' target='_blank'>
+        <div class='btn btn-primary disabled' aria-disabled='true'>
+          Register here
+        </div>
+      </a>
+      <span class='mx-auto'>(opening soon)</span>
+    </div>
+  </div>
   <br/>
-  <app-timer [time]="this.time"></app-timer>
-</ng-container>
-
-<br/>
+</div>
 <hr/>
 <p>Our second CTF is brewing, coming to you live from October 9th (00:00:00 GMT+2) until October 10th (23:59:59 GMT+2).</p>
 
-<p>This event will be a 2-day jeopardy style CTF.</p>
+<p><strong>Type:</strong> Jeopardy</p>
+<p><strong>Domains:</strong> Pwn, Cloud, Crypto, OSINT, ...</p>
+<p><strong>Price:</strong> Free</p>
+<p><strong>Team size:</strong> Max. 4</p>
+<p class='m-0'><strong>Prizes:</strong></p>
+<ul>
+  <li class='prize'><strong>1st Place:</strong> HackTheBox 1 year VIP</li>
+  <li class='prize'><strong>2nd Place:</strong> HackTheBox 6 months VIP</li>
+  <li class='prize'><strong>3rd Place:</strong> HackTheBox 1 month VIP & Pentester Lab Pro 3 months</li>
+</ul>
 
-<p>Sponsors and Infrastructure TBD.</p>
-
+<br/>
 <hr/>
+<br/>
 
-<hr/>
+<h3>Infrastructure</h3>
+
+<div class='media-container'>
+  <img src='/assets/images/ctf/2021-autumn/ractf_logo.svg' alt='The RACTF logo'/>
+</div>
+
+<p>The <a href='https://ractf.co.uk' target='_blank'><em class='fas fa-external-link-square-alt'></em> Really Awesome CTF</a> team is providing us with a copy of the Infrastructure used for the Really Awesome CTF. A big heartfelt thank you to them.</p>
+
+<p>Link TBD</p>
+
+<hr/><br/>
+
+<h3>Sponsors</h3>
+<div class="d-flex flex-column">
+  <div class="d-flex flex-wrap justify-content-center">
+    <div class="team-card m-2" appTeamCard *ngFor="let t of sponsors" [ngStyle]="{'background-image': 'url(' + t.imageUrl + ')'}">
+      <div class="card-caption">
+        <h3>{{ t.name }}<span *ngIf="t.alias !== undefined">,</span></h3>
+        <h3 *ngIf="t.alias !== undefined">{{ t.alias.join(', ') }}</h3>
+        <h5>{{ t.description }}</h5>
+        <div *ngIf="t.links != undefined" class="card-links w-75 d-flex flex-row flew-wrap justify-content-center mx-3">
+          <a class="card-link" *ngFor="let l of t.links" href="{{ l.url }}" title="{{ l.label }}"><em class="{{ l.icon }}"></em></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
