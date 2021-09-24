@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <urlset
-    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-          http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
+  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://digitaloverdose.tech/</loc>
     <priority>0.80</priority>
@@ -74,18 +69,17 @@
   </url>
 
   <url>
-    <loc>https://digitaloverdose.tech/ctf</loc>
-    <priority>0.80</priority>
-    <changefreq>daily</changefreq>
+    <loc>https://digitaloverdose.tech/ctf/about</loc>
+    <priority>0.40</priority>
+    <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://digitaloverdose.tech/ctf/2021-01</loc>
-    <priority>0.80</priority>
-    <changefreq>daily</changefreq>
+    <loc>https://digitaloverdose.tech/ctf/2021-spring</loc>
+    <priority>0.40</priority>
+    <changefreq>weekly</changefreq>
   </url>
-
   <url>
-    <loc>https://digitaloverdose.tech/posts</loc>
+    <loc>https://digitaloverdose.tech/ctf/2021-autumn</loc>
     <priority>0.80</priority>
     <changefreq>daily</changefreq>
   </url>
@@ -131,11 +125,6 @@
   </url>
   <url>
     <loc>https://digitaloverdose.tech/tags</loc>
-    <priority>0.80</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://digitaloverdose.tech/post/2021/2021_02_06+Hello-World</loc>
     <priority>0.80</priority>
     <changefreq>daily</changefreq>
   </url>
