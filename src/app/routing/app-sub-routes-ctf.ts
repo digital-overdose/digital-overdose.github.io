@@ -6,6 +6,10 @@ import { Ctf2021AutumnComponent as Ctf2021AutumnComponent } from '../content/ctf
 export const subroutesCTF: Routes = [
   {
     path: '',
+    redirectTo: '2021-autumn'
+  },
+  {
+    path: 'about',
     component: AboutCTFComponent
   },
   {

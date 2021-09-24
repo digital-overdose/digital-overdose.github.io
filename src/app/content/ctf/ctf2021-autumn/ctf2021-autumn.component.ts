@@ -1,20 +1,20 @@
 import { BASE_URL } from './../../../data/url';
 import { MetaService } from './../../../services/meta.service';
 import { Component, OnInit } from '@angular/core';
-import { sponsors } from 'src/app/data/ctf/2021-01/sponsors';
 import { Mentor } from 'src/app/interfaces/mentor';
 import { BrowserRecognitionService } from 'src/app/services/browser-recognition.service';
 import { interval } from 'rxjs';
 import { startWith } from 'rxjs/operators';
 import { diff } from 'src/app/utils/time-until';
+import { sponsorsCTFAutumn2021 } from 'src/app/data/ctf/2021-autumn/sponsors';
 
 @Component({
   selector: 'app-ctf2021',
   templateUrl: './ctf2021-autumn.component.html',
-  styleUrls: ['../ctf.components.scss', '../../../../assets/css/team-card.scss']
+  styleUrls: ['../ctf.components.scss', '../../../../assets/css/team-card.scss',  './ctf2021-autumn.component.scss']
 })
 export class Ctf2021AutumnComponent implements OnInit {
-  sponsors: Mentor[] = sponsors;
+  sponsors: Mentor[] = sponsorsCTFAutumn2021;
   time: number[] = [0, 0, 0, 0];
 
   nowEpoch: number = new Date().getTime();

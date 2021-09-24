@@ -1,7 +1,7 @@
 import { BASE_URL } from './../../../data/url';
 import { MetaService } from './../../../services/meta.service';
 import { Component, OnInit } from '@angular/core';
-import { sponsors } from 'src/app/data/ctf/2021-01/sponsors';
+import { sponsorsCTFSpring2021 } from 'src/app/data/ctf/2021-spring/sponsors';
 import { Mentor } from 'src/app/interfaces/mentor';
 
 @Component({
@@ -10,7 +10,7 @@ import { Mentor } from 'src/app/interfaces/mentor';
   styleUrls: ['../ctf.components.scss', '../../../../assets/css/team-card.scss']
 })
 export class Ctf2021Component implements OnInit {
-  sponsors: Mentor[] = sponsors;
+  sponsors: Mentor[] = sponsorsCTFSpring2021;
 
   constructor(private meta: MetaService) { }
 

@@ -12,6 +12,7 @@ export const ROUTES = [
   '/contribution-guidelines',
 
   '/ctf',
+  '/ctf/about',
   '/ctf/2021-spring',
   '/ctf/2021-autumn',
 
