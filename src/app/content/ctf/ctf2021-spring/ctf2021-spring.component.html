@@ -1,0 +1,44 @@
+<app-ctf-logo></app-ctf-logo>
+<br/>
+<app-ctf-header [path]="'/ctf/2021-spring'"></app-ctf-header>
+
+<h2 class="mt-4">Digital Overdose Conference 2021</h2>
+<h2>CTF</h2>
+
+<br/>
+
+<p>Our first CTF is coming on the heels of D_OVERCON 2021, from April 18th until April 25th.</p>
+
+<h2>Event updates</h2>
+
+<p>Our CTF is over after 7 days of hacking.</p>
+
+<p>We had 52 actual participants in 30 teams participating to win the prizes! With some additional challenges dropping throughout the week (including a few very spicy ones by <a href="https://twitter.com/AtomicNicos" target="_blank"><em class="fab fa-twitter-square"></em> Nicolas (AtomicNicos)</a>).</p>
+
+<h2>Winning teams</h2>
+
+<ol>
+  <li>Advanced Persistent Team: <a href="https://twitter.com/lennaert89" target="_blank"><em class="fab fa-twitter-square"></em> Lennaert</a> and <a href="https://twitter.com/ScottMcGready" target="_blank"><em class="fab fa-twitter-square"></em> Scott</a></li>
+  <li>Team sable: <a href="https://twitter.com/theokaydev" target="_blank"><em class="fab fa-twitter-square"></em> msddos</a> and <a href="https://twitter.com/lmrt03" target="_blank"><em class="fab fa-twitter-square"></em> Martín</a></li>
+  <li>Team <a href="https://twitter.com/hack_south" target="_blank"><em class="fab fa-twitter-square"></em> Hack South</a>: <a href="https://twitter.com/chrismeistre" target="_blank"><em class="fab fa-twitter-square"></em> Chris</a>, <a href="https://twitter.com/Geeg007" target="_blank"><em class="fab fa-twitter-square"></em> Nerdy</a> and coolst3r</li>
+</ol>
+
+<hr/>
+
+<h2>Our sponsors</h2>
+<div class="d-flex flex-column">
+  <div class="d-flex flex-wrap justify-content-center">
+    <div class="team-card m-2" appTeamCard *ngFor="let t of sponsors" [ngStyle]="{'background-image': 'url(' + t.imageUrl + ')'}">
+      <div class="card-caption">
+        <h3>{{ t.name }}<span *ngIf="t.alias !== undefined">,</span></h3>
+        <h3 *ngIf="t.alias !== undefined">{{ t.alias.join(', ') }}</h3>
+        <h5>{{ t.description }}</h5>
+        <div *ngIf="t.links != undefined" class="card-links w-75 d-flex flex-row flew-wrap justify-content-center mx-3">
+          <a class="card-link" *ngFor="let l of t.links" href="{{ l.url }}" title="{{ l.label }}"><em class="{{ l.icon }}"></em></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr/>
