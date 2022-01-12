@@ -5,11 +5,21 @@
 }
 
 
-h1, h2 {
+h1, h2, h3, h5 {
   font-family: 'Dosis', sans-serif;
   font-weight: 300 !important;
   text-align: center;
   margin-bottom: .275rem;
+}
+
+h3 {
+  font-weight: 800 !important;
+}
+
+h5 {
+  font-size: x-large;
+  font-weight: 500 !important;
+  margin-bottom: 1.5rem;
 }
 
 .fancy-container {

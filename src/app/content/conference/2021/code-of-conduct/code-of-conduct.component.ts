@@ -7,7 +7,7 @@ import { MetaService } from 'src/app/services/meta.service';
   templateUrl: './code-of-conduct.component.html',
   styleUrls: ['../../conference.components.scss']
 })
-export class Dovercon2021CodeOfConductComponent implements OnInit {
+export class Conference2021CodeOfConductComponent implements OnInit {
   /**
    * Creates an instance of ConferenceComponent.
    *
@@ -17,7 +17,7 @@ export class Dovercon2021CodeOfConductComponent implements OnInit {
 
   /** Set the page metadata information. */
   ngOnInit(): void {
-    this.meta.setTags(`${BASE_URL}/dovercon/code-of-conduct`, 'DOVERCON2021: Code of conduct',
+    this.meta.setTags(`${BASE_URL}/conference/2021/code-of-conduct`, 'DOVERCON2021: Code of conduct',
                       `${BASE_URL}/assets/images/cover.jfif`, 750, 750,
                       ['conference', 'for', 'rookies', 'code', 'of', 'conduct'],
                       'Digital Overdose Con! Making sure everyone has a good time.');

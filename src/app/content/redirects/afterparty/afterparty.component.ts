@@ -8,7 +8,7 @@ import { MetaService } from 'src/app/services/meta.service';
   templateUrl: './afterparty.component.html',
   styleUrls: []
 })
-export class Dovercon2021AfterpartyComponent implements OnInit {
+export class Conference2021AfterpartyComponent implements OnInit {
 
 /**
    * Creates an instance of DiscordComponent.

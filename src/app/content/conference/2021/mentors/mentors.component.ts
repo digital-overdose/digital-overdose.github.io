@@ -1,18 +1,18 @@
 import { Component, OnInit } from '@angular/core';
-import { mentors } from 'src/app/data/dovercon/2021/mentors';
-import { BASE_URL } from 'src/app/data/url';
-import { MetaService } from 'src/app/services/meta.service';
 import { interval } from 'rxjs';
 import { startWith } from 'rxjs/operators';
-import { diff } from 'src/app/utils/time-until';
-import { BrowserRecognitionService } from 'src/app/services/browser-recognition.service';
+import { mentors } from 'src/app/data/conference/2021/mentors';
+import { BASE_URL } from 'src/app/data/url';
 import { Mentor } from 'src/app/interfaces/mentor';
+import { BrowserRecognitionService } from 'src/app/services/browser-recognition.service';
+import { MetaService } from 'src/app/services/meta.service';
+import { diff } from 'src/app/utils/time-until';
 
 @Component({
   templateUrl: './mentors.component.html',
   styleUrls: ['../../conference.components.scss', '../../../../../assets/css/team-card.scss']
 })
-export class Dovercon2021MentorsComponent implements OnInit {
+export class Conference2021MentorsComponent implements OnInit {
   /** The list of team members, retrieved from data storage. */
   mentors: Mentor[] = mentors;
 
@@ -36,7 +36,7 @@ export class Dovercon2021MentorsComponent implements OnInit {
       });
     }
 
-    this.meta.setTags(`${BASE_URL}/dovercon/schedule-edition-2021`, 'DOVERCON2021: Mentors',
+    this.meta.setTags(`${BASE_URL}/conference/2021/mentors`, 'DOVERCON2021: Mentors',
                       `${BASE_URL}/assets/images/cover.jfif`, 750, 750,
                       ['conference', 'for', 'rookies', 'mentors', 'dovercon'],
                       'Digital Overdose Con! The team that will look after our speakers before the con...');

@@ -16,7 +16,7 @@ import { diff } from 'src/app/utils/time-until';
   templateUrl: './conference.component.html',
   styleUrls: ['../conference.components.scss']
 })
-export class Dovercon2021AboutComponent implements OnInit {
+export class Conference2021AboutComponent implements OnInit {
   time: number[] = [0, 0, 0, 0];
 
   nowEpoch: number = new Date().getTime();

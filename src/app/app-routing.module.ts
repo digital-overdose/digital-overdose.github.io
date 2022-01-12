@@ -16,7 +16,7 @@ import { PostsNoFilterComponent } from './content/common-ui/post-inventory-displ
 import { PostsFilteredByTagComponent } from './content/common-ui/post-inventory-display/posts-filtered-by-tag/posts-filtered-by-tag.component';
 import { PostsFilteredByAuthorComponent } from './content/common-ui/post-inventory-display/posts-filtered-by-author/posts-filtered-by-author.component';
 import { YoutubePlaylistRedirectComponent } from './content/redirects/youtube-playlist-redirect/youtube-playlist-redirect.component';
-import { Dovercon2021AfterpartyComponent } from './content/redirects/afterparty/afterparty.component';
+import { Conference2021AfterpartyComponent } from './content/redirects/afterparty/afterparty.component';
 
 /** {@link Route[] | Routes} used to navigate the application. */
 const routes: Route[] = [
@@ -38,24 +38,26 @@ const routes: Route[] = [
     component: TeamComponent
   },
   {
-    path: 'dovercon/2021',
-    loadChildren: () => import('./routing/app-dovercon2021-routing.module').then(m => m.Dovercon2021RoutingModule)
-  },
-  {
     path: 'conference',
-    redirectTo: '/dovercon/2021/about'
+    pathMatch: 'full',
+    redirectTo: '/conference/2022/about'
   },
   {
     path: 'dovercon',
-    redirectTo: '/dovercon/2021/about'
+    pathMatch: 'full',
+    redirectTo: '/conference/2022/about'
+  },
+  {
+    path: 'conference/2021',
+    loadChildren: () => import('./routing/app-conference2021-routing.module').then(m => m.Conference2021RoutingModule)
+  },
+  {
+    path: 'conference/2022',
+    loadChildren: () => import('./routing/app-conference2022-routing.module').then(m => m.Conference2022RoutingModule)
   },
   {
     path: 'ctf',
     loadChildren: () => import('./routing/app-ctf-routing.module').then(m => m.CTFRoutingModule)
-  },
-  {
-    path: 'dovercon',
-    redirectTo: '/dovercon/2021/about'
   },
   {
     path: 'ctf',
@@ -121,12 +123,12 @@ const routes: Route[] = [
     component: DiscordComponent
   },
   {
-    path: 'music-playlist',
+    path: 'playlist',
     component: YoutubePlaylistRedirectComponent
   },
   {
     path: 'afterparty',
-    component: Dovercon2021AfterpartyComponent
+    component: Conference2021AfterpartyComponent
   },
   {
     path: '404-not-found',

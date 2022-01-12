@@ -2,11 +2,11 @@ export const ROUTES = [
   '/',
 
   '/home',
-  '/community',
+  // '/community',
   '/team',
   '/dovercon',
   '/conference',
-  '/posts',
+  // '/posts',
   '/copyright',
   '/privacy',
   '/contribution-guidelines',
@@ -16,14 +16,23 @@ export const ROUTES = [
   '/ctf/2021-spring',
   '/ctf/2021-autumn',
 
-  '/dovercon/2021/about',
-  '/dovercon/2021/cfp',
-  '/dovercon/2021/mentors',
-  '/dovercon/2021/speakers',
-  '/dovercon/2021/schedule',
-  '/dovercon/2021/sponsoring',
-  '/dovercon/2021/team',
-  '/dovercon/2021/code-of-conduct',
+  '/conference/2021/about',
+  '/conference/2021/cfp',
+  '/conference/2021/mentors',
+  '/conference/2021/speakers',
+  '/conference/2021/schedule',
+  '/conference/2021/sponsoring',
+  '/conference/2021/team',
+  '/conference/2021/code-of-conduct',
+
+  '/conference/2022/about',
+  '/conference/2022/cfp',
+  '/conference/2022/mentors',
+  '/conference/2022/speakers',
+  '/conference/2022/schedule',
+  '/conference/2022/sponsoring',
+  '/conference/2022/team',
+  '/conference/2022/code-of-conduct',
 
   '/404-not-found',
 
@@ -32,6 +41,7 @@ export const ROUTES = [
   '/music-playlist',
   '/afterparty',
 
+  /*
   '/tags',
   '/tags/Community',
   '/tags/Convention',
@@ -56,5 +66,5 @@ export const ROUTES = [
   '/authors/Mrs.%20Skelli',
   '/authors/Night',
 
-  '/post/2021/2021_02_06+Hello-World',
+  '/post/2021/2021_02_06+Hello-World',*/
 ];

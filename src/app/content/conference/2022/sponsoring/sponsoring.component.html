@@ -1,0 +1,71 @@
+<app-conference-header-logo></app-conference-header-logo>
+
+<a id="title"></a>
+
+<app-conference-header [path]="'/conference/2022/sponsoring'"></app-conference-header>
+
+<br/>
+
+<!--
+<h2>Our sponsors</h2>
+<div class="d-flex flex-column">
+  <div class="d-flex flex-wrap justify-content-center">
+    <div class="team-card m-2" appTeamCard *ngFor="let t of sponsors" [ngStyle]="{'background-image': 'url(' + t.imageUrl + ')'}">
+      <div class="card-caption">
+        <h3>{{ t.name }}<span *ngIf="t.alias !== undefined">,</span></h3>
+        <h3 *ngIf="t.alias !== undefined">{{ t.alias.join(', ') }}</h3>
+        <h5>{{ t.description }}</h5>
+        <div *ngIf="t.links != undefined" class="card-links w-75 d-flex flex-row flew-wrap justify-content-center mx-3">
+          <a class="card-link" *ngFor="let l of t.links" href="{{ l.url }}" title="{{ l.label }}"><em class="{{ l.icon }}"></em></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+
+<h2>Sponsoring D.O. CON 2</h2>
+
+<h5 class="mt-4 mb-0">How?</h5>
+<h5 class="mt-0 mb-4">Fill this form, and follow the Eventbrite link in the introduction!</h5>
+<div class="d-flex justify-content-center">
+  <app-social-button class="m-1 mt-auto"
+    [text]="'Sponsorship Form'"
+    [url]="'https://forms.gle/rHoCFq8iTq4Aoj2s8'"
+    [faClass]="'fas fa-align-left'"
+    [color]="'#F05537'"
+    [border]='false'
+    ></app-social-button>
+</div>
+
+<h5 class="mt-4">What is it all about?</h5>
+
+<p>Our community is people-driven: there are a great number of people involved, from rookies to professionals, joining in from all around the globe.<br/>The same goes for our conference:</p>
+
+<p class="mb-0">Is the conference about the speakers? Definitely.</p>
+<p class="mb-0">Is it about the mentors? They get to see the fruits of their efforts.</p>
+<p class="mb-0">Is it about the hosts and volunteers? A bit, it is very gratifying to see it grow.</p>
+<p class="mb-0">Is it the attendees? They get to share the good moments with us.</p>
+
+
+
+<h5 class="mt-4">You can help us make it better!</h5>
+
+<p>In order to provide our speakers with well-deserved conference "swag" and its shipping, organizations can choose to sponsor the event at a flat rate of 250€, sent through EventBrite, an event ticket management platform.</p>
+
+<p>In return:</p>
+
+<ul>
+  <li>Your organization's logo will appear on the stream overlay, and on the resulting stream and recording of the conference, which will both be made publicly available on YouTube.</li>
+  <li>Your organization's logo will appear on this page, in a new section dedicated to sponsors (which will appear above this section).</li>
+  <li>Your organization's logo will appear on any conference "swag" (t-shirts or hoodies) that we will order for the speakers, mentors and other conference contributors.</li>
+</ul>
+
+<p>Last year we got our speakers and volunteers some stickers and T-shirts. This year, we would like to do more! (such as sending more to the mentors)</p>
+
+<h5 class="mt-4">Is this an elaborate rug-pull?</h5>
+
+<p class="mb-1">No. Please observe last year's transparency report on how the sponsorship funds were used: <a target="_blank" href="https://docs.google.com/spreadsheets/d/1qKyODSq011zCmi69ZWzJwsdVon5htfPxifI9HqOJg30" rel="noopener"><em class="fas fa-external-link-square-alt"></em> Transparency Report</a>.</p>
+
+<p class="coc-mention text-left mt-0">Based on recent events, we will however be changing the source for stickers.</p>
+

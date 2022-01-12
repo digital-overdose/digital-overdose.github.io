@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Dovercon2021MentorsComponent } from './mentors.component';
+import { Conference2021MentorsComponent } from './mentors.component';
 
 describe('MentorsComponent', () => {
-  let component: Dovercon2021MentorsComponent;
-  let fixture: ComponentFixture<Dovercon2021MentorsComponent>;
+  let component: Conference2021MentorsComponent;
+  let fixture: ComponentFixture<Conference2021MentorsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ Dovercon2021MentorsComponent ]
+      declarations: [ Conference2021MentorsComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(Dovercon2021MentorsComponent);
+    fixture = TestBed.createComponent(Conference2021MentorsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

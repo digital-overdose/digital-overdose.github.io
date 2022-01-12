@@ -1,27 +1,30 @@
 <div class="mt-4"></div>
-
 <div class="header mb-4">
   <div class="w-100 row m-0 py-0 px-3 d-flex flex-row justify-content-between">
+    <nav *ngIf="!this.isCurrentYear()" class="d-flex flex-row justify-content-center">
+      <ul class="d-flex flex-row flex-wrap justify-content-center">
+        <li [ngStyle]="{'color': 'white', 'pointer-events': 'none'}"><a>Archives {{ this.getYear() }}</a></li>
+        <li><a href="/conference/">BACK TO {{ year }}</a></li>
+      </ul>
+    </nav>
     <nav>
       <ul class="d-flex flex-row flex-wrap justify-content-center">
-        <li [ngClass]="{'active': (this.path.localeCompare('/dovercon/' + this.year + '/about') == 0)}"><a href="/dovercon/2021/about#title">About</a></li>
-        <li [ngClass]="{'active': (this.path.localeCompare('/dovercon/' + this.year + '/cfp') == 0)}"><a href="/dovercon/2021/cfp#title">Call for Proposals</a></li>
-        <li [ngClass]="{'active': (this.path.localeCompare('/dovercon/' + this.year + '/mentors') == 0)}"><a href="/dovercon/2021/mentors#title">Mentors</a></li>
-        <li [ngClass]="{'active': (this.path.localeCompare('/dovercon/' + this.year + '/speakers') == 0)}"><a href="/dovercon/2021/speakers#title">Speakers</a></li>
-        <li [ngClass]="{'active': (this.path.localeCompare('/dovercon/' + this.year + '/schedule') == 0)}"><a href="/dovercon/2021/schedule#title">Schedule</a></li>
-        <li [ngClass]="{'active': (this.path.localeCompare('/dovercon/' + this.year + '/sponsoring') == 0)}"><a href="/dovercon/2021/sponsoring#title">Sponsors</a></li>
-        <li [ngClass]="{'active': (this.path.localeCompare('/dovercon/' + this.year + '/code') == 0)}"><a href="/dovercon/2021/code-of-conduct#title">Code of Conduct</a></li>
-        <li [ngClass]="{'active': (this.path.localeCompare('/dovercon/' + this.year + '/team') == 0)}"><a href="/dovercon/2021/team#title">Conference Team</a></li>
+        <li [ngClass]="{'active': (this.path.localeCompare('/conference/{{ this.getYear() }}/about') == 0)}"><a href="/conference/{{ this.getYear() }}/about#title">About</a></li>
+        <li [ngClass]="{'active': (this.path.localeCompare('/conference/{{ this.getYear() }}/cfp') == 0)}"><a href="/conference/{{ this.getYear() }}/cfp#title">Call for Proposals</a></li>
+        <li *ngIf="this.getYear() != this.year" [ngClass]="{'active': (this.path.localeCompare('/conference/{{ this.getYear() }}/speakers') == 0)}"><a href="/conference/{{ this.getYear() }}/speakers#title">Speakers</a></li>
+        <li *ngIf="this.getYear() != this.year" [ngClass]="{'active': (this.path.localeCompare('/conference/{{ this.getYear() }}/schedule') == 0)}"><a href="/conference/{{ this.getYear() }}/schedule#title">Schedule</a></li>
+        <!--- *ngIf="this.getYear() != this.year" -->
+        <li *ngIf="this.getYear() != this.year" [ngClass]="{'active': (this.path.localeCompare('/conference/{{ this.getYear() }}/mentors') == 0)}"><a href="/conference/{{ this.getYear() }}/mentors#title">Mentors</a></li>
+        <li *ngIf="this.getYear() != this.year" [ngClass]="{'active': (this.path.localeCompare('/conference/{{ this.getYear() }}/sponsoring') == 0)}"><a href="/conference/{{ this.getYear() }}/sponsoring#title">Sponsors</a></li>
+        <li [ngClass]="{'active': (this.path.localeCompare('/conference/{{ this.getYear() }}/team') == 0)}"><a href="/conference/{{ this.getYear() }}/team#title">Conference Team</a></li>
+        <li [ngClass]="{'active': (this.path.localeCompare('/conference/{{ this.getYear() }}/code') == 0)}"><a href="/conference/{{ this.getYear() }}/code-of-conduct#title">Code of Conduct</a></li>
         <li [ngClass]="{'active': (this.showArchives)}" style="color:white;" (click)="this.toggleArchive()"><a>Archives</a></li>
       </ul>
     </nav>
   </div>
   <nav class="d-flex flex-row justify-content-center" *ngIf="this.showArchives">
     <ul *ngFor="let y of this.yearList" class="d-flex flex-row flex-wrap justify-content-center">
-      <li [ngClass]="{'active': (this.year == y)}"><a href="/dovercon/{{y}}/about#title">{{y}}</a></li>
-    </ul>
-    <ul *ngIf="this.yearList.length == 0" class="d-flex flex-row flex-wrap justify-content-center">
-      <li><a href="#">Nothing here yet, stick around until 2022 :D</a></li>
+      <li [ngClass]="{'active': (this.year == y)}" (click)="setYear(y)"><a href="/conference/{{y}}/about#title">{{y}}</a></li>
     </ul>
   </nav>
 </div>

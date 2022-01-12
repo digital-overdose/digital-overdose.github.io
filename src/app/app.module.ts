@@ -33,10 +33,10 @@ import { PostsCardCompactHeaderComponent } from './content/common-ui/posts-card/
 
 import { ServiceLocator } from './utils/service.locator';
 import { BrowserTransferStateModule } from '@angular/platform-browser';
-import { AppDovercon2021Module } from './submodules/app-dovercon-2021.module';
+import { AppConference2021Module } from './submodules/app-conference-2021.module';
 import { YoutubePlaylistRedirectComponent } from './content/redirects/youtube-playlist-redirect/youtube-playlist-redirect.component';
 import { AppCTFModule } from './submodules/app-ctf.module';
-
+import { AppConference2022Module } from './submodules/app-conference-2022.module';
 
 @NgModule({
   declarations: [
@@ -59,7 +59,6 @@ import { AppCTFModule } from './submodules/app-ctf.module';
     DiscordComponent,
     NotFound404Component,
 
-    SocialButtonComponent,
     CalendarComponent,
     CalendarCardComponent,
 
@@ -71,7 +70,8 @@ import { AppCTFModule } from './submodules/app-ctf.module';
   imports: [
     SharedModule,
     App2021Module,
-    AppDovercon2021Module,
+    AppConference2021Module,
+    AppConference2022Module,
     AppCTFModule,
     BrowserTransferStateModule,
     // App2022Module

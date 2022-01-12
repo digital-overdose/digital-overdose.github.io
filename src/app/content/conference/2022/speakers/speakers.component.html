@@ -1,0 +1,42 @@
+<app-conference-header-logo></app-conference-header-logo>
+
+<a id="title"></a>
+
+<app-conference-header [path]="'/conference/2022/speakers'"></app-conference-header>
+
+<br/>
+<h2>Speakers</h2>
+
+<p>The courageous rookies that have thrown their hat in the ring with a talk idea, overcoming multiple hurdles such as the infamous impostor syndrome, the creative woes of writer's block among other trials of the mind.</p>
+<br/>
+
+<ng-container *ngIf="(this.nowEpoch < this.releaseEpoch && !this.spoilers); then thenTemplate; else elseTemplate"></ng-container>
+<ng-template #thenTemplate>
+  <p class="text-center m-1 h4">Announcement in:</p>
+  <app-timer [time]="this.time"></app-timer>
+
+  <br/><br/><br/><br/><br/><br/><br/><br/>
+  <br/><br/><br/><br/><br/><br/><br/><div (click)="_5p01l3r5()" class="_5p01l3r">S</div><br/>
+</ng-template>
+<ng-template #elseTemplate>
+  <div class="d-flex flex-column">
+    <div class="d-flex flex-wrap justify-content-center">
+      <div class="team-card m-2" appTeamCard *ngFor="let t of speakers" [ngStyle]="{'background-image': 'url(' + t.imageUrl + ')'}">
+        <div class="card-caption">
+          <h3>{{ t.name }}<span *ngIf="t.alias !== undefined">,</span></h3>
+          <h3 *ngIf="t.alias !== undefined">{{ t.alias.join(', ') }}</h3>
+          <ng-container *ngIf="t.talkURL === undefined; else elseTemplate">
+            <h5>{{ t.description }}</h5>
+          </ng-container>
+          <ng-template #elseTemplate>
+            <h5><a class="card-link card-link-2" href="{{t.talkURL}}">{{ t.description }}</a></h5>
+          </ng-template>
+          <div *ngIf="t.links != undefined" class="card-links w-75 d-flex flex-row flew-wrap justify-content-center mx-3">
+            <a class="card-link" *ngFor="let l of t.links" href="{{ l.url }}" title="{{ l.label }}"><i class="{{ l.icon }}"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template>
+
