@@ -22,43 +22,73 @@
   </url>
 
   <url>
-    <loc>https://digitaloverdose.tech/dovercon/2021/about</loc>
+    <loc>https://digitaloverdose.tech/conference/2022/about</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://digitaloverdose.tech/conference/2022/cfp</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://digitaloverdose.tech/conference/2022/mentors</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://digitaloverdose.tech/conference/2022/speakers</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://digitaloverdose.tech/conference/2022/schedule</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://digitaloverdose.tech/conference/2022/sponsoring</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://digitaloverdose.tech/conference/2022/code-of-conduct</loc>
     <priority>0.80</priority>
     <changefreq>daily</changefreq>
   </url>
 
   <url>
-    <loc>https://digitaloverdose.tech/dovercon/2021/cfp</loc>
+    <loc>https://digitaloverdose.tech/conference/2021/about</loc>
     <priority>0.80</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://digitaloverdose.tech/dovercon/2021/mentors</loc>
+    <loc>https://digitaloverdose.tech/conference/2021/cfp</loc>
     <priority>0.80</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://digitaloverdose.tech/dovercon/2021/speakers</loc>
+    <loc>https://digitaloverdose.tech/conference/2021/mentors</loc>
     <priority>0.80</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://digitaloverdose.tech/dovercon/2021/schedule</loc>
+    <loc>https://digitaloverdose.tech/conference/2021/speakers</loc>
     <priority>0.80</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://digitaloverdose.tech/dovercon/2021/sponsoring</loc>
+    <loc>https://digitaloverdose.tech/conference/2021/schedule</loc>
     <priority>0.80</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://digitaloverdose.tech/team</loc>
+    <loc>https://digitaloverdose.tech/conference/2021/sponsoring</loc>
     <priority>0.80</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://digitaloverdose.tech/dovercon/2021/code-of-conduct</loc>
+    <loc>https://digitaloverdose.tech/conference/2021/code-of-conduct</loc>
     <priority>0.80</priority>
     <changefreq>daily</changefreq>
   </url>
