@@ -1,17 +1,18 @@
 import { Component, OnInit } from '@angular/core';
-import { BASE_URL } from 'src/app/data/url';
-import { MetaService } from 'src/app/services/meta.service';
 import { interval } from 'rxjs';
 import { startWith } from 'rxjs/operators';
-import { diff } from 'src/app/utils/time-until';
-import { BrowserRecognitionService } from 'src/app/services/browser-recognition.service';
+import { schedule } from 'src/app/data/conference/2021/schedule';
+import { BASE_URL } from 'src/app/data/url';
 import { ScheduleElement } from 'src/app/interfaces/schedule-element';
-import { schedule } from 'src/app/data/dovercon/2021/schedule';
+import { BrowserRecognitionService } from 'src/app/services/browser-recognition.service';
+import { MetaService } from 'src/app/services/meta.service';
+import { diff } from 'src/app/utils/time-until';
+
 @Component({
   templateUrl: './schedule.component.html',
   styleUrls: ['../../conference.components.scss', '../../../../../assets/css/team-card.scss', './schedule.component.scss']
 })
-export class Dovercon2021ScheduleComponent implements OnInit {
+export class Conference2021ScheduleComponent implements OnInit {
   schedule: ScheduleElement[] = schedule;
   day11: ScheduleElement[] = schedule.filter(x => x.portion === 1);
   day12: ScheduleElement[] = schedule.filter(x => x.portion === 2);
@@ -39,7 +40,7 @@ export class Dovercon2021ScheduleComponent implements OnInit {
       });
     }
 
-    this.meta.setTags(`${BASE_URL}/dovercon/schedule-edition-2021`, 'DOVERCON2021: Schedule',
+    this.meta.setTags(`${BASE_URL}/conference/2021/schedule`, 'DOVERCON2021: Schedule',
                       `${BASE_URL}/assets/images/cover.jfif`, 750, 750,
                       ['conference', 'for', 'rookies', 'schedule', 'dovercon'],
                       'Digital Overdose Con! Check out who and when will be on a YouTube stream near you, soon...');

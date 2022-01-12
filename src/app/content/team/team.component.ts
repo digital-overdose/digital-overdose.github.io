@@ -1,4 +1,4 @@
-import { teamMemberList } from 'src/app/data/team';
+import { teamMemberList, teamAlumniList } from 'src/app/data/team';
 import { BASE_URL } from 'src/app/data/url';
 import { MetaService } from 'src/app/services/meta.service';
 import { Component, OnInit } from '@angular/core';
@@ -17,6 +17,7 @@ import { TeamMember } from 'src/app/interfaces/team-member';
 export class TeamComponent implements OnInit {
   /** The list of team members, retrieved from data storage. */
   team: TeamMember[] = teamMemberList;
+  teamAlumns: TeamMember[] = teamAlumniList;
 
   /**
    * Creates an instance of TeamComponent.

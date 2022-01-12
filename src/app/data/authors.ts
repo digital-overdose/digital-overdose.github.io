@@ -14,14 +14,14 @@ export const authorList: AuthorMap = {
         url: 'https://discord.gg/yTPvyub'
       },
       {
-        label: 'Blog',
-        icon: 'fas fa-fw fa-blog',
-        url: 'https://digital-overdose.github.io',
+        label: 'Website',
+        icon: 'fas fa-fw fa-globe',
+        url: 'https://digitaloverdose.tech',
       },
       {
         label: 'Twitter',
         icon: 'fab fa-fw fa-twitter-square',
-        url: 'https://twitter.com/d_overcon',
+        url: 'https://twitter.com/Digit4lOverdose',
       },
       {
         label: 'LinkedIn',
@@ -41,7 +41,7 @@ export const authorList: AuthorMap = {
       {
         label: 'YouTube',
         icon: 'fab fa-fw fa-youtube',
-        url: 'https://www.youtube.com/channel/UCvTW4Eyt8xNbMEkFEEvFMIQ',
+        url: 'https://www.youtube.com/c/DigitalOverdose',
       }
     ]
   },

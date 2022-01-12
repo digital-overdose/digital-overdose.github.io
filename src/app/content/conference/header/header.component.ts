@@ -1,5 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { DoverconYearTrackingService } from 'src/app/services/dovercon-year-tracking.service';
+import { Component, Input } from '@angular/core';
+import { YEAR } from 'src/app/data/const';
+import { ConferenceYearTrackingService } from 'src/app/services/conference-year-tracking.service';
 
 @Component({
   selector: 'app-conference-header',
@@ -9,13 +10,23 @@ import { DoverconYearTrackingService } from 'src/app/services/dovercon-year-trac
 export class ConferenceNavHeaderComponent  {
   @Input() path: string;
   showArchives: boolean = false;
+  year = YEAR;
 
-  constructor(private yearDisplayService: DoverconYearTrackingService) { }
+  constructor(private yearDisplayService: ConferenceYearTrackingService) { }
 
-  year = this.yearDisplayService.year;
   yearList = this.yearDisplayService.yearList;
-  resetYear = this.yearDisplayService.resetYear;
-  toggleYear = this.yearDisplayService.toggleYear;
+
+  isCurrentYear(): boolean {
+    return this.getYear() === YEAR;
+  }
+
+  setYear(year: number): void {
+    this.year = year;
+  }
+
+  getYear(): number {
+    return parseInt(this.path.substring(12, 16), 10);
+  }
 
   toggleArchive() {
     this.showArchives = !this.showArchives;

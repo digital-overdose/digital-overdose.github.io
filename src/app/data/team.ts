@@ -91,24 +91,6 @@ export const teamMemberList: TeamMember[] = [
     ]
   },
   {
-    name: 'D4VID',
-    alias: ['LUCIFER'],
-    description: 'Community Manager',
-    imageUrl: '/assets/images/team/lucifer.jpg',
-    links: [
-      {
-        label: 'Twitter',
-        icon: 'fab fa-fw fa-twitter-square',
-        url: 'https://twitter.com/d4vid_lucifer',
-      },
-    ]
-  },
-  /*  {
-    name: '0x0elliot',
-    description: 'Community Moderator, Conference CTF Bringer',
-    imageUrl: '/assets/images/team/0x0elliot.jpg'
-  },*/
-  {
     name: 'Sable',
     alias: ['msddos'],
     description: 'Community Volunteer',
@@ -127,45 +109,9 @@ export const teamMemberList: TeamMember[] = [
     ]
   },
   {
-    name: 'Jafar',
-    alias: ['JK'],
-    description: 'Community Volunteer',
-    imageUrl: '/assets/images/team/jk.png',
-    links: [
-      {
-        label: 'Twitter',
-        icon: 'fab fa-fw fa-twitter-square',
-        url: 'https://twitter.com/_JKProfessor_',
-      },
-      {
-        label: 'Instagram',
-        icon: 'fab fa-fw fa-instagram-square',
-        url: 'https://www.instagram.com/jk.clickz/',
-      },
-      {
-        label: 'GitHub',
-        icon: 'fab fa-fw fa-github',
-        url: 'https://github.com/jkclickz',
-      }
-    ]
-  },
-  {
     name: '3T3RN4L P4R4D0X',
     description: 'Community Volunteer',
     imageUrl: '/assets/images/team/3t3rn4l_p4r4d0x.png',
-  },
-  {
-    name: 'SARTHAK TANEJA',
-    alias: ['S4T4N'],
-    description: 'Community Volunteer',
-    imageUrl: '/assets/images/team/sarthak.jpg',
-    links: [
-      {
-        label: 'Twitter',
-        icon: 'fab fa-fw fa-twitter-square',
-        url: 'https://twitter.com/s4t4n1212',
-      }
-    ]
   },
   {
     name: 'MICHAEL FAWLEY',
@@ -188,19 +134,6 @@ export const teamMemberList: TeamMember[] = [
         label: 'Twitter',
         icon: 'fab fa-fw fa-twitter-square',
         url: 'https://twitter.com/Geeg007',
-      }
-    ]
-  },
-  {
-    name: 'LUNA',
-    alias: ['SOVIETLUNOX'],
-    description: 'Community Volunteer',
-    imageUrl: '/assets/images/team/sovietlunox.jpg',
-    links: [
-      {
-        label: 'Twitter',
-        icon: 'fab fa-fw fa-twitter-square',
-        url: 'https://twitter.com/sovietlunox',
       }
     ]
   },
@@ -258,3 +191,73 @@ export const teamMemberList: TeamMember[] = [
     ]
   },
 ];
+
+export const teamAlumniList: TeamMember[] = [
+  {
+    name: 'D4VID',
+    alias: ['LUCIFER'],
+    description: 'Community Manager',
+    imageUrl: '/assets/images/team/lucifer.jpg',
+    links: [
+      {
+        label: 'Twitter',
+        icon: 'fab fa-fw fa-twitter-square',
+        url: 'https://twitter.com/d4vid_lucifer',
+      },
+    ]
+  },
+  {
+    name: 'Jafar',
+    alias: ['JK'],
+    description: 'Community Volunteer',
+    imageUrl: '/assets/images/team/jk.png',
+    links: [
+      {
+        label: 'Twitter',
+        icon: 'fab fa-fw fa-twitter-square',
+        url: 'https://twitter.com/_JKProfessor_',
+      },
+      {
+        label: 'Instagram',
+        icon: 'fab fa-fw fa-instagram-square',
+        url: 'https://www.instagram.com/jk.clickz/',
+      },
+      {
+        label: 'GitHub',
+        icon: 'fab fa-fw fa-github',
+        url: 'https://github.com/jkclickz',
+      }
+    ]
+  },
+  {
+    name: 'SARTHAK TANEJA',
+    alias: ['S4T4N'],
+    description: 'Community Volunteer',
+    imageUrl: '/assets/images/team/sarthak.jpg',
+    links: [
+      {
+        label: 'Twitter',
+        icon: 'fab fa-fw fa-twitter-square',
+        url: 'https://twitter.com/s4t4n1212',
+      }
+    ]
+  },
+  {
+    name: 'LUNA',
+    alias: ['SOVIETLUNOX'],
+    description: 'Community Volunteer',
+    imageUrl: '/assets/images/team/sovietlunox.jpg',
+    links: [
+      {
+        label: 'Twitter',
+        icon: 'fab fa-fw fa-twitter-square',
+        url: 'https://twitter.com/sovietlunox',
+      }
+    ]
+  },
+  {
+    name: '0x0elliot',
+    description: 'Community Moderator, Conference CTF Bringer',
+    imageUrl: '/assets/images/team/0x0elliot.jpg'
+  },
+]
