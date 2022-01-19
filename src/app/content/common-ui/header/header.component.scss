@@ -6,6 +6,7 @@ header {
 }
 
 h1 {
+  font-size: 2rem;
   a {
     color: white;
     text-decoration: none;
@@ -13,8 +14,18 @@ h1 {
 }
 
 li.active {
-  background: lighten($color: #1e1146, $amount: 5);
+  background: lighten($color: hsl(255, 61%, 17%), $amount: 5);
   border-radius: 5px;
+}
+
+.header-logo {
+  //display: none;
+  height: 40px;
+  width: 40px;
+  //aspect-ratio: 1;
+  background-image: url(/assets/images/cover.jfif);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 li {
@@ -32,6 +43,9 @@ li:not(.active) {
 
 
 @media screen and (max-width: 768px) {
+  .header-title {
+    margin: 0 auto;
+  }
   header {
     padding: 4px 0 !important;
 
@@ -47,7 +61,6 @@ li:not(.active) {
     }
 
     ul {
-
       display:flex;
       justify-content: center;
       flex-wrap: wrap;
