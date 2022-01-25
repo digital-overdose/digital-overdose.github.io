@@ -24,11 +24,11 @@ export class DiscordComponent implements OnInit {
   /** Sets the page metadata information and redirects to the Discord server if inBrowser. */
   ngOnInit(): void {
     this.meta.setTags(`${BASE_URL}/discord`, 'Join our Discord!',
-                      `${BASE_URL}/assets/images/cover.jfif`, 750, 750,
-                      ['discord', 'community']);
+      `${BASE_URL}/assets/images/cover.jfif`, 750, 750,
+      ['discord', 'community']);
 
     if (this.browserRec.isBrowser) {
-      window.location.replace('https://discord.gg/digitaloverdose');
+      window.location.replace('https://discord.gg/MQcYhk3D');
     }
   }
 }
