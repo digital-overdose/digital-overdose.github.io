@@ -53,6 +53,11 @@ const routes: Route[] = [
     redirectTo: '/conference/2022/cfp'
   },
   {
+    path: 'sponsoring',
+    pathMatch: 'full',
+    redirectTo: '/conference/2022/sponsoring'
+  },
+  {
     path: 'conference/2021',
     loadChildren: () => import('./routing/app-conference2021-routing.module').then(m => m.Conference2021RoutingModule)
   },
