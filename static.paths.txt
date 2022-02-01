@@ -4,6 +4,7 @@
 /team
 /dovercon
 /conference
+/cfp
 /posts
 /copyright
 /privacy

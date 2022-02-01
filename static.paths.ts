@@ -6,6 +6,7 @@ export const ROUTES = [
   '/team',
   '/dovercon',
   '/conference',
+  '/cfp',
   // '/posts',
   '/copyright',
   '/privacy',
