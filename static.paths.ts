@@ -7,6 +7,7 @@ export const ROUTES = [
   '/dovercon',
   '/conference',
   '/cfp',
+  '/sponsoring',
   // '/posts',
   '/copyright',
   '/privacy',

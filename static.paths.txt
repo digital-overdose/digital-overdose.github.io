@@ -5,6 +5,7 @@
 /dovercon
 /conference
 /cfp
+/sponsoring
 /posts
 /copyright
 /privacy
