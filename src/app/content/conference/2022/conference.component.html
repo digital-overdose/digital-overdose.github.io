@@ -28,20 +28,9 @@
 <h5>Free</h5>
 
 <h3>How to attend?</h3>
-
-<ng-container *ngIf="this.nowEpoch < this.releaseEpoch then thenTemplate; else elseTemplate"></ng-container>
-<ng-template #thenTemplate>
-  <h5 style="margin-bottom: 0 !important;">Get a ticket when the timer expires!</h5>
-  <h5>(March 7th, 2022)</h5>
-  <app-timer [time]="this.time"></app-timer>
-  <br/>
-</ng-template>
-<ng-template #elseTemplate>
-  <h5>Get a ticket!</h5>
-  <br/>
   <div class="d-flex justify-content-center">
     <app-social-button class="m-1 mt-auto"
-      [text]="'Get your (free) tickets'"
+      [text]="'Get a (free) ticket'"
       [url]="'https://www.eventbrite.com/e/digital-overdose-conference-2-tickets-242037810607'"
       [faClass]="'fas fa-ticket-alt'"
       [color]="'#F05537'"
@@ -49,7 +38,6 @@
       ></app-social-button>
   </div>
   <p class="mt-3 coc-mention">By acquiring a ticket you agree to the conference's <a target="_blank" href="/conference/2022/code-of-conduct">code of conduct</a>.</p>
-</ng-template>
 
 <hr>
 
