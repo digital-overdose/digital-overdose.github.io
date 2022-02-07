@@ -17,6 +17,7 @@ import { PostsFilteredByTagComponent } from './content/common-ui/post-inventory-
 import { PostsFilteredByAuthorComponent } from './content/common-ui/post-inventory-display/posts-filtered-by-author/posts-filtered-by-author.component';
 import { YoutubePlaylistRedirectComponent } from './content/redirects/youtube-playlist-redirect/youtube-playlist-redirect.component';
 import { Conference2021AfterpartyComponent } from './content/redirects/afterparty/afterparty.component';
+import { CfpFormComponent } from './content/redirects/cfpform/cfpform.component';
 
 /** {@link Route[] | Routes} used to navigate the application. */
 const routes: Route[] = [
@@ -51,6 +52,10 @@ const routes: Route[] = [
     path: 'cfp',
     pathMatch: 'full',
     redirectTo: '/conference/2022/cfp'
+  },
+  {
+    path: 'cfpform',
+    component: CfpFormComponent
   },
   {
     path: 'sponsoring',

@@ -37,6 +37,7 @@ import { AppConference2021Module } from './submodules/app-conference-2021.module
 import { YoutubePlaylistRedirectComponent } from './content/redirects/youtube-playlist-redirect/youtube-playlist-redirect.component';
 import { AppCTFModule } from './submodules/app-ctf.module';
 import { AppConference2022Module } from './submodules/app-conference-2022.module';
+import { CfpFormComponent } from './content/redirects/cfpform/cfpform.component';
 
 @NgModule({
   declarations: [
@@ -57,6 +58,7 @@ import { AppConference2022Module } from './submodules/app-conference-2022.module
 
     YoutubeComponent,
     DiscordComponent,
+    CfpFormComponent,
     NotFound404Component,
 
     CalendarComponent,
@@ -76,12 +78,12 @@ import { AppConference2022Module } from './submodules/app-conference-2022.module
     BrowserTransferStateModule,
     // App2022Module
   ],
-  providers: [ ],
-  bootstrap: [ AppComponent ],
-  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
+  providers: [],
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule {
   constructor(private injector: Injector) {    // Create global Service Injector.
-      ServiceLocator.injector = this.injector;
+    ServiceLocator.injector = this.injector;
   }
 }
