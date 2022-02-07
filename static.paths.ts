@@ -42,6 +42,7 @@ export const ROUTES = [
   '/youtube',
   '/music-playlist',
   '/afterparty',
+  '/cfpform',
 
   /*
   '/tags',
