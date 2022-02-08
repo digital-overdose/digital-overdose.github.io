@@ -25,7 +25,7 @@ export class CfpFormComponent implements OnInit {
   ngOnInit(): void {
     this.meta.setTags(`${BASE_URL}/cfpform`, 'D.O. Conference 2 CFP link!',
       `${BASE_URL}/assets/images/cover.jfif`, 750, 750,
-      ['discord', 'community', 'cfp', 'confenrence']);
+      ['discord', 'community', 'cfp', 'conference']);
 
     if (this.browserRec.isBrowser) {
       window.location.replace('https://docs.google.com/forms/d/e/1FAIpQLSdDQI45z2W3P-CL7M0PQSY0ikginRuW00B5Vn6MQcZDUiYtsA/viewform?usp=sf_link');
