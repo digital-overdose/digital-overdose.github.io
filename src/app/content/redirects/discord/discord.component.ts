@@ -28,7 +28,7 @@ export class DiscordComponent implements OnInit {
       ['discord', 'community']);
 
     if (this.browserRec.isBrowser) {
-      window.location.replace('https://discord.gg/MQcYhk3D');
+      window.location.replace('https://discord.gg/infosec');
     }
   }
 }
