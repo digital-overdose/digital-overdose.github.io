@@ -6,8 +6,7 @@
 
 <br/>
 
-<!--
-<h2>Our sponsors</h2>
+<h2>Our sponsors, as of now</h2>
 <div class="d-flex flex-column">
   <div class="d-flex flex-wrap justify-content-center">
     <div class="team-card m-2" appTeamCard *ngFor="let t of sponsors" [ngStyle]="{'background-image': 'url(' + t.imageUrl + ')'}">
@@ -16,13 +15,14 @@
         <h3 *ngIf="t.alias !== undefined">{{ t.alias.join(', ') }}</h3>
         <h5>{{ t.description }}</h5>
         <div *ngIf="t.links != undefined" class="card-links w-75 d-flex flex-row flew-wrap justify-content-center mx-3">
-          <a class="card-link" *ngFor="let l of t.links" href="{{ l.url }}" title="{{ l.label }}"><em class="{{ l.icon }}"></em></a>
+          <a class="card-link" *ngFor="let l of t.links" target='_blank' href="{{ l.url }}" title="{{ l.label }}"><em class="{{ l.icon }}"></em></a>
         </div>
       </div>
     </div>
   </div>
 </div>
--->
+
+<br/>
 
 <h2>Sponsoring D.O. CON 2</h2>
 
