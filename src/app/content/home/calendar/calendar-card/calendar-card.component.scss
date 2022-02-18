@@ -1,5 +1,6 @@
 .event-title {
-  font-size: large;
+  font-size: medium;
+  
   font-weight: bold;
   text-align: center;
   width: 90%;
@@ -11,15 +12,17 @@
 
 .event-date {
   font-size: medium;
+  font-family: 'Share Tech';
 }
 
 .event-time {
   font-size: small;
+  font-family: 'Share Tech';
 }
 
 @media screen and (max-width: 768px) {
   .event-title {
-    font-size: large;
+    font-size: medium;
   }
 
   .event-date {

@@ -1,11 +1,13 @@
 <div class="d-flex flex-column m-0">
   <div class="card">
-    <h5 class="text-center my-2 mx-1">Next up<br/>@Digital Overdose</h5>
+    <h5 class="text-center mt-2 mx-1">Next on Digital Overdose<br/><span>{{ events.length }} events</span></h5>
   </div>
   <ng-container *ngIf="this.events.length > 0; else elseTemplate">
-    <div *ngFor="let e of this.events">
-      <app-calendar-card [event]="e"></app-calendar-card>
+    <ng-scrollbar #scrollable track="all">
+    <div class='card-container'>
+      <app-calendar-card  *ngFor="let e of this.events" [event]="e"></app-calendar-card>
     </div>
+    </ng-scrollbar>
   </ng-container>
   <ng-template #elseTemplate>
     <ng-container *ngIf="this.loading; else elseTemplate">

@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 import { GcalApiResponse } from 'src/app/interfaces/calendar/gcal-api-response';
-import { GcalEvent } from 'src/app/interfaces/calendar/gcal-event';
+import { CalendarEvent } from 'src/app/interfaces/calendar/calendar-event';
 
 /**
  * This service is designed to integrate the Google Calendar API so that the site can display upcoming events.
@@ -12,7 +12,7 @@ import { GcalEvent } from 'src/app/interfaces/calendar/gcal-event';
 @Injectable({
   providedIn: 'root'
 })
-export class GoogleCalService {
+export class CalendarService {
   /**
    * Creates an instance of GoogleCalService.
    * @param http The service included in the module that allows for REST API requests and similar.
@@ -20,22 +20,12 @@ export class GoogleCalService {
   constructor(private http: HttpClient) {  }
 
   /** Queries the Google Calendar API to get the next events. */
-  async getCalendarEvents(): Promise<GcalEvent[]> {
-    let events: GcalEvent[] = [];
+  async getCalendarEvents(): Promise<CalendarEvent[]> {
+    let events: CalendarEvent[] = [];
     events = await this.http.get(
       'https://www.googleapis.com/calendar/v3/calendars/7v3cc0k33248jdcmrmvp75e6jo%40group.calendar.google.com/events?key=AIzaSyA4kVl5yEgSztWS27qG9oIgdw646KnoeNc').toPromise().then(
       (response: GcalApiResponse) => response.items
     );
-    events.push({
-      summary: 'Digital Overdose Autumn 2021 CTF',
-      start: {
-        dateTime: '2021-10-09T00:00:00+02:00'
-      },
-      end: {
-        dateTime: '2021-10-10T23:59:59+02:00'
-      },
-      htmlLink: 'https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MDJtbGxsa29sbGk0bjJ1MjI1MWVyMzNuYWogN3YzY2MwazMzMjQ4amRjbXJtdnA3NWU2am9AZw&amp;tmsrc=7v3cc0k33248jdcmrmvp75e6jo%40group.calendar.google.com'
-    });
     return events;
   }
 }

@@ -1,18 +1,14 @@
 /** A Google Calendar Event. */
-export interface GcalEvent {
+export interface CalendarEvent {
   /** The title of the Event.  */
   summary: string;
 
   /** The start time of the event. */
-  start: {
-    dateTime: string;
-  };
+  start: string;
 
   /** The finish time of the event. */
-  end: {
-    dateTime: string;
-  };
+  end: string;
 
-  /** The link to the calendar event. */
-  htmlLink: string;
+  /** The location of the event. */
+  location: string;
 }

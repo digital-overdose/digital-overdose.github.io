@@ -1,6 +1,7 @@
 import { BrowserRecognitionService } from 'src/app/services/browser-recognition.service';
-import { GcalEvent } from 'src/app/interfaces/calendar/gcal-event';
+import { CalendarEvent } from 'src/app/interfaces/calendar/calendar-event';
 import { Component, Input, OnInit } from '@angular/core';
+import { createCalendarLink } from 'src/app/utils/calendar-link';
 
 /**
  * Displays a Google Calendar event.
@@ -14,7 +15,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CalendarCardComponent implements OnInit {
   /** The actual event at the source of the card. */
-  @Input() event: GcalEvent;
+  @Input() event: CalendarEvent;
 
   /** Creates an instance of CalendarCardComponent. */
   constructor(private browserRec: BrowserRecognitionService) { }
@@ -25,7 +26,7 @@ export class CalendarCardComponent implements OnInit {
   /** Opens the calendar link in a new tab. */
   goToCalendar() {
     if (this.browserRec.isBrowser) {
-      window.open(this.event.htmlLink, '_blank');
+      window.open(createCalendarLink(this.event), '_blank');
     }
   }
 }

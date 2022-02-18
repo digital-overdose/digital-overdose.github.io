@@ -28,15 +28,15 @@
 }
 
 .separator-1 {
-  background: linear-gradient(to bottom, #0C0B0A, red);
+  background: linear-gradient(to bottom, #262625, #0D0D0D);
 }
 
 .cal-tainer {
-  background-image: url(/assets/images/community/cal-bg.svg);
+  background: #262625;
 }
 
 .soc-tainer {
-  background: linear-gradient(to right, #7289da, #7289da,  #4895E6, #4895E6, #4895E6, #1DA1F2, #1DA1F2);
+  background: #0D0D0D;
 }
 
 .separator {
@@ -61,11 +61,11 @@
 }
 
 .separator2 {
-  background: linear-gradient(to bottom, #4895E6, #9100da);
+  background: linear-gradient(to bottom, #0d0d0d, #262625);
 }
 
 .soc2-tainer {
-  background: linear-gradient(to bottom, #9100da, orange);
+  background: #262625;
 }
 
 @media screen and (max-width: 768px) {
@@ -76,7 +76,6 @@
   .cal-tainer {
     flex-direction: column !important;
     background-image: none;
-    background: linear-gradient(to bottom, red, orange, red);
   }
 
   .cal-frame {
@@ -84,7 +83,6 @@
   }
 
   .soc-tainer {
-    background: linear-gradient(to bottom, #7289da, #7289da,  #4895E6, #4895E6, #4895E6, #1DA1F2, #1DA1F2);
     flex-direction: column !important;
     align-items: center;
   }
@@ -94,7 +92,6 @@
   }
 
   .soc2-tainer {
-    background: linear-gradient(to bottom, #9100da, orange);
     flex-direction: column !important;
     align-items: center;
   }

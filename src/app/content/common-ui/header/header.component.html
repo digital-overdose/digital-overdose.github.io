@@ -1,9 +1,9 @@
 <header>
-  <div class="w-100 row m-0 py-0 px-3 d-flex flex-row justify-content-between">
+  <div class='w-100 row m-0 py-0 px-3 d-flex flex-row justify-content-between'>
     <div class='header-title d-flex flex-row justify-content-start align-items-center align-self-center'>
       <div class='header-logo'></div>
       <div class='ml-3 justify-content-start'>
-        <h1 class="text-center">
+        <h1 class='text-center'>
           <a [routerLink]="['/home']">
             Digital Overdose
           </a>
@@ -12,7 +12,7 @@
     </div>
 
     <nav>
-      <ul class="d-flex flex-row flex-wrap">
+      <ul class='d-flex flex-row flex-wrap'>
         <li [ngClass]="{'active': (this.currentPath.localeCompare('/home') == 0) || (this.currentPath.localeCompare('/') == 0)}"><a href="/home">Home</a></li>
         <li [ngClass]="{'active': (this.currentPath.localeCompare('/team')) == 0}"><a href="/team">Team</a></li>
         <li [ngClass]="{'active': (this.currentPath.localeCompare('/conference')) == 0 }"><a href="/conference">Conference</a></li>
