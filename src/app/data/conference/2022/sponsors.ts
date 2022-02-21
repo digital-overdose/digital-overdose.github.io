@@ -50,4 +50,30 @@ export const sponsors: Mentor[] = [
       },
     ]
   },
+  {
+    name: 'Punk Security',
+    imageUrl: '/assets/images/conference/2022/sponsors/punk-security.png',
+    links: [
+      {
+        label: 'Website',
+        icon: 'fas fa-globe',
+        url: 'https://punksecurity.co.uk',
+      },
+      {
+        label: 'Twitter',
+        icon: 'fab fa-fw fa-twitter-square',
+        url: 'https://twitter.com/punksecurityuk'
+      },
+      {
+        label: 'LinkedIn',
+        icon: 'fab fa-fw fa-linkedin',
+        url: 'https://www.linkedin.com/company/punk-security-limited/',
+      },
+      {
+        label: 'GitHub',
+        icon: 'fab fa-fw fa-github-square',
+        url: 'https://github.com/punk-security',
+      },
+    ]
+  },
 ];
