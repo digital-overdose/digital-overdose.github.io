@@ -23,7 +23,7 @@ export class Conference2022CfpComponent implements OnInit {
 
   nowEpoch: number = new Date().getTime();
   releaseEpoch: number = 1643670000000;
-  expireEpoch: number = 1646089200000;
+  expireEpoch: number = 1646434800000;
 
   /** Set the page metadata information. */
   ngOnInit(): void {
