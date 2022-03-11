@@ -109,7 +109,7 @@ export const speakers: Speaker[] = [
   {
     name: 'Elliot Ownbey',
     description: 'Seeing the Human Behind the Hack',
-    imageUrl: '/assets/images/conference/2022/speakers/placeholder.jfif',
+    imageUrl: '/assets/images/conference/2022/speakers/ohnoelliot.png',
     links: [
       {
         label: 'Twitter',
@@ -473,7 +473,7 @@ export const speakers: Speaker[] = [
   },
   {
     name: 'Simon Gurney',
-    description: 'Presenting our free and open-source SMB file share auditing tool',
+    description: 'SMBeagle: Our free and open-source SMB file share auditing tool',
     imageUrl: '/assets/images/conference/2022/speakers/simon.jfif',
     links: [
       {
