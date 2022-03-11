@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { interval } from 'rxjs';
 import { startWith } from 'rxjs/operators';
 import { speakers } from 'src/app/data/conference/2022/speakers';
@@ -19,7 +20,7 @@ export class Conference2022SpeakersComponent implements OnInit {
   time: number[] = [0, 0, 0, 0];
 
   nowEpoch: number = new Date().getTime();
-  releaseEpoch: number = 1646607600000;
+  releaseEpoch: number = 1647385200000;
   spoilers: boolean = false;
 
   /**
@@ -27,10 +28,13 @@ export class Conference2022SpeakersComponent implements OnInit {
    *
    * @param meta The HTML header metadata injection service.
    */
-  constructor(private meta: MetaService, private browserRec: BrowserRecognitionService) { }
+  constructor(private meta: MetaService, private browserRec: BrowserRecognitionService, private router: Router) { }
 
   /** Set the page metadata information. */
   ngOnInit(): void {
+    if (this.router.url.includes('?spoilers')) {
+      this.spoilers = true;
+    }
     if (this.browserRec.isBrowser) {
       interval(1000).pipe(startWith(0)).subscribe(() => {
         this.nowEpoch = new Date().getTime();
