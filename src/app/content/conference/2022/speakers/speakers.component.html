@@ -4,11 +4,9 @@
 
 <app-conference-header [path]="'/conference/2022/speakers'"></app-conference-header>
 
-<br/>
-<h2>Speakers</h2>
+<h2 class='my-2'>Speakers</h2>
 
-<p>The courageous rookies that have thrown their hat in the ring with a talk idea, overcoming multiple hurdles such as the infamous impostor syndrome, the creative woes of writer's block among other trials of the mind.</p>
-<br/>
+<p class='my-2'>The courageous rookies that have thrown their hat in the ring with a talk idea, overcoming multiple hurdles such as the infamous impostor syndrome, the creative woes of writer's block among other trials of the mind.</p>
 
 <ng-container *ngIf="(this.nowEpoch < this.releaseEpoch && !this.spoilers); then thenTemplate; else elseTemplate"></ng-container>
 <ng-template #thenTemplate>
@@ -29,7 +27,8 @@
             <h5>{{ t.description }}</h5>
           </ng-container>
           <ng-template #elseTemplate>
-            <h5><a class="card-link card-link-2" href="{{t.talkURL}}">{{ t.description }}</a></h5>
+            <h5 *ngIf="t.talkURL !== undefined"><a class="card-link card-link-2" href="{{t.talkURL}}">{{ t.description }}</a></h5>
+            <h5 *ngIf="t.talkURL === undefined"><span class="card-link card-link-2">{{ t.description }}</span></h5>
           </ng-template>
           <div *ngIf="t.links != undefined" class="card-links w-75 d-flex flex-row flew-wrap justify-content-center mx-3">
             <a class="card-link" *ngFor="let l of t.links" href="{{ l.url }}" title="{{ l.label }}"><i class="{{ l.icon }}"></i></a>
