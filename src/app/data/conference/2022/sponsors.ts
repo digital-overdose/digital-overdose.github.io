@@ -76,4 +76,25 @@ export const sponsors: Mentor[] = [
       },
     ]
   },
+  {
+    name: 'Exabeam',
+    imageUrl: '/assets/images/conference/2022/sponsors/exabeam.svg',
+    links: [
+      {
+        label: 'Website',
+        icon: 'fas fa-globe',
+        url: 'https://www.exabeam.com',
+      },
+      {
+        label: 'Twitter',
+        icon: 'fab fa-fw fa-twitter-square',
+        url: 'https://twitter.com/exabeam'
+      },
+      {
+        label: 'LinkedIn',
+        icon: 'fab fa-fw fa-linkedin',
+        url: 'https://www.linkedin.com/company/exabeam/',
+      },
+    ]
+  },
 ];
