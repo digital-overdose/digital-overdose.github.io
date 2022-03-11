@@ -26,9 +26,9 @@ export const speakers: Speaker[] = [
         url: 'https://twitter.com/theokaydev'
       },
       {
-        label: 'GitLab',
-        icon: 'fab fa-fw fa-gitlab',
-        url: 'https://gitlab.com/sable',
+        label: 'GitHub',
+        icon: 'fab fa-fw fa-github',
+        url: 'https://github.com/Sable-20',
       }
     ],
   },
@@ -360,7 +360,7 @@ export const speakers: Speaker[] = [
   {
     name: 'Arpit Nandi',
     alias: ['AlienX'],
-    description: 'How I hacked our college as my internal testing experience',
+    description: 'How I hacked our college as my first internal testing experience',
     imageUrl: '/assets/images/conference/2022/speakers/AlienX.jpg',
     links: [
       {
@@ -457,12 +457,12 @@ export const speakers: Speaker[] = [
     name: 'Stefan',
     alias: ['CyberScriber'],
     description: 'An Overview of the T-Pot Honeypot',
-    imageUrl: '/assets/images/conference/2022/speakers/placeholder.jfif',
+    imageUrl: '/assets/images/conference/2022/speakers/cyberscriber.png',
     links: [
       {
         label: 'Twitter',
         icon: 'fab fa-fw fa-twitter-square',
-        url: 'https://twitter.com/CyberScriber'
+        url: 'https://twitter.com/cyber_scriber'
       },
       {
         label: 'Instagram',
