@@ -454,24 +454,6 @@ export const speakers: Speaker[] = [
     ],
   },
   {
-    name: 'Stefan',
-    alias: ['CyberScriber'],
-    description: 'An Overview of the T-Pot Honeypot',
-    imageUrl: '/assets/images/conference/2022/speakers/cyberscriber.png',
-    links: [
-      {
-        label: 'Twitter',
-        icon: 'fab fa-fw fa-twitter-square',
-        url: 'https://twitter.com/cyber_scriber'
-      },
-      {
-        label: 'Instagram',
-        icon: 'fab fa-fw fa-instagram-square',
-        url: 'https://www.instagram.com/thecyberscriber/',
-      },
-    ],
-  },
-  {
     name: 'Simon Gurney',
     description: 'SMBeagle: Our free and open-source SMB file share auditing tool',
     imageUrl: '/assets/images/conference/2022/speakers/simon.jfif',
