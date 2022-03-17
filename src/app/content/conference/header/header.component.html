@@ -14,7 +14,7 @@
         <li [ngClass]="{'active': (this.path.localeCompare('/conference/{{ this.getYear() }}/speakers') == 0)}"><a href="/conference/{{ this.getYear() }}/speakers#title">Speakers</a></li>
         <li *ngIf="this.getYear() != this.year" [ngClass]="{'active': (this.path.localeCompare('/conference/{{ this.getYear() }}/schedule') == 0)}"><a href="/conference/{{ this.getYear() }}/schedule#title">Schedule</a></li>
         <!--- *ngIf="this.getYear() != this.year" -->
-        <li *ngIf="this.getYear() != this.year" [ngClass]="{'active': (this.path.localeCompare('/conference/{{ this.getYear() }}/mentors') == 0)}"><a href="/conference/{{ this.getYear() }}/mentors#title">Mentors</a></li>
+        <li [ngClass]="{'active': (this.path.localeCompare('/conference/{{ this.getYear() }}/mentors') == 0)}"><a href="/conference/{{ this.getYear() }}/mentors#title">Mentors</a></li>
         <li [ngClass]="{'active': (this.path.localeCompare('/conference/{{ this.getYear() }}/sponsoring') == 0)}"><a href="/conference/{{ this.getYear() }}/sponsoring#title">Sponsors</a></li>
         <li [ngClass]="{'active': (this.path.localeCompare('/conference/{{ this.getYear() }}/team') == 0)}"><a href="/conference/{{ this.getYear() }}/team#title">Conference Team</a></li>
         <li [ngClass]="{'active': (this.path.localeCompare('/conference/{{ this.getYear() }}/code') == 0)}"><a href="/conference/{{ this.getYear() }}/code-of-conduct#title">Code of Conduct</a></li>
