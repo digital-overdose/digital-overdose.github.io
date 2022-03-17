@@ -6,7 +6,7 @@ export const speakers: Speaker[] = [
   {
     name: 'Tony Haresign',
     description: 'How To Present Your Security Awareness Training With Better Engagement',
-    imageUrl: '/assets/images/conference/2022/speakers/placeholder.jfif',
+    imageUrl: '/assets/images/conference/2022/speakers/tonyharesign.jpeg',
     links: [
       {
         label: 'LinkedIn',
@@ -185,7 +185,7 @@ export const speakers: Speaker[] = [
     name: 'Abhinav Khanna',
     alias: ['ak'],
     description: 'API Pentesting - The OWASP Way!',
-    imageUrl: '/assets/images/conference/2022/speakers/placeholder.jfif',
+    imageUrl: '/assets/images/conference/2022/speakers/abhinavkhanna.jpg',
     links: [
       {
         label: 'Website',
@@ -385,7 +385,7 @@ export const speakers: Speaker[] = [
   {
     name: 'Tori Outlaw',
     alias: ['Bee'],
-    description: 'Cryptology: pre tech era (a short history) ',
+    description: 'Cryptology: pre tech era\n(a short history) ',
     imageUrl: '/assets/images/conference/2022/speakers/bee.png',
     links: [
       {
