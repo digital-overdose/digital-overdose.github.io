@@ -386,7 +386,7 @@ export const speakers: Speaker[] = [
     name: 'Tori Outlaw',
     alias: ['Bee'],
     description: 'Cryptology: pre tech era (a short history) ',
-    imageUrl: '/assets/images/conference/2022/speakers/placeholder.jfif',
+    imageUrl: '/assets/images/conference/2022/speakers/bee.png',
     links: [
       {
         label: 'Twitter',

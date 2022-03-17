@@ -38,7 +38,7 @@ export class Conference2022MentorsComponent implements OnInit {
 
     this.meta.setTags(`${BASE_URL}/conference/2022/mentors`, 'D.O. CON 2: Mentors',
                       `${BASE_URL}/assets/images/cover.jfif`, 750, 750,
-                      ['conference', 'for', 'rookies', 'mentors', 'dovercon'],
+                      ['conference', 'for', 'rookies', 'mentors', 'D.O. Conference'],
                       'Digital Overdose Con! The team that will look after our speakers before the con...');
   }
 }
