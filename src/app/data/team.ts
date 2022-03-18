@@ -114,6 +114,19 @@ export const teamMemberList: TeamMember[] = [
     imageUrl: '/assets/images/team/3t3rn4l_p4r4d0x.png',
   },
   {
+    name: 'ANASTASIIA MYTROFANOVSKA',
+    alias: ['STACY'],
+    description: 'Community Volunteer',
+    imageUrl: '/assets/images/team/anastasiia_m.jpg',
+    links: [
+      {
+        label: 'Twitter',
+        icon: 'fab fa-fw fa-twitter-square',
+        url: 'https://twitter.com/stasya7z',
+      }
+    ]
+  },
+  {
     name: 'MICHAEL FAWLEY',
     description: 'Community Volunteer',
     imageUrl: '/assets/images/team/fawley.jpg',
@@ -178,17 +191,41 @@ export const teamMemberList: TeamMember[] = [
     ]
   },
   {
-    name: 'ANASTASIIA MYTROFANOVSKA',
-    alias: ['STACY'],
-    description: 'Community Volunteer',
-    imageUrl: '/assets/images/team/anastasiia_m.jpg',
+    name: 'YUI',
+    description: 'Community Volunteer (Probation)',
+    imageUrl: '/assets/images/team/yuictf.jpg',
     links: [
       {
         label: 'Twitter',
         icon: 'fab fa-fw fa-twitter-square',
-        url: 'https://twitter.com/stasya7z',
+        url: 'https://twitter.com/YuiCTF',
       }
     ]
+  },
+  {
+    name: 'GARY HAWKINS',
+    description: 'Community Volunteer (Probation)',
+    imageUrl: '/assets/images/team/gary_hawkins.jpeg',
+    links: [
+      {
+        label: 'LinkedIn',
+        icon: 'fab fa-fw fa-linkedin',
+        url: 'https://www.linkedin.com/in/thegaryhawkins/',
+      },
+    ]
+  },
+  {
+    name: 'TRUSTEDINSTALLER',
+    description: 'Community Volunteer (Probation)',
+    imageUrl: '/assets/images/team/placeholder.jfif',
+    links: [ ]
+  },
+  {
+    name: 'MEHUL AHORA',
+    alias: ['SOCIALLYENCRYPTED'],
+    description: 'Community Volunteer (Probation)',
+    imageUrl: '/assets/images/team/placeholder.jfif',
+    links: [ ]
   },
 ];
 
