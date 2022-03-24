@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { interval } from 'rxjs';
 import { startWith } from 'rxjs/operators';
 import { speakers } from 'src/app/data/conference/2022/speakers';

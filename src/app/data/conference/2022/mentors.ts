@@ -26,49 +26,125 @@ export const mentors: Mentor[] = [
   },
   {
     name: 'Bryna Kirzner',
-    imageUrl: '/assets/images/conference/2022/mentors/placeholder.jfif',
-    links: [ ]
+    imageUrl: '/assets/images/conference/2022/mentors/brynak.jfif',
+    links: [
+      {
+        label: 'Twitter',
+        icon: 'fab fa-fw fa-twitter-square',
+        url: 'https://twitter.com/brynak'
+      },
+      {
+        label: 'LinkedIn',
+        icon: 'fab fa-fw fa-linkedin',
+        url: 'https://www.linkedin.com/in/brynak',
+      },
+    ]
   },
   {
     name: 'Mark S.',
     alias: ['Binary Sleeper'],
     imageUrl: '/assets/images/conference/2022/mentors/placeholder.jfif',
-    links: [ ]
+    links: [
+      {
+        label: 'Twitter',
+        icon: 'fab fa-fw fa-twitter-square',
+        url: 'https://twitter.com/binarysleeper'
+      },
+    ]
   },
   {
     name: 'Lori Barfield',
-    imageUrl: '/assets/images/conference/2022/mentors/placeholder.jfif',
-    links: [ ]
+    imageUrl: '/assets/images/conference/2022/mentors/lori.png',
+    links: [
+      {
+        label: 'Twitter',
+        icon: 'fab fa-fw fa-twitter-square',
+        url: 'https://twitter.com/itdirector'
+      },
+      {
+        label: 'LinkedIn',
+        icon: 'fab fa-fw fa-linkedin',
+        url: 'https://www.linkedin.com/in/vpglobalops',
+      },
+    ]
   },
   {
     name: 'Howard Chen',
-    imageUrl: '/assets/images/conference/2022/mentors/placeholder.jfif',
-    links: [ ]
+    alias: ['yaxis'],
+    imageUrl: '/assets/images/conference/2022/mentors/howard.jfif',
+    links: [
+      {
+        label: 'Twitter',
+        icon: 'fab fa-fw fa-twitter-square',
+        url: 'https://twitter.com/yaxisbot'
+      },
+      {
+        label: 'LinkedIn',
+        icon: 'fab fa-fw fa-linkedin',
+        url: 'https://www.linkedin.com/in/howardchen0',
+      },
+    ]
   },
   {
     name: 'Rosie Anderson',
-    imageUrl: '/assets/images/conference/2022/mentors/placeholder.jfif',
-    links: [ ]
-  },
-  {
-    name: 'Paul Love',
-    imageUrl: '/assets/images/conference/2022/mentors/placeholder.jfif',
-    links: [ ]
+    imageUrl: '/assets/images/conference/2022/mentors/ladycyberrosie.jfif',
+    links: [
+      {
+        label: 'Twitter',
+        icon: 'fab fa-fw fa-twitter-square',
+        url: 'https://twitter.com/ladycyberrosie'
+      },
+      {
+        label: 'LinkedIn',
+        icon: 'fab fa-fw fa-linkedin',
+        url: 'https://www.linkedin.com/in/rosieladycyber',
+      },
+    ]
   },
   {
     name: 'Sam Humphries',
-    imageUrl: '/assets/images/conference/2022/mentors/placeholder.jfif',
-    links: [ ]
+    alias: ['safesecs'],
+    imageUrl: '/assets/images/conference/2022/mentors/safesecs.jfif',
+    links: [
+      {
+        label: 'Twitter',
+        icon: 'fab fa-fw fa-twitter-square',
+        url: 'https://twitter.com/safesecs'
+      },
+      {
+        label: 'LinkedIn',
+        icon: 'fab fa-fw fa-linkedin',
+        url: 'https://www.linkedin.com/in/safesecs',
+      },
+    ]
   },
   {
     name: 'Damon Small',
-    imageUrl: '/assets/images/conference/2022/mentors/placeholder.jfif',
-    links: [ ]
+    alias: ['ch3f'],
+    imageUrl: '/assets/images/conference/2022/mentors/ch3f.jfif',
+    links: [
+      {
+        label: 'Twitter',
+        icon: 'fab fa-fw fa-twitter-square',
+        url: 'https://twitter.com/damonsmall'
+      },
+      {
+        label: 'LinkedIn',
+        icon: 'fab fa-fw fa-linkedin',
+        url: 'https://www.linkedin.com/in/damon-small-7400501/',
+      },
+    ]
   },
   {
     name: 'Gary Hawkins',
     imageUrl: '/assets/images/conference/2022/mentors/gary_hawkins.jpeg',
-    links: [ ]
+    links: [
+      {
+        label: 'LinkedIn',
+        icon: 'fab fa-fw fa-linkedin',
+        url: 'https://www.linkedin.com/in/thegaryhawkins',
+      },
+    ]
   },
   {
     name: 'Sam Ferguson',

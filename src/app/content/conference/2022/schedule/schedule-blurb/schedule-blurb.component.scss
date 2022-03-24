@@ -1,0 +1,27 @@
+.event-timelocal {
+  font-size: small;
+}
+
+.event-timezone {
+  font-size: x-small;
+}
+
+.hr {
+  border: .0125rem solid rgb(184, 184, 184);
+}
+
+.h5-nomargin {
+  margin-bottom: 0 !important;
+}
+
+@media screen and (max-width: 768px) {
+  .col-9 {
+    flex: 0 0 66%;
+    max-width: 66%;
+  }
+
+  .col-3 {
+    flex: 0 0 33%;
+    max-width: 33%;
+  }
+}

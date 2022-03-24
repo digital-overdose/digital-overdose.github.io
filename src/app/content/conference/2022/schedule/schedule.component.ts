@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { interval } from 'rxjs';
 import { startWith } from 'rxjs/operators';
 import { schedule } from 'src/app/data/conference/2022/schedule';
@@ -15,11 +16,12 @@ import { diff } from 'src/app/utils/time-until';
 export class Conference2022ScheduleComponent implements OnInit {
   schedule: ScheduleElement[] = schedule;
   day11: ScheduleElement[] = schedule.filter(x => x.portion === 1);
-  day12: ScheduleElement[] = schedule.filter(x => x.portion === 2);
-  day21: ScheduleElement[] = schedule.filter(x => x.portion === 3);
-  day22: ScheduleElement[] = schedule.filter(x => x.portion === 4);
+  day12: ScheduleElement[] = schedule.filter(x => [2, 3].includes(x.portion));
+  day21: ScheduleElement[] = schedule.filter(x => x.portion === 4);
+  day22: ScheduleElement[] = schedule.filter(x => [5, 6].includes(x.portion));
 
   time: number[] = [0, 0, 0, 0];
+  spoilers: boolean = false;
 
   nowEpoch: number = new Date().getTime();
   releaseEpoch: number = 1648418400000;
@@ -29,10 +31,13 @@ export class Conference2022ScheduleComponent implements OnInit {
    *
    * @param meta The HTML header metadata injection service.
    */
-  constructor(private meta: MetaService, private browserRec: BrowserRecognitionService) { }
+  constructor(private meta: MetaService, private browserRec: BrowserRecognitionService, private router: Router) { }
 
   /** Set the page metadata information. */
   ngOnInit(): void {
+    if (this.router.url.includes('?spoilers')) {
+      this.spoilers = true;
+    }
     if (this.browserRec.isBrowser) {
       interval(1000).pipe(startWith(0)).subscribe(() => {
         this.nowEpoch = new Date().getTime();
