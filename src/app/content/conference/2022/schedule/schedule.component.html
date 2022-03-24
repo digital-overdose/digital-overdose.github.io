@@ -4,10 +4,9 @@
 
 <app-conference-header [path]="'/conference/2022/schedule'"></app-conference-header>
 
-<br/>
 <h2>Schedule</h2>
 
-<ng-container *ngIf="this.nowEpoch < this.releaseEpoch; then thenTemplate; else elseTemplate"></ng-container>
+<ng-container *ngIf="(this.nowEpoch < this.releaseEpoch && !this.spoilers); then thenTemplate; else elseTemplate"></ng-container>
 <ng-template #thenTemplate>
   <br/>
   <p class="text-center m-1 h4">Announcement in:</p>
@@ -18,125 +17,52 @@
 </ng-template>
 <ng-template #elseTemplate>
   <div class="d-flex flex-column">
+    <div class="hr my-1"></div>
+    <h3 class="text-center">Day 1: Saturday, April 23rd</h3>
+    <app-schedule-con2022-blurb
+      [startTimeCEST]='"09:30"'
+      [endTimeCEST]='"09:40"'
+      [title]='"Conference kick-off"'
+      [description]='"The hosts welcome you to the conference and start the festivities."'
+    ></app-schedule-con2022-blurb>
+    <app-schedule-con2022-fragment [scheduleFragment]='this.day11'></app-schedule-con2022-fragment>
+    <app-schedule-con2022-blurb
+      [startTimeCEST]='"13:05"'
+      [endTimeCEST]='"14:00"'
+      [title]='"Break"'
+    ></app-schedule-con2022-blurb>
+    <app-schedule-con2022-fragment [scheduleFragment]='this.day12'></app-schedule-con2022-fragment>
+
+    <app-schedule-con2022-blurb
+      [startTimeCEST]='"18:35"'
+      [endTimeCEST]='"18:45"'
+      [title]='"Conference Day 1 Sendoff"'
+    ></app-schedule-con2022-blurb>
+
     <div class="hr my-2"></div>
-    <h3 class="text-center">Day 1</h3>
-    <div class="card p-2 d-flex flex-row mb-2">
-      <div class="col-3 my-auto d-flex flex-row align-items-stretch justify-content-around mx-2">
-        <div class="d-flex flex-column text-center"><span class="event-time">10:05</span><span class="event-timezone">(CEST)</span></div>
-        <div class="d-flex flex-column justify-content-center"><em class="fas fa-arrow-circle-right mx-1"></em></div>
-        <div class="d-flex flex-column text-center"><span class="event-time">10:20</span><span class="event-timezone">(CEST)</span></div>
-      </div>
-      <div class="col-9">
-        <div class="d-flex flex-column my-auto">
-          <div class="h5">Conference kick-off</div>
-          <div>The hosts welcome you to the conference and start the festivities.</div>
-        </div>
-      </div>
-    </div>
-    <div class="card d-flex flex-row p-2" *ngFor="let se of this.day11">
-      <div class="col-3 my-auto d-flex flex-row align-items-stretch justify-content-around mx-2">
-        <div class="d-flex flex-column text-center"><span class="event-time">{{ se.startCEST }}</span><span class="event-timezone">(CEST)</span><span class="event-timelocal mt-3">{{ se.start | date: 'HH:mm' }}</span><span class="event-timezone">(Local)</span></div>
-        <div class="d-flex flex-column justify-content-center"><em class="fas fa-arrow-circle-right mx-1"></em></div>
-        <div class="d-flex flex-column text-center"><span class="event-time">{{ se.endCEST }}</span><span class="event-timezone">(CEST)</span><span class="event-timelocal mt-3">{{ se.end | date: 'HH:mm' }}</span><span class="event-timezone">(Local)</span></div>
-      </div>
-      <div class="col-9 d-flex flex-column">
-        <div class="d-flex flex-column my-auto" *ngFor="let speaker of se.speakers">
-          <div class="h5">{{ speaker.name }}</div>
-          <div>{{ speaker.description }}</div>
-        </div>
-      </div>
-    </div>
-    <div class="card p-2 my-2 d-flex flex-row"><div class="col-3">&nbsp;</div><div class="col-9 ml-4 pl-2 h5">Break</div></div>
-    <div class="card d-flex flex-row p-2" *ngFor="let se of this.day12">
-      <div class="col-3 my-auto d-flex flex-row align-items-stretch justify-content-around mx-2">
-        <div class="d-flex flex-column text-center"><span class="event-time">{{ se.startCEST }}</span><span class="event-timezone">(CEST)</span><span class="event-timelocal mt-3">{{ se.start | date: 'HH:mm' }}</span><span class="event-timezone">(Local)</span></div>
-        <div class="d-flex flex-column justify-content-center"><em class="fas fa-arrow-circle-right mx-1"></em></div>
-        <div class="d-flex flex-column text-center"><span class="event-time">{{ se.endCEST }}</span><span class="event-timezone">(CEST)</span><span class="event-timelocal mt-3">{{ se.end | date: 'HH:mm' }}</span><span class="event-timezone">(Local)</span></div>
-      </div>
-      <div class="col-9 d-flex flex-column">
-        <span class="d-flex flex-column my-auto" *ngFor="let speaker of se.speakers">
-          <div class="h5">{{ speaker.name }}</div>
-          <div>{{ speaker.description }}</div>
-        </span>
-      </div>
-    </div>
-    <div class="card p-2 d-flex flex-row mt-2">
-      <div class="col-3 my-auto d-flex flex-row align-items-stretch justify-content-around mx-2">
-        <div class="d-flex flex-column text-center"><span class="event-time">18:45</span><span class="event-timezone">(CEST)</span></div>
-        <div class="d-flex flex-column justify-content-center"><i class="fas fa-arrow-circle-right mx-1"></i></div>
-        <div class="d-flex flex-column text-center"><span class="event-time">19:00</span><span class="event-timezone">(CEST)</span></div>
-      </div>
-      <div class="col-9 d-flex flex-column justify-content-center">
-        <div class="my-auto">
-          <div class="h5 m-0">Conference Day 1 Sendoff</div>
-        </div>
-      </div>
-    </div>
-    <div class="hr my-2"></div>
-    <h3 class="text-center">Day 2</h3>
-    <div class="card p-2 d-flex flex-row mb-2">
-      <div class="col-3 my-auto d-flex flex-row align-items-stretch justify-content-around mx-2">
-        <div class="d-flex flex-column text-center"><span class="event-time">10:05</span><span class="event-timezone">(CEST)</span></div>
-        <div class="d-flex flex-column justify-content-center"><em class="fas fa-arrow-circle-right mx-1"></em></div>
-        <div class="d-flex flex-column text-center"><span class="event-time">10:15</span><span class="event-timezone">(CEST)</span></div>
-      </div>
-      <div class="col-9 d-flex flex-column justify-content-center">
-        <div class="my-auto">
-          <div class="h5 m-0">Conference Day 2 Kick-off</div>
-        </div>
-      </div>
-    </div>
-    <div class="card d-flex flex-row p-2" *ngFor="let se of this.day21">
-      <div class="col-3 my-auto d-flex flex-row align-items-stretch justify-content-around mx-2">
-        <div class="d-flex flex-column text-center"><span class="event-time">{{ se.startCEST }}</span><span class="event-timezone">(CEST)</span><span class="event-timelocal mt-3">{{ se.start | date: 'HH:mm' }}</span><span class="event-timezone">(Local)</span></div>
-        <div class="d-flex flex-column justify-content-center"><em class="fas fa-arrow-circle-right mx-1"></em></div>
-        <div class="d-flex flex-column text-center"><span class="event-time">{{ se.endCEST }}</span><span class="event-timezone">(CEST)</span><span class="event-timelocal mt-3">{{ se.end | date: 'HH:mm' }}</span><span class="event-timezone">(Local)</span></div>
-      </div>
-      <div class="col-9 d-flex flex-column">
-        <span class="d-flex flex-column my-auto" *ngFor="let speaker of se.speakers">
-          <div class="h5">{{ speaker.name }}</div>
-          <div>{{ speaker.description }}</div>
-        </span>
-      </div>
-    </div>
-    <div class="card p-2 my-2 d-flex flex-row"><div class="col-3">&nbsp;</div><div class="col-9 ml-4 pl-2 h5">Break</div></div>
-    <div class="card d-flex flex-row p-2" *ngFor="let se of this.day22">
-      <div class="col-3 my-auto d-flex flex-row align-items-stretch justify-content-around mx-2">
-        <div class="d-flex flex-column text-center"><span class="event-time">{{ se.startCEST }}</span><span class="event-timezone">(CEST)</span><span class="event-timelocal mt-3">{{ se.start | date: 'HH:mm' }}</span><span class="event-timezone">(Local)</span></div>
-        <div class="d-flex flex-column justify-content-center"><i class="fas fa-arrow-circle-right mx-1"></i></div>
-        <div class="d-flex flex-column text-center"><span class="event-time">{{ se.endCEST }}</span><span class="event-timezone">(CEST)</span><span class="event-timelocal mt-3">{{ se.end | date: 'HH:mm' }}</span><span class="event-timezone">(Local)</span></div>
-      </div>
-      <div class="col-9 d-flex flex-column">
-        <span class="d-flex flex-column my-auto" *ngFor="let speaker of se.speakers">
-          <div class="h5">{{ speaker.name }}</div>
-          <div>{{ speaker.description }}</div>
-        </span>
-      </div>
-    </div>
-    <div class="card p-2 d-flex flex-row mt-2">
-      <div class="col-3 my-auto d-flex flex-row align-items-stretch justify-content-around mx-2">
-        <div class="d-flex flex-column text-center"><span class="event-time">18:05</span><span class="event-timezone">(CEST)</span></div>
-        <div class="d-flex flex-column justify-content-center"><em class="fas fa-arrow-circle-right mx-1"></em></div>
-        <div class="d-flex flex-column text-center"><span class="event-time">18:20</span><span class="event-timezone">(CEST)</span></div>
-      </div>
-      <div class="col-9 d-flex flex-column justify-content-center">
-        <div class="my-auto">
-          <div class="h5 m-0">Conference Closing Comments</div>
-        </div>
-      </div>
-    </div>
-    <div class="card p-2 d-flex flex-row mt-2">
-      <div class="col-3 my-auto d-flex flex-row align-items-stretch justify-content-around mx-2">
-        <div class="d-flex flex-column text-center"><span class="event-time">18:30</span><span class="event-timezone">(CEST)</span></div>
-        <div class="d-flex flex-column justify-content-center"><em class="fas fa-arrow-circle-right mx-1"></em></div>
-        <div class="d-flex flex-column text-center"><span class="event-time">20:30</span><span class="event-timezone">(CEST)</span></div>
-      </div>
-      <div class="col-9 d-flex flex-column justify-content-center">
-        <div class="my-auto">
-          <div class="h5 m-0">Afterparty stream w/ Dan Conn</div>
-        </div>
-      </div>
-    </div>
+    <h3 class="text-center">Day 2: Sunday, April 24th</h3>
+    <app-schedule-con2022-blurb
+      [startTimeCEST]='"09:30"'
+      [endTimeCEST]='"09:40"'
+      [title]='"Conference Day 2 Kick-off"'
+    ></app-schedule-con2022-blurb>
+    <app-schedule-con2022-fragment [scheduleFragment]='this.day21'></app-schedule-con2022-fragment>
+    <app-schedule-con2022-blurb
+      [startTimeCEST]='"13:05"'
+      [endTimeCEST]='"14:00"'
+      [title]='"Break"'
+    ></app-schedule-con2022-blurb>
+    <app-schedule-con2022-fragment [scheduleFragment]='this.day22'></app-schedule-con2022-fragment>
+    <app-schedule-con2022-blurb
+      [startTimeCEST]='"18:35"'
+      [endTimeCEST]='"18:45"'
+      [title]='"Conference closing comments"'
+    ></app-schedule-con2022-blurb>
+    <app-schedule-con2022-blurb
+      [startTimeCEST]='"18:50"'
+      [endTimeCEST]='"22:00"'
+      [title]='"Afterparty"'
+    ></app-schedule-con2022-blurb>
   </div>
   <br/>
 </ng-template>

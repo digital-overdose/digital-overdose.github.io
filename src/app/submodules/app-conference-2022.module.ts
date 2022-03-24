@@ -9,6 +9,9 @@ import { Conference2022ScheduleComponent } from '../content/conference/2022/sche
 import { Conference2022SpeakersComponent } from '../content/conference/2022/speakers/speakers.component';
 import { Conference2022SponsoringComponent } from '../content/conference/2022/sponsoring/sponsoring.component';
 import { Conference2022TeamComponent } from '../content/conference/2022/team/team.component';
+import { Conference2022ScheduleCardComponent } from '../content/conference/2022/schedule/schedule-fragment/schedule-card/schedule-card.component';
+import { ScheduleFragmentComponent } from '../content/conference/2022/schedule/schedule-fragment/schedule-fragment.component';
+import { ScheduleBlurbComponent } from '../content/conference/2022/schedule/schedule-blurb/schedule-blurb.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +23,9 @@ import { Conference2022TeamComponent } from '../content/conference/2022/team/tea
     Conference2022SponsoringComponent,
     Conference2022CfpComponent,
     Conference2022CodeOfConductComponent,
+    Conference2022ScheduleCardComponent,
+    ScheduleFragmentComponent,
+    ScheduleBlurbComponent,
   ],
   imports: [
     CommonModule,

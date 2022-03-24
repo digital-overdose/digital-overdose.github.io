@@ -9,10 +9,10 @@
     </nav>
     <nav>
       <ul class="d-flex flex-row flex-wrap justify-content-center">
-        <li [ngClass]="{'active': (this.path.localeCompare('/conference/{{ this.getYear() }}/about') == 0)}"><a href="/conference/{{ this.getYear() }}/about#title">About</a></li>
+        <li [class.active]="(this.path.localeCompare('/conference/{{ this.getYear() }}/about') == 0)"><a href="/conference/{{ this.getYear() }}/about#title">About</a></li>
         <li [ngClass]="{'active': (this.path.localeCompare('/conference/{{ this.getYear() }}/cfp') == 0)}"><a href="/conference/{{ this.getYear() }}/cfp#title">Call for Proposals</a></li>
         <li [ngClass]="{'active': (this.path.localeCompare('/conference/{{ this.getYear() }}/speakers') == 0)}"><a href="/conference/{{ this.getYear() }}/speakers#title">Speakers</a></li>
-        <li *ngIf="this.getYear() != this.year" [ngClass]="{'active': (this.path.localeCompare('/conference/{{ this.getYear() }}/schedule') == 0)}"><a href="/conference/{{ this.getYear() }}/schedule#title">Schedule</a></li>
+        <li [ngClass]="{'active': (this.path.localeCompare('/conference/{{ this.getYear() }}/schedule') == 0)}"><a href="/conference/{{ this.getYear() }}/schedule#title">Schedule</a></li>
         <!--- *ngIf="this.getYear() != this.year" -->
         <li [ngClass]="{'active': (this.path.localeCompare('/conference/{{ this.getYear() }}/mentors') == 0)}"><a href="/conference/{{ this.getYear() }}/mentors#title">Mentors</a></li>
         <li [ngClass]="{'active': (this.path.localeCompare('/conference/{{ this.getYear() }}/sponsoring') == 0)}"><a href="/conference/{{ this.getYear() }}/sponsoring#title">Sponsors</a></li>
