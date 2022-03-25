@@ -24,7 +24,7 @@ export class Conference2022ScheduleComponent implements OnInit {
   spoilers: boolean = false;
 
   nowEpoch: number = new Date().getTime();
-  releaseEpoch: number = 1648418400000;
+  releaseEpoch: number = 1648533600000;
 
   /**
    * Creates an instance of ConferenceComponent.
