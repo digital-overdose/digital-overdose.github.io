@@ -10,9 +10,9 @@
 <div class="d-flex flex-column">
   <div class="d-flex flex-wrap justify-content-center">
     <div class="team-card m-2" appTeamCard *ngFor="let t of sponsors" [ngStyle]="{'background-image': 'url(' + t.imageUrl + ')'}">
-      <div class="card-caption">
+      <div class="card-caption p-1">
         <h3>{{ t.name }}<span *ngIf="t.alias !== undefined">,</span></h3>
-        <h3 *ngIf="t.alias !== undefined">{{ t.alias.join(', ') }}</h3>
+        <h5 *ngIf="t.alias !== undefined">{{ t.alias.join(', ') }}</h5>
         <h5>{{ t.description }}</h5>
         <div *ngIf="t.links != undefined" class="card-links w-75 d-flex flex-row flew-wrap justify-content-center mx-3">
           <a class="card-link" *ngFor="let l of t.links" target='_blank' href="{{ l.url }}" title="{{ l.label }}"><em class="{{ l.icon }}"></em></a>
@@ -46,8 +46,6 @@
 <p class="mb-0">Is it about the mentors? They get to see the fruits of their efforts.</p>
 <p class="mb-0">Is it about the hosts and volunteers? A bit, it is very gratifying to see it grow.</p>
 <p class="mb-0">Is it the attendees? They get to share the good moments with us.</p>
-
-
 
 <h5 class="mt-4">You can help us make it better!</h5>
 

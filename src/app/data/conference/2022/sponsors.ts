@@ -97,4 +97,26 @@ export const sponsors: Mentor[] = [
       },
     ]
   },
+  {
+    name: 'MCH2022: May Contain Hackers 2022',
+    alias: ['IFCAT'],
+    imageUrl: '/assets/images/conference/2022/sponsors/mch2022.jpg',
+    links: [
+      {
+        label: 'Website',
+        icon: 'fas fa-globe',
+        url: 'https://mch2022.org',
+      },
+      {
+        label: 'Twitter',
+        icon: 'fab fa-fw fa-twitter-square',
+        url: 'https://twitter.com/mch2022camp'
+      },
+      {
+        label: 'Mastodon',
+        icon: 'fab fa-mastodon',
+        url: 'https://chaos.social/@mch2022camp',
+      },
+    ]
+  },
 ];

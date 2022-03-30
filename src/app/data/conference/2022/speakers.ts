@@ -338,7 +338,7 @@ export const speakers: Speaker[] = [
     name: 'Doug Kras',
     alias: ['DFreshALot'],
     description: 'The Adventures of IoT Hacking',
-    imageUrl: '/assets/images/conference/2022/speakers/placeholder.jfif',
+    imageUrl: '/assets/images/conference/2022/speakers/sirhacksalot.jpg',
     links: [
       {
         label: 'Website',
