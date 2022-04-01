@@ -142,7 +142,7 @@ export const schedule: ScheduleElement[] = [
   },
   {
     speakers: [
-      _('Arpit Nandi')
+      _('AlienX')
     ],
     portion: 3,
     start: new Date(1650729900000),

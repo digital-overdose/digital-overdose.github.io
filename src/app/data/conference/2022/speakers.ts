@@ -82,7 +82,7 @@ export const speakers: Speaker[] = [
     name: 'Mark Giles',
     alias: ['CyberCiderCity'],
     description: 'The way forward with 2FA',
-    imageUrl: '/assets/images/conference/2022/speakers/placeholder.jfif',
+    imageUrl: '/assets/images/conference/2022/speakers/cybercidercity.jpg',
     links: [
       {
         label: 'Website',
@@ -358,8 +358,7 @@ export const speakers: Speaker[] = [
     ],
   },
   {
-    name: 'Arpit Nandi',
-    alias: ['AlienX'],
+    name: 'AlienX',
     description: 'How I hacked our college as my first internal testing experience',
     imageUrl: '/assets/images/conference/2022/speakers/AlienX.jpg',
     links: [

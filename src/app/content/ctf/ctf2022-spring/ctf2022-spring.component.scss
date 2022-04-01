@@ -1,0 +1,25 @@
+@media screen and (min-width: 768px) {
+  .media-container > img {
+    width: 50%;
+    height: auto;
+  }
+}
+
+
+.bg {
+  background-image: url('/assets/images/ctf/2022/spring/ctf_cover_3.png') ;
+  background-repeat: no-repeat;
+  background-size: cover; /* Resize the background image to cover the entire container */
+  background-position: bottom;
+}
+
+.bg-grey {
+  background-color: #f5f5f5ea;
+  border-radius: 10px;
+  margin: 3rem auto;
+  width: 50%;
+}
+
+.prize {
+  font-size: large;
+}
