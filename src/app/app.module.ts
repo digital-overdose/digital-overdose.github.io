@@ -1,3 +1,4 @@
+import { TwitchComponent } from './content/redirects/twitch/twitch.component';
 
 import { SharedModule } from './shared.module';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA, Injector } from '@angular/core';
@@ -57,6 +58,7 @@ import { CfpFormComponent } from './content/redirects/cfpform/cfpform.component'
     PostsFilteredByAuthorComponent,
 
     YoutubeComponent,
+    TwitchComponent,
     DiscordComponent,
     CfpFormComponent,
     NotFound404Component,

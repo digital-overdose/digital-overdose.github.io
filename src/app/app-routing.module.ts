@@ -1,3 +1,4 @@
+import { TwitchComponent } from './content/redirects/twitch/twitch.component';
 import { ContributionGuidelinesComponent } from './content/contribution-guidelines/contribution-guidelines.component';
 
 import { NgModule } from '@angular/core';
@@ -132,6 +133,10 @@ const routes: Route[] = [
   {
     path: 'youtube',
     component: YoutubeComponent,
+  },
+  {
+    path: 'watch',
+    component: TwitchComponent,
   },
   {
     path: 'discord',
