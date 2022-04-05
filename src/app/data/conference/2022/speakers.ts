@@ -36,7 +36,7 @@ export const speakers: Speaker[] = [
     name: 'Apurv',
     alias: ['Aiden Senju'],
     description: 'Getting Started in Security Auditing and GRC',
-    imageUrl: '/assets/images/conference/2022/speakers/placeholder.jfif',
+    imageUrl: '/assets/images/conference/2022/speakers/apurv.jpg',
     links: [
       {
         label: 'Website',
@@ -231,7 +231,7 @@ export const speakers: Speaker[] = [
     name: 'Jennifer Gomez',
     alias: ['Jen'],
     description: 'Tangled Web of Romance Fraud',
-    imageUrl: '/assets/images/conference/2022/speakers/placeholder.jfif',
+    imageUrl: '/assets/images/conference/2022/speakers/jennifer_gomez.jpg',
   },
   {
     name: 'Denice',
