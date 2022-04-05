@@ -17,9 +17,9 @@ export class Conference2022CodeOfConductComponent implements OnInit {
 
   /** Set the page metadata information. */
   ngOnInit(): void {
-    this.meta.setTags(`${BASE_URL}/dovercon/code-of-conduct`, 'DOVERCON2021: Code of conduct',
-                      `${BASE_URL}/assets/images/cover.jfif`, 750, 750,
-                      ['conference', 'for', 'rookies', 'code', 'of', 'conduct'],
-                      'Digital Overdose Con! Making sure everyone has a good time.');
+    this.meta.setTags(`${BASE_URL}/dovercon/code-of-conduct`, 'D.O. CON 2: Code of conduct',
+      `${BASE_URL}/assets/images/cover.jfif`, 750, 750,
+      ['conference', 'for', 'rookies', 'code', 'of', 'conduct'],
+      'Digital Overdose Con! Making sure everyone has a good time.');
   }
 }

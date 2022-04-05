@@ -39,6 +39,7 @@
 
 /youtube
 /discord
+/watch
 /music-playlist
 /afterparty
 /cfpform

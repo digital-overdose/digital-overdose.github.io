@@ -41,6 +41,7 @@ export const ROUTES = [
 
   '/discord',
   '/youtube',
+  '/watch',
   '/music-playlist',
   '/afterparty',
   '/cfpform',
