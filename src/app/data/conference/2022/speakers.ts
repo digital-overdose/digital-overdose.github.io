@@ -377,7 +377,7 @@ export const speakers: Speaker[] = [
   {
     name: 'Glen',
     description: 'What can be hidden in QR codes',
-    imageUrl: '/assets/images/conference/2022/speakers/placeholder.jfif',
+    imageUrl: '/assets/images/conference/2022/speakers/glen.png',
     links: [
     ],
   },

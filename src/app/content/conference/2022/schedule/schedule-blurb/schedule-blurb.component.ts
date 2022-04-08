@@ -10,6 +10,8 @@ export class ScheduleBlurbComponent implements OnInit {
   @Input('description') description?: string;
   @Input('startTimeCEST') start: string;
   @Input('endTimeCEST') end: string;
+  @Input('startTimestamp') startTs?: number;
+  @Input('endTimestamp') endTs?: number;
 
   constructor() { }
 

@@ -1,8 +1,8 @@
 <div class="card p-2 py-3 d-flex flex-row my-2">
   <div class="col-3 my-auto d-flex flex-row align-items-stretch justify-content-around px-2">
-    <div class="d-flex flex-column text-center"><span class="event-time">{{ start }}</span><span class="event-timezone">(CEST)</span></div>
-    <div class="d-flex flex-column justify-content-center"><em class="fas fa-arrow-circle-right px-1"></em></div>
-    <div class="d-flex flex-column text-center"><span class="event-time">{{ end }}</span><span class="event-timezone">(CEST)</span></div>
+    <div class="d-flex flex-column text-center"><span class="event-time">{{ start }}</span><span class="event-timezone">(CEST)</span><span *ngIf='startTs != undefined && endTs != undefined' class="event-timelocal mt-3">{{ startTs | date: 'HH:mm' }}</span><span *ngIf='startTs != undefined && endTs != undefined' class="event-timezone">(Local)</span></div>
+    <div class="d-flex flex-column justify-content-center"><em class="fas fa-arrow-circle-right mx-1"></em></div>
+    <div class="d-flex flex-column text-center"><span class="event-time">{{ end }}</span><span class="event-timezone">(CEST)</span><span *ngIf='startTs != undefined && endTs != undefined'  class="event-timelocal mt-3">{{ endTs | date: 'HH:mm' }}</span><span *ngIf='startTs != undefined && endTs != undefined' class="event-timezone">(Local)</span></div>
   </div>
     <div class="col-9 d-flex flex-column my-auto justify-content-center">
       <div class="h5" [class.h5-nomargin]="this.description == undefined">{{ title }}</div>
