@@ -19,6 +19,27 @@ export class Conference2022ScheduleComponent implements OnInit {
   day12: ScheduleElement[] = schedule.filter(x => [2, 3].includes(x.portion));
   day21: ScheduleElement[] = schedule.filter(x => x.portion === 4);
   day22: ScheduleElement[] = schedule.filter(x => [5, 6].includes(x.portion));
+  day23: ScheduleElement[] = [
+    {
+      speakers: [
+        {
+          name: 'Miss Jackalope',
+          links: [
+            { label: 'Twitch', icon: 'fab fa-twitch', url: 'https://twitch.tv/missjackalope' },
+            { label: 'Twitter', icon: 'fab fa-fw fa-twitter-square', url: 'https://twitter.com/djjackalope' },
+            { label: 'Website', icon: 'fas fa-globe', url: 'http://www.missjackalope.com/' },
+          ],
+          description: 'Afterparty',
+          imageUrl: '/assets/images/conference/2022/missjackalope.png'
+        }
+      ],
+      portion: 7,
+      start: new Date(1650825000000),
+      end: new Date(1650830400000),
+      startCEST: '20:30',
+      endCEST: '22:00'
+    },
+  ]
 
   time: number[] = [0, 0, 0, 0];
   spoilers: boolean = false;
