@@ -119,4 +119,25 @@ export const sponsors: Mentor[] = [
       },
     ]
   },
+  {
+    name: 'e2e-assure ltd',
+    imageUrl: '/assets/images/conference/2022/sponsors/e2e-assure.png',
+    links: [
+      {
+        label: 'Website',
+        icon: 'fas fa-globe',
+        url: 'https://www.e2e-assure.com',
+      },
+      {
+        label: 'Twitter',
+        icon: 'fab fa-fw fa-twitter-square',
+        url: 'https://twitter.com/e2eassure'
+      },
+      {
+        label: 'LinkedIn',
+        icon: 'fab fa-fw fa-linkedin',
+        url: 'https://www.linkedin.com/company/e2e-assure-ltd/',
+      },
+    ]
+  },
 ];
