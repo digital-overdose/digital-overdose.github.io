@@ -268,6 +268,16 @@ export const speakers: Speaker[] = [
         icon: 'fas fa-globe',
         url: 'https://thecrabbyhacker.net',
       },
+      {
+        label: 'Twitter',
+        icon: 'fab fa-fw fa-twitter-square',
+        url: 'https://twitter.com/thecrabbyhacker'
+      },
+      {
+        label: 'LinkedIn',
+        icon: 'fab fa-fw fa-linkedin',
+        url: 'https://www.linkedin.com/in/thecrabbyhacker/',
+      },
     ],
   },
   {

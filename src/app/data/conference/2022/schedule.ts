@@ -132,7 +132,7 @@ export const schedule: ScheduleElement[] = [
   },
   {
     speakers: [
-      _('Glen')
+      _('AlienX')
     ],
     portion: 3,
     start: new Date(1650727800000),
@@ -140,16 +140,17 @@ export const schedule: ScheduleElement[] = [
     startCEST: '17:30',
     endCEST: '18:00'
   },
+  /*
   {
     speakers: [
-      _('AlienX')
+      _('Glen')
     ],
     portion: 3,
     start: new Date(1650729900000),
     end: new Date(1650731700000),
     startCEST: '18:05',
     endCEST: '18:35'
-  },
+  },*/
   // DAY 2 - MORNING
   {
     speakers: [
