@@ -58,16 +58,6 @@ export const schedule: ScheduleElement[] = [
     startCEST: '12:00',
     endCEST: '12:30'
   },
-  {
-    speakers: [
-      _('Doug Kras')
-    ],
-    portion: 1,
-    start: new Date(1650710100000),
-    end: new Date(1650711900000),
-    startCEST: '12:35',
-    endCEST: '13:05'
-  },
   // DAY 1 - AFTERNOON 1
   {
     speakers: [
@@ -139,6 +129,16 @@ export const schedule: ScheduleElement[] = [
     end: new Date(1650729600000),
     startCEST: '17:30',
     endCEST: '18:00'
+  },
+  {
+    speakers: [
+      _('Doug Kras')
+    ],
+    portion: 3,
+    start: new Date(1650729900000),
+    end: new Date(1650731700000),
+    startCEST: '18:05',
+    endCEST: '18:35'
   },
   /*
   {
