@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Route, RouterModule } from '@angular/router';
-import { subroutesDovercon2022 } from './app-sub-routes-conference-2022';
+import { subroutesDOCon2022 } from './app-sub-routes-conference-2022';
 
-const routes: Route[] = subroutesDovercon2022;
+const routes: Route[] = subroutesDOCon2022;
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

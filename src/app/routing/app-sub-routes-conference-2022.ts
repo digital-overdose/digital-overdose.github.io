@@ -8,7 +8,7 @@ import { Conference2022SpeakersComponent } from '../content/conference/2022/spea
 import { Conference2022SponsoringComponent } from '../content/conference/2022/sponsoring/sponsoring.component';
 import { Conference2022TeamComponent } from '../content/conference/2022/team/team.component';
 
-export const subroutesDovercon2022: Routes = [
+export const subroutesDOCon2022: Routes = [
   {
     path: 'about',
     component: Conference2022AboutComponent

@@ -39,6 +39,7 @@ import { YoutubePlaylistRedirectComponent } from './content/redirects/youtube-pl
 import { AppCTFModule } from './submodules/app-ctf.module';
 import { AppConference2022Module } from './submodules/app-conference-2022.module';
 import { CfpFormComponent } from './content/redirects/cfpform/cfpform.component';
+import { YoutubePlaylistRedirect2Component } from './content/redirects/youtube-playlist-redirect2/youtube-playlist-redirect2.component';
 
 @NgModule({
   declarations: [
@@ -69,7 +70,8 @@ import { CfpFormComponent } from './content/redirects/cfpform/cfpform.component'
     PostsCardNormalComponent,
     PostsCardCompactComponent,
     PostsCardCompactHeaderComponent,
-    YoutubePlaylistRedirectComponent
+    YoutubePlaylistRedirectComponent,
+    YoutubePlaylistRedirect2Component
   ],
   imports: [
     SharedModule,

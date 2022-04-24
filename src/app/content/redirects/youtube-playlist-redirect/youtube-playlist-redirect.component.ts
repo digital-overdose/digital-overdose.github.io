@@ -24,7 +24,7 @@ export class YoutubePlaylistRedirectComponent implements OnInit {
 
   /** Sets the page metadata information and redirects to the Discord server if inBrowser. */
   ngOnInit(): void {
-    this.meta.setTags(`${BASE_URL}/playlist`, 'The Playlist!',
+    this.meta.setTags(`${BASE_URL}/playlist-2021`, 'The Playlist!',
                       `${BASE_URL}/assets/images/cover.jfif`, 750, 750,
                       ['music']);
 
