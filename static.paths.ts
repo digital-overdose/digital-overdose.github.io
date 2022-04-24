@@ -42,7 +42,8 @@ export const ROUTES = [
   '/discord',
   '/youtube',
   '/watch',
-  '/music-playlist',
+  '/playlist-2021',
+  '/playlist-2022',
   '/afterparty',
   '/cfpform',
 

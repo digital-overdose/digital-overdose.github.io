@@ -19,6 +19,7 @@ import { PostsFilteredByAuthorComponent } from './content/common-ui/post-invento
 import { YoutubePlaylistRedirectComponent } from './content/redirects/youtube-playlist-redirect/youtube-playlist-redirect.component';
 import { Conference2021AfterpartyComponent } from './content/redirects/afterparty/afterparty.component';
 import { CfpFormComponent } from './content/redirects/cfpform/cfpform.component';
+import { YoutubePlaylistRedirect2Component } from './content/redirects/youtube-playlist-redirect2/youtube-playlist-redirect2.component';
 
 /** {@link Route[] | Routes} used to navigate the application. */
 const routes: Route[] = [
@@ -143,8 +144,12 @@ const routes: Route[] = [
     component: DiscordComponent
   },
   {
-    path: 'playlist',
+    path: 'playlist-2021',
     component: YoutubePlaylistRedirectComponent
+  },
+  {
+    path: 'playlist-2022',
+    component: YoutubePlaylistRedirect2Component
   },
   {
     path: 'afterparty',
