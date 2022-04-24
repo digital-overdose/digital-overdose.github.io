@@ -152,6 +152,8 @@ export const schedule: ScheduleElement[] = [
     endCEST: '18:35'
   },*/
   // DAY 2 - MORNING
+  /*
+
   {
     speakers: [
       _('Sable')
@@ -161,7 +163,7 @@ export const schedule: ScheduleElement[] = [
     end: new Date(1650787800000),
     startCEST: '09:40',
     endCEST: '10:10'
-  },
+  },*/
   {
     speakers: [
       _('Michael Hopewell')
@@ -184,7 +186,7 @@ export const schedule: ScheduleElement[] = [
   },
   {
     speakers: [
-      _('The Crabby Hacker')
+      _('Apurv')
     ],
     portion: 4,
     start: new Date(1650792300000),
@@ -194,19 +196,31 @@ export const schedule: ScheduleElement[] = [
   },
   {
     speakers: [
-      _('Apurv')
+      {
+        name: 'Abigail Simmons, Chloe',
+        description: 'A panel hosted by James Bore',
+        imageUrl: '/assets/images/conference/2022/speakers/placeholder.jfif',
+        links: [
+          {
+            label: 'James Bore (Twitter)',
+            icon: 'fab fa-fw fa-twitter-square',
+            url: 'https://twitter.com/coffee_fueled'
+          },
+        ]
+      }
     ],
     portion: 4,
     start: new Date(1650794400000),
-    end: new Date(1650796200000),
+    end: new Date(1650796800000),
     startCEST: '12:00',
-    endCEST: '12:30'
+    endCEST: '12:40'
   },
+  /*
   {
     speakers: [
       {
         name: 'TBD',
-        description: 'A panel by ex-rookies, hosted by James Bore.',
+        description: 'A panel with Abigail and Chloe, hosted by James Bore.',
         imageUrl: '/assets/images/conference/2022/speakers/placeholder.jfif',
         links: [
           {
@@ -222,10 +236,10 @@ export const schedule: ScheduleElement[] = [
     end: new Date(1650798300000),
     startCEST: '12:35',
     endCEST: '13:05'
-  },
+  },*/
   {
     speakers: [
-      _('Chloe')
+      _('Sable')
     ],
     portion: 5,
     start: new Date(1650801600000),
@@ -255,7 +269,8 @@ export const schedule: ScheduleElement[] = [
   },
   {
     speakers: [
-      _('Tony Haresign')
+      _('The Crabby Hacker')
+      //_('Tony Haresign')
     ],
     portion: 5,
     start: new Date(1650807900000),
