@@ -13,11 +13,15 @@
     </ng-container>
 
     <div class='d-flex flex-column mt-3'>
-      <a class='mx-auto' target='_blank'>
-        <div class='btn btn-primary disabled' aria-disabled='true'>
-          Registration Will Open Soon
-        </div>
-      </a>
+      <div class="d-flex justify-content-center">
+        <app-social-button class="m-1 mt-auto"
+          [text]="'Get registered'"
+          [url]="'https://digitaloverdose.ractf.cloud'"
+          [faClass]="'fas fa-ticket-alt'"
+          [color]="'#1e1c34'"
+          [border]='false'
+          ></app-social-button>
+      </div>
       <!-- span class='mx-auto'>(event ended) -->
     </div>
   </div>
@@ -31,7 +35,7 @@
 <p><strong>Domains:</strong> Pwn, Cloud, Crypto, OSINT, ...</p>
 <p><strong>Price:</strong> Free</p>
 <p><strong>Team size:</strong> Max. 4</p>
-<p><strong>CTF Time:</strong>&nbsp;<!--a href="https://ctftime.org/event/1459" target="_blank"><em class="fas fa-external-link-square-alt"></em> Link</a-->TBD</p>
+<p><strong>CTF Time:</strong>&nbsp;<a href="https://ctftime.org/event/1623/" target="_blank"><em class="fas fa-external-link-square-alt"></em> Link</a></p>
 <p class='m-0'><strong>Prizes:</strong> TBD</p>
 <ul>
   <li class='prize'><strong>1st Place:</strong> TBD</li>
