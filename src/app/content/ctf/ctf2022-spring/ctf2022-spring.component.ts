@@ -18,7 +18,7 @@ export class Ctf2022SpringComponent implements OnInit {
   time: number[] = [0, 0, 0, 0];
 
   nowEpoch: number = new Date().getTime();
-  releaseEpoch: number = 1651442399000;
+  releaseEpoch: number = 1650664800000;
 
   constructor(private meta: MetaService, private browserRec: BrowserRecognitionService) { }
 
