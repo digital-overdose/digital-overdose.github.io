@@ -11,7 +11,7 @@ import { diff } from 'src/app/utils/time-until';
 @Component({
   selector: 'app-ctf2022-spring',
   templateUrl: './ctf2022-spring.component.html',
-  styleUrls: ['./ctf2022-spring.component.scss']
+  styleUrls: ['./ctf2022-spring.component.scss', '../../../../assets/css/team-card.scss']
 })
 export class Ctf2022SpringComponent implements OnInit {
   sponsors: Mentor[] = sponsorsCTFSpring2022;
