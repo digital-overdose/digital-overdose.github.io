@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
   container: boolean = true;
 
   /** List of paths that should not be x-constrained. */
-  unconstrainedPath: string[] = [];
+  unconstrainedPath: string[] = ['/home'];
 
   /**
    * Creates an instance of AppComponent.

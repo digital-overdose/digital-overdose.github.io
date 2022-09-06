@@ -3,7 +3,12 @@
 <a id="title"></a>
 
 <app-conference-header [path]="'/conference/2022/about'"></app-conference-header>
-<br/>
+
+<h2>Aftermath</h2>
+
+<p>You can see our playlist with all of the talks on <a target="_blank" href="https://www.youtube.com/playlist?list=PLUI-ug97ALy38dw8-1pkMexj_7qpjEbkH" rel="noopener"><em class="fas fa-external-link-square-alt"></em> this YouTube playlist</a>.</p>
+
+<hr/>
 
 <h2>The Digital Overdose Conference is back!</h2>
 <br/>
@@ -29,13 +34,21 @@
 
 <h3>How to attend?</h3>
   <div class="d-flex justify-content-center">
-    <app-social-button class="m-1 mt-auto"
+    <div class='d-flex flex-column mt-3'>
+      <a class='mx-auto' target='_blank'>
+        <div class='btn btn-primary disabled' aria-disabled='true'>
+          Registration closed
+        </div>
+      </a>
+      <span class='mx-auto'>(event ended)</span>
+    </div>
+    <!--app-social-button class="m-1 mt-auto"
       [text]="'Get a (free) ticket'"
       [url]="'https://www.eventbrite.com/e/digital-overdose-conference-2-tickets-242037810607'"
       [faClass]="'fas fa-ticket-alt'"
       [color]="'#F05537'"
       [border]='false'
-      ></app-social-button>
+      ></app-social-button-->
   </div>
   <p class="mt-3 coc-mention">By acquiring a ticket you agree to the conference's <a target="_blank" href="/conference/2022/code-of-conduct">code of conduct</a>.</p>
 

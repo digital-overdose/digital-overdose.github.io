@@ -1,1 +1,1 @@
- <app-schedule-con2022-card *ngFor="let se of this.scheduleFragment" [speakers]='se.speakers' [startTimeCEST]='se.startCEST' [endTimeCEST]='se.endCEST' [startTimestamp]='se.start' [endTimestamp]='se.end'></app-schedule-con2022-card>
+ <app-schedule-con2022-card *ngFor="let se of this.scheduleFragment" [speakers]='se.speakers' [startTimeCEST]='se.startCEST' [endTimeCEST]='se.endCEST' [startTimestamp]='se.start' [endTimestamp]='se.end' [link]='se.speakers[0].talkURL'></app-schedule-con2022-card>

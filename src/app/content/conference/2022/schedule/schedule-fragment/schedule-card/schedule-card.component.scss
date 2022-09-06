@@ -14,6 +14,22 @@
   width: 80px;
 }
 
+a.talk-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+a.talk-link:hover {
+  animation: all 5ms ease-in-out;
+  font-weight: 900;
+
+  div.h5 {
+    animation: all 5ms ease-in-out;
+    font-weight: 900;
+
+  }
+}
+
 img {
   max-height: 80px;
   max-width: 80px;

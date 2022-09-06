@@ -1,6 +1,6 @@
 <div class="h-100 w-100 d-flex flex-column justify-content-between">
   <app-header class="align-self-stretch"></app-header>
-  <app-main-body class="align-self-stretch align-items-stretch mb-auto" [class.h-100]="!this.container">
+  <app-main-body class="align-self-stretch align-items-stretch mb-auto" [class.h-100]="!this.container" [class.dark-bg]="!this.container">
     <router-outlet></router-outlet>
   </app-main-body>
   <app-footer class="align-items-end"></app-footer>

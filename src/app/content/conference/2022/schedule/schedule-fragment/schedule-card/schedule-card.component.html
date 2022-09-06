@@ -1,22 +1,33 @@
 
-<div class="card d-flex flex-row p-2">
-  <div class="col-3 my-auto d-flex flex-row align-items-stretch justify-content-around px-2">
-    <div class="d-flex flex-column text-center"><span class="event-time">{{ start }}</span><span class="event-timezone">(CEST)</span><span class="event-timelocal mt-3">{{ startTs | date: 'HH:mm' }}</span><span class="event-timezone">(Local)</span></div>
-    <div class="d-flex flex-column justify-content-center"><em class="fas fa-arrow-circle-right mx-1"></em></div>
-    <div class="d-flex flex-column text-center"><span class="event-time">{{ end }}</span><span class="event-timezone">(CEST)</span><span class="event-timelocal mt-3">{{ endTs | date: 'HH:mm' }}</span><span class="event-timezone">(Local)</span></div>
-  </div>
-  <div class="col-9 d-flex flex-column px-1 justify-content-center">
-    <div class='speaker-details-container d-flex flex-row' *ngFor="let speaker of speakers">
-      <div class='img-container d-flex flex-column justify-content-center mr-3'>
-        <img src='{{ speaker.imageUrl }}'>
-      </div>
-      <div class="d-flex flex-column my-auto speaker-details-name" >
-        <div class="h5">{{ speaker.name }}</div>
-        <div>{{ speaker.description }}</div>
-      </div>
-      <div class="speaker-details-links d-flex flex-column my-auto ml-auto" >
-        <a class="card-link" target="_blank" *ngFor="let l of speaker.links" href="{{ l.url }}" title="{{ l.label }}"><i class="{{ l.icon }}"></i></a>
+<ng-template #card>
+  <div class="card d-flex flex-row p-2">
+    <div class="col-3 my-auto d-flex flex-row align-items-stretch justify-content-around px-2">
+      <div class="d-flex flex-column text-center"><span class="event-time">{{ start }}</span><span class="event-timezone">(CEST)</span><span class="event-timelocal mt-3">{{ startTs | date: 'HH:mm' }}</span><span class="event-timezone">(Local)</span></div>
+      <div class="d-flex flex-column justify-content-center"><em class="fas fa-arrow-circle-right mx-1"></em></div>
+      <div class="d-flex flex-column text-center"><span class="event-time">{{ end }}</span><span class="event-timezone">(CEST)</span><span class="event-timelocal mt-3">{{ endTs | date: 'HH:mm' }}</span><span class="event-timezone">(Local)</span></div>
+    </div>
+    <div class="col-9 d-flex flex-column px-1 justify-content-center">
+      <div class='speaker-details-container d-flex flex-row' *ngFor="let speaker of speakers">
+        <div class='img-container d-flex flex-column justify-content-center mr-3'>
+          <img src='{{ speaker.imageUrl }}'>
+        </div>
+        <div class="d-flex flex-column my-auto speaker-details-name" >
+          <div class="h5">{{ speaker.name }}</div>
+          <div>{{ speaker.description }}</div>
+        </div>
+        <div class="speaker-details-links d-flex flex-column my-auto ml-auto" >
+          <a class="card-link" target="_blank" *ngFor="let l of speaker.links" href="{{ l.url }}" title="{{ l.label }}"><i class="{{ l.icon }}"></i></a>
+        </div>
       </div>
     </div>
   </div>
-</div>
+</ng-template>
+
+<ng-container *ngIf='this.link == undefined; else elseTemplate'>
+  <ng-container *ngTemplateOutlet="card"></ng-container>
+</ng-container>
+<ng-template #elseTemplate>
+  <a href='{{this.link}}' target='_blank' class='talk-link'>
+    <ng-container *ngTemplateOutlet="card"></ng-container>
+  </a>
+</ng-template>

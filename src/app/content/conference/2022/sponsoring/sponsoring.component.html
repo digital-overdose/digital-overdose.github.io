@@ -4,9 +4,12 @@
 
 <app-conference-header [path]="'/conference/2022/sponsoring'"></app-conference-header>
 
-<br/>
+<div class="my-4 p-1 important">
+  <p class="m-0"><strong>As of April 24th, 2022 at 23:59 GMT+1, the conference has ended.</strong></p>
+  <p class="m-0">The following is preserved for archival purposes and perpetuity.</p>
+</div>
 
-<h2>Our sponsors, as of now</h2>
+<h2>Our sponsors</h2>
 <div class="d-flex flex-column">
   <div class="d-flex flex-wrap justify-content-center">
     <div class="team-card m-2" appTeamCard *ngFor="let t of sponsors" [ngStyle]="{'background-image': 'url(' + t.imageUrl + ')'}">
@@ -25,18 +28,6 @@
 <br/>
 
 <h2>Sponsoring D.O. CON 2</h2>
-
-<h5 class="mt-4 mb-0">How?</h5>
-<h5 class="mt-0 mb-4">Fill this form, and follow the Eventbrite link in the introduction!</h5>
-<div class="d-flex justify-content-center">
-  <app-social-button class="m-1 mt-auto"
-    [text]="'Sponsorship Form'"
-    [url]="'https://forms.gle/rHoCFq8iTq4Aoj2s8'"
-    [faClass]="'fas fa-align-left'"
-    [color]="'#F05537'"
-    [border]='false'
-    ></app-social-button>
-</div>
 
 <h5 class="mt-4">What is it all about?</h5>
 

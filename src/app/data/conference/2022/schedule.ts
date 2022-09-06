@@ -206,7 +206,8 @@ export const schedule: ScheduleElement[] = [
             icon: 'fab fa-fw fa-twitter-square',
             url: 'https://twitter.com/coffee_fueled'
           },
-        ]
+        ],
+        talkURL: 'https://www.youtube.com/watch?v=w78RnIFJ638&list=PLUI-ug97ALy38dw8-1pkMexj_7qpjEbkH&index=19'
       }
     ],
     portion: 4,
