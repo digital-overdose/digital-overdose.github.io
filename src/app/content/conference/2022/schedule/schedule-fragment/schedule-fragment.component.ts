@@ -14,5 +14,4 @@ export class ScheduleFragmentComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }

@@ -110,7 +110,7 @@ export const teamMemberList: TeamMember[] = [
   },
   {
     name: '3T3RN4L P4R4D0X',
-    description: 'Community Volunteer',
+    description: 'Community Volunteer (Probation)',
     imageUrl: '/assets/images/team/3t3rn4l_p4r4d0x.png',
   },
   {
@@ -192,7 +192,7 @@ export const teamMemberList: TeamMember[] = [
   },
   {
     name: 'YUI',
-    description: 'Community Volunteer (Probation)',
+    description: 'Community Volunteer',
     imageUrl: '/assets/images/team/yuictf.jpg',
     links: [
       {
@@ -204,7 +204,7 @@ export const teamMemberList: TeamMember[] = [
   },
   {
     name: 'GARY HAWKINS',
-    description: 'Community Volunteer (Probation)',
+    description: 'Community Volunteer',
     imageUrl: '/assets/images/team/gary_hawkins.jpeg',
     links: [
       {
@@ -216,7 +216,7 @@ export const teamMemberList: TeamMember[] = [
   },
   {
     name: 'TRUSTEDINSTALLER',
-    description: 'Community Volunteer (Probation)',
+    description: 'Community Volunteer',
     imageUrl: '/assets/images/team/placeholder.jfif',
     links: [ ]
   },
@@ -226,6 +226,89 @@ export const teamMemberList: TeamMember[] = [
     description: 'Community Volunteer (Probation)',
     imageUrl: '/assets/images/team/placeholder.jfif',
     links: [ ]
+  },
+  {
+    name: 'TORI OUTLAW',
+    alias: ['BEE'],
+    description: 'Community Volunteer ',
+    imageUrl: '/assets/images/team/bee.png',
+    links: [
+      {
+        label: 'Twitter',
+        icon: 'fab fa-fw fa-twitter-square',
+        url: 'https://twitter.com/itsbeejuice'
+      },
+      {
+        label: 'LinkedIn',
+        icon: 'fab fa-fw fa-linkedin',
+        url: 'https://www.linkedin.com/in/tori-bee-outlaw/',
+      },
+      {
+        label: 'Linktr.ee',
+        icon: 'fas fa-external-link-square-alt',
+        url: 'https://linktr.ee/itsbeejuice',
+      }
+    ],
+  },
+  {
+    name: 'MICHAEL',
+    alias: ['HAEL_MJ'],
+    description: 'Community Volunteer',
+    imageUrl: '/assets/images/team/placeholder.jfif',
+    links: [
+      {
+        label: 'Twitter',
+        icon: 'fab fa-fw fa-twitter-square',
+        url: 'https://twitter.com/hael_mj'
+      },
+    ]
+  },
+  {
+    name: 'ELLIOT OWNBEY',
+    description: 'Community Volunteer',
+    imageUrl: '/assets/images/team/ohnoelliot.png',
+    links: [
+      {
+        label: 'Twitter',
+        icon: 'fab fa-fw fa-twitter-square',
+        url: 'https://twitter.com/OhNoElliot'
+      },
+      {
+        label: 'LinkedIn',
+        icon: 'fab fa-fw fa-linkedin',
+        url: 'https://www.linkedin.com/in/elliotownbey/',
+      },
+    ],
+  },
+  {
+    name: 'SNIV',
+    description: 'Community Volunteer',
+    imageUrl: '/assets/images/team/placeholder.jfif',
+    links: [
+      {
+        label: 'Twitter',
+        icon: 'fab fa-fw fa-twitter-square',
+        url: 'https://twitter.com/Sniverrs'
+      }
+    ],
+  },
+  {
+    name: 'INDYK1NG',
+    description: 'Community Volunteer (Probation)',
+    imageUrl: '/assets/images/team/placeholder.jfif',
+    links: [ ]
+  },
+  {
+    name: 'SAMMY',
+    description: 'Community Volunteer (Probation)',
+    imageUrl: '/assets/images/team/placeholder.jfif',
+    links: [
+      {
+        label: 'Twitter',
+        icon: 'fab fa-fw fa-twitter-square',
+        url: 'https://twitter.com/TheresNoTimeFor'
+      }
+    ]
   },
 ];
 

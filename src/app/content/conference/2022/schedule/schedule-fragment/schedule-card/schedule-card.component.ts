@@ -12,10 +12,10 @@ export class Conference2022ScheduleCardComponent implements OnInit {
   @Input('endTimeCEST') end: String;
   @Input('startTimestamp') startTs: number;
   @Input('endTimestamp') endTs: number;
+  @Input('link') link?: string;
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }

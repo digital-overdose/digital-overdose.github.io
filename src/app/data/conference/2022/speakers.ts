@@ -31,6 +31,7 @@ export const speakers: Speaker[] = [
         url: 'https://github.com/Sable-20',
       }
     ],
+    talkURL: 'https://www.youtube.com/watch?v=mJgUEh3ALFg&list=PLUI-ug97ALy38dw8-1pkMexj_7qpjEbkH&index=14'
   },
   {
     name: 'Apurv',
@@ -54,6 +55,7 @@ export const speakers: Speaker[] = [
         url: 'https://www.linkedin.com/in/apurvraja/',
       },
     ],
+    talkURL: 'https://www.youtube.com/watch?v=TNgTDCHfCx0&list=PLUI-ug97ALy38dw8-1pkMexj_7qpjEbkH&index=18'
   },
   {
     name: 'Aditya Narayan Sinha',
@@ -77,6 +79,7 @@ export const speakers: Speaker[] = [
         url: 'https://www.linkedin.com/in/adityanarayansinha/',
       },
     ],
+    talkURL: 'https://www.youtube.com/watch?v=5dlbCdw2cRI&list=PLUI-ug97ALy38dw8-1pkMexj_7qpjEbkH&index=10'
   },
   {
     name: 'Mark Giles',
@@ -105,6 +108,7 @@ export const speakers: Speaker[] = [
         url: 'https://www.facebook.com/mark.herefordcomputerhelp',
       }
     ],
+    talkURL: 'https://www.youtube.com/watch?v=anwfFktFe3k&list=PLUI-ug97ALy38dw8-1pkMexj_7qpjEbkH&index=3'
   },
   {
     name: 'Elliot Ownbey',
@@ -122,6 +126,7 @@ export const speakers: Speaker[] = [
         url: 'https://www.linkedin.com/in/elliotownbey/',
       },
     ],
+    talkURL: 'https://www.youtube.com/watch?v=9ZYwUS7EV0o&list=PLUI-ug97ALy38dw8-1pkMexj_7qpjEbkH&index=8'
   },
   {
     name: 'Squiblydoo',
@@ -139,6 +144,7 @@ export const speakers: Speaker[] = [
         url: 'https://twitter.com/SquiblydooBlog'
       },
     ],
+    talkURL: 'https://www.youtube.com/watch?v=B1u2jMKEzz4&list=PLUI-ug97ALy38dw8-1pkMexj_7qpjEbkH&index=22'
   },
   {
     name: 'Ahmed Rashwan',
@@ -167,6 +173,7 @@ export const speakers: Speaker[] = [
         url: 'https://www.youtube.com/channel/UCs9eGDLYFObHoBp6cH9vocA',
       },
     ],
+    talkURL: 'https://www.youtube.com/watch?v=cVvf03p60zI&list=PLUI-ug97ALy38dw8-1pkMexj_7qpjEbkH&index=5'
   },
   {
     name: 'Greg Burkland',
@@ -180,6 +187,7 @@ export const speakers: Speaker[] = [
         url: 'https://twitter.com/ghostprot_do'
       },
     ],
+    talkURL: 'https://www.youtube.com/watch?v=7sEgeQr7FTc&list=PLUI-ug97ALy38dw8-1pkMexj_7qpjEbkH&index=12'
   },
   {
     name: 'Abhinav Khanna',
@@ -203,6 +211,7 @@ export const speakers: Speaker[] = [
         url: 'https://in.linkedin.com/in/abhinav-khanna-a2633b114',
       },
     ],
+    talkURL: 'https://www.youtube.com/watch?v=kR5L5WcOr5Q&list=PLUI-ug97ALy38dw8-1pkMexj_7qpjEbkH&index=16'
   },
   {
     name: 'Chris Meistre',
@@ -226,12 +235,14 @@ export const speakers: Speaker[] = [
         url: 'https://www.linkedin.com/in/chrismeistre/',
       },
     ],
+    talkURL: 'https://www.youtube.com/watch?v=-SdcAMM0eho&list=PLUI-ug97ALy38dw8-1pkMexj_7qpjEbkH&index=24'
   },
   {
     name: 'Jennifer Gomez',
     alias: ['Jen'],
     description: 'Tangled Web of Romance Fraud',
     imageUrl: '/assets/images/conference/2022/speakers/jennifer_gomez.jpg',
+    talkURL: 'https://www.youtube.com/watch?v=ehfKBVOPseg&list=PLUI-ug97ALy38dw8-1pkMexj_7qpjEbkH&index=11'
   },
   {
     name: 'Denice',
@@ -245,6 +256,7 @@ export const speakers: Speaker[] = [
         url: 'https://twitter.com/de3ev'
       },
     ],
+    talkURL: 'https://www.youtube.com/watch?v=DJPb347urPE&list=PLUI-ug97ALy38dw8-1pkMexj_7qpjEbkH&index=21'
   },
   {
     name: 'Patrick Rus',
@@ -257,6 +269,7 @@ export const speakers: Speaker[] = [
         url: 'https://twitter.com/IntelligenceQu6'
       },
     ],
+    talkURL: 'https://www.youtube.com/watch?v=ruOZpW_QcVE&list=PLUI-ug97ALy38dw8-1pkMexj_7qpjEbkH&index=20'
   },
   {
     name: 'The Crabby Hacker',
@@ -279,6 +292,7 @@ export const speakers: Speaker[] = [
         url: 'https://www.linkedin.com/in/thecrabbyhacker/',
       },
     ],
+    talkURL: 'https://www.youtube.com/watch?v=T0jVKgw1_MM&list=PLUI-ug97ALy38dw8-1pkMexj_7qpjEbkH&index=17'
   },
   {
     name: 'Peter',
@@ -291,6 +305,7 @@ export const speakers: Speaker[] = [
         url: 'https://www.linkedin.com/in/pengchengluo/',
       },
     ],
+    talkURL: 'https://www.youtube.com/watch?v=hs7YUo9ReYA&list=PLUI-ug97ALy38dw8-1pkMexj_7qpjEbkH&index=7'
   },
   {
     name: 'Alexandru Lazar',
@@ -303,6 +318,7 @@ export const speakers: Speaker[] = [
         url: 'https://www.linkedin.com/in/alexandru-lazar-9a152996/',
       },
     ],
+    talkURL: 'https://www.youtube.com/watch?v=EsFJGb5_k1o&list=PLUI-ug97ALy38dw8-1pkMexj_7qpjEbkH&index=9'
   },
   {
     name: 'Michael Hopewell',
@@ -330,6 +346,7 @@ export const speakers: Speaker[] = [
         url: 'https://www.facebook.com/mqhopewell/',
       }
     ],
+    talkURL: 'https://www.youtube.com/watch?v=5DkmaygcIy4&list=PLUI-ug97ALy38dw8-1pkMexj_7qpjEbkH&index=15'
   },
   {
     name: 'Chloe',
@@ -366,6 +383,7 @@ export const speakers: Speaker[] = [
         url: 'https://www.linkedin.com/in/douglas-kras/',
       },
     ],
+    talkURL: 'https://www.youtube.com/watch?v=72DP8BFfovY&list=PLUI-ug97ALy38dw8-1pkMexj_7qpjEbkH&index=6'
   },
   {
     name: 'AlienX',
@@ -383,6 +401,7 @@ export const speakers: Speaker[] = [
         url: 'https://www.linkedin.com/in/arpit-nandi-894511206',
       },
     ],
+    talkURL: 'https://www.youtube.com/watch?v=_QkYNYu0QH8&list=PLUI-ug97ALy38dw8-1pkMexj_7qpjEbkH&index=13'
   },
   {
     name: 'Glen',
@@ -413,6 +432,7 @@ export const speakers: Speaker[] = [
         url: 'https://linktr.ee/itsbeejuice',
       }
     ],
+    talkURL: 'https://www.youtube.com/watch?v=p0RN9txN1h4&list=PLUI-ug97ALy38dw8-1pkMexj_7qpjEbkH&index=23'
   },
   {
     name: 'Danielle Arcon',
@@ -431,6 +451,7 @@ export const speakers: Speaker[] = [
         url: 'https://www.linkedin.com/in/danielle-arcon-174579128',
       }
     ],
+    talkURL: 'https://www.youtube.com/watch?v=qo89hkGOpcc&list=PLUI-ug97ALy38dw8-1pkMexj_7qpjEbkH&index=2'
   },
   {
     name: 'Tom Quinn',
@@ -449,6 +470,7 @@ export const speakers: Speaker[] = [
         url: 'https://www.linkedin.com/in/tomquinn8/',
       },
     ],
+    talkURL: 'https://www.youtube.com/watch?v=uBMZthkFDoE&list=PLUI-ug97ALy38dw8-1pkMexj_7qpjEbkH&index=1'
   },
   {
     name: 'Yui',
@@ -461,6 +483,7 @@ export const speakers: Speaker[] = [
         url: 'https://twitter.com/YuiCTF'
       },
     ],
+    talkURL: 'https://www.youtube.com/watch?v=e7fOmPX_c2M&list=PLUI-ug97ALy38dw8-1pkMexj_7qpjEbkH&index=25'
   },
   {
     name: 'Simon Gurney',
@@ -478,5 +501,6 @@ export const speakers: Speaker[] = [
         url: 'https://github.com/SimonGurney',
       }
     ],
+    talkURL: 'https://www.youtube.com/watch?v=yl_xU_cWQNQ&list=PLUI-ug97ALy38dw8-1pkMexj_7qpjEbkH&index=4'
   },
 ];

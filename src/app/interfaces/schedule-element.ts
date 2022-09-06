@@ -13,4 +13,6 @@ export interface ScheduleElement {
   startCEST: string;
 
   endCEST: string;
+
+  link?: string;
 }
