@@ -191,14 +191,14 @@ export const teamMemberList: TeamMember[] = [
     ]
   },
   {
-    name: 'YUI',
+    name: 'SARAH',
     description: 'Community Volunteer',
-    imageUrl: '/assets/images/team/yuictf.jpg',
+    imageUrl: '/assets/images/team/sarah.jpg',
     links: [
       {
         label: 'Twitter',
         icon: 'fab fa-fw fa-twitter-square',
-        url: 'https://twitter.com/YuiCTF',
+        url: 'https://twitter.com/hyp3rv1s0r',
       }
     ]
   },

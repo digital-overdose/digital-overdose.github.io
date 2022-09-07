@@ -311,7 +311,7 @@ export const schedule: ScheduleElement[] = [
   },
   {
     speakers: [
-      _('Yui')
+      _('Sarah')
     ],
     portion: 6,
     start: new Date(1650816300000),
