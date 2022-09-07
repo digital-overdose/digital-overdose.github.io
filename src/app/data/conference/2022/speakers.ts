@@ -473,14 +473,14 @@ export const speakers: Speaker[] = [
     talkURL: 'https://www.youtube.com/watch?v=uBMZthkFDoE&list=PLUI-ug97ALy38dw8-1pkMexj_7qpjEbkH&index=1'
   },
   {
-    name: 'Yui',
+    name: 'Sarah',
     description: 'Exploitation: Past to Present',
-    imageUrl: '/assets/images/conference/2022/speakers/yuictf.jpg',
+    imageUrl: '/assets/images/conference/2022/speakers/sarah.jpg',
     links: [
       {
         label: 'Twitter',
         icon: 'fab fa-fw fa-twitter-square',
-        url: 'https://twitter.com/YuiCTF'
+        url: 'https://twitter.com/hyp3rv1s0r'
       },
     ],
     talkURL: 'https://www.youtube.com/watch?v=e7fOmPX_c2M&list=PLUI-ug97ALy38dw8-1pkMexj_7qpjEbkH&index=25'
