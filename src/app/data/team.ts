@@ -205,7 +205,7 @@ export const teamMemberList: TeamMember[] = [
   {
     name: 'GARY HAWKINS',
     description: 'Community Volunteer',
-    imageUrl: '/assets/images/team/gary_hawkins.jpeg',
+    imageUrl: '/assets/images/team/gary_hawkins.png',
     links: [
       {
         label: 'LinkedIn',
@@ -224,8 +224,14 @@ export const teamMemberList: TeamMember[] = [
     name: 'MEHUL AHORA',
     alias: ['SOCIALLYENCRYPTED'],
     description: 'Community Volunteer (Probation)',
-    imageUrl: '/assets/images/team/placeholder.jfif',
-    links: [ ]
+    imageUrl: '/assets/images/team/mehul.jpg',
+    links: [
+      {
+        label: 'LinkedIn',
+        icon: 'fab fa-fw fa-linkedin',
+        url: 'https://www.linkedin.com/in/mehulcodesstuff/',
+      },
+    ]
   },
   {
     name: 'TORI OUTLAW',
@@ -254,7 +260,7 @@ export const teamMemberList: TeamMember[] = [
     name: 'MICHAEL',
     alias: ['HAEL_MJ'],
     description: 'Community Volunteer',
-    imageUrl: '/assets/images/team/placeholder.jfif',
+    imageUrl: '/assets/images/team/hael.jpg',
     links: [
       {
         label: 'Twitter',
@@ -265,6 +271,7 @@ export const teamMemberList: TeamMember[] = [
   },
   {
     name: 'ELLIOT OWNBEY',
+    alias: ['OHNOELLIOT'],
     description: 'Community Volunteer',
     imageUrl: '/assets/images/team/ohnoelliot.png',
     links: [
@@ -283,7 +290,7 @@ export const teamMemberList: TeamMember[] = [
   {
     name: 'SNIV',
     description: 'Community Volunteer',
-    imageUrl: '/assets/images/team/placeholder.jfif',
+    imageUrl: '/assets/images/team/sniv.png',
     links: [
       {
         label: 'Twitter',
@@ -301,7 +308,7 @@ export const teamMemberList: TeamMember[] = [
   {
     name: 'SAMMY',
     description: 'Community Volunteer (Probation)',
-    imageUrl: '/assets/images/team/placeholder.jfif',
+    imageUrl: '/assets/images/team/sammy.jpg',
     links: [
       {
         label: 'Twitter',
