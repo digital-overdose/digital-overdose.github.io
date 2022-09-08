@@ -35,7 +35,7 @@
     "ngx-scrollbar": "^9.0.1",
     "ngx-tweet": "^2.0.3",
     "rxjs": "~6.5.4",
-    "tslib": "^2.0.0",
+    "tslib": "^2.4.0",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
