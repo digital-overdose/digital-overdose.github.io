@@ -175,5 +175,8 @@
         }
       }
     }},
-  "defaultProject": "digital-overdose"
+  "defaultProject": "digital-overdose",
+  "cli": {
+    "analytics": false
+  }
 }
