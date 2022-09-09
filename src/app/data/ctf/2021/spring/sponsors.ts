@@ -1,4 +1,3 @@
-// tslint:disable:object-literal-key-quotes
 import { Sponsor } from 'src/app/interfaces/sponsor';
 
 /** The list of team members. */
