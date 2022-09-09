@@ -307,13 +307,24 @@ export const teamMemberList: TeamMember[] = [
   },
   {
     name: 'SAMMY',
+    alias: ['TheresNoTime'],
     description: 'Community Volunteer (Probation)',
     imageUrl: '/assets/images/team/sammy.jpg',
     links: [
       {
+        label: 'Website',
+        icon: 'fas fa-fw fa-globe',
+        url: 'https://www.theresnotime.co.uk',
+      },
+      {
         label: 'Twitter',
         icon: 'fab fa-fw fa-twitter-square',
         url: 'https://twitter.com/TheresNoTimeFor'
+      },
+      {
+        label: 'GitHub',
+        icon: 'fab fa-fw fa-github',
+        url: 'https://github.com/theresnotime',
       }
     ]
   },

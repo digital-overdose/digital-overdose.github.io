@@ -9,7 +9,7 @@ Fork the repository.
 
 Clone it to your machine.
 
-Make sure you have `Node v14.16.0` or similar installed.
+Make sure you have `Node 16.17.0` or similar installed, asa well as `npm ^8.0.0`.
 
 > You may use nvm to switch node versions.
 
