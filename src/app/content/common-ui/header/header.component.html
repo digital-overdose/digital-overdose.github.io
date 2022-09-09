@@ -2,7 +2,8 @@
   <div class='w-100 row m-0 py-0 px-3 d-flex flex-row justify-content-between'>
     <div class='header-title d-flex flex-row justify-content-start align-items-center align-self-center'>
       <div class='header-logo'></div>
-      <div class='ml-3 justify-content-start'>
+
+      <div class='ms-3 justify-content-start'>
         <h1 class='text-center'>
           <a [routerLink]="['/home']">
             Digital Overdose
@@ -17,7 +18,7 @@
         <li [ngClass]="{'active': (this.currentPath.localeCompare('/team')) == 0}"><a href="/team">Team</a></li>
         <li [ngClass]="{'active': (this.currentPath.localeCompare('/conference')) == 0 }"><a href="/conference">Conference</a></li>
         <li [ngClass]="{'active': (this.currentPath.localeCompare('/ctf')) == 0 || this.currentPath.startsWith('/ctf') }"><a href="/ctf">CTF</a></li>
-        <!-- <li [ngClass]="{'active': (this.currentPath.localeCompare('/posts')) == 0}"><a href="/posts">Posts</a></li> -->
+        <li [ngClass]="{'active': (this.currentPath.localeCompare('/posts')) == 0 || this.currentPath.startsWith('/posts') }"><a href="/posts">Posts</a></li>
       </ul>
     </nav>
   </div>

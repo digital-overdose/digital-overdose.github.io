@@ -40,6 +40,7 @@ import { AppCTFModule } from './submodules/app-ctf.module';
 import { AppConference2022Module } from './submodules/app-conference-2022.module';
 import { CfpFormComponent } from './content/redirects/cfpform/cfpform.component';
 import { YoutubePlaylistRedirect2Component } from './content/redirects/youtube-playlist-redirect2/youtube-playlist-redirect2.component';
+import { CodeOfConductComponent } from './content/code-of-conduct/code-of-conduct.component';
 
 @NgModule({
   declarations: [
@@ -71,7 +72,8 @@ import { YoutubePlaylistRedirect2Component } from './content/redirects/youtube-p
     PostsCardCompactComponent,
     PostsCardCompactHeaderComponent,
     YoutubePlaylistRedirectComponent,
-    YoutubePlaylistRedirect2Component
+    YoutubePlaylistRedirect2Component,
+    CodeOfConductComponent
   ],
   imports: [
     SharedModule,

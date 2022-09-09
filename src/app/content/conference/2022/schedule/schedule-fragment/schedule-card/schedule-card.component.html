@@ -8,14 +8,14 @@
     </div>
     <div class="col-9 d-flex flex-column px-1 justify-content-center">
       <div class='speaker-details-container d-flex flex-row' *ngFor="let speaker of speakers">
-        <div class='img-container d-flex flex-column justify-content-center mr-3'>
+        <div class='img-container d-flex flex-column justify-content-center me-3'>
           <img src='{{ speaker.imageUrl }}'>
         </div>
         <div class="d-flex flex-column my-auto speaker-details-name" >
           <div class="h5">{{ speaker.name }}</div>
           <div>{{ speaker.description }}</div>
         </div>
-        <div class="speaker-details-links d-flex flex-column my-auto ml-auto" >
+        <div class="speaker-details-links d-flex flex-column my-auto ms-auto" >
           <a class="card-link" target="_blank" *ngFor="let l of speaker.links" href="{{ l.url }}" title="{{ l.label }}"><i class="{{ l.icon }}"></i></a>
         </div>
       </div>

@@ -20,6 +20,7 @@ import { YoutubePlaylistRedirectComponent } from './content/redirects/youtube-pl
 import { Conference2021AfterpartyComponent } from './content/redirects/afterparty/afterparty.component';
 import { CfpFormComponent } from './content/redirects/cfpform/cfpform.component';
 import { YoutubePlaylistRedirect2Component } from './content/redirects/youtube-playlist-redirect2/youtube-playlist-redirect2.component';
+import { CodeOfConductComponent } from './content/code-of-conduct/code-of-conduct.component';
 
 /** {@link Route[] | Routes} used to navigate the application. */
 const routes: Route[] = [
@@ -125,12 +126,10 @@ const routes: Route[] = [
     path: 'post/2021',
     loadChildren: () => import('./routing/app-content-2021-routing.module').then(m => m.Posts2021RoutingModule)
   },
-  /*
   {
     path: 'post/2022',
     loadChildren: () => import('./routing/app-content-2022-routing.module').then(m => m.Posts2022RoutingModule)
   },
-  */
   {
     path: 'youtube',
     component: YoutubeComponent,
@@ -160,6 +159,10 @@ const routes: Route[] = [
     component: NotFound404Component
   },
   {
+    path: 'code-of-conduct',
+    component: CodeOfConductComponent
+  },
+  {
     path: '**',
     redirectTo: '/404-not-found'
   }
@@ -168,7 +171,7 @@ const routes: Route[] = [
 @NgModule({
   imports: [
     RouterModule.forRoot(routes, {
-      initialNavigation: 'enabled',
+      initialNavigation: 'enabledBlocking',
       relativeLinkResolution: 'legacy',
       preloadingStrategy: PreloadAllModules,
       scrollPositionRestoration: 'enabled',

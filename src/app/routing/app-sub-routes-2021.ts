@@ -1,8 +1,8 @@
 // tslint:disable: no-string-literal
 import { authorList } from 'src/app/data/authors';
-import { TAG_TALKS, TAG_INFOSEC, TAG_CONVENTION, TAG_COMMUNITY, TAG_WEB } from 'src/app/utils/tags';
+import { TAG_TALKS, TAG_INFOSEC, TAG_CONFERENCE, TAG_COMMUNITY, TAG_WEB } from 'src/app/utils/tags';
 import { Routes } from '@angular/router';
-import { Feb2021HelloWorldComponent } from 'src/app/content/posts/2021/feb-hello-world/feb-hello-world.component';
+import { Feb2021HelloWorldComponent } from 'src/app/content/posts/2021/210206-feb-hello-world/feb-hello-world.component';
 
 /**
  *

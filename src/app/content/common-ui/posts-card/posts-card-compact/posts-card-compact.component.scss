@@ -44,6 +44,14 @@
 
 
 @media screen and (max-width: 768px) {
+  .card {
+    flex-direction: column !important;
+
+    div {
+      width: 100% !important;
+      padding: 2px 0 !important;
+    }
+  }
 }
 
 
