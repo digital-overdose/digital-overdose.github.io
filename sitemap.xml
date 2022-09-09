@@ -20,6 +20,11 @@
     <priority>0.80</priority>
     <changefreq>daily</changefreq>
   </url>
+  <url>
+    <loc>https://digitaloverdose.tech/code-of-conduct</loc>
+    <priority>0.80</priority>
+    <changefreq>daily</changefreq>
+  </url>
 
   <url>
     <loc>https://digitaloverdose.tech/conference/2022/about</loc>
