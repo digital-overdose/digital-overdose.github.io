@@ -42,16 +42,28 @@ li:not(.active) {
   }
 }
 
+@media screen and (min-width: 768px) {
+  header > div, nav {
+    width: auto !important;
+  }
+
+  .header-title {
+    width: auto !important;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .header-title {
     margin: 0 auto;
+    padding: 3px;
   }
+
   header {
-    padding: 4px 0 !important;
+    padding: 4px !important;
 
     nav {
       width: 100%;
+      margin-top: 2px;
     }
 
     div {
@@ -59,6 +71,10 @@ li:not(.active) {
         margin: 0 auto !important;
         margin-bottom: .25rem !important;
       }
+    }
+
+    .header-title {
+      justify-content: center !important;
     }
 
     ul {
@@ -69,6 +85,7 @@ li:not(.active) {
       li {
         a {
           padding: 4px 10px !important;
+          font-size: .9rem !important;
         }
       }
     }

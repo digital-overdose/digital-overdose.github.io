@@ -90,7 +90,7 @@ Create the file `routing/app-sub-routes-XXXX.ts`. Within it write the following:
 
 ```typescript
 import { authorList } from './../data/authors';
-import { TAG_TALKS, TAG_INFOSEC, TAG_CONVENTION, TAG_COMMUNITY } from '../utils/tags';
+import { TAG_YYYY } from '../utils/tags';
 import { Routes } from '@angular/router';
 
 export const subroutesXXXX: Routes = [

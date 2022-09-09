@@ -8,9 +8,10 @@ export const ROUTES = [
   '/conference',
   '/cfp',
   '/sponsoring',
-  // '/posts',
+  '/posts',
   '/copyright',
   '/privacy',
+  '/code-of-conduct',
   '/contribution-guidelines',
 
   '/ctf',
@@ -47,10 +48,10 @@ export const ROUTES = [
   '/afterparty',
   '/cfpform',
 
-  /*
   '/tags',
+  '/tags/Application%20Security',
   '/tags/Community',
-  '/tags/Convention',
+  '/tags/Conference',
   '/tags/Cryptocurrency',
   '/tags/Cryptography',
   '/tags/CTF',
@@ -66,11 +67,13 @@ export const ROUTES = [
   '/tags/Privacy',
   '/tags/Programming',
   '/tags/Talks',
+  '/tags/Volunteering',
   '/tags/Web',
+  '/tags/Write-Up',
 
   '/authors/AtomicNicos',
   '/authors/Mrs.%20Skelli',
   '/authors/Night',
 
-  '/post/2021/2021_02_06+Hello-World',*/
+  '/post/2021/2021_02_06+Hello-World',
 ];

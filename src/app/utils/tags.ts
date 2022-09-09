@@ -1,10 +1,13 @@
 import { Tag } from 'src/app/interfaces/tag';
 
+/** Tag for all application security related posts. */
+export const TAG_APPSEC: Tag = { name: 'Application Security' };
+
 /** Tag for all community projects and endeavors. */
 export const TAG_COMMUNITY: Tag = { name: 'Community' };
 
 /** Tag for anything related to conventions / conferences. */
-export const TAG_CONVENTION: Tag = { name: 'Convention' };
+export const TAG_CONFERENCE: Tag = { name: 'Conference' };
 
 /** Tag for anything related to cryptocurrencies. */
 export const TAG_CRYPTOCURRENCY: Tag = { name: 'Cryptocurrency' };
@@ -48,6 +51,12 @@ export const TAG_PROGRAMMING: Tag = { name: 'Programming' };
 /** Tag for anything related to talks given at a conference or convention. */
 export const TAG_TALKS: Tag = { name: 'Talks' };
 
+/** Tag relating to volunteering efforts made by community members. */
+export const TAG_VOLUNTEERING: Tag = { name: 'Volunteering' };
+
 /** Tag for anything related to web / Internet technologies. */
 export const TAG_WEB: Tag = { name: 'Web' };
+
+/** Tag for any and all CTF write-ups provided by the community */
+export const TAG_WRITEUP: Tag = { name: 'Write-Up' };
 
