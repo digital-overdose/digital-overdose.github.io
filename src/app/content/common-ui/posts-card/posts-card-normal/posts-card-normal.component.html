@@ -1,5 +1,7 @@
 <div class="card">
-  <img *ngIf="post.imageUrl" class="card-img-top" src="{{ post.imageUrl }}" alt="Card image">
+  <a href="post/{{ post.year }}/{{ post.path }}">
+    <img *ngIf="post.imageUrl" class="card-img-top" src="{{ post.imageUrl }}" alt="Card image">
+  </a>
   <div class="card-body">
     <h6 class="card-title mb-1"><em>{{ getMonth(+post.path.slice(5,7)) }} {{getDay(+post.path.slice(8, 10))}}, {{ post.year }}</em></h6>
 
