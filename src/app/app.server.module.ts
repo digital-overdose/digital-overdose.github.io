@@ -1,3 +1,4 @@
+import { App2022Module } from './submodules/app-content-2022.module';
 import { App2021Module } from './submodules/app-content-2021.module';
 import { SharedModule } from 'src/app/shared.module';
 
@@ -14,6 +15,7 @@ import {AppComponent} from './app.component';
     AppModule,
     SharedModule,
     App2021Module,
+    App2022Module,
     ServerModule,
     ServerTransferStateModule,
   ],
