@@ -1,4 +1,3 @@
-// tslint:disable: quotemark
 import { BASE_URL } from 'src/app/data/url';
 import { TitleService } from 'src/app/services/title.service';
 import { Injectable } from '@angular/core';
