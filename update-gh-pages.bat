@@ -1,3 +1,4 @@
+@echo off
 npm run prerender
 git add .
 git commit -m "STANDARDIZED COMMIT: GH-PAGES"
