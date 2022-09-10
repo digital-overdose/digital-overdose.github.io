@@ -1,4 +1,3 @@
-// tslint:disable:object-literal-key-quotes
 import { AuthorMap } from 'src/app/interfaces/author-map';
 
 /** The list of authors. */
