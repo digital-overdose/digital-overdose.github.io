@@ -7,12 +7,14 @@ import { Ctf2021SpringComponent } from '../content/ctf/ctf2021-spring/ctf2021-sp
 import { HeaderComponent } from '../content/ctf/header/header.component';
 import { CTFLogoComponent } from '../content/ctf/logo/logo.component';
 import { Ctf2022SpringComponent } from '../content/ctf/ctf2022-spring/ctf2022-spring.component';
+import { Ctf2022AutumnComponent } from '../content/ctf/ctf2022-autumn/ctf2022-autumn.component';
 
 @NgModule({
   declarations: [
     Ctf2021SpringComponent,
     Ctf2021AutumnComponent,
     Ctf2022SpringComponent,
+    Ctf2022AutumnComponent,
     AboutCTFComponent,
     CTFLogoComponent,
     HeaderComponent,

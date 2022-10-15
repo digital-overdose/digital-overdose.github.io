@@ -3,7 +3,7 @@ import { startWith } from 'rxjs/operators';
 import { interval } from 'rxjs';
 import { BrowserRecognitionService } from 'src/app/services/browser-recognition.service';
 import { MetaService } from 'src/app/services/meta.service';
-import { sponsorsCTFSpring2022 } from 'src/app/data/ctf/ctf/2022/spring/sponsors';
+import { sponsorsCTFSpring2022 } from 'src/app/data/ctf/2022/spring/sponsors';
 import { Mentor } from 'src/app/interfaces/mentor';
 import { Component, OnInit } from '@angular/core';
 import { diff } from 'src/app/utils/time-until';
