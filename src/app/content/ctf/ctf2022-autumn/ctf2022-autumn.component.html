@@ -1,0 +1,80 @@
+<app-ctf-logo></app-ctf-logo>
+<br/>
+<app-ctf-header [path]="'/ctf/2022/autumn'"></app-ctf-header>
+
+<div class='bg d-flex flex-column'>
+  <div class='p-4 bg-grey mx-auto'>
+    <h2 class='text-center'>Digital Overdose 2022</h2>
+    <h2 class='text-center'>Autumn CTF</h2>
+
+    <ng-container *ngIf="this.nowEpoch < this.releaseEpoch">
+      <br/>
+      <app-timer [time]="this.time"></app-timer>
+    </ng-container>
+
+    <div class='d-flex flex-column mt-3'>
+      <div class="d-flex justify-content-center">
+        <div class='d-flex flex-column mt-3'>
+          <a class='mx-auto' target='_blank'>
+            <div class='btn btn-primary disabled' aria-disabled='true'>
+              Registration will open soon.
+            </div>
+          </a>
+          <!--span class='mx-auto'>(event ended)</span-->
+        </div>
+        <!--app-social-button class="m-1 mt-auto"
+          [text]="'Get registered'"
+          [url]="'https://digitaloverdose.ractf.cloud'"
+          [faClass]="'fas fa-ticket-alt'"
+          [color]="'#1e1c34'"
+          [border]='false'
+          ></app-social-button-->
+      </div>
+      <!-- span class='mx-auto'>(event ended) -->
+    </div>
+  </div>
+  <br/>
+</div>
+<hr/>
+<p>Our fourth CTF is brewing, coming to you live from November 19th (00:00:00 GMT+1) until November 20th (23:59:59 GMT+1).</p>
+
+<p><strong>Type:</strong> Jeopardy</p>
+<p><strong>Domains:</strong> Pwn, Cloud, Crypto, OSINT, ...</p>
+<p><strong>Price:</strong> Free</p>
+<p><strong>Team size:</strong> Max. 4</p>
+<p class='m-0'><strong>Prizes:</strong></p>
+<ul>
+  <li class='prize'><strong>1st Place:</strong> OffSec Voucher, Cybrancee 1 year Web Hosting</li>
+  <li class='prize'><strong>2nd Place:</strong> Cybrancee 6 months Web Hosting</li>
+  <li class='prize'><strong>3rd Place:</strong> Cybrancee 3 months Web Hosting</li>
+</ul>
+
+<br/>
+<hr/>
+<br/>
+
+<h3>Infrastructure</h3>
+
+<div class='media-container'>
+  <img src='/assets/images/ctf/2022/autumn/ractf_logo.svg' alt='The RACTF logo'/>
+</div>
+
+<p>The <a href='https://ractf.co.uk' target='_blank'><em class='fas fa-external-link-square-alt'></em> Really Awesome CTF</a> team is providing us with a copy of the Infrastructure used for the Really Awesome CTF. A big heartfelt thank you to them.</p>
+
+<hr/><br/>
+
+<h3>Sponsors</h3>
+<div class="d-flex flex-column">
+  <div class="d-flex flex-wrap justify-content-center">
+    <div class="team-card m-2" appTeamCard *ngFor="let t of sponsors" [ngStyle]="{'background-image': 'url(' + t.imageUrl + ')'}">
+      <div class="card-caption">
+        <h3>{{ t.name }}<span *ngIf="t.alias !== undefined">,</span></h3>
+        <h3 *ngIf="t.alias !== undefined">{{ t.alias.join(', ') }}</h3>
+        <h5>{{ t.description }}</h5>
+        <div *ngIf="t.links != undefined" class="card-links w-75 d-flex flex-row flew-wrap justify-content-center mx-3">
+          <a class="card-link" *ngFor="let l of t.links" href="{{ l.url }}" title="{{ l.label }}"><em class="{{ l.icon }}"></em></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

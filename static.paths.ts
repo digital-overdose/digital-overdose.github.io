@@ -19,6 +19,7 @@ export const ROUTES = [
   '/ctf/2021/spring',
   '/ctf/2021/autumn',
   '/ctf/2022/spring',
+  '/ctf/2022/autumn',
 
   '/conference/2021/about',
   '/conference/2021/cfp',
