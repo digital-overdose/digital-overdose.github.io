@@ -72,7 +72,7 @@ export const ROUTES = [
   '/tags/Web',
   '/tags/Write-Up',
 
-  '/authors/AtomicNicos',
+  '/authors/AtomicMaya',
   '/authors/Mrs.%20Skelli',
   '/authors/Night',
 

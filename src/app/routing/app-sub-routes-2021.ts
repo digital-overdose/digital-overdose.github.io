@@ -28,7 +28,7 @@ export const subroutes2021: Routes = [
     component: Feb2021HelloWorldComponent,
     data: {
       title: 'Hello World!',
-      authors: [ authorList['AtomicNicos'], authorList['Mrs. Skelli'], authorList['Night'] ],
+      authors: [ authorList['AtomicMaya'], authorList['Mrs. Skelli'], authorList['Night'] ],
       description: 'Introducing Digital Overdose\'s new window into the community.',
       imageUrl: '/assets/images/cover.jfif',
       tags: [ TAG_COMMUNITY, TAG_WEB ],
