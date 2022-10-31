@@ -44,35 +44,35 @@ export const authorList: AuthorMap = {
       }
     ]
   },
-  'AtomicNicos': {
-    name: 'AtomicNicos',
+  'AtomicMaya': {
+    name: 'AtomicMaya',
     bio: 'Developer, Hackademic, OSINTeer, Wannabe Infosec Contributor.',
-    avatar: '/assets/images/authors/atomicnicos.jpg',
+    avatar: '/assets/images/authors/atomicmaya.jpg',
     links: [
       {
         label: 'Blog',
         icon: 'fas fa-fw fa-globe',
-        url: 'https://atomicnicos.me',
+        url: 'https://atomicmaya.me',
       },
       {
         label: 'Twitter',
         icon: 'fab fa-fw fa-twitter-square',
-        url: 'https://twitter.com/AtomicNicos',
-      },
+        url: 'https://twitter.com/Atomic_Maya',
+      },/*
       {
         label: 'LinkedIn',
         icon: 'fab fa-fw fa-linkedin',
         url: 'https://linkedin.com/in/nicolas-boeckh',
-      },
+      },*/
       {
         label: 'Keybase',
         icon: 'fas fa-fw fa-key',
-        url: 'https://keybase.io/atomicnicos',
+        url: 'https://keybase.io/atomicmaya',
       },
       {
         label: 'GitHub',
         icon: 'fab fa-fw fa-github',
-        url: 'https://github.com/AtomicNicos',
+        url: 'https://github.com/AtomicMaya',
       }
     ]
   },
@@ -100,6 +100,11 @@ export const authorList: AuthorMap = {
         label: 'GitHub',
         icon: 'fab fa-fw fa-github',
         url: 'https://github.com/mrs-skelli',
+      },
+      {
+        label: 'Mastodon',
+        icon: 'fab fa-fw fa-mastodon',
+        url: 'https://tech.lgbt/@AtomicMaya',
       }
     ]
   },

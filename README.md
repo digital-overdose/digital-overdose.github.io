@@ -30,7 +30,7 @@ npm install
 
 ### Prerendering the files for deployment
 
-Run `npm run prerender` ! Past Nicos bids you hello.
+Run `npm run prerender` ! Past Maya bids you hello.
 
 ___
 

@@ -3,35 +3,40 @@ import { TeamMember } from '../../../interfaces/team-member';
 /** The list of team members. */
 export const organizers: TeamMember[] = [
   {
-    name: 'NICOLAS BOECKH',
-    alias: ['ATOMICNICOS'],
+    name: 'MAYA',
+    alias: ['ATOMICMAYA'],
     description: 'Organizer, Host',
-    imageUrl: '/assets/images/conference/2022/team/atomicnicos.jpg',
+    imageUrl: '/assets/images/team/atomicmaya.jpg',
     links: [
       {
         label: 'Blog',
         icon: 'fas fa-fw fa-globe',
-        url: 'https://atomicnicos.me',
+        url: 'https://atomicmaya.me',
       },
       {
         label: 'Twitter',
         icon: 'fab fa-fw fa-twitter-square',
-        url: 'https://twitter.com/AtomicNicos',
-      },
+        url: 'https://twitter.com/Atomic_Maya',
+      },/*
       {
         label: 'LinkedIn',
         icon: 'fab fa-fw fa-linkedin',
         url: 'https://linkedin.com/in/nicolas-boeckh',
-      },
+      },*/
       {
         label: 'Keybase',
         icon: 'fas fa-fw fa-key',
-        url: 'https://keybase.io/atomicnicos',
+        url: 'https://keybase.io/atomicmaya',
       },
       {
         label: 'GitHub',
         icon: 'fab fa-fw fa-github',
-        url: 'https://github.com/AtomicNicos',
+        url: 'https://github.com/AtomicMaya',
+      },
+      {
+        label: 'Mastodon',
+        icon: 'fab fa-fw fa-mastodon',
+        url: 'https://tech.lgbt/@AtomicMaya',
       }
     ]
   },
