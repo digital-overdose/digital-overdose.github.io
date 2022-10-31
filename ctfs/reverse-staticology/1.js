@@ -2,7 +2,7 @@ const m = {};
 const input = document.getElementById('input');
 const response = document.getElementById('response');
 
-const txt = 'Challenge reworked by @AtomicNicos for @d_overcon\nOriginal by @UnrealSec';
+const txt = 'Challenge reworked by @Atomic_Maya for @Digit4lOverdose\nOriginal by @UnrealSec';
 response.innerText = txt;
 
 input.addEventListener('input', e =>{
