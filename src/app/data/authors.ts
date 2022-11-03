@@ -57,7 +57,7 @@ export const authorList: AuthorMap = {
       {
         label: 'Twitter',
         icon: 'fab fa-fw fa-twitter-square',
-        url: 'https://twitter.com/Atomic_Maya',
+        url: 'https://twitter.com/AtomicMaya_',
       },/*
       {
         label: 'LinkedIn',
