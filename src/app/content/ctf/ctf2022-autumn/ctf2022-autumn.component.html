@@ -7,28 +7,23 @@
     <h2 class='text-center'>Digital Overdose 2022</h2>
     <h2 class='text-center'>Autumn CTF</h2>
 
-    <ng-container *ngIf="this.nowEpoch < this.releaseEpoch">
-      <br/>
-      <app-timer [time]="this.time"></app-timer>
-    </ng-container>
-
     <div class='d-flex flex-column mt-3'>
       <div class="d-flex justify-content-center">
-        <div class='d-flex flex-column mt-3'>
+        <!--div class='d-flex flex-column mt-3'>
           <a class='mx-auto' target='_blank'>
             <div class='btn btn-primary disabled' aria-disabled='true'>
               Registration will open soon.
             </div>
           </a>
-          <!--span class='mx-auto'>(event ended)</span-->
-        </div>
-        <!--app-social-button class="m-1 mt-auto"
-          [text]="'Get registered'"
+          <span class='mx-auto'>(event ended)</span>
+        </div-->
+        <app-social-button class="m-1 mt-auto"
+          [text]="'Register'"
           [url]="'https://digitaloverdose.ractf.cloud'"
           [faClass]="'fas fa-ticket-alt'"
           [color]="'#1e1c34'"
           [border]='false'
-          ></app-social-button-->
+          ></app-social-button>
       </div>
       <!-- span class='mx-auto'>(event ended) -->
     </div>
@@ -39,15 +34,51 @@
 <p>Our fourth CTF is brewing, coming to you live from November 19th (00:00:00 GMT+1) until November 20th (23:59:59 GMT+1).</p>
 
 <p><strong>Type:</strong> Jeopardy</p>
-<p><strong>Domains:</strong> Pwn, Cloud, Crypto, OSINT, ...</p>
+<p><strong>Domains:</strong> Pwn, Web, Crypto, OSINT, ...</p>
 <p><strong>Price:</strong> Free</p>
 <p><strong>Team size:</strong> Max. 4</p>
 <p class='m-0'><strong>Prizes:</strong></p>
-<ul>
-  <li class='prize'><strong>1st Place:</strong> OffSec Voucher, PentesterLab 6 month voucher, TryHackMe 6 months voucher, Cybrancee 1 year Web Hosting</li>
-  <li class='prize'><strong>2nd Place:</strong> TryHackMe 3 months voucher, PentesterLab 3 month voucher, Cybrancee 6 months Web Hosting</li>
-  <li class='prize'><strong>3rd Place:</strong> TryHackMe 3 months voucher, PentesterLab 1 month voucher, Cybrancee 3 months Web Hosting</li>
-</ul>
+<table>
+  <thead>
+    <tr>
+      <td class='prize'>1st Place</td>
+      <td class='prize'>2nd Place</td>
+      <td class='prize'>3rd Place</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <div class='d-flex'>
+          <ul class='mx-auto'>
+            <li><span>OffSec Voucher</span></li>
+            <li><span>PentesterLab 6 month voucher</span></li>
+            <li><span>TryHackMe 6 months voucher</span></li>
+            <li><span>Cybrancee 1 year Web Hosting</span></li>
+          </ul>
+        </div>
+      </td>
+      <td>
+        <div class='d-flex'>
+          <ul class='mx-auto'>
+            <li><span>PentesterLab 3 month voucher</span></li>
+            <li><span>TryHackMe 3 months voucher</span></li>
+            <li><span>Cybrancee 6 months Web Hosting</span></li>
+          </ul>
+        </div>
+      </td>
+      <td>
+        <div class='d-flex'>
+          <ul class='mx-auto'>
+            <li><span>PentesterLab 1 month voucher</span></li>
+            <li><span>TryHackMe 1 months voucher</span></li>
+            <li><span>Cybrancee 3 months Web Hosting</span></li>
+          </ul>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 <br/>
 <hr/>
