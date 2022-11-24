@@ -66,6 +66,27 @@ export const sponsorsCTFAutumn2022: Sponsor[] = [
     ]
   },
   {
+    name: 'The Cyber Community',
+    imageUrl: '/assets/images/ctf/2022/spring/cybercommunity.jpg',
+    links: [
+      {
+        label: 'Website',
+        icon: 'fas fa-globe',
+        url: 'https://helpfightbullies.com/blog/helping-missing-persons-find-their-way/'
+      },
+      {
+        label: 'Twitter',
+        icon: 'fab fa-fw fa-twitter-square',
+        url: 'https://twitter.com/Thecybercomm'
+      },
+      {
+        label: 'Discord',
+        icon: 'fab fa-fw fa-discord',
+        url: 'https://discord.gg/YRhhCsZA',
+      },
+    ]
+  },
+  {
     name: 'Trans Tech Tent',
     imageUrl: '/assets/images/conference/2022/sponsors/trans-tech-tent.png',
     links: [
