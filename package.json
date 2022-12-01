@@ -29,7 +29,7 @@
     "@angular/router": "^14.2.1",
     "@nguniversal/express-engine": "^14.2.0",
     "@nguniversal/module-map-ngfactory-loader": "^8.2.6",
-    "@fontsource/anton": "^4.5.8",
+    "@fontsource/anton": "^4.5.9",
     "@fontsource/dosis": "^4.5.9",
     "@fontsource/share-tech": "^4.5.10",
     "bootstrap": "^5.2.1",
