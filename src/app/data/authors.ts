@@ -55,15 +55,15 @@ export const authorList: AuthorMap = {
         url: 'https://atomicmaya.me',
       },
       {
+        label: 'Mastodon',
+        icon: 'fab fa-fw fa-mastodon',
+        url: 'https://tech.lgbt/@AtomicMaya',
+      },
+      {
         label: 'Twitter',
         icon: 'fab fa-fw fa-twitter-square',
         url: 'https://twitter.com/AtomicMaya_',
-      },/*
-      {
-        label: 'LinkedIn',
-        icon: 'fab fa-fw fa-linkedin',
-        url: 'https://linkedin.com/in/nicolas-boeckh',
-      },*/
+      },
       {
         label: 'Keybase',
         icon: 'fas fa-fw fa-key',
@@ -76,9 +76,9 @@ export const authorList: AuthorMap = {
       }
     ]
   },
-  'Mrs. Skelli': {
-    name: 'Mrs. Skelli',
-    bio: 'Eden is a cyber security enthusiast dedicated to giving back to the community. In her spare time she teaches beginners, students, hobbyists and other tech enthusiasts about cyber security, from the basic principles and working towards the goal of getting them prepared for what the field has to offer.',
+  'Skelli': {
+    name: 'Skelli',
+    bio: 'Eden is a cyber security enthusiast dedicated to giving back to the community. In their spare time they teaches beginners, students, hobbyists and other tech enthusiasts about cyber security, from the basic principles and working towards the goal of getting them prepared for what the field has to offer.',
     avatar: '/assets/images/authors/mrs-skelli.jpg',
     links: [
       {
@@ -110,7 +110,7 @@ export const authorList: AuthorMap = {
   },
   'Night': {
     name: 'Night',
-    bio: 'Mr. Stroet, commonly known as Night, is the husband of Eden and co-owner of the Digital Overdose community. He works as a solution architect for a VPN company. In his spare time he loves to game and hack.',
+    bio: 'Kai, commonly known as Night, is the husband of Eden and co-owner of the Digital Overdose community. He works as a solution architect for a VPN company. In his spare time he loves to game and hack.',
     avatar: '/assets/images/authors/night.jpg',
     links: [
       {

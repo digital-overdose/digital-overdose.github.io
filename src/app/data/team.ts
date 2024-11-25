@@ -82,19 +82,6 @@ export const teamMemberList: TeamMember[] = [
     ]
   },
   {
-    name: 'K. STROET',
-    alias: ['NIGHT', 'BUGBOT'],
-    description: 'Community Manager',
-    imageUrl: '/assets/images/team/night.jpg',
-    links: [
-      {
-        label: 'Twitter',
-        icon: 'fab fa-fw fa-twitter-square',
-        url: 'https://twitter.com/BugBot4',
-      },
-    ]
-  },
-  {
     name: 'Sable',
     alias: ['msddos'],
     description: 'Community Volunteer',
@@ -114,7 +101,7 @@ export const teamMemberList: TeamMember[] = [
   },
   {
     name: '3T3RN4L P4R4D0X',
-    description: 'Community Volunteer (Probation)',
+    description: 'Community Volunteer',
     imageUrl: '/assets/images/team/3t3rn4l_p4r4d0x.png',
   },
   {
@@ -195,18 +182,6 @@ export const teamMemberList: TeamMember[] = [
     ]
   },
   {
-    name: 'SARAH',
-    description: 'Community Volunteer',
-    imageUrl: '/assets/images/team/sarah.jpg',
-    links: [
-      {
-        label: 'Twitter',
-        icon: 'fab fa-fw fa-twitter-square',
-        url: 'https://twitter.com/hyp3rv1s0r',
-      }
-    ]
-  },
-  {
     name: 'GARY HAWKINS',
     description: 'Community Volunteer',
     imageUrl: '/assets/images/team/gary_hawkins.png',
@@ -221,13 +196,13 @@ export const teamMemberList: TeamMember[] = [
   {
     name: 'TRUSTEDINSTALLER',
     description: 'Community Volunteer',
-    imageUrl: '/assets/images/team/placeholder.jfif',
-    links: [ ]
+    imageUrl: '/assets/images/team/ras.png',
+    links: []
   },
   {
     name: 'MEHUL AHORA',
     alias: ['SOCIALLYENCRYPTED'],
-    description: 'Community Volunteer (Probation)',
+    description: 'Community Volunteer',
     imageUrl: '/assets/images/team/mehul.jpg',
     links: [
       {
@@ -307,30 +282,7 @@ export const teamMemberList: TeamMember[] = [
     name: 'INDYK1NG',
     description: 'Community Volunteer (Probation)',
     imageUrl: '/assets/images/team/placeholder.jfif',
-    links: [ ]
-  },
-  {
-    name: 'SAMMY',
-    alias: ['TheresNoTime'],
-    description: 'Community Volunteer (Probation)',
-    imageUrl: '/assets/images/team/sammy.jpg',
-    links: [
-      {
-        label: 'Website',
-        icon: 'fas fa-fw fa-globe',
-        url: 'https://www.theresnotime.co.uk',
-      },
-      {
-        label: 'Twitter',
-        icon: 'fab fa-fw fa-twitter-square',
-        url: 'https://twitter.com/TheresNoTimeFor'
-      },
-      {
-        label: 'GitHub',
-        icon: 'fab fa-fw fa-github',
-        url: 'https://github.com/theresnotime',
-      }
-    ]
+    links: []
   },
 ];
 
@@ -345,6 +297,19 @@ export const teamAlumniList: TeamMember[] = [
         label: 'Twitter',
         icon: 'fab fa-fw fa-twitter-square',
         url: 'https://twitter.com/d4vid_lucifer',
+      },
+    ]
+  },
+  {
+    name: 'KAI',
+    alias: ['NIGHT', 'BUGBOT'],
+    description: 'Community Manager',
+    imageUrl: '/assets/images/team/night.jpg',
+    links: [
+      {
+        label: 'Twitter',
+        icon: 'fab fa-fw fa-twitter-square',
+        url: 'https://twitter.com/BugBot4',
       },
     ]
   },
@@ -401,5 +366,40 @@ export const teamAlumniList: TeamMember[] = [
     name: '0x0elliot',
     description: 'Community Moderator, Conference CTF Bringer',
     imageUrl: '/assets/images/team/0x0elliot.jpg'
+  },
+  {
+    name: 'ZHEA',
+    description: 'Community Volunteer',
+    imageUrl: '/assets/images/team/sarah.jpg',
+    links: [
+      {
+        label: 'Twitter',
+        icon: 'fab fa-fw fa-twitter-square',
+        url: 'https://twitter.com/hyp3rv1s0r',
+      }
+    ]
+  },
+  {
+    name: 'SAMMY',
+    alias: ['TheresNoTime'],
+    description: 'Community Volunteer (Probation)',
+    imageUrl: '/assets/images/team/sammy.jpg',
+    links: [
+      {
+        label: 'Website',
+        icon: 'fas fa-fw fa-globe',
+        url: 'https://www.theresnotime.co.uk',
+      },
+      {
+        label: 'Twitter',
+        icon: 'fab fa-fw fa-twitter-square',
+        url: 'https://twitter.com/TheresNoTimeFor'
+      },
+      {
+        label: 'GitHub',
+        icon: 'fab fa-fw fa-github',
+        url: 'https://github.com/theresnotime',
+      }
+    ]
   },
 ]
