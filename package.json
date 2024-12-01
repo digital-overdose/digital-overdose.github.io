@@ -33,7 +33,7 @@
     "@fontsource/dosis": "^4.5.9",
     "@fontsource/share-tech": "^4.5.10",
     "bootstrap": "^5.2.1",
-    "express": "^4.18.1",
+    "express": "^4.21.1",
     "ngx-scrollbar": "^10.0.1",
     "ngx-tweet": "^2.0.3",
     "rxjs": "~7.5.6",
